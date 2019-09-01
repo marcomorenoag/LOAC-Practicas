@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "S",
+					"strict" : false
+				},
+				{
+					"name" : "currentState1",
+					"strict" : false
+				},
+				{
+					"name" : "currentState0",
+					"strict" : false
+				},
+				{
+					"name" : "nextState1",
+					"strict" : false
+				},
+				{
+					"name" : "nextState0",
+					"strict" : false
+				},
+				{
+					"name" : "E",
+					"strict" : false
+				},
+				{
+					"name" : "BOTON",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

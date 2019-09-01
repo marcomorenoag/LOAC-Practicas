@@ -1,0 +1,23 @@
+|practica2_ff
+S <= Salida.DB_MAX_OUTPUT_PORT_TYPE
+BOTON => sensa_boton:inst5.BOTON
+CLK => sensa_boton:inst5.CLK
+E => inst10.IN2
+E => inst7.IN1
+E => inst9.IN2
+E => inst6.IN1
+currentState1 <= Q1.DB_MAX_OUTPUT_PORT_TYPE
+currentState0 <= Q0.DB_MAX_OUTPUT_PORT_TYPE
+nextState1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+nextState0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica2_ff|sensa_boton:inst5
+BOTON => ESIGUIENTE.DATAIN
+BOTON => RELOJ.DATAB
+CLK => ESIGUIENTE.CLK
+CLK => RELOJ~reg0.CLK
+RELOJ <= RELOJ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EPRESENTE <= ESIGUIENTE.DB_MAX_OUTPUT_PORT_TYPE
+
+

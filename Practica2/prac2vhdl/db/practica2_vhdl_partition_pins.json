@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Salida",
+					"strict" : false
+				},
+				{
+					"name" : "currentState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "currentState[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nextState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nextState[0]",
+					"strict" : false
+				},
+				{
+					"name" : "maquinaBtn",
+					"strict" : false
+				},
+				{
+					"name" : "inicia",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

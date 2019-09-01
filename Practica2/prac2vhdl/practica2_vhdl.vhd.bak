@@ -1,0 +1,47 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Tareavhdl is
+	Port (  RELOJ : in STD_LOGIC;
+			E  : in STD_LOGIC;
+			S  : out STD_LOGIC);
+end Tareavhdl;
+
+architecture Behavioral of Tareavhdl is
+
+	signal esiguiente : std_logic_vector (1 downto 0) := B"00";
+	constant A : std_logic_vector(1 downto 0) := B"00";
+	constant B : std_logic_vector(1 downto 0) := B"01";
+	constant C : std_logic_vector(1 downto 0) := B"10";
+	constant D : std_logic_vector(1 downto 0) := B"11";
+	
+	begin
+	process (E, RELOJ)
+		begin
+			if rising_edge (RELOJ) then
+				case esiguiente is
+					when A =>
+						S <= '0';
+						if E = '0' then esiguiente <= A;
+						elsif E = '1' then esiguiente <= B;
+						end if;
+					when B =>
+						S <= '0';
+						if E = '1' then esiguiente <= C;
+						elsif E = '0' then esiguiente <= A;
+						end if;
+					when C =>
+						S <= '0';
+						if E = '0' then esiguiente <= A;
+						elsif E = '1' then esiguiente <= D;
+						end if;
+					when D =>
+						S <= '1';
+						if E = '0' then esiguiente <= A;
+						elsif E = '1' then esiguiente <= D;
+						end if;
+					when others => null;
+				end case;
+			end if;
+	end process;
+end Behavioral;

@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Alejandro Sebas/Documents/Prac2/simulation/qsim
+vhard_block
+Z0 !s110 1566398285
+!i10b 1
+!s100 oNY9Z0^X=5Y=mNWHGkCj^3
+I0_E7VII`GK_Bh4?4C3Ria0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/OyAC/Lab/Practica2/practica2_ff/simulation/qsim
+Z3 w1566398282
+Z4 8practica2_ff.vo
+Z5 Fpractica2_ff.vo
+L0 313
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1566398284.000000
+Z8 !s107 practica2_ff.vo|
+Z9 !s90 -work|work|practica2_ff.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vpractica2_ff
+R0
+!i10b 1
+!s100 :lSG?ddbAVeail_i[CW[=1
+IoiUd<@WdABA652a88JE6I1
+R1
+R2
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vpractica2_ff_vlg_vec_tst
+R0
+!i10b 1
+!s100 3:6gaiKbQ[9=eK=6]`PKD2
+ID0z:]JG50T;mkDX;JmzE>1
+R1
+R2
+w1566398280
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1566398285.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11

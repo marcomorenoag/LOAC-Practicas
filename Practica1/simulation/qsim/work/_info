@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/OyAC/Lab/Practica1/simulation/qsim
+vhard_block
+Z1 !s110 1565552586
+!i10b 1
+!s100 ELcA_bc`73:Xl_?4CE9[X0
+IN9No6O2B^@gnfg;nL7RD02
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1565552583
+Z4 8LOyAC_P1.vo
+Z5 FLOyAC_P1.vo
+L0 486
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1565552586.000000
+Z8 !s107 LOyAC_P1.vo|
+Z9 !s90 -work|work|LOyAC_P1.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vLOyAC_P1
+R1
+!i10b 1
+!s100 l_Xb=Cl[a4MM>31B25>]K0
+I;nnS;bWQ1R5a>@k5LLWbM0
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@l@oy@a@c_@p1
+vLOyAC_P1_vlg_vec_tst
+R1
+!i10b 1
+!s100 >T15Z4TPhOHd2W@D^N9;k2
+IONL1kDW>Ze34a943f`lKU0
+R2
+R0
+w1565552578
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@l@oy@a@c_@p1_vlg_vec_tst

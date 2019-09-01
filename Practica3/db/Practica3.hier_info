@@ -1,0 +1,159 @@
+|Practica3
+salida[0] <= switchSalidas:inst6.salida[0]
+salida[1] <= switchSalidas:inst6.salida[1]
+salida[2] <= switchSalidas:inst6.salida[2]
+salida[3] <= switchSalidas:inst6.salida[3]
+salida[4] <= switchSalidas:inst6.salida[4]
+salida[5] <= switchSalidas:inst6.salida[5]
+salida[6] <= switchSalidas:inst6.salida[6]
+Switch => switchSalidas:inst6.Switch
+entradas[0] => concatenador_datos:inst.entradas[0]
+entradas[1] => concatenador_datos:inst.entradas[1]
+entradas[2] => concatenador_datos:inst.entradas[2]
+BOTON => sensa_boton:inst1.BOTON
+CLK => sensa_boton:inst1.CLK
+RESET => register2:inst4.RESET
+
+
+|Practica3|switchSalidas:inst6
+ContenidoM[0] => salida.DATAB
+ContenidoM[1] => salida.DATAB
+ContenidoM[2] => salida.DATAB
+ContenidoM[3] => salida.DATAB
+ContenidoM[4] => salida.DATAB
+ContenidoM[5] => salida.DATAB
+ContenidoM[6] => salida.DATAB
+Presente[0] => ~NO_FANOUT~
+Presente[1] => ~NO_FANOUT~
+Presente[2] => ~NO_FANOUT~
+Presente[3] => salida.DATAA
+Presente[4] => salida.DATAA
+Presente[5] => salida.DATAA
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Salidas[0] => salida.DATAA
+Salidas[1] => salida.DATAA
+Salidas[2] => salida.DATAA
+Salidas[3] => salida.DATAA
+salida[0] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica3|memory:inst3
+dir[0] => Mux0.IN69
+dir[0] => Mux1.IN69
+dir[0] => Mux2.IN69
+dir[0] => Mux3.IN69
+dir[0] => Mux4.IN69
+dir[0] => Mux5.IN69
+dir[0] => Mux6.IN69
+dir[1] => Mux0.IN68
+dir[1] => Mux1.IN68
+dir[1] => Mux2.IN68
+dir[1] => Mux3.IN68
+dir[1] => Mux4.IN68
+dir[1] => Mux5.IN68
+dir[1] => Mux6.IN68
+dir[2] => Mux0.IN67
+dir[2] => Mux1.IN67
+dir[2] => Mux2.IN67
+dir[2] => Mux3.IN67
+dir[2] => Mux4.IN67
+dir[2] => Mux5.IN67
+dir[2] => Mux6.IN67
+dir[3] => Mux0.IN66
+dir[3] => Mux1.IN66
+dir[3] => Mux2.IN66
+dir[3] => Mux3.IN66
+dir[3] => Mux4.IN66
+dir[3] => Mux5.IN66
+dir[3] => Mux6.IN66
+dir[4] => Mux0.IN65
+dir[4] => Mux1.IN65
+dir[4] => Mux2.IN65
+dir[4] => Mux3.IN65
+dir[4] => Mux4.IN65
+dir[4] => Mux5.IN65
+dir[4] => Mux6.IN65
+dir[5] => Mux0.IN64
+dir[5] => Mux1.IN64
+dir[5] => Mux2.IN64
+dir[5] => Mux3.IN64
+dir[5] => Mux4.IN64
+dir[5] => Mux5.IN64
+dir[5] => Mux6.IN64
+data[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica3|concatenador_datos:inst
+entradas[0] => salida[0].DATAIN
+entradas[1] => salida[1].DATAIN
+entradas[2] => salida[2].DATAIN
+liga[0] => salida[3].DATAIN
+liga[1] => salida[4].DATAIN
+liga[2] => salida[5].DATAIN
+salida[0] <= entradas[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= entradas[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= entradas[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= liga[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= liga[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= liga[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica3|register2:inst4
+CLK => internal_value[0].CLK
+CLK => internal_value[1].CLK
+CLK => internal_value[2].CLK
+RESET => internal_value[0].ACLR
+RESET => internal_value[1].ACLR
+RESET => internal_value[2].ACLR
+DATA_IN[0] => internal_value[0].DATAIN
+DATA_IN[1] => internal_value[1].DATAIN
+DATA_IN[2] => internal_value[2].DATAIN
+DATA_OUT[0] <= internal_value[0].DB_MAX_OUTPUT_PORT_TYPE
+DATA_OUT[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
+DATA_OUT[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica3|sensa_boton:inst1
+BOTON => ESIGUIENTE.DATAIN
+BOTON => RELOJ.DATAB
+CLK => ESIGUIENTE.CLK
+CLK => RELOJ~reg0.CLK
+RELOJ <= RELOJ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EPRESENTE <= ESIGUIENTE.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica3|divisor_datos:inst2
+entrada[0] => salidas[0].DATAIN
+entrada[1] => salidas[1].DATAIN
+entrada[2] => salidas[2].DATAIN
+entrada[3] => salidas[3].DATAIN
+entrada[4] => liga[0].DATAIN
+entrada[5] => liga[1].DATAIN
+entrada[6] => liga[2].DATAIN
+liga[0] <= entrada[4].DB_MAX_OUTPUT_PORT_TYPE
+liga[1] <= entrada[5].DB_MAX_OUTPUT_PORT_TYPE
+liga[2] <= entrada[6].DB_MAX_OUTPUT_PORT_TYPE
+salidas[0] <= entrada[0].DB_MAX_OUTPUT_PORT_TYPE
+salidas[1] <= entrada[1].DB_MAX_OUTPUT_PORT_TYPE
+salidas[2] <= entrada[2].DB_MAX_OUTPUT_PORT_TYPE
+salidas[3] <= entrada[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,49 @@
+|Block3
+Salida <= practica2_vhdl:inst4.S
+inicia => inst3.IN0
+Clock => sensa_boton:inst.CLK
+maquinaBtn => practica2_vhdl:inst4.E
+currentState[0] <= practica2_vhdl:inst4.currentState[0]
+currentState[1] <= practica2_vhdl:inst4.currentState[1]
+nextState[0] <= practica2_vhdl:inst4.nextState[0]
+nextState[1] <= practica2_vhdl:inst4.nextState[1]
+
+
+|Block3|practica2_vhdl:inst4
+RELOJ => nextState[0]~reg0.CLK
+RELOJ => nextState[1]~reg0.CLK
+RELOJ => esiguiente[0].CLK
+RELOJ => esiguiente[1].CLK
+RELOJ => currentState[0]~reg0.CLK
+RELOJ => currentState[1]~reg0.CLK
+RELOJ => S~reg0.CLK
+E => esiguiente.OUTPUTSELECT
+E => nextState.OUTPUTSELECT
+E => esiguiente.OUTPUTSELECT
+E => esiguiente.OUTPUTSELECT
+E => nextState.OUTPUTSELECT
+E => nextState.OUTPUTSELECT
+E => Mux3.IN3
+E => Mux1.IN3
+E => esiguiente.OUTPUTSELECT
+E => esiguiente.OUTPUTSELECT
+E => nextState.OUTPUTSELECT
+E => nextState.OUTPUTSELECT
+E => esiguiente.OUTPUTSELECT
+E => nextState.OUTPUTSELECT
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nextState[0] <= nextState[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nextState[1] <= nextState[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+currentState[0] <= currentState[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+currentState[1] <= currentState[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block3|sensa_boton:inst
+BOTON => ESIGUIENTE.DATAIN
+BOTON => RELOJ.DATAB
+CLK => ESIGUIENTE.CLK
+CLK => RELOJ~reg0.CLK
+RELOJ <= RELOJ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EPRESENTE <= ESIGUIENTE.DB_MAX_OUTPUT_PORT_TYPE
+
+
