@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA_lite/OyAC/Lab/Practica4/simulation/qsim
 Ehard_block
-Z1 w1567610301
+Z1 w1568004951
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1567610309
+Z11 !s110 1568004957
 !i10b 1
-Z12 !s108 1567610308.000000
+Z12 !s108 1568004956.000000
 Z13 !s90 -work|work|LOAC_P4.vho|
 Z14 !s107 LOAC_P4.vho|
 !i113 1
@@ -70,8 +70,8 @@ R8
 R9
 l0
 L90
-V]LQGEj^_EbQS5kGKkWDGA3
-!s100 4flJ8>Vd7Zz5GM9hfh7f@2
+V[Lz>B:OdFdOUF3V][Qb7X0
+!s100 MPZDf0<DmVO?e4m=<IfjA3
 R10
 32
 R11
@@ -91,11 +91,11 @@ R4
 R5
 R6
 R18
-DEx4 work 7 loac_p4 0 22 ]LQGEj^_EbQS5kGKkWDGA3
-l168
-L113
-Vl>6:NPY<bkY_^f=;a0AZz3
-!s100 O;RNzFJ@a`8@XHMGJ07H41
+DEx4 work 7 loac_p4 0 22 [Lz>B:OdFdOUF3V][Qb7X0
+l202
+L125
+Vkj<86f1kKW3YiclM``1J@2
+!s100 8faoH?OoM7]Co4WeII3Yc3
 R10
 32
 R11
@@ -107,7 +107,7 @@ R14
 R15
 R16
 Eloac_p4_vhd_vec_tst
-Z19 w1567610298
+Z19 w1568004949
 R5
 R6
 R0
@@ -119,29 +119,29 @@ V>]WE1=lhCI@gaCiMG2Q^L1
 !s100 [lN3:lAe2cogL9?bO>I`a2
 R10
 32
-Z22 !s110 1567610310
+R11
 !i10b 1
-Z23 !s108 1567610309.000000
-Z24 !s90 -work|work|Waveform.vwf.vht|
-Z25 !s107 Waveform.vwf.vht|
+Z22 !s108 1568004957.000000
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
 !i113 1
 R15
 R16
 Aloac_p4_arch
 R5
 R6
-DEx4 work 19 loac_p4_vhd_vec_tst 0 22 >]WE1=lhCI@gaCiMG2Q^L1
-l52
+Z25 DEx4 work 19 loac_p4_vhd_vec_tst 0 22 >]WE1=lhCI@gaCiMG2Q^L1
+l58
 L33
-VIRUODdV1_DbQdIPzD^`]T3
-!s100 0Oa8Ge2bK@23Af>N6A^ek2
+VKd9AcfdT4>6PmCU1UZFD22
+!s100 enYn9Bn9ENd1i4==4Z:[C1
 R10
 32
-R22
+R11
 !i10b 1
+R22
 R23
 R24
-R25
 !i113 1
 R15
 R16

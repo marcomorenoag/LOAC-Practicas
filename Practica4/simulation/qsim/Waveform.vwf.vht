@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "09/04/2019 10:18:18"
+-- Generated on "09/08/2019 23:55:49"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          LOAC_P4
 -- 
@@ -35,18 +35,24 @@ ARCHITECTURE LOAC_P4_arch OF LOAC_P4_vhd_vec_tst IS
 -- signals                                                   
 SIGNAL A : STD_LOGIC;
 SIGNAL B : STD_LOGIC;
+SIGNAL BOTON : STD_LOGIC;
 SIGNAL C : STD_LOGIC;
 SIGNAL CLK : STD_LOGIC;
 SIGNAL Output : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL RESET : STD_LOGIC;
+SIGNAL salida : STD_LOGIC_VECTOR(6 DOWNTO 0);
+SIGNAL Switch : STD_LOGIC;
 COMPONENT LOAC_P4
 	PORT (
 	A : IN STD_LOGIC;
 	B : IN STD_LOGIC;
+	BOTON : IN STD_LOGIC;
 	C : IN STD_LOGIC;
 	CLK : IN STD_LOGIC;
 	Output : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-	RESET : IN STD_LOGIC
+	RESET : IN STD_LOGIC;
+	salida : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	Switch : IN STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
@@ -55,10 +61,13 @@ BEGIN
 -- list connections between master ports and signals
 	A => A,
 	B => B,
+	BOTON => BOTON,
 	C => C,
 	CLK => CLK,
 	Output => Output,
-	RESET => RESET
+	RESET => RESET,
+	salida => salida,
+	Switch => Switch
 	);
 
 -- A
