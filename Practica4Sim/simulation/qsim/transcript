@@ -1,7 +1,7 @@
 # do prac4.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:17:06 on Sep 10,2019
+# Start time: 09:46:14 on Sep 11,2019
 # vcom -work work prac4.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -16,20 +16,20 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity prac4
 # -- Compiling architecture structure of prac4
-# End time: 00:17:06 on Sep 10,2019, Elapsed time: 0:00:00
+# End time: 09:46:15 on Sep 11,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:17:06 on Sep 10,2019
+# Start time: 09:46:15 on Sep 11,2019
 # vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity prac4_vhd_vec_tst
 # -- Compiling architecture prac4_arch of prac4_vhd_vec_tst
-# End time: 00:17:06 on Sep 10,2019, Elapsed time: 0:00:00
+# End time: 09:46:15 on Sep 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.prac4_vhd_vec_tst 
-# Start time: 00:17:07 on Sep 10,2019
+# Start time: 09:46:17 on Sep 11,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -51,5 +51,5 @@
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
 # after#35
-# End time: 00:17:08 on Sep 10,2019, Elapsed time: 0:00:01
+# End time: 09:46:19 on Sep 11,2019, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0

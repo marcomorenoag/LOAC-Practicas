@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA_lite/OyAC/Lab/Practica4Sim/simulation/qsim
 Ehard_block
-Z1 w1568092624
+Z1 w1568213168
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1568092626
+Z11 !s110 1568213175
 !i10b 1
-Z12 !s108 1568092626.000000
+Z12 !s108 1568213174.000000
 Z13 !s90 -work|work|prac4.vho|
 Z14 !s107 prac4.vho|
 !i113 1
@@ -107,7 +107,7 @@ R14
 R15
 R16
 Eprac4_vhd_vec_tst
-Z19 w1568092622
+Z19 w1568213164
 R5
 R6
 R0
@@ -121,27 +121,27 @@ R10
 32
 R11
 !i10b 1
-R12
-Z22 !s90 -work|work|Waveform1.vwf.vht|
-Z23 !s107 Waveform1.vwf.vht|
+Z22 !s108 1568213175.000000
+Z23 !s90 -work|work|Waveform1.vwf.vht|
+Z24 !s107 Waveform1.vwf.vht|
 !i113 1
 R15
 R16
 Aprac4_arch
 R5
 R6
-Z24 DEx4 work 17 prac4_vhd_vec_tst 0 22 O2Xg>7lLeQ?RmG9SD3>Y82
+Z25 DEx4 work 17 prac4_vhd_vec_tst 0 22 O2Xg>7lLeQ?RmG9SD3>Y82
 l56
 L33
-VUdN>Z>EH_;9@T3UZN?`JC1
-!s100 9mjXS_<BfK11>9Z=;<E_B2
+Z26 VUdN>Z>EH_;9@T3UZN?`JC1
+Z27 !s100 9mjXS_<BfK11>9Z=;<E_B2
 R10
 32
 R11
 !i10b 1
-R12
 R22
 R23
+R24
 !i113 1
 R15
 R16

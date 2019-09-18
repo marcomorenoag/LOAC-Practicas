@@ -1,0 +1,69 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "currentState[2]",
+					"strict" : false
+				},
+				{
+					"name" : "currentState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "currentState[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nexttSate[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nexttSate[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nexttSate[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salida[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salida[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "RELOJ",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

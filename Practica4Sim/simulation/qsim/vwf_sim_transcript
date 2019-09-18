@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Sep 10 00:17:01 2019
+    Info: Processing started: Wed Sep 11 09:46:02 2019
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off prac4 -c prac4 --vector_source=C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/Waveform1.vwf --testbench_file=C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/simulation/qsim/Waveform1.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -51,15 +51,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Sep 10 00:17:03 2019
+    Info: Processing started: Wed Sep 11 09:46:05 2019
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/simulation/qsim/ prac4 -c prac4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file prac4.vho in folder "C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4629 megabytes
-    Info: Processing ended: Tue Sep 10 00:17:04 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Wed Sep 11 09:46:08 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 Completed successfully. 
 
@@ -75,6 +75,7 @@ C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vsim -c -do prac4.do
 
 Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
+
 # 10.5b
 
 
@@ -83,10 +84,9 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:17:06 on Sep 10,2019
+# Start time: 09:46:14 on Sep 11,2019
 # vcom -work work prac4.vho 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -94,27 +94,31 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package fiftyfivenm_atom_pack
 # -- Loading package fiftyfivenm_components
 # -- Compiling entity hard_block
+
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
+
 # -- Compiling entity prac4
 # -- Compiling architecture structure of prac4
-# End time: 00:17:06 on Sep 10,2019, Elapsed time: 0:00:00
+
+# End time: 09:46:15 on Sep 11,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:17:06 on Sep 10,2019
+# Start time: 09:46:15 on Sep 11,2019
 # vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+
 # -- Compiling entity prac4_vhd_vec_tst
 # -- Compiling architecture prac4_arch of prac4_vhd_vec_tst
-# End time: 00:17:06 on Sep 10,2019, Elapsed time: 0:00:00
+# End time: 09:46:15 on Sep 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.prac4_vhd_vec_tst 
-# Start time: 00:17:07 on Sep 10,2019
+# Start time: 09:46:17 on Sep 11,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -137,7 +141,7 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
 # after#35
 
-# End time: 00:17:08 on Sep 10,2019, Elapsed time: 0:00:01
+# End time: 09:46:19 on Sep 11,2019, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -150,7 +154,7 @@ Reading C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/simulation/qsim/prac4.msim.vcd..
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/simulation/qsim/prac4_20190910001708.sim.vwf
+Writing the resulting VWF to C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/simulation/qsim/prac4_20190911094619.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -7,6 +7,7 @@ source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/mux3.vhd
 source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/mux4.vhd
 source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/prac4.bdf
 source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/Waveform.vwf
+source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Practica4Sim/Waveform1.vwf
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
