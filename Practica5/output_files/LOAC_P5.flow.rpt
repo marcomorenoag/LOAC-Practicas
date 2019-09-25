@@ -1,5 +1,5 @@
 Flow report for LOAC_P5
-Wed Sep 18 09:15:18 2019
+Wed Sep 18 10:23:53 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Sep 18 09:15:18 2019       ;
+; Flow Status                        ; Successful - Wed Sep 18 10:23:45 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LOAC_P5                                     ;
 ; Top-level Entity Name              ; LOAC_P5                                     ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 46 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 44 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 3 / 49,760 ( < 1 % )                        ;
-; Total registers                    ; 3                                           ;
-; Total pins                         ; 15 / 360 ( 4 % )                            ;
+; Total logic elements               ; 17 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 16 / 49,760 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 5 / 49,760 ( < 1 % )                        ;
+; Total registers                    ; 5                                           ;
+; Total pins                         ; 14 / 360 ( 4 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/11/2019 10:27:44 ;
+; Start date & time ; 09/18/2019 10:23:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LOAC_P5             ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1097032508660.156821566302180          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1097032508660.156882018316256          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -92,15 +92,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4776 MB             ; 00:00:38                           ;
-; Fitter               ; 00:00:16     ; 1.0                     ; 5289 MB             ; 00:00:19                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4677 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 4773 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4618 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4627 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4618 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4627 MB             ; 00:00:02                           ;
-; Total                ; 00:00:58     ; --                      ; --                  ; 00:01:14                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4778 MB             ; 00:00:37                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 5283 MB             ; 00:00:17                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4673 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 4774 MB             ; 00:00:05                           ;
+; Total                ; 00:00:45     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,10 +109,6 @@ refer to the applicable agreement for further details.
 ; Fitter               ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -127,10 +119,6 @@ quartus_map --read_settings_files=on --write_settings_files=off LOAC_P5 -c LOAC_
 quartus_fit --read_settings_files=off --write_settings_files=off LOAC_P5 -c LOAC_P5
 quartus_asm --read_settings_files=off --write_settings_files=off LOAC_P5 -c LOAC_P5
 quartus_sta LOAC_P5 -c LOAC_P5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P5 -c LOAC_P5 --vector_source=C:/intelFPGA_lite/OyAC/Lab/Practica5/Waveform2.vwf --testbench_file=C:/intelFPGA_lite/OyAC/Lab/Practica5/simulation/qsim/Waveform2.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/OyAC/Lab/Practica5/simulation/qsim/ LOAC_P5 -c LOAC_P5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P5 -c LOAC_P5 --vector_source=C:/intelFPGA_lite/OyAC/Lab/Practica5/Waveform2.vwf --testbench_file=C:/intelFPGA_lite/OyAC/Lab/Practica5/simulation/qsim/Waveform2.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/OyAC/Lab/Practica5/simulation/qsim/ LOAC_P5 -c LOAC_P5
 
 
 

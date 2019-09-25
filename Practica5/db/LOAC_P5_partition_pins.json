@@ -4,27 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "currentState[2]",
+					"name" : "salida[6]",
 					"strict" : false
 				},
 				{
-					"name" : "currentState[1]",
+					"name" : "salida[5]",
 					"strict" : false
 				},
 				{
-					"name" : "currentState[0]",
-					"strict" : false
-				},
-				{
-					"name" : "nexttSate[2]",
-					"strict" : false
-				},
-				{
-					"name" : "nexttSate[1]",
-					"strict" : false
-				},
-				{
-					"name" : "nexttSate[0]",
+					"name" : "salida[4]",
 					"strict" : false
 				},
 				{
@@ -44,11 +32,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "C",
+					"name" : "A",
 					"strict" : false
 				},
 				{
-					"name" : "A",
+					"name" : "C",
 					"strict" : false
 				},
 				{
@@ -56,11 +44,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "RELOJ",
+					"name" : "Switch",
 					"strict" : false
 				},
 				{
 					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "sensaboton",
+					"strict" : false
+				},
+				{
+					"name" : "RELOJ",
 					"strict" : false
 				}
 			]

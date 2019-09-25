@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Sep 11 10:28:05 2019
+Analysis & Synthesis Status : Successful - Wed Sep 18 10:23:23 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : LOAC_P5
 Top-level Entity Name : LOAC_P5
 Family : MAX 10
-Total logic elements : 43
-    Total combinational functions : 43
-    Dedicated logic registers : 3
-Total registers : 3
-Total pins : 15
+Total logic elements : 16
+    Total combinational functions : 15
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 14
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

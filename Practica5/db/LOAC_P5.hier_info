@@ -1,19 +1,41 @@
 |LOAC_P5
-currentState[0] <= registro3x3:inst1.SALIDA[0]
-currentState[1] <= registro3x3:inst1.SALIDA[1]
-currentState[2] <= registro3x3:inst1.SALIDA[2]
-RELOJ => registro3x3:inst1.RELOJ
+salida[0] <= switchSalidas:inst8.salida[0]
+salida[1] <= switchSalidas:inst8.salida[1]
+salida[2] <= switchSalidas:inst8.salida[2]
+salida[3] <= switchSalidas:inst8.salida[3]
+salida[4] <= switchSalidas:inst8.salida[4]
+salida[5] <= switchSalidas:inst8.salida[5]
+salida[6] <= switchSalidas:inst8.salida[6]
+Switch => switchSalidas:inst8.Switch
+sensaboton => sensa_boton:inst7.BOTON
+RELOJ => sensa_boton:inst7.CLK
 RESET => registro3x3:inst1.RESET
 A => mux2X4X1:inst3.Q1
 B => mux2X4X1:inst3.Q2
 C => mux2X4X1:inst3.Q3
-nexttSate[0] <= mux2:inst9.salida[0]
-nexttSate[1] <= mux2:inst9.salida[1]
-nexttSate[2] <= mux2:inst9.salida[2]
-salida[0] <= muxSalidas:inst40.salida[0]
-salida[1] <= muxSalidas:inst40.salida[1]
-salida[2] <= muxSalidas:inst40.salida[2]
-salida[3] <= muxSalidas:inst40.salida[3]
+
+
+|LOAC_P5|switchSalidas:inst8
+nextState[0] => salida.DATAB
+nextState[1] => salida.DATAB
+nextState[2] => salida.DATAB
+currentState[0] => salida.DATAA
+currentState[1] => salida.DATAA
+currentState[2] => salida.DATAA
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+SalidaMaquina[0] => salida[0].DATAIN
+SalidaMaquina[1] => salida[1].DATAIN
+SalidaMaquina[2] => salida[2].DATAIN
+SalidaMaquina[3] => salida[3].DATAIN
+salida[0] <= SalidaMaquina[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= SalidaMaquina[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= SalidaMaquina[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= SalidaMaquina[3].DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= salida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |LOAC_P5|registro3x3:inst1
@@ -29,6 +51,15 @@ ENTRADA[2] => valor_interno[2].DATAIN
 SALIDA[0] <= valor_interno[0].DB_MAX_OUTPUT_PORT_TYPE
 SALIDA[1] <= valor_interno[1].DB_MAX_OUTPUT_PORT_TYPE
 SALIDA[2] <= valor_interno[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LOAC_P5|sensa_boton:inst7
+BOTON => ESIGUIENTE.DATAIN
+BOTON => RELOJ.DATAB
+CLK => ESIGUIENTE.CLK
+CLK => RELOJ~reg0.CLK
+RELOJ <= RELOJ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EPRESENTE <= ESIGUIENTE.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |LOAC_P5|mux2:inst9
@@ -93,36 +124,63 @@ salidasI[2] <= entrada[2].DB_MAX_OUTPUT_PORT_TYPE
 salidasI[3] <= entrada[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LOAC_P5|memory:inst4
-direccion[0] => Equal0.IN5
-direccion[0] => Equal1.IN5
-direccion[0] => Equal2.IN5
-direccion[0] => Equal3.IN5
-direccion[0] => Equal4.IN5
-direccion[1] => Equal0.IN4
-direccion[1] => Equal1.IN4
-direccion[1] => Equal2.IN4
-direccion[1] => Equal3.IN4
-direccion[1] => Equal4.IN4
-direccion[2] => Equal0.IN3
-direccion[2] => Equal1.IN3
-direccion[2] => Equal2.IN3
-direccion[2] => Equal3.IN3
-direccion[2] => Equal4.IN3
-datos[0] <= datos[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[1] <= datos[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[2] <= datos[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[3] <= datos[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[4] <= datos[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[5] <= datos[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[6] <= datos[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[7] <= datos[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[8] <= datos[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[9] <= datos[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[10] <= datos[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[11] <= datos[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[12] <= datos[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-datos[13] <= datos[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+|LOAC_P5|memory:inst10
+dir[0] => Mux0.IN10
+dir[0] => Mux1.IN10
+dir[0] => Mux2.IN10
+dir[0] => Mux3.IN10
+dir[0] => Mux4.IN10
+dir[0] => Mux5.IN10
+dir[0] => Mux6.IN10
+dir[0] => Mux7.IN10
+dir[0] => Mux8.IN10
+dir[0] => Mux9.IN10
+dir[0] => Mux10.IN10
+dir[0] => Mux11.IN10
+dir[0] => Mux12.IN10
+dir[0] => Mux13.IN10
+dir[1] => Mux0.IN9
+dir[1] => Mux1.IN9
+dir[1] => Mux2.IN9
+dir[1] => Mux3.IN9
+dir[1] => Mux4.IN9
+dir[1] => Mux5.IN9
+dir[1] => Mux6.IN9
+dir[1] => Mux7.IN9
+dir[1] => Mux8.IN9
+dir[1] => Mux9.IN9
+dir[1] => Mux10.IN9
+dir[1] => Mux11.IN9
+dir[1] => Mux12.IN9
+dir[1] => Mux13.IN9
+dir[2] => Mux0.IN8
+dir[2] => Mux1.IN8
+dir[2] => Mux2.IN8
+dir[2] => Mux3.IN8
+dir[2] => Mux4.IN8
+dir[2] => Mux5.IN8
+dir[2] => Mux6.IN8
+dir[2] => Mux7.IN8
+dir[2] => Mux8.IN8
+dir[2] => Mux9.IN8
+dir[2] => Mux10.IN8
+dir[2] => Mux11.IN8
+dir[2] => Mux12.IN8
+dir[2] => Mux13.IN8
+data[0] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+data[8] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+data[9] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+data[10] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+data[11] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+data[12] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+data[13] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |LOAC_P5|incrementador:inst2

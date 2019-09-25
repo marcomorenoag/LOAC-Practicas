@@ -59,5 +59,21 @@ set_global_assignment -name VHDL_FILE mux2x4x1.vhd
 set_global_assignment -name VHDL_FILE muxSalidas.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VHDL_FILE sensa_boton.vhd
+set_global_assignment -name VHDL_FILE switchSalidas.vhd
+set_location_assignment PIN_B12 -to C
+set_location_assignment PIN_A13 -to B
+set_location_assignment PIN_A14 -to A
+set_location_assignment PIN_N14 -to RELOJ
+set_location_assignment PIN_B8 -to RESET
+set_location_assignment PIN_A7 -to sensaboton
+set_location_assignment PIN_F15 -to Switch
+set_location_assignment PIN_A8 -to salida[0]
+set_location_assignment PIN_A9 -to salida[1]
+set_location_assignment PIN_A10 -to salida[2]
+set_location_assignment PIN_B10 -to salida[3]
+set_location_assignment PIN_D13 -to salida[4]
+set_location_assignment PIN_C13 -to salida[5]
+set_location_assignment PIN_E14 -to salida[6]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
