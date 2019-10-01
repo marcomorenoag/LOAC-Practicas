@@ -4,11 +4,103 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "OUT",
+					"name" : "selector",
 					"strict" : false
 				},
 				{
-					"name" : "IN",
+					"name" : "carga",
+					"strict" : false
+				},
+				{
+					"name" : "mi[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mi[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nextState[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nextState[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nextState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nextState[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salidas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salidas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salidas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salidas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "state[3]",
+					"strict" : false
+				},
+				{
+					"name" : "state[2]",
+					"strict" : false
+				},
+				{
+					"name" : "state[1]",
+					"strict" : false
+				},
+				{
+					"name" : "state[0]",
+					"strict" : false
+				},
+				{
+					"name" : "int",
+					"strict" : false
+				},
+				{
+					"name" : "x",
+					"strict" : false
+				},
+				{
+					"name" : "y",
+					"strict" : false
+				},
+				{
+					"name" : "RELOJ",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADA[0]",
 					"strict" : false
 				}
 			]

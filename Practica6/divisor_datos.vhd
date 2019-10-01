@@ -4,7 +4,8 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity divisor_datos is
-	Port ( entrada : in STD_LOGIC_VECTOR (12 downto 0);
+	Port ( clk : in STD_LOGIC;
+			 entrada : in STD_LOGIC_VECTOR (12 downto 0);
 			 mi : out STD_LOGIC_VECTOR(1 downto 0);
 			 prueba: out STD_LOGIC_VECTOR(1 downto 0);
 			 vf : out STD_LOGIC;
@@ -14,12 +15,14 @@ end divisor_datos;
 
 architecture Behavioral of divisor_datos is
 begin
-	process(entrada)
+	process(clk, entrada)
 	begin
-		mi <=  entrada(12 downto 11);
-		prueba <= entrada(10 downto 9);
-		vf <= entrada(8);
-		liga <= entrada(7 downto 4);
-		salidas <= entrada(3 downto 0);
+		if rising_edge(clk) then
+			mi <=  entrada(12 downto 11);
+			prueba <= entrada(10 downto 9);
+			vf <= entrada(8);
+			liga <= entrada(7 downto 4);
+			salidas <= entrada(3 downto 0);
+		end if;
 	end process;
 end Behavioral;

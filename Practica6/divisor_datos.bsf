@@ -26,9 +26,16 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
 		(text "entrada[12..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "entrada[12..0]" (rect 21 27 74 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "entrada[12..0]" (rect 21 43 74 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 200 32)
