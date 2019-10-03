@@ -12,27 +12,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "currentState[3]",
+					"strict" : false
+				},
+				{
+					"name" : "currentState[2]",
+					"strict" : false
+				},
+				{
+					"name" : "currentState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "currentState[0]",
+					"strict" : false
+				},
+				{
 					"name" : "mi[1]",
 					"strict" : false
 				},
 				{
 					"name" : "mi[0]",
-					"strict" : false
-				},
-				{
-					"name" : "nextState[3]",
-					"strict" : false
-				},
-				{
-					"name" : "nextState[2]",
-					"strict" : false
-				},
-				{
-					"name" : "nextState[1]",
-					"strict" : false
-				},
-				{
-					"name" : "nextState[0]",
 					"strict" : false
 				},
 				{

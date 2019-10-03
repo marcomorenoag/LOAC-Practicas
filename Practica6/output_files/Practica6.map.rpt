@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Practica6
-Tue Oct 01 01:05:46 2019
+Thu Oct 03 10:31:45 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,15 +43,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 01 01:05:46 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 03 10:31:45 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Practica6                                   ;
 ; Top-level Entity Name              ; Practica6                                   ;
 ; Family                             ; MAX 10                                      ;
 ; Total logic elements               ; 41                                          ;
 ;     Total combinational functions  ; 33                                          ;
-;     Dedicated logic registers      ; 24                                          ;
-; Total registers                    ; 24                                          ;
+;     Dedicated logic registers      ; 20                                          ;
+; Total registers                    ; 20                                          ;
 ; Total pins                         ; 25                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -200,8 +200,8 @@ refer to the applicable agreement for further details.
 ;     -- normal mode                          ; 33          ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
-; Total registers                             ; 24          ;
-;     -- Dedicated logic registers            ; 24          ;
+; Total registers                             ; 20          ;
+;     -- Dedicated logic registers            ; 20          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 25          ;
@@ -209,8 +209,8 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; RELOJ~input ;
-; Maximum fan-out                             ; 24          ;
-; Total fan-out                               ; 219         ;
+; Maximum fan-out                             ; 20          ;
+; Total fan-out                               ; 211         ;
 ; Average fan-out                             ; 2.05        ;
 +---------------------------------------------+-------------+
 
@@ -220,11 +220,11 @@ refer to the applicable agreement for further details.
 +-------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                 ; Entity Name       ; Library Name ;
 +-------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+-------------------+--------------+
-; |Practica6                    ; 33 (3)              ; 24 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 25   ; 0            ; 0          ; |Practica6                          ; Practica6         ; work         ;
-;    |divisor_datos:inst|       ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|divisor_datos:inst       ; divisor_datos     ; work         ;
-;    |incrementador:inst4|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|incrementador:inst4      ; incrementador     ; work         ;
+; |Practica6                    ; 33 (3)              ; 20 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 25   ; 0            ; 0          ; |Practica6                          ; Practica6         ; work         ;
+;    |divisor_datos:inst|       ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|divisor_datos:inst       ; divisor_datos     ; work         ;
+;    |incrementador:inst4|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|incrementador:inst4      ; incrementador     ; work         ;
 ;    |logicaInterna:inst19|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|logicaInterna:inst19     ; logicaInterna     ; work         ;
-;    |memory:inst18|            ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|memory:inst18            ; memory            ; work         ;
+;    |memory:inst18|            ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|memory:inst18            ; memory            ; work         ;
 ;    |muxSalInc:inst5|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|muxSalInc:inst5          ; muxSalInc         ; work         ;
 ;    |regInc:inst3|             ; 1 (1)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|regInc:inst3             ; regInc            ; work         ;
 ;    |regInterrupciones:inst11| ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|regInterrupciones:inst11 ; regInterrupciones ; work         ;
@@ -248,7 +248,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 24    ;
+; Total registers                              ; 20    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 4     ;
@@ -264,19 +264,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 25                          ;
-; cycloneiii_ff         ; 24                          ;
+; cycloneiii_ff         ; 20                          ;
 ;     CLR               ; 4                           ;
-;     plain             ; 20                          ;
+;     plain             ; 16                          ;
 ; cycloneiii_io_obuf    ; 4                           ;
-; cycloneiii_lcell_comb ; 34                          ;
-;     normal            ; 34                          ;
-;         1 data inputs ; 2                           ;
+; cycloneiii_lcell_comb ; 36                          ;
+;     normal            ; 36                          ;
+;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 27                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.32                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -295,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 01 01:05:25 2019
+    Info: Processing started: Thu Oct 03 10:31:24 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Practica6 -c Practica6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -362,9 +362,9 @@ Info (21057): Implemented 66 device resources after synthesis - the final resour
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 41 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Tue Oct 01 01:05:46 2019
+    Info: Peak virtual memory: 4776 megabytes
+    Info: Processing ended: Thu Oct 03 10:31:45 2019
     Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Total CPU time (on all processors): 00:00:37
 
 

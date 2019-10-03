@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Practica6
-Tue Oct 01 01:09:23 2019
+Thu Oct 03 10:50:49 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 01 01:09:23 2019 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 03 10:50:49 2019 ;
 ; Revision Name             ; Practica6                             ;
 ; Top-level Entity Name     ; Practica6                             ;
 ; Family                    ; MAX 10                                ;
@@ -93,13 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 01 01:09:21 2019
+    Info: Processing started: Thu Oct 03 10:50:47 2019
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/OyAC/Lab/Practica6/simulation/qsim/ Practica6 -c Practica6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Practica6.vho in folder "C:/intelFPGA_lite/OyAC/Lab/Practica6/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4630 megabytes
-    Info: Processing ended: Tue Oct 01 01:09:23 2019
+    Info: Peak virtual memory: 4628 megabytes
+    Info: Processing ended: Thu Oct 03 10:50:49 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

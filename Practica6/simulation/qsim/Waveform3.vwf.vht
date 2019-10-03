@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/03/2019 10:26:55"
+-- Generated on "10/03/2019 10:50:47"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Practica6
 -- 
@@ -82,11 +82,19 @@ BEGIN
 t_prcs_ENTRADA_3: PROCESS
 BEGIN
 	ENTRADA(3) <= '0';
+	WAIT FOR 40000 ps;
+	ENTRADA(3) <= '1';
+	WAIT FOR 30000 ps;
+	ENTRADA(3) <= '0';
 WAIT;
 END PROCESS t_prcs_ENTRADA_3;
 -- ENTRADA[2]
 t_prcs_ENTRADA_2: PROCESS
 BEGIN
+	ENTRADA(2) <= '0';
+	WAIT FOR 40000 ps;
+	ENTRADA(2) <= '1';
+	WAIT FOR 30000 ps;
 	ENTRADA(2) <= '0';
 WAIT;
 END PROCESS t_prcs_ENTRADA_2;
@@ -100,13 +108,17 @@ END PROCESS t_prcs_ENTRADA_1;
 t_prcs_ENTRADA_0: PROCESS
 BEGIN
 	ENTRADA(0) <= '1';
+	WAIT FOR 40000 ps;
+	ENTRADA(0) <= '0';
+	WAIT FOR 30000 ps;
+	ENTRADA(0) <= '1';
 WAIT;
 END PROCESS t_prcs_ENTRADA_0;
 
 -- int
 t_prcs_int: PROCESS
 BEGIN
-	int <= '0';
+	int <= '1';
 WAIT;
 END PROCESS t_prcs_int;
 
@@ -132,7 +144,7 @@ END PROCESS t_prcs_RESET;
 -- x
 t_prcs_x: PROCESS
 BEGIN
-	x <= '0';
+	x <= '1';
 WAIT;
 END PROCESS t_prcs_x;
 

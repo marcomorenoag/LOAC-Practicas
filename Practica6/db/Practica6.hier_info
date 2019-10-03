@@ -17,12 +17,12 @@ ENTRADA[2] => regInterrupciones:inst11.ENTRADA[2]
 ENTRADA[3] => regTransforma:inst12.ENTRADA[3]
 ENTRADA[3] => regInterrupciones:inst11.ENTRADA[3]
 carga <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+currentState[0] <= muxSalInc:inst5.salida[0]
+currentState[1] <= muxSalInc:inst5.salida[1]
+currentState[2] <= muxSalInc:inst5.salida[2]
+currentState[3] <= muxSalInc:inst5.salida[3]
 mi[0] <= divisor_datos:inst.mi[0]
 mi[1] <= divisor_datos:inst.mi[1]
-nextState[0] <= muxSalInc:inst5.salida[0]
-nextState[1] <= muxSalInc:inst5.salida[1]
-nextState[2] <= muxSalInc:inst5.salida[2]
-nextState[3] <= muxSalInc:inst5.salida[3]
 salidas[0] <= divisor_datos:inst.salidas[0]
 salidas[1] <= divisor_datos:inst.salidas[1]
 salidas[2] <= divisor_datos:inst.salidas[2]
@@ -66,10 +66,6 @@ salida <= salida$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Practica6|divisor_datos:inst
-clk => salidas[0]~reg0.CLK
-clk => salidas[1]~reg0.CLK
-clk => salidas[2]~reg0.CLK
-clk => salidas[3]~reg0.CLK
 clk => liga[0]~reg0.CLK
 clk => liga[1]~reg0.CLK
 clk => liga[2]~reg0.CLK
@@ -79,10 +75,10 @@ clk => prueba[0]~reg0.CLK
 clk => prueba[1]~reg0.CLK
 clk => mi[0]~reg0.CLK
 clk => mi[1]~reg0.CLK
-entrada[0] => salidas[0]~reg0.DATAIN
-entrada[1] => salidas[1]~reg0.DATAIN
-entrada[2] => salidas[2]~reg0.DATAIN
-entrada[3] => salidas[3]~reg0.DATAIN
+entrada[0] => salidas[0].DATAIN
+entrada[1] => salidas[1].DATAIN
+entrada[2] => salidas[2].DATAIN
+entrada[3] => salidas[3].DATAIN
 entrada[4] => liga[0]~reg0.DATAIN
 entrada[5] => liga[1]~reg0.DATAIN
 entrada[6] => liga[2]~reg0.DATAIN
@@ -101,10 +97,10 @@ liga[0] <= liga[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 liga[1] <= liga[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 liga[2] <= liga[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 liga[3] <= liga[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-salidas[0] <= salidas[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-salidas[1] <= salidas[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-salidas[2] <= salidas[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-salidas[3] <= salidas[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+salidas[0] <= entrada[0].DB_MAX_OUTPUT_PORT_TYPE
+salidas[1] <= entrada[1].DB_MAX_OUTPUT_PORT_TYPE
+salidas[2] <= entrada[2].DB_MAX_OUTPUT_PORT_TYPE
+salidas[3] <= entrada[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Practica6|memory:inst18

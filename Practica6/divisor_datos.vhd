@@ -22,7 +22,11 @@ begin
 			prueba <= entrada(10 downto 9);
 			vf <= entrada(8);
 			liga <= entrada(7 downto 4);
-			salidas <= entrada(3 downto 0);
 		end if;
+	end process;
+	
+	process(entrada)
+	begin
+		salidas <= entrada(3 downto 0);
 	end process;
 end Behavioral;
