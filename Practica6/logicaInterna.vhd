@@ -41,11 +41,11 @@ begin
 							  NOTPL <= '1';
 							  NOTVECT <= '1';
 							  NOTMAP <= '0';
-			when "110" => SELECTOR <= '1';
+			when "110" => SELECTOR <= '0';
 							  NOTPL <= '1';
-							  NOTVECT <= '0';
+							  NOTVECT <= '1';
 							  NOTMAP <= '1';	
-			when "111" => SELECTOR <= '0';
+			when "111" => SELECTOR <= '1';
 							  NOTPL <= '1';
 							  NOTVECT <= '0';
 							  NOTMAP <= '1';

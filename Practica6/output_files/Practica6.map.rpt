@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Practica6
-Thu Oct 03 10:31:45 2019
+Sat Oct 05 17:07:54 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,9 +15,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +44,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 03 10:31:45 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 05 17:07:54 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Practica6                                   ;
 ; Top-level Entity Name              ; Practica6                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 41                                          ;
-;     Total combinational functions  ; 33                                          ;
-;     Dedicated logic registers      ; 20                                          ;
-; Total registers                    ; 20                                          ;
-; Total pins                         ; 25                                          ;
+; Total logic elements               ; 40                                          ;
+;     Total combinational functions  ; 35                                          ;
+;     Dedicated logic registers      ; 18                                          ;
+; Total registers                    ; 18                                          ;
+; Total pins                         ; 19                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -165,54 +166,56 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
-; memory.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/memory.vhd            ;         ;
-; regInc.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/regInc.vhd            ;         ;
-; incrementador.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/incrementador.vhd     ;         ;
-; muxSalInc.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/muxSalInc.vhd         ;         ;
-; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/divisor_datos.vhd     ;         ;
-; muxEntradas.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/muxEntradas.vhd       ;         ;
-; Practica6.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Practica6/Practica6.bdf         ;         ;
-; logicaInterna.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/logicaInterna.vhd     ;         ;
-; regInterrupciones.vhd            ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/regInterrupciones.vhd ;         ;
-; regTransforma.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Practica6/regTransforma.vhd     ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; memory.vhd                       ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/memory.vhd            ;         ;
+; regInc.vhd                       ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regInc.vhd            ;         ;
+; incrementador.vhd                ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/incrementador.vhd     ;         ;
+; muxSalInc.vhd                    ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxSalInc.vhd         ;         ;
+; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/divisor_datos.vhd     ;         ;
+; muxEntradas.vhd                  ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxEntradas.vhd       ;         ;
+; Practica6.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/Practica6.bdf         ;         ;
+; logicaInterna.vhd                ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/logicaInterna.vhd     ;         ;
+; regInterrupciones.vhd            ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regInterrupciones.vhd ;         ;
+; regTransforma.vhd                ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regTransforma.vhd     ;         ;
+; sensa_boton.vhd                  ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/sensa_boton.vhd       ;         ;
+; switchSalidas.vhd                ; yes             ; User VHDL File                     ; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/switchSalidas.vhd     ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 41          ;
-;                                             ;             ;
-; Total combinational functions               ; 33          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 27          ;
-;     -- 3 input functions                    ; 3           ;
-;     -- <=2 input functions                  ; 3           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 33          ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 20          ;
-;     -- Dedicated logic registers            ; 20          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 25          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; RELOJ~input ;
-; Maximum fan-out                             ; 20          ;
-; Total fan-out                               ; 211         ;
-; Average fan-out                             ; 2.05        ;
-+---------------------------------------------+-------------+
++-----------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                 ;
++---------------------------------------------+-------------------------------+
+; Resource                                    ; Usage                         ;
++---------------------------------------------+-------------------------------+
+; Estimated Total logic elements              ; 40                            ;
+;                                             ;                               ;
+; Total combinational functions               ; 35                            ;
+; Logic element usage by number of LUT inputs ;                               ;
+;     -- 4 input functions                    ; 23                            ;
+;     -- 3 input functions                    ; 10                            ;
+;     -- <=2 input functions                  ; 2                             ;
+;                                             ;                               ;
+; Logic elements by mode                      ;                               ;
+;     -- normal mode                          ; 35                            ;
+;     -- arithmetic mode                      ; 0                             ;
+;                                             ;                               ;
+; Total registers                             ; 18                            ;
+;     -- Dedicated logic registers            ; 18                            ;
+;     -- I/O registers                        ; 0                             ;
+;                                             ;                               ;
+; I/O pins                                    ; 19                            ;
+;                                             ;                               ;
+; Embedded Multiplier 9-bit elements          ; 0                             ;
+;                                             ;                               ;
+; Maximum fan-out node                        ; switchSalidas:inst13|salida~6 ;
+; Maximum fan-out                             ; 16                            ;
+; Total fan-out                               ; 192                           ;
+; Average fan-out                             ; 2.11                          ;
++---------------------------------------------+-------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -220,27 +223,31 @@ refer to the applicable agreement for further details.
 +-------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                 ; Entity Name       ; Library Name ;
 +-------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+-------------------+--------------+
-; |Practica6                    ; 33 (3)              ; 20 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 25   ; 0            ; 0          ; |Practica6                          ; Practica6         ; work         ;
+; |Practica6                    ; 35 (0)              ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 19   ; 0            ; 0          ; |Practica6                          ; Practica6         ; work         ;
 ;    |divisor_datos:inst|       ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|divisor_datos:inst       ; divisor_datos     ; work         ;
-;    |incrementador:inst4|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|incrementador:inst4      ; incrementador     ; work         ;
-;    |logicaInterna:inst19|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|logicaInterna:inst19     ; logicaInterna     ; work         ;
+;    |incrementador:inst4|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|incrementador:inst4      ; incrementador     ; work         ;
+;    |logicaInterna:inst1|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|logicaInterna:inst1      ; logicaInterna     ; work         ;
 ;    |memory:inst18|            ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|memory:inst18            ; memory            ; work         ;
-;    |muxSalInc:inst5|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|muxSalInc:inst5          ; muxSalInc         ; work         ;
 ;    |regInc:inst3|             ; 1 (1)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|regInc:inst3             ; regInc            ; work         ;
 ;    |regInterrupciones:inst11| ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|regInterrupciones:inst11 ; regInterrupciones ; work         ;
-;    |regTransforma:inst12|     ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|regTransforma:inst12     ; regTransforma     ; work         ;
+;    |sensa_boton:inst9|        ; 1 (1)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|sensa_boton:inst9        ; sensa_boton       ; work         ;
+;    |switchSalidas:inst13|     ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Practica6|switchSalidas:inst13     ; switchSalidas     ; work         ;
 +-------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; divisor_datos:inst|liga[2]            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1 ;                                        ;
-+---------------------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                            ;
++---------------------------------------+-------------------------------------------------------+
+; Register name                         ; Reason for Removal                                    ;
++---------------------------------------+-------------------------------------------------------+
+; regTransforma:inst12|valor_interno[3] ; Merged with regInterrupciones:inst11|valor_interno[3] ;
+; regTransforma:inst12|valor_interno[2] ; Merged with regInterrupciones:inst11|valor_interno[2] ;
+; regTransforma:inst12|valor_interno[1] ; Merged with regInterrupciones:inst11|valor_interno[1] ;
+; regTransforma:inst12|valor_interno[0] ; Merged with regInterrupciones:inst11|valor_interno[0] ;
+; divisor_datos:inst|liga[2]            ; Stuck at GND due to stuck port data_in                ;
+; Total Number of Removed Registers = 5 ;                                                       ;
++---------------------------------------+-------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -248,7 +255,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 20    ;
+; Total registers                              ; 18    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 4     ;
@@ -258,25 +265,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Practica6|switchSalidas:inst13|salida ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 25                          ;
-; cycloneiii_ff         ; 20                          ;
+; boundary_port         ; 19                          ;
+; cycloneiii_ff         ; 18                          ;
 ;     CLR               ; 4                           ;
-;     plain             ; 16                          ;
-; cycloneiii_io_obuf    ; 4                           ;
-; cycloneiii_lcell_comb ; 36                          ;
-;     normal            ; 36                          ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 27                          ;
+;     plain             ; 14                          ;
+; cycloneiii_lcell_comb ; 37                          ;
+;     normal            ; 37                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 23                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 4.17                        ;
+; Average LUT depth     ; 4.23                        ;
 +-----------------------+-----------------------------+
 
 
@@ -285,7 +300,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -295,76 +310,87 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 03 10:31:24 2019
+    Info: Processing started: Sat Oct 05 17:07:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Practica6 -c Practica6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: memory-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/memory.vhd Line: 12
-    Info (12023): Found entity 1: memory File: C:/intelFPGA_lite/OyAC/Lab/Practica6/memory.vhd Line: 6
+    Info (12022): Found design unit 1: memory-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/memory.vhd Line: 12
+    Info (12023): Found entity 1: memory File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/memory.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file reginc.vhd
-    Info (12022): Found design unit 1: regInc-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regInc.vhd Line: 11
-    Info (12023): Found entity 1: regInc File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regInc.vhd Line: 4
+    Info (12022): Found design unit 1: regInc-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regInc.vhd Line: 11
+    Info (12023): Found entity 1: regInc File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regInc.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file incrementador.vhd
-    Info (12022): Found design unit 1: incrementador-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/incrementador.vhd Line: 11
-    Info (12023): Found entity 1: incrementador File: C:/intelFPGA_lite/OyAC/Lab/Practica6/incrementador.vhd Line: 6
+    Info (12022): Found design unit 1: incrementador-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/incrementador.vhd Line: 11
+    Info (12023): Found entity 1: incrementador File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/incrementador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file muxsalinc.vhd
-    Info (12022): Found design unit 1: muxSalInc-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxSalInc.vhd Line: 11
-    Info (12023): Found entity 1: muxSalInc File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxSalInc.vhd Line: 4
+    Info (12022): Found design unit 1: muxSalInc-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxSalInc.vhd Line: 11
+    Info (12023): Found entity 1: muxSalInc File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxSalInc.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_datos.vhd
-    Info (12022): Found design unit 1: divisor_datos-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/divisor_datos.vhd Line: 16
-    Info (12023): Found entity 1: divisor_datos File: C:/intelFPGA_lite/OyAC/Lab/Practica6/divisor_datos.vhd Line: 6
+    Info (12022): Found design unit 1: divisor_datos-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/divisor_datos.vhd Line: 16
+    Info (12023): Found entity 1: divisor_datos File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/divisor_datos.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file muxentradas.vhd
-    Info (12022): Found design unit 1: muxEntradas-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxEntradas.vhd Line: 13
-    Info (12023): Found entity 1: muxEntradas File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxEntradas.vhd Line: 4
+    Info (12022): Found design unit 1: muxEntradas-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxEntradas.vhd Line: 13
+    Info (12023): Found entity 1: muxEntradas File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxEntradas.vhd Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file practica6.bdf
     Info (12023): Found entity 1: Practica6
 Info (12021): Found 2 design units, including 1 entities, in source file logicainterna.vhd
-    Info (12022): Found design unit 1: logicaInterna-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/logicaInterna.vhd Line: 14
-    Info (12023): Found entity 1: logicaInterna File: C:/intelFPGA_lite/OyAC/Lab/Practica6/logicaInterna.vhd Line: 4
+    Info (12022): Found design unit 1: logicaInterna-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/logicaInterna.vhd Line: 14
+    Info (12023): Found entity 1: logicaInterna File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/logicaInterna.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reginterrupciones.vhd
-    Info (12022): Found design unit 1: regInterrupciones-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regInterrupciones.vhd Line: 12
-    Info (12023): Found entity 1: regInterrupciones File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regInterrupciones.vhd Line: 4
+    Info (12022): Found design unit 1: regInterrupciones-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regInterrupciones.vhd Line: 12
+    Info (12023): Found entity 1: regInterrupciones File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regInterrupciones.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file regtransforma.vhd
-    Info (12022): Found design unit 1: regTransforma-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regTransforma.vhd Line: 12
-    Info (12023): Found entity 1: regTransforma File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regTransforma.vhd Line: 4
+    Info (12022): Found design unit 1: regTransforma-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regTransforma.vhd Line: 12
+    Info (12023): Found entity 1: regTransforma File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/regTransforma.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sensa_boton.vhd
+    Info (12022): Found design unit 1: sensa_boton-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/sensa_boton.vhd Line: 13
+    Info (12023): Found entity 1: sensa_boton File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/sensa_boton.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file switchsalidas.vhd
+    Info (12022): Found design unit 1: switchSalidas-Behavioral File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/switchSalidas.vhd Line: 16
+    Info (12023): Found entity 1: switchSalidas File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/switchSalidas.vhd Line: 6
 Info (12127): Elaborating entity "Practica6" for the top level hierarchy
-Info (12128): Elaborating entity "logicaInterna" for hierarchy "logicaInterna:inst19"
-Warning (10542): VHDL Variable Declaration warning at logicaInterna.vhd(17): used initial value expression for variable "eval" because variable was never assigned a value File: C:/intelFPGA_lite/OyAC/Lab/Practica6/logicaInterna.vhd Line: 17
+Info (12128): Elaborating entity "switchSalidas" for hierarchy "switchSalidas:inst13"
+Info (12128): Elaborating entity "logicaInterna" for hierarchy "logicaInterna:inst1"
+Warning (10542): VHDL Variable Declaration warning at logicaInterna.vhd(17): used initial value expression for variable "eval" because variable was never assigned a value File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/logicaInterna.vhd Line: 17
 Info (12128): Elaborating entity "muxEntradas" for hierarchy "muxEntradas:inst2"
-Warning (10631): VHDL Process Statement warning at muxEntradas.vhd(15): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxEntradas.vhd Line: 15
-Info (10041): Inferred latch for "salida" at muxEntradas.vhd(15) File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxEntradas.vhd Line: 15
+Warning (10631): VHDL Process Statement warning at muxEntradas.vhd(15): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxEntradas.vhd Line: 15
+Info (10041): Inferred latch for "salida" at muxEntradas.vhd(15) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxEntradas.vhd Line: 15
 Info (12128): Elaborating entity "divisor_datos" for hierarchy "divisor_datos:inst"
+Info (12128): Elaborating entity "sensa_boton" for hierarchy "sensa_boton:inst9"
+Warning (10492): VHDL Process Statement warning at sensa_boton.vhd(21): signal "CLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/sensa_boton.vhd Line: 21
 Info (12128): Elaborating entity "memory" for hierarchy "memory:inst18"
-Warning (10492): VHDL Process Statement warning at memory.vhd(51): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Practica6/memory.vhd Line: 51
-Warning (10873): Using initial value X (don't care) for net "internal_mem[15]" at memory.vhd(14) File: C:/intelFPGA_lite/OyAC/Lab/Practica6/memory.vhd Line: 14
+Warning (10492): VHDL Process Statement warning at memory.vhd(51): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/memory.vhd Line: 51
+Warning (10873): Using initial value X (don't care) for net "internal_mem[15]" at memory.vhd(14) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/memory.vhd Line: 14
 Info (12128): Elaborating entity "muxSalInc" for hierarchy "muxSalInc:inst5"
-Warning (10631): VHDL Process Statement warning at muxSalInc.vhd(13): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxSalInc.vhd Line: 13
-Info (10041): Inferred latch for "salida[0]" at muxSalInc.vhd(13) File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxSalInc.vhd Line: 13
-Info (10041): Inferred latch for "salida[1]" at muxSalInc.vhd(13) File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxSalInc.vhd Line: 13
-Info (10041): Inferred latch for "salida[2]" at muxSalInc.vhd(13) File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxSalInc.vhd Line: 13
-Info (10041): Inferred latch for "salida[3]" at muxSalInc.vhd(13) File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxSalInc.vhd Line: 13
+Warning (10631): VHDL Process Statement warning at muxSalInc.vhd(13): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxSalInc.vhd Line: 13
+Info (10041): Inferred latch for "salida[0]" at muxSalInc.vhd(13) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxSalInc.vhd Line: 13
+Info (10041): Inferred latch for "salida[1]" at muxSalInc.vhd(13) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxSalInc.vhd Line: 13
+Info (10041): Inferred latch for "salida[2]" at muxSalInc.vhd(13) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxSalInc.vhd Line: 13
+Info (10041): Inferred latch for "salida[3]" at muxSalInc.vhd(13) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxSalInc.vhd Line: 13
 Info (12128): Elaborating entity "regInc" for hierarchy "regInc:inst3"
 Info (12128): Elaborating entity "incrementador" for hierarchy "incrementador:inst4"
 Info (12128): Elaborating entity "regTransforma" for hierarchy "regTransforma:inst12"
 Info (12128): Elaborating entity "regInterrupciones" for hierarchy "regInterrupciones:inst11"
-Warning (14026): LATCH primitive "muxEntradas:inst2|salida" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Practica6/muxEntradas.vhd Line: 10
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "regTransforma:inst12|SALIDA[3]" to the node "muxSalInc:inst5|salida[3]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regTransforma.vhd Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst7[2]" to the node "muxSalInc:inst5|salida[2]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "regTransforma:inst12|SALIDA[1]" to the node "muxSalInc:inst5|salida[1]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regTransforma.vhd Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regTransforma:inst12|SALIDA[0]" to the node "muxSalInc:inst5|salida[0]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica6/regTransforma.vhd Line: 9
+    Warning (13048): Converted tri-state node "gdfx_temp0[3]" into a selector File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/switchSalidas.vhd Line: 13
+    Warning (13048): Converted tri-state node "gdfx_temp0[2]" into a selector File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/switchSalidas.vhd Line: 13
+    Warning (13048): Converted tri-state node "gdfx_temp0[1]" into a selector File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/switchSalidas.vhd Line: 13
+    Warning (13048): Converted tri-state node "gdfx_temp0[0]" into a selector File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/switchSalidas.vhd Line: 13
+Warning (14026): LATCH primitive "muxEntradas:inst2|salida" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/muxEntradas.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 41 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4776 megabytes
-    Info: Processing ended: Thu Oct 03 10:31:45 2019
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:37
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Switch"
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 40 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Sat Oct 05 17:07:54 2019
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:49
 
 

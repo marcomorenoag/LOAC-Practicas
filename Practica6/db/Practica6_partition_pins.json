@@ -4,67 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "selector",
+					"name" : "salida[7]",
 					"strict" : false
 				},
 				{
-					"name" : "carga",
+					"name" : "salida[6]",
 					"strict" : false
 				},
 				{
-					"name" : "currentState[3]",
+					"name" : "salida[5]",
 					"strict" : false
 				},
 				{
-					"name" : "currentState[2]",
+					"name" : "salida[4]",
 					"strict" : false
 				},
 				{
-					"name" : "currentState[1]",
+					"name" : "salida[3]",
 					"strict" : false
 				},
 				{
-					"name" : "currentState[0]",
+					"name" : "salida[2]",
 					"strict" : false
 				},
 				{
-					"name" : "mi[1]",
+					"name" : "salida[1]",
 					"strict" : false
 				},
 				{
-					"name" : "mi[0]",
-					"strict" : false
-				},
-				{
-					"name" : "salidas[3]",
-					"strict" : false
-				},
-				{
-					"name" : "salidas[2]",
-					"strict" : false
-				},
-				{
-					"name" : "salidas[1]",
-					"strict" : false
-				},
-				{
-					"name" : "salidas[0]",
-					"strict" : false
-				},
-				{
-					"name" : "state[3]",
-					"strict" : false
-				},
-				{
-					"name" : "state[2]",
-					"strict" : false
-				},
-				{
-					"name" : "state[1]",
-					"strict" : false
-				},
-				{
-					"name" : "state[0]",
+					"name" : "salida[0]",
 					"strict" : false
 				},
 				{
@@ -77,10 +45,6 @@
 				},
 				{
 					"name" : "y",
-					"strict" : false
-				},
-				{
-					"name" : "RELOJ",
 					"strict" : false
 				},
 				{
@@ -101,6 +65,14 @@
 				},
 				{
 					"name" : "ENTRADA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTON",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
 					"strict" : false
 				}
 			]

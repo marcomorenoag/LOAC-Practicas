@@ -7,16 +7,16 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/intelFPGA_lite/OyAC/Lab/Practica6/simulation/qsim
+dC:/intelFPGA_lite/OyAC/Lab/Practica6/simulation/qsim
 Ehard_block
-Z1 w1570117849
-Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
-Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
-R0
+Z0 w1570308144
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+Z7 dC:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica6/simulation/qsim
 Z8 8Practica6.vho
 Z9 FPractica6.vho
 l0
@@ -25,21 +25,21 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1570117850
+Z11 !s110 1570308146
 !i10b 1
-Z12 !s108 1570117850.000000
+Z12 !s108 1570308146.000000
 Z13 !s90 -work|work|Practica6.vho|
 Z14 !s107 Practica6.vho|
 !i113 1
 Z15 o-work work
 Z16 tExplicit 1 CvgOpt 0
 Astructure
+R1
 R2
 R3
 R4
 R5
 R6
-R7
 DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
 l75
 L53
@@ -56,92 +56,92 @@ R14
 R15
 R16
 Epractica6
-R1
-R3
-R7
+Z17 w1570309324
 R2
-Z17 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+R6
+R1
+Z18 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+R3
 R4
 R5
-R6
-Z18 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
-R0
+Z19 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+R7
 R8
 R9
 l0
-L90
-Vm3:7[48I44QEeE:B;BJ[92
-!s100 M>4l5m[fZ^]fNnEl`D=1J1
+L36
+V`]GFCV?8b3^>J`5X2V3Lf0
+!s100 CAI_ZH_<AN1TggL^WLXaz0
 R10
 32
-R11
+Z20 !s110 1570309327
 !i10b 1
-R12
+Z21 !s108 1570309327.000000
 R13
 R14
 !i113 1
 R15
 R16
 Astructure
-R3
-R7
 R2
-R17
+R6
+R1
+R18
+R3
 R4
 R5
-R6
-R18
-DEx4 work 9 practica6 0 22 m3:7[48I44QEeE:B;BJ[92
-l245
-L135
-V@:Yg4IaVQ4^an<XAV^c?;3
-!s100 k?6:HCfX23PSE3faN5LBE0
+R19
+DEx4 work 9 practica6 0 22 `]GFCV?8b3^>J`5X2V3Lf0
+l147
+L53
+VjzV@jhfle@<9;KX8SC]nn0
+!s100 Mbd84MmU3H?Gh2RNV4fdQ1
 R10
 32
-R11
+R20
 !i10b 1
-R12
+R21
 R13
 R14
 !i113 1
 R15
 R16
 Epractica6_vhd_vec_tst
-Z19 w1570117847
+Z22 w1570309321
+R4
 R5
-R6
-R0
-Z20 8Waveform3.vwf.vht
-Z21 FWaveform3.vwf.vht
+R7
+Z23 8Waveform5.vwf.vht
+Z24 FWaveform5.vwf.vht
 l0
 L31
 V=477`_BGUk^T5GJ3Gj?Ki0
 !s100 BO]ULTdBl_2Ed8[kBYgbP3
 R10
 32
-R11
+R20
 !i10b 1
-R12
-Z22 !s90 -work|work|Waveform3.vwf.vht|
-Z23 !s107 Waveform3.vwf.vht|
+R21
+Z25 !s90 -work|work|Waveform5.vwf.vht|
+Z26 !s107 Waveform5.vwf.vht|
 !i113 1
 R15
 R16
 Apractica6_arch
+R4
 R5
-R6
-Z24 DEx4 work 21 practica6_vhd_vec_tst 0 22 =477`_BGUk^T5GJ3Gj?Ki0
+Z27 DEx4 work 21 practica6_vhd_vec_tst 0 22 =477`_BGUk^T5GJ3Gj?Ki0
 l64
 L33
-VQGV<YFkebJ<`nC:C4OiQK3
-!s100 f2BU7nDJe9_TzXFoYOUS=1
+VEX^zP=b;CQLQSSFYhOJk`2
+!s100 bH[3olPf]>fF2Lc^Qi=>a0
 R10
 32
-R11
+R20
 !i10b 1
-R12
-R22
-R23
+R21
+R25
+R26
 !i113 1
 R15
 R16

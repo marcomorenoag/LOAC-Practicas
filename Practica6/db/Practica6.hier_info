@@ -1,12 +1,17 @@
 |Practica6
-selector <= logicaInterna:inst19.SELECTOR
+salida[0] <= switchSalidas:inst13.salida[0]
+salida[1] <= switchSalidas:inst13.salida[1]
+salida[2] <= switchSalidas:inst13.salida[2]
+salida[3] <= switchSalidas:inst13.salida[3]
+salida[4] <= switchSalidas:inst13.salida[4]
+salida[5] <= switchSalidas:inst13.salida[5]
+salida[6] <= switchSalidas:inst13.salida[6]
+salida[7] <= switchSalidas:inst13.salida[7]
 x => muxEntradas:inst2.x
 y => muxEntradas:inst2.y
 int => muxEntradas:inst2.int
-RELOJ => divisor_datos:inst.clk
-RELOJ => regInc:inst3.RELOJ
-RELOJ => regTransforma:inst12.RELOJ
-RELOJ => regInterrupciones:inst11.RELOJ
+BOTON => sensa_boton:inst9.BOTON
+CLK => sensa_boton:inst9.CLK
 RESET => regInc:inst3.RESET
 ENTRADA[0] => regTransforma:inst12.ENTRADA[0]
 ENTRADA[0] => regInterrupciones:inst11.ENTRADA[0]
@@ -16,33 +21,55 @@ ENTRADA[2] => regTransforma:inst12.ENTRADA[2]
 ENTRADA[2] => regInterrupciones:inst11.ENTRADA[2]
 ENTRADA[3] => regTransforma:inst12.ENTRADA[3]
 ENTRADA[3] => regInterrupciones:inst11.ENTRADA[3]
-carga <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-currentState[0] <= muxSalInc:inst5.salida[0]
-currentState[1] <= muxSalInc:inst5.salida[1]
-currentState[2] <= muxSalInc:inst5.salida[2]
-currentState[3] <= muxSalInc:inst5.salida[3]
-mi[0] <= divisor_datos:inst.mi[0]
-mi[1] <= divisor_datos:inst.mi[1]
-salidas[0] <= divisor_datos:inst.salidas[0]
-salidas[1] <= divisor_datos:inst.salidas[1]
-salidas[2] <= divisor_datos:inst.salidas[2]
-salidas[3] <= divisor_datos:inst.salidas[3]
-state[0] <= gdfx_temp0[0].DB_MAX_OUTPUT_PORT_TYPE
-state[1] <= gdfx_temp0[1].DB_MAX_OUTPUT_PORT_TYPE
-state[2] <= gdfx_temp0[2].DB_MAX_OUTPUT_PORT_TYPE
-state[3] <= gdfx_temp0[3].DB_MAX_OUTPUT_PORT_TYPE
+Switch => switchSalidas:inst13.Switch
 
 
-|Practica6|logicaInterna:inst19
+|Practica6|switchSalidas:inst13
+nextStateInc[0] => salida.DATAB
+nextStateInc[1] => salida.DATAB
+nextStateInc[2] => salida.DATAB
+nextStateInc[3] => salida.DATAB
+nextStateCar[0] => salida.DATAA
+nextStateCar[1] => salida.DATAA
+nextStateCar[2] => salida.DATAA
+nextStateCar[3] => salida.DATAA
+currentState[0] => salida.DATAA
+currentState[1] => salida.DATAA
+currentState[2] => salida.DATAA
+currentState[3] => salida.DATAA
+selector => salida.OUTPUTSELECT
+selector => salida.OUTPUTSELECT
+selector => salida.OUTPUTSELECT
+selector => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+Switch => salida.OUTPUTSELECT
+SalidaMaquina[0] => salida[0].DATAIN
+SalidaMaquina[1] => salida[1].DATAIN
+SalidaMaquina[2] => salida[2].DATAIN
+SalidaMaquina[3] => salida[3].DATAIN
+salida[0] <= SalidaMaquina[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= SalidaMaquina[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= SalidaMaquina[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= SalidaMaquina[3].DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[7] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica6|logicaInterna:inst1
 mi[0] => Mux0.IN9
 mi[0] => Mux1.IN5
-mi[0] => Mux2.IN5
+mi[0] => Mux2.IN9
 mi[0] => Mux3.IN5
 mi[1] => Mux0.IN8
 mi[1] => Mux1.IN4
-mi[1] => Mux2.IN4
+mi[1] => Mux2.IN8
 mi[1] => Mux3.IN4
 carga => Mux0.IN10
+carga => Mux2.IN10
 NOTPL <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 NOTVECT <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 NOTMAP <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
@@ -101,6 +128,15 @@ salidas[0] <= entrada[0].DB_MAX_OUTPUT_PORT_TYPE
 salidas[1] <= entrada[1].DB_MAX_OUTPUT_PORT_TYPE
 salidas[2] <= entrada[2].DB_MAX_OUTPUT_PORT_TYPE
 salidas[3] <= entrada[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica6|sensa_boton:inst9
+BOTON => ESIGUIENTE.DATAIN
+BOTON => RELOJ.DATAB
+CLK => ESIGUIENTE.CLK
+CLK => RELOJ~reg0.CLK
+RELOJ <= RELOJ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EPRESENTE <= ESIGUIENTE.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Practica6|memory:inst18

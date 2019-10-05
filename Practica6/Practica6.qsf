@@ -62,5 +62,28 @@ set_global_assignment -name VHDL_FILE regTransforma.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VHDL_FILE sensa_boton.vhd
+set_global_assignment -name VHDL_FILE switchSalidas.vhd
+set_location_assignment PIN_P11 -to CLK
+set_location_assignment PIN_B8 -to BOTON
+set_location_assignment PIN_A7 -to RESET
+set_location_assignment PIN_F15 -to ENTRADA[3]
+set_location_assignment PIN_B14 -to ENTRADA[2]
+set_location_assignment PIN_A14 -to ENTRADA[1]
+set_location_assignment PIN_A13 -to ENTRADA[0]
+set_location_assignment PIN_B12 -to int
+set_location_assignment PIN_A12 -to x
+set_location_assignment PIN_C12 -to y
+set_location_assignment PIN_D12 -to Switch
+set_location_assignment PIN_A8 -to salida[0]
+set_location_assignment PIN_A9 -to salida[1]
+set_location_assignment PIN_A10 -to salida[2]
+set_location_assignment PIN_B10 -to salida[3]
+set_location_assignment PIN_D13 -to salida[4]
+set_location_assignment PIN_C13 -to salida[5]
+set_location_assignment PIN_E14 -to salida[6]
+set_location_assignment PIN_D14 -to salida[7]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
