@@ -19,9 +19,9 @@ begin
 	begin
 		if Switch = '0' then
 			if selector = '0' then
-			salida <= nextStateInc & salidaMaquina;
+				salida <= nextStateInc & SalidaMaquina;
 			else
-			salida <= nextStateCar & salidaMaquina;
+				salida <= nextStateCar & SalidaMaquina;
 			end if;
 		else
 			salida <= currentState & SalidaMaquina;

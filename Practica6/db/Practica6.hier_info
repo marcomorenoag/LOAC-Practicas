@@ -1,17 +1,18 @@
 |Practica6
-salida[0] <= switchSalidas:inst13.salida[0]
-salida[1] <= switchSalidas:inst13.salida[1]
-salida[2] <= switchSalidas:inst13.salida[2]
-salida[3] <= switchSalidas:inst13.salida[3]
-salida[4] <= switchSalidas:inst13.salida[4]
-salida[5] <= switchSalidas:inst13.salida[5]
-salida[6] <= switchSalidas:inst13.salida[6]
-salida[7] <= switchSalidas:inst13.salida[7]
+salida[0] <= switchSalidas:inst17.salida[0]
+salida[1] <= switchSalidas:inst17.salida[1]
+salida[2] <= switchSalidas:inst17.salida[2]
+salida[3] <= switchSalidas:inst17.salida[3]
+salida[4] <= switchSalidas:inst17.salida[4]
+salida[5] <= switchSalidas:inst17.salida[5]
+salida[6] <= switchSalidas:inst17.salida[6]
+salida[7] <= switchSalidas:inst17.salida[7]
 x => muxEntradas:inst2.x
 y => muxEntradas:inst2.y
 int => muxEntradas:inst2.int
 BOTON => sensa_boton:inst9.BOTON
 CLK => sensa_boton:inst9.CLK
+RESET => divisor_datos:inst.RESET
 RESET => regInc:inst3.RESET
 ENTRADA[0] => regTransforma:inst12.ENTRADA[0]
 ENTRADA[0] => regInterrupciones:inst11.ENTRADA[0]
@@ -21,10 +22,10 @@ ENTRADA[2] => regTransforma:inst12.ENTRADA[2]
 ENTRADA[2] => regInterrupciones:inst11.ENTRADA[2]
 ENTRADA[3] => regTransforma:inst12.ENTRADA[3]
 ENTRADA[3] => regInterrupciones:inst11.ENTRADA[3]
-Switch => switchSalidas:inst13.Switch
+Switch => switchSalidas:inst17.Switch
 
 
-|Practica6|switchSalidas:inst13
+|Practica6|switchSalidas:inst17
 nextStateInc[0] => salida.DATAB
 nextStateInc[1] => salida.DATAB
 nextStateInc[2] => salida.DATAB
@@ -59,7 +60,7 @@ salida[6] <= salida.DB_MAX_OUTPUT_PORT_TYPE
 salida[7] <= salida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Practica6|logicaInterna:inst1
+|Practica6|logicaInterna:inst16
 mi[0] => Mux0.IN9
 mi[0] => Mux1.IN5
 mi[0] => Mux2.IN9
@@ -93,15 +94,15 @@ salida <= salida$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Practica6|divisor_datos:inst
-clk => liga[0]~reg0.CLK
-clk => liga[1]~reg0.CLK
-clk => liga[2]~reg0.CLK
-clk => liga[3]~reg0.CLK
 clk => vf~reg0.CLK
 clk => prueba[0]~reg0.CLK
 clk => prueba[1]~reg0.CLK
 clk => mi[0]~reg0.CLK
 clk => mi[1]~reg0.CLK
+clk => liga[0]~reg0.CLK
+clk => liga[1]~reg0.CLK
+clk => liga[2]~reg0.CLK
+clk => liga[3]~reg0.CLK
 entrada[0] => salidas[0].DATAIN
 entrada[1] => salidas[1].DATAIN
 entrada[2] => salidas[2].DATAIN
@@ -115,6 +116,15 @@ entrada[9] => prueba[0]~reg0.DATAIN
 entrada[10] => prueba[1]~reg0.DATAIN
 entrada[11] => mi[0]~reg0.DATAIN
 entrada[12] => mi[1]~reg0.DATAIN
+RESET => liga[0]~reg0.ACLR
+RESET => liga[1]~reg0.ACLR
+RESET => liga[2]~reg0.ACLR
+RESET => liga[3]~reg0.ACLR
+RESET => mi[1]~reg0.ENA
+RESET => mi[0]~reg0.ENA
+RESET => prueba[1]~reg0.ENA
+RESET => prueba[0]~reg0.ENA
+RESET => vf~reg0.ENA
 mi[0] <= mi[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 mi[1] <= mi[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 prueba[0] <= prueba[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE

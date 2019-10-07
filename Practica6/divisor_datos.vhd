@@ -6,6 +6,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity divisor_datos is
 	Port ( clk : in STD_LOGIC;
 			 entrada : in STD_LOGIC_VECTOR (12 downto 0);
+			 RESET : in STD_LOGIC;
 			 mi : out STD_LOGIC_VECTOR(1 downto 0);
 			 prueba: out STD_LOGIC_VECTOR(1 downto 0);
 			 vf : out STD_LOGIC;
@@ -15,9 +16,11 @@ end divisor_datos;
 
 architecture Behavioral of divisor_datos is
 begin
-	process(clk, entrada)
+	process(clk, entrada, RESET)
 	begin
-		if rising_edge(clk) then
+		if RESET = '0' then 
+			liga <= B"0000";
+		elsif rising_edge(clk) then
 			mi <=  entrada(12 downto 11);
 			prueba <= entrada(10 downto 9);
 			vf <= entrada(8);

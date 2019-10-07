@@ -3,8 +3,8 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'sensa_boton:inst9|RELOJ'
-Slack : -2.232
-TNS   : -22.806
+Slack : -2.037
+TNS   : -23.878
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
 Slack : 0.178
@@ -15,7 +15,7 @@ Slack : 0.432
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'sensa_boton:inst9|RELOJ'
-Slack : 1.092
+Slack : 0.663
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
@@ -27,8 +27,8 @@ Slack : -1.403
 TNS   : -22.448
 
 Type  : Slow 1200mV 0C Model Setup 'sensa_boton:inst9|RELOJ'
-Slack : -2.007
-TNS   : -20.224
+Slack : -1.796
+TNS   : -20.915
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
 Slack : 0.250
@@ -39,7 +39,7 @@ Slack : 0.398
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'sensa_boton:inst9|RELOJ'
-Slack : 0.998
+Slack : 0.620
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
@@ -51,8 +51,8 @@ Slack : -1.403
 TNS   : -22.448
 
 Type  : Fast 1200mV 0C Model Setup 'sensa_boton:inst9|RELOJ'
-Slack : -0.326
-TNS   : -2.489
+Slack : -0.272
+TNS   : -2.908
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
 Slack : 0.640
@@ -63,7 +63,7 @@ Slack : 0.164
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'sensa_boton:inst9|RELOJ'
-Slack : 0.423
+Slack : 0.253
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'

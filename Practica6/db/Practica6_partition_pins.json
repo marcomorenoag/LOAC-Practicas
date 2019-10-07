@@ -36,7 +36,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "int",
+					"name" : "y",
 					"strict" : false
 				},
 				{
@@ -44,7 +44,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "y",
+					"name" : "int",
 					"strict" : false
 				},
 				{

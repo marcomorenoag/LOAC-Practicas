@@ -1,5 +1,5 @@
 Timing Analyzer report for Practica6
-Sat Oct 05 17:08:32 2019
+Mon Oct 07 10:33:18 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -91,12 +91,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.3%      ;
+;     Processor 2            ;   1.5%      ;
 +----------------------------+-------------+
 
 
@@ -115,7 +115,7 @@ refer to the applicable agreement for further details.
 +-------------+-----------------+-------------------------+---------------------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name              ; Note                                                          ;
 +-------------+-----------------+-------------------------+---------------------------------------------------------------+
-; 309.41 MHz  ; 309.41 MHz      ; sensa_boton:inst9|RELOJ ;                                                               ;
+; 329.27 MHz  ; 329.27 MHz      ; sensa_boton:inst9|RELOJ ;                                                               ;
 ; 1216.55 MHz ; 250.0 MHz       ; CLK                     ; limit due to minimum period restriction (max I/O toggle rate) ;
 +-------------+-----------------+-------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
@@ -126,7 +126,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------+--------+---------------+
 ; Clock                   ; Slack  ; End Point TNS ;
 +-------------------------+--------+---------------+
-; sensa_boton:inst9|RELOJ ; -2.232 ; -22.806       ;
+; sensa_boton:inst9|RELOJ ; -2.037 ; -23.878       ;
 ; CLK                     ; 0.178  ; 0.000         ;
 +-------------------------+--------+---------------+
 
@@ -137,7 +137,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock                   ; Slack ; End Point TNS ;
 +-------------------------+-------+---------------+
 ; CLK                     ; 0.432 ; 0.000         ;
-; sensa_boton:inst9|RELOJ ; 1.092 ; 0.000         ;
+; sensa_boton:inst9|RELOJ ; 0.663 ; 0.000         ;
 +-------------------------+-------+---------------+
 
 
@@ -174,7 +174,7 @@ No synchronizer chains to report.
 +-------------+-----------------+-------------------------+---------------------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name              ; Note                                                          ;
 +-------------+-----------------+-------------------------+---------------------------------------------------------------+
-; 332.56 MHz  ; 332.56 MHz      ; sensa_boton:inst9|RELOJ ;                                                               ;
+; 357.65 MHz  ; 357.65 MHz      ; sensa_boton:inst9|RELOJ ;                                                               ;
 ; 1333.33 MHz ; 250.0 MHz       ; CLK                     ; limit due to minimum period restriction (max I/O toggle rate) ;
 +-------------+-----------------+-------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
@@ -185,7 +185,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------+--------+---------------+
 ; Clock                   ; Slack  ; End Point TNS ;
 +-------------------------+--------+---------------+
-; sensa_boton:inst9|RELOJ ; -2.007 ; -20.224       ;
+; sensa_boton:inst9|RELOJ ; -1.796 ; -20.915       ;
 ; CLK                     ; 0.250  ; 0.000         ;
 +-------------------------+--------+---------------+
 
@@ -196,7 +196,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock                   ; Slack ; End Point TNS ;
 +-------------------------+-------+---------------+
 ; CLK                     ; 0.398 ; 0.000         ;
-; sensa_boton:inst9|RELOJ ; 0.998 ; 0.000         ;
+; sensa_boton:inst9|RELOJ ; 0.620 ; 0.000         ;
 +-------------------------+-------+---------------+
 
 
@@ -233,7 +233,7 @@ No synchronizer chains to report.
 +-------------------------+--------+---------------+
 ; Clock                   ; Slack  ; End Point TNS ;
 +-------------------------+--------+---------------+
-; sensa_boton:inst9|RELOJ ; -0.326 ; -2.489        ;
+; sensa_boton:inst9|RELOJ ; -0.272 ; -2.908        ;
 ; CLK                     ; 0.640  ; 0.000         ;
 +-------------------------+--------+---------------+
 
@@ -244,7 +244,7 @@ No synchronizer chains to report.
 ; Clock                   ; Slack ; End Point TNS ;
 +-------------------------+-------+---------------+
 ; CLK                     ; 0.164 ; 0.000         ;
-; sensa_boton:inst9|RELOJ ; 0.423 ; 0.000         ;
+; sensa_boton:inst9|RELOJ ; 0.253 ; 0.000         ;
 +-------------------------+-------+---------------+
 
 
@@ -281,12 +281,12 @@ No synchronizer chains to report.
 +--------------------------+---------+-------+----------+---------+---------------------+
 ; Clock                    ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +--------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack         ; -2.232  ; 0.164 ; N/A      ; N/A     ; -3.000              ;
+; Worst-case Slack         ; -2.037  ; 0.164 ; N/A      ; N/A     ; -3.000              ;
 ;  CLK                     ; 0.178   ; 0.164 ; N/A      ; N/A     ; -3.000              ;
-;  sensa_boton:inst9|RELOJ ; -2.232  ; 0.423 ; N/A      ; N/A     ; -1.403              ;
-; Design-wide TNS          ; -22.806 ; 0.0   ; 0.0      ; 0.0     ; -28.254             ;
+;  sensa_boton:inst9|RELOJ ; -2.037  ; 0.253 ; N/A      ; N/A     ; -1.403              ;
+; Design-wide TNS          ; -23.878 ; 0.0   ; 0.0      ; 0.0     ; -28.254             ;
 ;  CLK                     ; 0.000   ; 0.000 ; N/A      ; N/A     ; -5.806              ;
-;  sensa_boton:inst9|RELOJ ; -22.806 ; 0.000 ; N/A      ; N/A     ; -22.448             ;
+;  sensa_boton:inst9|RELOJ ; -23.878 ; 0.000 ; N/A      ; N/A     ; -22.448             ;
 +--------------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -313,9 +313,9 @@ No synchronizer chains to report.
 ; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+-----------------------+-----------------+-----------------+
 ; Switch              ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; int                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; x                   ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; y                   ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; x                   ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; int                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ENTRADA[3]          ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; RESET               ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ENTRADA[2]          ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
@@ -426,7 +426,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 9     ; 9    ;
-; Unconstrained Input Port Paths  ; 70    ; 70   ;
+; Unconstrained Input Port Paths  ; 78    ; 78   ;
 ; Unconstrained Output Ports      ; 8     ; 8    ;
 ; Unconstrained Output Port Paths ; 119   ; 119  ;
 +---------------------------------+-------+------+
@@ -514,7 +514,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Oct 05 17:08:26 2019
+    Info: Processing started: Mon Oct 07 10:33:13 2019
 Info: Command: quartus_sta Practica6 -c Practica6
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -532,16 +532,16 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.232
+Info (332146): Worst-case setup slack is -2.037
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.232             -22.806 sensa_boton:inst9|RELOJ 
+    Info (332119):    -2.037             -23.878 sensa_boton:inst9|RELOJ 
     Info (332119):     0.178               0.000 CLK 
 Info (332146): Worst-case hold slack is 0.432
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.432               0.000 CLK 
-    Info (332119):     1.092               0.000 sensa_boton:inst9|RELOJ 
+    Info (332119):     0.663               0.000 sensa_boton:inst9|RELOJ 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -554,16 +554,16 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.007
+Info (332146): Worst-case setup slack is -1.796
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.007             -20.224 sensa_boton:inst9|RELOJ 
+    Info (332119):    -1.796             -20.915 sensa_boton:inst9|RELOJ 
     Info (332119):     0.250               0.000 CLK 
 Info (332146): Worst-case hold slack is 0.398
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.398               0.000 CLK 
-    Info (332119):     0.998               0.000 sensa_boton:inst9|RELOJ 
+    Info (332119):     0.620               0.000 sensa_boton:inst9|RELOJ 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -574,16 +574,16 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.326
+Info (332146): Worst-case setup slack is -0.272
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.326              -2.489 sensa_boton:inst9|RELOJ 
+    Info (332119):    -0.272              -2.908 sensa_boton:inst9|RELOJ 
     Info (332119):     0.640               0.000 CLK 
 Info (332146): Worst-case hold slack is 0.164
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.164               0.000 CLK 
-    Info (332119):     0.423               0.000 sensa_boton:inst9|RELOJ 
+    Info (332119):     0.253               0.000 sensa_boton:inst9|RELOJ 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -594,9 +594,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Sat Oct 05 17:08:32 2019
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 4773 megabytes
+    Info: Processing ended: Mon Oct 07 10:33:18 2019
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 
