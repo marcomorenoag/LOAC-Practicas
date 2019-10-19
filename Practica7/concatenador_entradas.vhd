@@ -36,6 +36,6 @@ architecture Behavioral of concatenador_entradas is
 begin
 	process(Q7,Q0,Y7,Y0,R15Y,d0Y,R15X,ROX,R15AUX,R0AUX,R15AP,R0AP,R15PC,R0PC,FC,INT,C,V,Z,N,I,H,X,S,AUX)
 	begin
-		data <= Q7 & Q0 & Y7 & Y0 & R15Y & d0Y & R15X & ROX & R15AUX & R0AUX & R15AP & R0AP & R15PC & R0PC & FC & INT & C & V & Z & N & I & H & X & S & AUX;
+		data <= Q7 & Q0 & Y7 & Y0 & R15Y & d0Y & R15X & ROX & R15AUX & R0AUX & R15AP & R0AP & R15PC & R0PC & FC & INT & C & V & Z & N & I & H & X & S & AUX & "0000000";
 	end process;
 end Behavioral;

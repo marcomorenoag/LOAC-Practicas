@@ -1,0 +1,329 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Z",
+					"strict" : false
+				},
+				{
+					"name" : "N",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[11]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[10]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[9]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[8]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CurrentState[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Q[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Q[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Q[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Q[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Q[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Q[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Yupa[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Yupa[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Yupa[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Yupa[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Yupa[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Yupa[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Yupa[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Debug_Yupa[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugACUMB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugPC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugRA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
