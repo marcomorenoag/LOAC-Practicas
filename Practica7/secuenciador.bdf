@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 992 96 1160 112)
+	(rect 888 80 1056 96)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "entrada[31..0]" (rect 5 0 71 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 640 -312 656 -144)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "RESET" (rect 6 5 18 41)(font "Arial" )(vertical))
+	(text "RESET" (rect 6 5 18 40)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -72,7 +72,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 672 -272 688 -104)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "CLK" (rect -1 5 16 26)(font "Intel Clear" )(vertical))
+	(text "CLK" (rect -1 5 16 25)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -1918,11 +1918,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1160 104)
-	(pt 1192 104)
-	(bus)
-)
-(connector
 	(pt 968 232)
 	(pt 1096 232)
 	(bus)
@@ -2036,6 +2031,21 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 336 376)
 	(pt 320 376)
+)
+(connector
+	(pt 1192 104)
+	(pt 1184 104)
+	(bus)
+)
+(connector
+	(pt 1184 104)
+	(pt 1184 88)
+	(bus)
+)
+(connector
+	(pt 1184 88)
+	(pt 1056 88)
+	(bus)
 )
 (junction (pt 424 216))
 (junction (pt 680 -88))

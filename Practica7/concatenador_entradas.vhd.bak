@@ -1,0 +1,41 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity concatenador_entradas is
+	Port ( Q7 : in STD_LOGIC;
+			 Q0 : in STD_LOGIC;
+			 Y7 : in STD_LOGIC;
+			 Y0 : in STD_LOGIC;
+			 R15(Y) : in STD_LOGIC;
+			 d0(Y) : in STD_LOGIC;
+			 R15(X) : in STD_LOGIC;
+			 RO(X) : in STD_LOGIC;
+			 R15(AUX) : in STD_LOGIC;
+			 R0(AUX) : in STD_LOGIC;
+			 R15(AP) : in STD_LOGIC;
+			 R0(AP) : in STD_LOGIC;
+			 R15(PC) : in STD_LOGIC;
+			 R0(PC) : in STD_LOGIC;
+			 FC : in STD_LOGIC;
+			 INT : in STD_LOGIC;
+			 C : in STD_LOGIC;
+			 V : in STD_LOGIC;
+			 Z : in STD_LOGIC;
+			 N : in STD_LOGIC;
+			 I : in STD_LOGIC;
+			 H : in STD_LOGIC;
+			 X : in STD_LOGIC;
+			 S : in STD_LOGIC;
+			 AUX : in STD_LOGIC;
+			 data: out STD_LOGIC_VECTOR(31 downto 0));
+end concatenador_entradas;
+
+architecture Behavioral of concatenador_entradas is
+begin
+	process(Q7,Q0,Y7,Y0,R15(Y),d0(Y),R15(X),RO(X),R15(AUX),R0(AUX),R15(AP),R0(AP),R15(PC),R0(PC),FC,INT,C,V,Z,N,I,H,X,S,AUX)
+	begin
+		data <= Q7 & Q0 & Y7 & Y0 & R15(Y) & d0(Y) & R15(X) & RO(X) & R15(AUX) & R0(AUX) & R15(AP) & R0(AP) & R15(PC) & R0(PC) & FC & INT & C & V & Z & N & I & H & X & S & AUX;
+	end process;
+end Behavioral;
