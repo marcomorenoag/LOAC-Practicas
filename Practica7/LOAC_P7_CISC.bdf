@@ -278,6 +278,22 @@ refer to the applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 888 -1608 1064 -1592)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "regInstr[11..0]" (rect 90 0 159 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 192 744 392 920)
 	(text "contador_ID" (rect 5 0 65 12)(font "Arial" ))
@@ -1324,7 +1340,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 784 -1664 832 -1632)
+	(rect 752 -1664 800 -1632)
 	(text "TRI" (rect 1 0 16 10)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 3 21 31 38)(font "Intel Clear" ))
 	(port
@@ -1760,9 +1776,325 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 456 -1360 712 -368)
+	(rect 152 -16 304 592)
+	(text "RegEdos" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
+	(text "flags" (rect 8 587 31 604)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CC" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "CC" (rect 21 27 37 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Reset" (rect 0 0 33 19)(font "Intel Clear" (font_size 8)))
+		(text "Reset" (rect 21 43 54 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "nHB" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
+		(text "nHB" (rect 21 59 45 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "B0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B0" (rect 21 75 37 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "CUPA" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "CUPA" (rect 21 91 55 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "CV" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "CV" (rect 21 107 37 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "B2" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B2" (rect 21 123 37 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "B1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B1" (rect 21 139 37 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "CZ" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "CZ" (rect 21 155 37 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "VUPA" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "VUPA" (rect 21 171 55 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "B5" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B5" (rect 21 187 37 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "B4" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B4" (rect 21 203 37 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "CN" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
+		(text "CN" (rect 21 219 38 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "B3" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B3" (rect 21 235 37 254)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "ZUPA" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "ZUPA" (rect 21 251 55 270)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "ZA" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "ZA" (rect 21 267 37 286)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "ZB" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "ZB" (rect 21 283 37 302)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "ZX_ZY" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "ZX_ZY" (rect 21 299 61 318)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 304)(pt 16 304))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "ZAP" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
+		(text "ZAP" (rect 21 315 45 334)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 320)(pt 16 320))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "ZPC" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
+		(text "ZPC" (rect 21 331 45 350)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 336)(pt 16 336))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "CI" (rect 0 0 11 19)(font "Intel Clear" (font_size 8)))
+		(text "CI" (rect 21 347 32 366)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 352)(pt 16 352))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "B8" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B8" (rect 21 363 37 382)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 368)(pt 16 368))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "B7" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B7" (rect 21 379 37 398)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 384)(pt 16 384))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "CH" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
+		(text "CH" (rect 21 395 38 414)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 400)(pt 16 400))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "B6" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B6" (rect 21 411 37 430)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 416)(pt 16 416))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "NUPA" (rect 0 0 35 19)(font "Intel Clear" (font_size 8)))
+		(text "NUPA" (rect 21 427 56 446)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 432)(pt 16 432))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "NA" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
+		(text "NA" (rect 21 443 38 462)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 448)(pt 16 448))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "NB" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
+		(text "NB" (rect 21 459 38 478)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 464)(pt 16 464))
+	)
+	(port
+		(pt 0 480)
+		(input)
+		(text "NX_NY" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "NX_NY" (rect 21 475 63 494)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 480)(pt 16 480))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "NAP" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "NAP" (rect 21 491 46 510)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 496)(pt 16 496))
+	)
+	(port
+		(pt 0 512)
+		(input)
+		(text "NPC" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "NPC" (rect 21 507 46 526)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 512)(pt 16 512))
+	)
+	(port
+		(pt 0 528)
+		(input)
+		(text "CX" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "CX" (rect 21 523 37 542)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 528)(pt 16 528))
+	)
+	(port
+		(pt 0 544)
+		(input)
+		(text "B9" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B9" (rect 21 539 37 558)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 544)(pt 16 544))
+	)
+	(port
+		(pt 0 560)
+		(input)
+		(text "CS" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "CS" (rect 21 555 37 574)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 560)(pt 16 560))
+	)
+	(port
+		(pt 0 576)
+		(input)
+		(text "HUPA" (rect 0 0 35 19)(font "Intel Clear" (font_size 8)))
+		(text "HUPA" (rect 21 571 56 590)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 576)(pt 16 576))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "C" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "C" (rect 123 43 131 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(port
+		(pt 152 64)
+		(output)
+		(text "V" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "V" (rect 123 59 131 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 64)(pt 136 64))
+	)
+	(port
+		(pt 152 80)
+		(output)
+		(text "Z" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "Z" (rect 123 75 131 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 80)(pt 136 80))
+	)
+	(port
+		(pt 152 96)
+		(output)
+		(text "N" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
+		(text "N" (rect 122 91 131 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 96)(pt 136 96))
+	)
+	(port
+		(pt 152 112)
+		(output)
+		(text "I" (rect 0 0 3 19)(font "Intel Clear" (font_size 8)))
+		(text "I" (rect 128 107 131 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 112)(pt 136 112))
+	)
+	(port
+		(pt 152 128)
+		(output)
+		(text "H" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
+		(text "H" (rect 122 123 131 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 128)(pt 136 128))
+	)
+	(port
+		(pt 152 144)
+		(output)
+		(text "X" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "X" (rect 123 139 131 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 144)(pt 136 144))
+	)
+	(port
+		(pt 152 160)
+		(output)
+		(text "S" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "S" (rect 123 155 131 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 160)(pt 136 160))
+	)
+	(port
+		(pt 152 32)
+		(bidir)
+		(text "data[7..0]" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "data[7..0]" (rect 74 27 131 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 592))
+	)
+)
+(symbol
+	(rect 440 -1360 696 -368)
 	(text "secuenciador" (rect 5 0 81 19)(font "Intel Clear" (font_size 8)))
-	(text "sec" (rect 8 971 23 988)(font "Intel Clear" ))
+	(text "inst7" (rect 8 971 30 988)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -2199,322 +2531,6 @@ refer to the applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 240 976))
-	)
-)
-(symbol
-	(rect 152 -16 304 592)
-	(text "RegEdos" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
-	(text "flags" (rect 8 587 31 604)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CC" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "CC" (rect 21 27 37 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Reset" (rect 0 0 33 19)(font "Intel Clear" (font_size 8)))
-		(text "Reset" (rect 21 43 54 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "nHB" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
-		(text "nHB" (rect 21 59 45 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "B0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B0" (rect 21 75 37 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "CUPA" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
-		(text "CUPA" (rect 21 91 55 110)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "CV" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "CV" (rect 21 107 37 126)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 112)(pt 16 112))
-	)
-	(port
-		(pt 0 128)
-		(input)
-		(text "B2" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B2" (rect 21 123 37 142)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 128)(pt 16 128))
-	)
-	(port
-		(pt 0 144)
-		(input)
-		(text "B1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B1" (rect 21 139 37 158)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 144)(pt 16 144))
-	)
-	(port
-		(pt 0 160)
-		(input)
-		(text "CZ" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "CZ" (rect 21 155 37 174)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 160)(pt 16 160))
-	)
-	(port
-		(pt 0 176)
-		(input)
-		(text "VUPA" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
-		(text "VUPA" (rect 21 171 55 190)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 176)(pt 16 176))
-	)
-	(port
-		(pt 0 192)
-		(input)
-		(text "B5" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B5" (rect 21 187 37 206)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 192)(pt 16 192))
-	)
-	(port
-		(pt 0 208)
-		(input)
-		(text "B4" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B4" (rect 21 203 37 222)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 208)(pt 16 208))
-	)
-	(port
-		(pt 0 224)
-		(input)
-		(text "CN" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
-		(text "CN" (rect 21 219 38 238)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 224)(pt 16 224))
-	)
-	(port
-		(pt 0 240)
-		(input)
-		(text "B3" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B3" (rect 21 235 37 254)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 240)(pt 16 240))
-	)
-	(port
-		(pt 0 256)
-		(input)
-		(text "ZUPA" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
-		(text "ZUPA" (rect 21 251 55 270)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 256)(pt 16 256))
-	)
-	(port
-		(pt 0 272)
-		(input)
-		(text "ZA" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "ZA" (rect 21 267 37 286)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 272)(pt 16 272))
-	)
-	(port
-		(pt 0 288)
-		(input)
-		(text "ZB" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "ZB" (rect 21 283 37 302)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 288)(pt 16 288))
-	)
-	(port
-		(pt 0 304)
-		(input)
-		(text "ZX_ZY" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
-		(text "ZX_ZY" (rect 21 299 61 318)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 304)(pt 16 304))
-	)
-	(port
-		(pt 0 320)
-		(input)
-		(text "ZAP" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
-		(text "ZAP" (rect 21 315 45 334)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 320)(pt 16 320))
-	)
-	(port
-		(pt 0 336)
-		(input)
-		(text "ZPC" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
-		(text "ZPC" (rect 21 331 45 350)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 336)(pt 16 336))
-	)
-	(port
-		(pt 0 352)
-		(input)
-		(text "CI" (rect 0 0 11 19)(font "Intel Clear" (font_size 8)))
-		(text "CI" (rect 21 347 32 366)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 352)(pt 16 352))
-	)
-	(port
-		(pt 0 368)
-		(input)
-		(text "B8" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B8" (rect 21 363 37 382)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 368)(pt 16 368))
-	)
-	(port
-		(pt 0 384)
-		(input)
-		(text "B7" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B7" (rect 21 379 37 398)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 384)(pt 16 384))
-	)
-	(port
-		(pt 0 400)
-		(input)
-		(text "CH" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
-		(text "CH" (rect 21 395 38 414)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 400)(pt 16 400))
-	)
-	(port
-		(pt 0 416)
-		(input)
-		(text "B6" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B6" (rect 21 411 37 430)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 416)(pt 16 416))
-	)
-	(port
-		(pt 0 432)
-		(input)
-		(text "NUPA" (rect 0 0 35 19)(font "Intel Clear" (font_size 8)))
-		(text "NUPA" (rect 21 427 56 446)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 432)(pt 16 432))
-	)
-	(port
-		(pt 0 448)
-		(input)
-		(text "NA" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
-		(text "NA" (rect 21 443 38 462)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 448)(pt 16 448))
-	)
-	(port
-		(pt 0 464)
-		(input)
-		(text "NB" (rect 0 0 17 19)(font "Intel Clear" (font_size 8)))
-		(text "NB" (rect 21 459 38 478)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 464)(pt 16 464))
-	)
-	(port
-		(pt 0 480)
-		(input)
-		(text "NX_NY" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
-		(text "NX_NY" (rect 21 475 63 494)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 480)(pt 16 480))
-	)
-	(port
-		(pt 0 496)
-		(input)
-		(text "NAP" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
-		(text "NAP" (rect 21 491 46 510)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 496)(pt 16 496))
-	)
-	(port
-		(pt 0 512)
-		(input)
-		(text "NPC" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
-		(text "NPC" (rect 21 507 46 526)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 512)(pt 16 512))
-	)
-	(port
-		(pt 0 528)
-		(input)
-		(text "CX" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "CX" (rect 21 523 37 542)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 528)(pt 16 528))
-	)
-	(port
-		(pt 0 544)
-		(input)
-		(text "B9" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "B9" (rect 21 539 37 558)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 544)(pt 16 544))
-	)
-	(port
-		(pt 0 560)
-		(input)
-		(text "CS" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "CS" (rect 21 555 37 574)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 560)(pt 16 560))
-	)
-	(port
-		(pt 0 576)
-		(input)
-		(text "HUPA" (rect 0 0 35 19)(font "Intel Clear" (font_size 8)))
-		(text "HUPA" (rect 21 571 56 590)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 576)(pt 16 576))
-	)
-	(port
-		(pt 152 48)
-		(output)
-		(text "C" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
-		(text "C" (rect 123 43 131 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 48)(pt 136 48))
-	)
-	(port
-		(pt 152 64)
-		(output)
-		(text "V" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
-		(text "V" (rect 123 59 131 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 64)(pt 136 64))
-	)
-	(port
-		(pt 152 80)
-		(output)
-		(text "Z" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
-		(text "Z" (rect 123 75 131 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 80)(pt 136 80))
-	)
-	(port
-		(pt 152 96)
-		(output)
-		(text "N" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
-		(text "N" (rect 122 91 131 110)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 96)(pt 136 96))
-	)
-	(port
-		(pt 152 112)
-		(output)
-		(text "I" (rect 0 0 3 19)(font "Intel Clear" (font_size 8)))
-		(text "I" (rect 128 107 131 126)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 112)(pt 136 112))
-	)
-	(port
-		(pt 152 128)
-		(output)
-		(text "H" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
-		(text "H" (rect 122 123 131 142)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 128)(pt 136 128))
-	)
-	(port
-		(pt 152 144)
-		(output)
-		(text "X" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
-		(text "X" (rect 123 139 131 158)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 144)(pt 136 144))
-	)
-	(port
-		(pt 152 160)
-		(output)
-		(text "S" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
-		(text "S" (rect 123 155 131 174)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 160)(pt 136 160))
-	)
-	(port
-		(pt 152 32)
-		(bidir)
-		(text "data[7..0]" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
-		(text "data[7..0]" (rect 74 27 131 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 32)(pt 136 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 592))
 	)
 )
 (connector
@@ -3598,14 +3614,6 @@ refer to the applicable agreement for further details.
 	(pt 840 -1320)
 )
 (connector
-	(pt 832 -1536)
-	(pt 424 -1536)
-)
-(connector
-	(pt 424 -1536)
-	(pt 424 -1648)
-)
-(connector
 	(pt 424 -1648)
 	(pt 448 -1648)
 )
@@ -3640,29 +3648,6 @@ refer to the applicable agreement for further details.
 	(pt 304 -1376)
 	(pt -200 -1376)
 	(bus)
-)
-(connector
-	(pt 680 -1648)
-	(pt 784 -1648)
-	(bus)
-)
-(connector
-	(pt 408 -1504)
-	(pt 408 -1280)
-	(bus)
-)
-(connector
-	(pt 408 -1504)
-	(pt 864 -1504)
-	(bus)
-)
-(connector
-	(pt 1144 -1680)
-	(pt 808 -1680)
-)
-(connector
-	(pt 808 -1680)
-	(pt 808 -1664)
 )
 (connector
 	(pt 200 -872)
@@ -4548,16 +4533,6 @@ refer to the applicable agreement for further details.
 	(pt 328 96)
 )
 (connector
-	(pt 864 -1504)
-	(pt 864 -1648)
-	(bus)
-)
-(connector
-	(pt 832 -1648)
-	(pt 864 -1648)
-	(bus)
-)
-(connector
 	(pt 112 -1056)
 	(pt 104 -1056)
 	(bus)
@@ -4652,14 +4627,6 @@ refer to the applicable agreement for further details.
 	(pt -600 -1632)
 )
 (connector
-	(pt -352 -1568)
-	(pt -352 -1544)
-)
-(connector
-	(pt 64 -1544)
-	(pt -352 -1544)
-)
-(connector
 	(pt 288 -1184)
 	(pt 312 -1184)
 )
@@ -4684,14 +4651,6 @@ refer to the applicable agreement for further details.
 	(pt 1912 -1304)
 )
 (connector
-	(pt 64 -1552)
-	(pt 1912 -1552)
-)
-(connector
-	(pt 64 -1552)
-	(pt 64 -1544)
-)
-(connector
 	(pt 1160 576)
 	(pt 472 576)
 )
@@ -4702,14 +4661,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -560 648)
 	(pt 472 648)
-)
-(connector
-	(pt -560 648)
-	(pt -560 -1568)
-)
-(connector
-	(pt -560 -1568)
-	(pt -352 -1568)
 )
 (connector
 	(pt 192 840)
@@ -4773,611 +4724,11 @@ refer to the applicable agreement for further details.
 )
 (connector
 	(pt -720 1008)
-	(pt -720 -1568)
-)
-(connector
-	(pt -720 1008)
 	(pt -248 1008)
 )
 (connector
 	(pt -248 1008)
 	(pt -200 1008)
-)
-(connector
-	(pt -1088 -1568)
-	(pt -720 -1568)
-)
-(connector
-	(pt -720 -1568)
-	(pt -560 -1568)
-)
-(connector
-	(pt 288 -1072)
-	(pt 440 -1072)
-)
-(connector
-	(pt 440 -1072)
-	(pt 440 -1416)
-)
-(connector
-	(pt 752 -1416)
-	(pt 440 -1416)
-)
-(connector
-	(pt 736 -1424)
-	(pt 432 -1424)
-)
-(connector
-	(pt 432 -1152)
-	(pt 432 -1424)
-)
-(connector
-	(pt 288 -1152)
-	(pt 432 -1152)
-)
-(connector
-	(pt 760 -1432)
-	(pt 424 -1432)
-)
-(connector
-	(pt 424 -1136)
-	(pt 424 -1432)
-)
-(connector
-	(pt 288 -1136)
-	(pt 424 -1136)
-)
-(connector
-	(pt 416 -1432)
-	(pt 416 -1440)
-)
-(connector
-	(pt 768 -1440)
-	(pt 416 -1440)
-)
-(connector
-	(pt -376 -1432)
-	(pt 416 -1432)
-)
-(connector
-	(pt -376 848)
-	(pt -376 -1432)
-)
-(connector
-	(pt 288 -1088)
-	(pt 448 -1088)
-)
-(connector
-	(pt 744 -1408)
-	(pt 448 -1408)
-)
-(connector
-	(pt 448 -1088)
-	(pt 448 -1408)
-)
-(connector
-	(pt 728 376)
-	(pt 728 -416)
-)
-(connector
-	(pt 736 128)
-	(pt 736 -432)
-)
-(connector
-	(pt 744 600)
-	(pt 744 -448)
-)
-(connector
-	(pt 752 608)
-	(pt 752 -464)
-)
-(connector
-	(pt 760 616)
-	(pt 760 -480)
-)
-(connector
-	(pt 768 624)
-	(pt 768 -496)
-)
-(connector
-	(pt 776 120)
-	(pt 776 -544)
-)
-(connector
-	(pt 784 112)
-	(pt 784 -512)
-)
-(connector
-	(pt 792 104)
-	(pt 792 -528)
-)
-(connector
-	(pt 808 88)
-	(pt 808 -576)
-)
-(connector
-	(pt 816 80)
-	(pt 816 -592)
-)
-(connector
-	(pt 824 72)
-	(pt 824 -608)
-)
-(connector
-	(pt 800 96)
-	(pt 800 -560)
-)
-(connector
-	(pt 840 -336)
-	(pt 840 -640)
-)
-(connector
-	(pt 848 -176)
-	(pt 848 -656)
-)
-(connector
-	(pt 856 -328)
-	(pt 856 -672)
-)
-(connector
-	(pt 864 -320)
-	(pt 864 -688)
-)
-(connector
-	(pt 872 -312)
-	(pt 872 -704)
-)
-(connector
-	(pt 880 -344)
-	(pt 880 -720)
-)
-(connector
-	(pt 2032 -664)
-	(pt 2032 -800)
-)
-(connector
-	(pt 1944 64)
-	(pt 1944 -832)
-)
-(connector
-	(pt 1968 1016)
-	(pt 1968 -848)
-)
-(connector
-	(pt 1904 1104)
-	(pt 1904 -864)
-	(bus)
-)
-(connector
-	(pt 1896 744)
-	(pt 1896 -880)
-)
-(connector
-	(pt 1536 736)
-	(pt 1536 -896)
-)
-(connector
-	(pt 1544 728)
-	(pt 1544 -912)
-)
-(connector
-	(pt 1552 720)
-	(pt 1552 -928)
-	(bus)
-)
-(connector
-	(pt 888 656)
-	(pt 888 -944)
-)
-(connector
-	(pt 896 648)
-	(pt 896 -960)
-)
-(connector
-	(pt 904 640)
-	(pt 904 -976)
-)
-(connector
-	(pt 912 128)
-	(pt 912 -992)
-	(bus)
-)
-(connector
-	(pt 920 120)
-	(pt 920 -1008)
-)
-(connector
-	(pt 928 112)
-	(pt 928 -1024)
-)
-(connector
-	(pt 936 104)
-	(pt 936 -1040)
-)
-(connector
-	(pt 776 -1448)
-	(pt 776 -1072)
-	(bus)
-)
-(connector
-	(pt 784 -1368)
-	(pt 784 -1088)
-)
-(connector
-	(pt 792 -1384)
-	(pt 792 -1104)
-)
-(connector
-	(pt 800 -1392)
-	(pt 800 -1136)
-)
-(connector
-	(pt 944 344)
-	(pt 944 -1152)
-)
-(connector
-	(pt 952 296)
-	(pt 952 -1168)
-)
-(connector
-	(pt 960 432)
-	(pt 960 -1200)
-)
-(connector
-	(pt 816 -1216)
-	(pt 816 -1232)
-)
-(connector
-	(pt 808 -1208)
-	(pt 808 -1216)
-	(bus)
-)
-(connector
-	(pt 816 -1416)
-	(pt 816 -1248)
-)
-(connector
-	(pt 824 -1320)
-	(pt 824 -1280)
-)
-(connector
-	(pt 808 -1336)
-	(pt 808 -1296)
-	(bus)
-)
-(connector
-	(pt 832 -1536)
-	(pt 832 -1312)
-)
-(connector
-	(pt 968 -304)
-	(pt 968 -1184)
-)
-(connector
-	(pt 1144 -1680)
-	(pt 1144 -1120)
-)
-(connector
-	(pt 376 -1296)
-	(pt 456 -1296)
-	(bus)
-)
-(connector
-	(pt 376 -872)
-	(pt 376 -1296)
-	(bus)
-)
-(connector
-	(pt 832 56)
-	(pt 832 -624)
-)
-(connector
-	(pt 392 -1328)
-	(pt 456 -1328)
-)
-(connector
-	(pt 392 -1632)
-	(pt 392 -1328)
-)
-(connector
-	(pt 744 -1408)
-	(pt 744 -736)
-)
-(connector
-	(pt 752 -1416)
-	(pt 752 -752)
-)
-(connector
-	(pt 736 -1424)
-	(pt 736 -768)
-)
-(connector
-	(pt 760 -1432)
-	(pt 760 -784)
-)
-(connector
-	(pt 768 -1440)
-	(pt 768 -1056)
-)
-(connector
-	(pt 728 -1488)
-	(pt 728 -1264)
-	(bus)
-)
-(connector
-	(pt 2024 -816)
-	(pt 2024 -680)
-)
-(connector
-	(pt 2024 -680)
-	(pt 2024 56)
-)
-(connector
-	(pt 104 -1280)
-	(pt 408 -1280)
-	(bus)
-)
-(connector
-	(pt 408 -1280)
-	(pt 456 -1280)
-	(bus)
-)
-(connector
-	(pt 392 -1632)
-	(pt 448 -1632)
-)
-(connector
-	(pt 64 -1312)
-	(pt 312 -1312)
-)
-(connector
-	(pt 312 -1312)
-	(pt 456 -1312)
-)
-(connector
-	(pt 712 -1312)
-	(pt 832 -1312)
-)
-(connector
-	(pt 712 -1296)
-	(pt 808 -1296)
-	(bus)
-)
-(connector
-	(pt 712 -1280)
-	(pt 824 -1280)
-)
-(connector
-	(pt 712 -1264)
-	(pt 728 -1264)
-	(bus)
-)
-(connector
-	(pt 712 -1248)
-	(pt 816 -1248)
-)
-(connector
-	(pt 712 -1232)
-	(pt 816 -1232)
-)
-(connector
-	(pt 712 -1216)
-	(pt 808 -1216)
-	(bus)
-)
-(connector
-	(pt 712 -1200)
-	(pt 960 -1200)
-)
-(connector
-	(pt 712 -1184)
-	(pt 968 -1184)
-)
-(connector
-	(pt 712 -1168)
-	(pt 952 -1168)
-)
-(connector
-	(pt 712 -1152)
-	(pt 944 -1152)
-)
-(connector
-	(pt 712 -1136)
-	(pt 800 -1136)
-)
-(connector
-	(pt 712 -1120)
-	(pt 1144 -1120)
-)
-(connector
-	(pt 712 -1104)
-	(pt 792 -1104)
-)
-(connector
-	(pt 712 -1088)
-	(pt 784 -1088)
-)
-(connector
-	(pt 712 -1072)
-	(pt 776 -1072)
-	(bus)
-)
-(connector
-	(pt 712 -1056)
-	(pt 768 -1056)
-)
-(connector
-	(pt 712 -1040)
-	(pt 936 -1040)
-)
-(connector
-	(pt 712 -1024)
-	(pt 928 -1024)
-)
-(connector
-	(pt 712 -1008)
-	(pt 920 -1008)
-)
-(connector
-	(pt 712 -992)
-	(pt 912 -992)
-	(bus)
-)
-(connector
-	(pt 712 -976)
-	(pt 904 -976)
-)
-(connector
-	(pt 712 -960)
-	(pt 896 -960)
-)
-(connector
-	(pt 712 -944)
-	(pt 888 -944)
-)
-(connector
-	(pt 712 -928)
-	(pt 1552 -928)
-	(bus)
-)
-(connector
-	(pt 712 -912)
-	(pt 1544 -912)
-)
-(connector
-	(pt 712 -896)
-	(pt 1536 -896)
-)
-(connector
-	(pt 712 -880)
-	(pt 1896 -880)
-)
-(connector
-	(pt 712 -864)
-	(pt 1904 -864)
-	(bus)
-)
-(connector
-	(pt 712 -848)
-	(pt 1968 -848)
-)
-(connector
-	(pt 712 -832)
-	(pt 1944 -832)
-)
-(connector
-	(pt 712 -816)
-	(pt 2024 -816)
-)
-(connector
-	(pt 712 -800)
-	(pt 2032 -800)
-)
-(connector
-	(pt 712 -784)
-	(pt 760 -784)
-)
-(connector
-	(pt 712 -768)
-	(pt 736 -768)
-)
-(connector
-	(pt 712 -752)
-	(pt 752 -752)
-)
-(connector
-	(pt 712 -736)
-	(pt 744 -736)
-)
-(connector
-	(pt 712 -720)
-	(pt 880 -720)
-)
-(connector
-	(pt 712 -704)
-	(pt 872 -704)
-)
-(connector
-	(pt 712 -688)
-	(pt 864 -688)
-)
-(connector
-	(pt 712 -672)
-	(pt 856 -672)
-)
-(connector
-	(pt 712 -656)
-	(pt 848 -656)
-)
-(connector
-	(pt 712 -640)
-	(pt 840 -640)
-)
-(connector
-	(pt 712 -624)
-	(pt 832 -624)
-)
-(connector
-	(pt 712 -608)
-	(pt 824 -608)
-)
-(connector
-	(pt 712 -592)
-	(pt 816 -592)
-)
-(connector
-	(pt 712 -576)
-	(pt 808 -576)
-)
-(connector
-	(pt 712 -560)
-	(pt 800 -560)
-)
-(connector
-	(pt 712 -544)
-	(pt 776 -544)
-)
-(connector
-	(pt 712 -528)
-	(pt 792 -528)
-)
-(connector
-	(pt 712 -512)
-	(pt 784 -512)
-)
-(connector
-	(pt 712 -496)
-	(pt 768 -496)
-)
-(connector
-	(pt 712 -480)
-	(pt 760 -480)
-)
-(connector
-	(pt 712 -464)
-	(pt 752 -464)
-)
-(connector
-	(pt 712 -448)
-	(pt 744 -448)
-)
-(connector
-	(pt 712 -432)
-	(pt 736 -432)
-)
-(connector
-	(pt 712 -416)
-	(pt 728 -416)
-)
-(connector
-	(pt 712 -1328)
-	(pt 720 -1328)
-	(bus)
-)
-(connector
-	(pt 720 -1328)
-	(pt 720 -1360)
-	(bus)
 )
 (connector
 	(pt 720 -1360)
@@ -5417,10 +4768,6 @@ refer to the applicable agreement for further details.
 	(pt -512 -1632)
 )
 (connector
-	(pt -512 -1632)
-	(pt 392 -1632)
-)
-(connector
 	(pt 1624 -1256)
 	(pt 1616 -1256)
 	(bus)
@@ -5436,10 +4783,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 64 -1472)
 	(pt 1176 -1472)
-)
-(connector
-	(pt 64 -1544)
-	(pt 64 -1472)
 )
 (connector
 	(pt 64 -1472)
@@ -5714,6 +5057,669 @@ refer to the applicable agreement for further details.
 	(pt 2280 32)
 	(pt 2280 64)
 )
+(connector
+	(pt 888 -1600)
+	(pt 864 -1600)
+	(bus)
+)
+(connector
+	(pt 680 -1648)
+	(pt 752 -1648)
+	(bus)
+)
+(connector
+	(pt 864 -1648)
+	(pt 864 -1600)
+	(bus)
+)
+(connector
+	(pt 864 -1600)
+	(pt 864 -1504)
+	(bus)
+)
+(connector
+	(pt 800 -1648)
+	(pt 864 -1648)
+	(bus)
+)
+(connector
+	(pt 776 -1664)
+	(pt 776 -1680)
+)
+(connector
+	(pt -376 848)
+	(pt -376 -1440)
+)
+(connector
+	(pt -376 -1440)
+	(pt 768 -1440)
+)
+(connector
+	(pt 400 -1280)
+	(pt 400 -1504)
+	(bus)
+)
+(connector
+	(pt 864 -1504)
+	(pt 400 -1504)
+	(bus)
+)
+(connector
+	(pt 288 -1072)
+	(pt 424 -1072)
+)
+(connector
+	(pt 424 -1072)
+	(pt 424 -1416)
+)
+(connector
+	(pt 752 -1416)
+	(pt 424 -1416)
+)
+(connector
+	(pt 736 -1424)
+	(pt 416 -1424)
+)
+(connector
+	(pt 416 -1152)
+	(pt 416 -1424)
+)
+(connector
+	(pt 288 -1152)
+	(pt 416 -1152)
+)
+(connector
+	(pt 760 -1432)
+	(pt 408 -1432)
+)
+(connector
+	(pt 408 -1136)
+	(pt 408 -1432)
+)
+(connector
+	(pt 288 -1136)
+	(pt 408 -1136)
+)
+(connector
+	(pt 288 -1088)
+	(pt 432 -1088)
+)
+(connector
+	(pt 744 -1408)
+	(pt 432 -1408)
+)
+(connector
+	(pt 432 -1088)
+	(pt 432 -1408)
+)
+(connector
+	(pt 728 376)
+	(pt 728 -416)
+)
+(connector
+	(pt 736 128)
+	(pt 736 -432)
+)
+(connector
+	(pt 744 600)
+	(pt 744 -448)
+)
+(connector
+	(pt 752 608)
+	(pt 752 -464)
+)
+(connector
+	(pt 760 616)
+	(pt 760 -480)
+)
+(connector
+	(pt 768 624)
+	(pt 768 -496)
+)
+(connector
+	(pt 776 120)
+	(pt 776 -544)
+)
+(connector
+	(pt 784 112)
+	(pt 784 -512)
+)
+(connector
+	(pt 792 104)
+	(pt 792 -528)
+)
+(connector
+	(pt 808 88)
+	(pt 808 -576)
+)
+(connector
+	(pt 816 80)
+	(pt 816 -592)
+)
+(connector
+	(pt 824 72)
+	(pt 824 -608)
+)
+(connector
+	(pt 800 96)
+	(pt 800 -560)
+)
+(connector
+	(pt 840 -336)
+	(pt 840 -640)
+)
+(connector
+	(pt 848 -176)
+	(pt 848 -656)
+)
+(connector
+	(pt 856 -328)
+	(pt 856 -672)
+)
+(connector
+	(pt 864 -320)
+	(pt 864 -688)
+)
+(connector
+	(pt 872 -312)
+	(pt 872 -704)
+)
+(connector
+	(pt 880 -344)
+	(pt 880 -720)
+)
+(connector
+	(pt 2032 -664)
+	(pt 2032 -800)
+)
+(connector
+	(pt 1944 64)
+	(pt 1944 -832)
+)
+(connector
+	(pt 1968 1016)
+	(pt 1968 -848)
+)
+(connector
+	(pt 1904 1104)
+	(pt 1904 -864)
+	(bus)
+)
+(connector
+	(pt 1896 744)
+	(pt 1896 -880)
+)
+(connector
+	(pt 1536 736)
+	(pt 1536 -896)
+)
+(connector
+	(pt 1544 728)
+	(pt 1544 -912)
+)
+(connector
+	(pt 1552 720)
+	(pt 1552 -928)
+	(bus)
+)
+(connector
+	(pt 888 656)
+	(pt 888 -944)
+)
+(connector
+	(pt 896 648)
+	(pt 896 -960)
+)
+(connector
+	(pt 904 640)
+	(pt 904 -976)
+)
+(connector
+	(pt 912 128)
+	(pt 912 -992)
+	(bus)
+)
+(connector
+	(pt 920 120)
+	(pt 920 -1008)
+)
+(connector
+	(pt 928 112)
+	(pt 928 -1024)
+)
+(connector
+	(pt 936 104)
+	(pt 936 -1040)
+)
+(connector
+	(pt 776 -1448)
+	(pt 776 -1072)
+	(bus)
+)
+(connector
+	(pt 784 -1368)
+	(pt 784 -1088)
+)
+(connector
+	(pt 792 -1384)
+	(pt 792 -1104)
+)
+(connector
+	(pt 800 -1392)
+	(pt 800 -1136)
+)
+(connector
+	(pt 944 344)
+	(pt 944 -1152)
+)
+(connector
+	(pt 952 296)
+	(pt 952 -1168)
+)
+(connector
+	(pt 960 432)
+	(pt 960 -1200)
+)
+(connector
+	(pt 816 -1216)
+	(pt 816 -1232)
+)
+(connector
+	(pt 808 -1208)
+	(pt 808 -1216)
+	(bus)
+)
+(connector
+	(pt 816 -1416)
+	(pt 816 -1248)
+)
+(connector
+	(pt 824 -1320)
+	(pt 824 -1280)
+)
+(connector
+	(pt 808 -1336)
+	(pt 808 -1296)
+	(bus)
+)
+(connector
+	(pt 968 -304)
+	(pt 968 -1184)
+)
+(connector
+	(pt 376 -1296)
+	(pt 440 -1296)
+	(bus)
+)
+(connector
+	(pt 376 -872)
+	(pt 376 -1296)
+	(bus)
+)
+(connector
+	(pt 832 56)
+	(pt 832 -624)
+)
+(connector
+	(pt 392 -1328)
+	(pt 440 -1328)
+)
+(connector
+	(pt 392 -1632)
+	(pt 392 -1328)
+)
+(connector
+	(pt 744 -1408)
+	(pt 744 -736)
+)
+(connector
+	(pt 752 -1416)
+	(pt 752 -752)
+)
+(connector
+	(pt 736 -1424)
+	(pt 736 -768)
+)
+(connector
+	(pt 760 -1432)
+	(pt 760 -784)
+)
+(connector
+	(pt 768 -1440)
+	(pt 768 -1056)
+)
+(connector
+	(pt 728 -1488)
+	(pt 728 -1264)
+	(bus)
+)
+(connector
+	(pt 720 -1360)
+	(pt 720 -1328)
+	(bus)
+)
+(connector
+	(pt -512 -1632)
+	(pt 392 -1632)
+)
+(connector
+	(pt 392 -1632)
+	(pt 448 -1632)
+)
+(connector
+	(pt 2024 -816)
+	(pt 2024 -680)
+)
+(connector
+	(pt 2024 -680)
+	(pt 2024 56)
+)
+(connector
+	(pt 64 -1312)
+	(pt 312 -1312)
+)
+(connector
+	(pt 312 -1312)
+	(pt 440 -1312)
+)
+(connector
+	(pt 104 -1280)
+	(pt 400 -1280)
+	(bus)
+)
+(connector
+	(pt 400 -1280)
+	(pt 440 -1280)
+	(bus)
+)
+(connector
+	(pt 696 -1328)
+	(pt 720 -1328)
+	(bus)
+)
+(connector
+	(pt 696 -1296)
+	(pt 808 -1296)
+	(bus)
+)
+(connector
+	(pt 696 -1280)
+	(pt 824 -1280)
+)
+(connector
+	(pt 696 -1264)
+	(pt 728 -1264)
+	(bus)
+)
+(connector
+	(pt 696 -1248)
+	(pt 816 -1248)
+)
+(connector
+	(pt 696 -1232)
+	(pt 816 -1232)
+)
+(connector
+	(pt 696 -1216)
+	(pt 808 -1216)
+	(bus)
+)
+(connector
+	(pt 696 -1200)
+	(pt 960 -1200)
+)
+(connector
+	(pt 696 -1184)
+	(pt 968 -1184)
+)
+(connector
+	(pt 696 -1168)
+	(pt 952 -1168)
+)
+(connector
+	(pt 696 -1152)
+	(pt 944 -1152)
+)
+(connector
+	(pt 696 -1136)
+	(pt 800 -1136)
+)
+(connector
+	(pt 696 -1120)
+	(pt 1080 -1120)
+)
+(connector
+	(pt 696 -1104)
+	(pt 792 -1104)
+)
+(connector
+	(pt 696 -1088)
+	(pt 784 -1088)
+)
+(connector
+	(pt 696 -1072)
+	(pt 776 -1072)
+	(bus)
+)
+(connector
+	(pt 696 -1056)
+	(pt 768 -1056)
+)
+(connector
+	(pt 696 -1040)
+	(pt 936 -1040)
+)
+(connector
+	(pt 696 -1024)
+	(pt 928 -1024)
+)
+(connector
+	(pt 696 -1008)
+	(pt 920 -1008)
+)
+(connector
+	(pt 696 -992)
+	(pt 912 -992)
+	(bus)
+)
+(connector
+	(pt 696 -976)
+	(pt 904 -976)
+)
+(connector
+	(pt 696 -960)
+	(pt 896 -960)
+)
+(connector
+	(pt 696 -944)
+	(pt 888 -944)
+)
+(connector
+	(pt 696 -928)
+	(pt 1552 -928)
+	(bus)
+)
+(connector
+	(pt 696 -912)
+	(pt 1544 -912)
+)
+(connector
+	(pt 696 -896)
+	(pt 1536 -896)
+)
+(connector
+	(pt 696 -880)
+	(pt 1896 -880)
+)
+(connector
+	(pt 696 -864)
+	(pt 1904 -864)
+	(bus)
+)
+(connector
+	(pt 696 -848)
+	(pt 1968 -848)
+)
+(connector
+	(pt 696 -832)
+	(pt 1944 -832)
+)
+(connector
+	(pt 696 -816)
+	(pt 2024 -816)
+)
+(connector
+	(pt 696 -800)
+	(pt 2032 -800)
+)
+(connector
+	(pt 696 -784)
+	(pt 760 -784)
+)
+(connector
+	(pt 696 -768)
+	(pt 736 -768)
+)
+(connector
+	(pt 696 -752)
+	(pt 752 -752)
+)
+(connector
+	(pt 696 -736)
+	(pt 744 -736)
+)
+(connector
+	(pt 696 -720)
+	(pt 880 -720)
+)
+(connector
+	(pt 696 -704)
+	(pt 872 -704)
+)
+(connector
+	(pt 696 -688)
+	(pt 864 -688)
+)
+(connector
+	(pt 696 -672)
+	(pt 856 -672)
+)
+(connector
+	(pt 696 -656)
+	(pt 848 -656)
+)
+(connector
+	(pt 696 -640)
+	(pt 840 -640)
+)
+(connector
+	(pt 696 -624)
+	(pt 832 -624)
+)
+(connector
+	(pt 696 -608)
+	(pt 824 -608)
+)
+(connector
+	(pt 696 -592)
+	(pt 816 -592)
+)
+(connector
+	(pt 696 -576)
+	(pt 808 -576)
+)
+(connector
+	(pt 696 -560)
+	(pt 800 -560)
+)
+(connector
+	(pt 696 -544)
+	(pt 776 -544)
+)
+(connector
+	(pt 696 -528)
+	(pt 792 -528)
+)
+(connector
+	(pt 696 -512)
+	(pt 784 -512)
+)
+(connector
+	(pt 696 -496)
+	(pt 768 -496)
+)
+(connector
+	(pt 696 -480)
+	(pt 760 -480)
+)
+(connector
+	(pt 696 -464)
+	(pt 752 -464)
+)
+(connector
+	(pt 696 -448)
+	(pt 744 -448)
+)
+(connector
+	(pt 696 -432)
+	(pt 736 -432)
+)
+(connector
+	(pt 696 -416)
+	(pt 728 -416)
+)
+(connector
+	(pt 1080 -1120)
+	(pt 1080 -1680)
+)
+(connector
+	(pt 776 -1680)
+	(pt 1080 -1680)
+)
+(connector
+	(pt 424 -1552)
+	(pt 424 -1648)
+)
+(connector
+	(pt 424 -1552)
+	(pt 1912 -1552)
+)
+(connector
+	(pt -1080 -1568)
+	(pt -1080 -1552)
+)
+(connector
+	(pt -1088 -1568)
+	(pt -1080 -1568)
+)
+(connector
+	(pt -720 -1552)
+	(pt -720 1008)
+)
+(connector
+	(pt -560 -1552)
+	(pt -560 648)
+)
+(connector
+	(pt -1080 -1552)
+	(pt -720 -1552)
+)
+(connector
+	(pt -720 -1552)
+	(pt -560 -1552)
+)
+(connector
+	(pt 64 -1552)
+	(pt 64 -1472)
+)
+(connector
+	(pt -560 -1552)
+	(pt 64 -1552)
+)
+(connector
+	(pt 64 -1552)
+	(pt 424 -1552)
+)
 (junction (pt 1080 1048))
 (junction (pt 1360 1048))
 (junction (pt 1664 1048))
@@ -5751,7 +5757,6 @@ refer to the applicable agreement for further details.
 (junction (pt -32 848))
 (junction (pt 344 -208))
 (junction (pt 328 -200))
-(junction (pt 408 -1280))
 (junction (pt 392 -1632))
 (junction (pt 160 872))
 (junction (pt 512 960))
@@ -5761,14 +5766,17 @@ refer to the applicable agreement for further details.
 (junction (pt -600 -1632))
 (junction (pt 312 -1312))
 (junction (pt 64 -1472))
-(junction (pt 64 -1544))
-(junction (pt -560 -1568))
 (junction (pt -248 1008))
 (junction (pt 480 1096))
 (junction (pt 816 1096))
 (junction (pt 1096 1096))
-(junction (pt -720 -1568))
 (junction (pt -512 -1632))
+(junction (pt 864 -1600))
+(junction (pt 400 -1280))
+(junction (pt 424 -1552))
+(junction (pt -720 -1552))
+(junction (pt -560 -1552))
+(junction (pt 64 -1552))
 (text "Bus de Direcciones Interno" (rect 1032 1064 1187 1083)(font "Intel Clear" (font_size 8)))
 (text "ParteBaja" (rect 568 656 625 675)(font "Intel Clear" (font_size 8)))
 (text "Reset" (rect -952 -1616 -919 -1597)(font "Intel Clear" (font_size 8)))

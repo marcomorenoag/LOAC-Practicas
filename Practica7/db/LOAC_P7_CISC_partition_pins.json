@@ -316,6 +316,54 @@
 					"strict" : false
 				},
 				{
+					"name" : "regInstr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regInstr[0]",
+					"strict" : false
+				},
+				{
 					"name" : "CLK",
 					"strict" : false
 				},
