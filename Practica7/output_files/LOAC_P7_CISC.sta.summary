@@ -3,111 +3,123 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -6.633
-TNS   : -475.131
+Slack : -36.021
+TNS   : -2658.025
 
-Type  : Slow 1200mV 85C Model Setup 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : -2.981
-TNS   : -2.981
+Type  : Slow 1200mV 85C Model Setup 'RESET'
+Slack : -35.907
+TNS   : -298.930
 
-Type  : Slow 1200mV 85C Model Setup 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : -1.022
-TNS   : -7.294
+Type  : Slow 1200mV 85C Model Hold 'RESET'
+Slack : -16.585
+TNS   : -161.973
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.340
+Slack : 1.152
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : 1.277
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Recovery 'CLK'
+Slack : -9.187
+TNS   : -189.405
 
-Type  : Slow 1200mV 85C Model Hold 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : 3.515
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Recovery 'RESET'
+Slack : -6.908
+TNS   : -85.000
+
+Type  : Slow 1200mV 85C Model Removal 'RESET'
+Slack : -7.862
+TNS   : -104.935
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : -0.044
+TNS   : -0.044
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RESET'
+Slack : -12.431
+TNS   : -2342.525
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -146.106
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : -1.403
-TNS   : -11.224
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : -1.403
-TNS   : -1.403
+TNS   : -115.240
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -5.994
-TNS   : -429.144
+Slack : -33.552
+TNS   : -2470.546
 
-Type  : Slow 1200mV 0C Model Setup 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : -2.625
-TNS   : -2.625
+Type  : Slow 1200mV 0C Model Setup 'RESET'
+Slack : -33.402
+TNS   : -278.114
 
-Type  : Slow 1200mV 0C Model Setup 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : -0.920
-TNS   : -6.607
+Type  : Slow 1200mV 0C Model Hold 'RESET'
+Slack : -15.513
+TNS   : -153.498
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.304
+Slack : 1.117
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : 1.239
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Recovery 'CLK'
+Slack : -8.417
+TNS   : -168.684
 
-Type  : Slow 1200mV 0C Model Hold 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : 3.188
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Recovery 'RESET'
+Slack : -6.470
+TNS   : -80.596
+
+Type  : Slow 1200mV 0C Model Removal 'RESET'
+Slack : -7.498
+TNS   : -99.310
+
+Type  : Slow 1200mV 0C Model Removal 'CLK'
+Slack : -0.088
+TNS   : -0.088
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RESET'
+Slack : -11.397
+TNS   : -2144.691
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -146.106
+TNS   : -115.240
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : -1.403
-TNS   : -11.224
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : -1.403
-TNS   : -1.403
+Type  : Fast 1200mV 0C Model Setup 'RESET'
+Slack : -15.215
+TNS   : -126.562
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -2.321
-TNS   : -151.863
+Slack : -15.001
+TNS   : -1108.431
 
-Type  : Fast 1200mV 0C Model Setup 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : -0.975
-TNS   : -0.975
-
-Type  : Fast 1200mV 0C Model Setup 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : -0.165
-TNS   : -0.882
+Type  : Fast 1200mV 0C Model Hold 'RESET'
+Slack : -6.803
+TNS   : -65.571
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.148
+Slack : 0.206
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : 0.772
+Type  : Fast 1200mV 0C Model Recovery 'CLK'
+Slack : -4.513
+TNS   : -93.937
+
+Type  : Fast 1200mV 0C Model Recovery 'RESET'
+Slack : -2.726
+TNS   : -30.674
+
+Type  : Fast 1200mV 0C Model Removal 'RESET'
+Slack : -3.237
+TNS   : -43.363
+
+Type  : Fast 1200mV 0C Model Removal 'CLK'
+Slack : 0.028
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : 1.682
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RESET'
+Slack : -5.454
+TNS   : -925.772
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -108.018
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'secuenciador:inst7|registro_sec:inst3|nCBD'
-Slack : -1.000
-TNS   : -8.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'secuenciador:inst7|registro_sec:inst3|CC'
-Slack : -1.000
-TNS   : -1.000
+TNS   : -86.906
 
 ------------------------------------------------------------

@@ -364,11 +364,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "RESET",
 					"strict" : false
 				},
 				{
-					"name" : "RESET",
+					"name" : "CLK",
 					"strict" : false
 				}
 			]

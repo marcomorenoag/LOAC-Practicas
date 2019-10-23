@@ -5677,14 +5677,6 @@ refer to the applicable agreement for further details.
 	(pt 1080 -1680)
 )
 (connector
-	(pt 424 -1552)
-	(pt 424 -1648)
-)
-(connector
-	(pt 424 -1552)
-	(pt 1912 -1552)
-)
-(connector
 	(pt -1080 -1568)
 	(pt -1080 -1552)
 )
@@ -5718,7 +5710,23 @@ refer to the applicable agreement for further details.
 )
 (connector
 	(pt 64 -1552)
-	(pt 424 -1552)
+	(pt 1912 -1552)
+)
+(connector
+	(pt 696 -1312)
+	(pt 704 -1312)
+)
+(connector
+	(pt 704 -1312)
+	(pt 704 -1520)
+)
+(connector
+	(pt 424 -1520)
+	(pt 704 -1520)
+)
+(connector
+	(pt 424 -1520)
+	(pt 424 -1648)
 )
 (junction (pt 1080 1048))
 (junction (pt 1360 1048))
@@ -5773,7 +5781,6 @@ refer to the applicable agreement for further details.
 (junction (pt -512 -1632))
 (junction (pt 864 -1600))
 (junction (pt 400 -1280))
-(junction (pt 424 -1552))
 (junction (pt -720 -1552))
 (junction (pt -560 -1552))
 (junction (pt 64 -1552))
