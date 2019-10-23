@@ -1,16 +1,16 @@
 |LOAC_P7_CISC
 Z <= contador:RegAux.Z
-RESET => secuenciador:inst7.RESET
+RESET => secuenciador:inst1.RESET
 RESET => registro_instruccion:inst11.RESET
-RESET => inst8.IN0
 RESET => contador_ID:RegIndX.RESET
 RESET => contador_ID:RegIndY.RESET
 RESET => contador:RegPila.RESET
 RESET => contador:RegPC.RESET
 RESET => registro_direccion:dir.RESET
 RESET => contador:RegAux.RESET
-CLK => secuenciador:inst7.CLK
+CLK => secuenciador:inst1.CLK
 CLK => contador_ID:RegIndX.clk
+CLK => inst8.ACLR
 CLK => acumulador:AcumuladorB.clk
 CLK => acumulador:AcumuladorA.clk
 CLK => contador_ID:RegIndY.clk
@@ -22,18 +22,18 @@ CLK => contador:RegAux.clk
 IRQn => ctrl_interrupciones:inst4.IRQn
 XIRQn => ctrl_interrupciones:inst4.XIRQn
 N <= contador:RegAux.N
-CurrentState[0] <= secuenciador:inst7.CurrentState[0]
-CurrentState[1] <= secuenciador:inst7.CurrentState[1]
-CurrentState[2] <= secuenciador:inst7.CurrentState[2]
-CurrentState[3] <= secuenciador:inst7.CurrentState[3]
-CurrentState[4] <= secuenciador:inst7.CurrentState[4]
-CurrentState[5] <= secuenciador:inst7.CurrentState[5]
-CurrentState[6] <= secuenciador:inst7.CurrentState[6]
-CurrentState[7] <= secuenciador:inst7.CurrentState[7]
-CurrentState[8] <= secuenciador:inst7.CurrentState[8]
-CurrentState[9] <= secuenciador:inst7.CurrentState[9]
-CurrentState[10] <= secuenciador:inst7.CurrentState[10]
-CurrentState[11] <= secuenciador:inst7.CurrentState[11]
+CurrentState[0] <= secuenciador:inst1.CurrentState[0]
+CurrentState[1] <= secuenciador:inst1.CurrentState[1]
+CurrentState[2] <= secuenciador:inst1.CurrentState[2]
+CurrentState[3] <= secuenciador:inst1.CurrentState[3]
+CurrentState[4] <= secuenciador:inst1.CurrentState[4]
+CurrentState[5] <= secuenciador:inst1.CurrentState[5]
+CurrentState[6] <= secuenciador:inst1.CurrentState[6]
+CurrentState[7] <= secuenciador:inst1.CurrentState[7]
+CurrentState[8] <= secuenciador:inst1.CurrentState[8]
+CurrentState[9] <= secuenciador:inst1.CurrentState[9]
+CurrentState[10] <= secuenciador:inst1.CurrentState[10]
+CurrentState[11] <= secuenciador:inst1.CurrentState[11]
 Debug_Q[0] <= upa:upa.Debug_Q[0]
 Debug_Q[1] <= upa:upa.Debug_Q[1]
 Debug_Q[2] <= upa:upa.Debug_Q[2]
@@ -274,7 +274,7 @@ RESET => data_out[14].ACLR
 RESET => data_out[15].ACLR
 
 
-|LOAC_P7_CISC|secuenciador:inst7
+|LOAC_P7_CISC|secuenciador:inst1
 MAP1 <= logica_seleccion:inst1.MAP1
 entrada[0] => MUX:inst6.data[0]
 entrada[1] => MUX:inst6.data[1]
@@ -373,6 +373,7 @@ CX <= registro_sec:inst3.CX
 CS <= registro_sec:inst3.CS
 nHB <= registro_sec:inst3.nHB
 ACCSEC <= registro_sec:inst3.ACCSEC
+RESETFF <= logica_seleccion:inst1.RESETFF
 AP[0] <= registro_sec:inst3.AP[0]
 AP[1] <= registro_sec:inst3.AP[1]
 AP[2] <= registro_sec:inst3.AP[2]
@@ -413,7 +414,7 @@ X[1] <= registro_sec:inst3.X[1]
 X[2] <= registro_sec:inst3.X[2]
 
 
-|LOAC_P7_CISC|secuenciador:inst7|logica_seleccion:inst1
+|LOAC_P7_CISC|secuenciador:inst1|logica_seleccion:inst1
 inst[0] => Equal0.IN3
 inst[0] => Equal1.IN3
 inst[0] => Equal2.IN3
@@ -429,10 +430,11 @@ CC => process_0.IN1
 SELECTOR <= SELECTOR$latch.DB_MAX_OUTPUT_PORT_TYPE
 PL <= PL$latch.DB_MAX_OUTPUT_PORT_TYPE
 MAP1 <= MAP1$latch.DB_MAX_OUTPUT_PORT_TYPE
+RESETFF <= <VCC>
 VECT <= VECT$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LOAC_P7_CISC|secuenciador:inst7|MUX:inst6
+|LOAC_P7_CISC|secuenciador:inst1|MUX:inst6
 data[0] => lpm_mux:$00001.data[0][0]
 data[1] => lpm_mux:$00001.data[1][0]
 data[2] => lpm_mux:$00001.data[2][0]
@@ -473,7 +475,7 @@ sel[4] => lpm_mux:$00001.sel[4]
 result <= lpm_mux:$00001.result[0]
 
 
-|LOAC_P7_CISC|secuenciador:inst7|MUX:inst6|lpm_mux:$00001
+|LOAC_P7_CISC|secuenciador:inst1|MUX:inst6|lpm_mux:$00001
 data[0][0] => mux_k7c:auto_generated.data[0]
 data[1][0] => mux_k7c:auto_generated.data[1]
 data[2][0] => mux_k7c:auto_generated.data[2]
@@ -517,7 +519,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_k7c:auto_generated.result[0]
 
 
-|LOAC_P7_CISC|secuenciador:inst7|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated
+|LOAC_P7_CISC|secuenciador:inst1|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated
 data[0] => _.IN0
 data[0] => _.IN0
 data[0] => _.IN0
@@ -735,7 +737,7 @@ sel[4] => result_node[0].IN0
 sel[4] => _.IN0
 
 
-|LOAC_P7_CISC|secuenciador:inst7|registro_sec:inst3
+|LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3
 CLK => liga[0]~reg0.CLK
 CLK => liga[1]~reg0.CLK
 CLK => liga[2]~reg0.CLK
@@ -1040,7 +1042,7 @@ nHB <= nHB.DB_MAX_OUTPUT_PORT_TYPE
 ACCSEC <= ACCSEC.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LOAC_P7_CISC|secuenciador:inst7|memory:inst
+|LOAC_P7_CISC|secuenciador:inst1|memory:inst
 dir[0] => Equal0.IN23
 dir[0] => Equal1.IN23
 dir[0] => Equal2.IN23
@@ -1377,7 +1379,7 @@ data[92] <= data.DB_MAX_OUTPUT_PORT_TYPE
 data[93] <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LOAC_P7_CISC|secuenciador:inst7|BUSMUX:inst5
+|LOAC_P7_CISC|secuenciador:inst1|BUSMUX:inst5
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -1417,7 +1419,7 @@ result[10] <= lpm_mux:$00000.result[10]
 result[11] <= lpm_mux:$00000.result[11]
 
 
-|LOAC_P7_CISC|secuenciador:inst7|BUSMUX:inst5|lpm_mux:$00000
+|LOAC_P7_CISC|secuenciador:inst1|BUSMUX:inst5|lpm_mux:$00000
 data[0][0] => mux_f7c:auto_generated.data[0]
 data[0][1] => mux_f7c:auto_generated.data[1]
 data[0][2] => mux_f7c:auto_generated.data[2]
@@ -1460,7 +1462,7 @@ result[10] <= mux_f7c:auto_generated.result[10]
 result[11] <= mux_f7c:auto_generated.result[11]
 
 
-|LOAC_P7_CISC|secuenciador:inst7|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated
+|LOAC_P7_CISC|secuenciador:inst1|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -1523,7 +1525,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|LOAC_P7_CISC|secuenciador:inst7|registro_MicroInst:inst2
+|LOAC_P7_CISC|secuenciador:inst1|registro_MicroInst:inst2
 RELOJ => valor_interno[0].CLK
 RELOJ => valor_interno[1].CLK
 RELOJ => valor_interno[2].CLK

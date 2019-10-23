@@ -9,6 +9,7 @@ entity logica_seleccion is
 			  SELECTOR : out STD_LOGIC;
 			  PL : out STD_LOGIC;
 			  MAP1 : Out STD_LOGIC;
+			  RESETFF : Out STD_LOGIC;
 			  VECT : out STD_LOGIC);
 end logica_seleccion;
 
@@ -41,11 +42,13 @@ begin
 			PL <= '0';
 			MAP1 <= '0';
 			VECT <= '1';
+			RESETFF <= '1';
 		elsif (inst = "11" and CC = '0') then 
 			SELECTOR <= '0';
 			PL <= '0';
 			MAP1 <= '0';
 			VECT <= '1';
+			RESETFF <= '1';
 		end if;
 	end process;
 end Behavioral;

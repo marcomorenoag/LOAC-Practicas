@@ -7,16 +7,16 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim
+Z0 dC:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim
 Ehard_block
-Z0 w1571792018
-Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
-Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z6 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
-Z7 dC:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim
+Z1 w1571798736
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+R0
 Z8 8LOAC_P7_CISC.vho
 Z9 FLOAC_P7_CISC.vho
 l0
@@ -25,21 +25,21 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1571792023
+Z11 !s110 1571798740
 !i10b 1
-Z12 !s108 1571792023.000000
+Z12 !s108 1571798739.000000
 Z13 !s90 -work|work|LOAC_P7_CISC.vho|
 Z14 !s107 LOAC_P7_CISC.vho|
 !i113 1
 Z15 o-work work
 Z16 tExplicit 1 CvgOpt 0
 Astructure
-R1
 R2
 R3
 R4
 R5
 R6
+R7
 DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
 l75
 L53
@@ -56,16 +56,16 @@ R14
 R15
 R16
 Eloac_p7_cisc
-R0
-R2
-R6
 R1
-Z17 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
 R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
 R4
 R5
+R6
 Z18 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
-R7
+R0
 R8
 R9
 l0
@@ -83,19 +83,19 @@ R14
 R15
 R16
 Astructure
-R2
-R6
-R1
-R17
 R3
+R7
+R2
+R17
 R4
 R5
+R6
 R18
 DEx4 work 12 loac_p7_cisc 0 22 BFk`2LKhYm=@3Xf>ob=RN3
 l755
 L257
-VVT^bkfMcjC6IgPFzPPcKN0
-!s100 kO9cA<ORgi[LY^=z^W=Wi3
+Vh7Y?0`38ZC9c@C3_67mB>1
+!s100 KjC1WnP5`YWW06a_l<dPn1
 R10
 32
 R11
@@ -107,29 +107,29 @@ R14
 R15
 R16
 Eloac_p7_cisc_vhd_vec_tst
-Z19 w1571792015
-R4
+Z19 w1571798733
 R5
-R7
-Z20 8Waveform9.vwf.vht
-Z21 FWaveform9.vwf.vht
+R6
+R0
+Z20 8Waveform11.vwf.vht
+Z21 FWaveform11.vwf.vht
 l0
 L31
 Vo=Oje7k1FI4E18DHY^6Tm0
 !s100 9^@]J1?SFV:JdS2NhKYO43
 R10
 32
-Z22 !s110 1571792024
+R11
 !i10b 1
-R12
-Z23 !s90 -work|work|Waveform9.vwf.vht|
-Z24 !s107 Waveform9.vwf.vht|
+Z22 !s108 1571798740.000000
+Z23 !s90 -work|work|Waveform11.vwf.vht|
+Z24 !s107 Waveform11.vwf.vht|
 !i113 1
 R15
 R16
 Aloac_p7_cisc_arch
-R4
 R5
+R6
 Z25 DEx4 work 24 loac_p7_cisc_vhd_vec_tst 0 22 o=Oje7k1FI4E18DHY^6Tm0
 l74
 L33
@@ -137,9 +137,9 @@ Z26 VaTLT?m4jj^RJ;nPJcZ`220
 Z27 !s100 >kl;[k]5>jC2`iNkP6n6M3
 R10
 32
-R22
+R11
 !i10b 1
-R12
+R22
 R23
 R24
 !i113 1

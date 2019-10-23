@@ -1,5 +1,5 @@
 EDA Netlist Writer report for LOAC_P7_CISC
-Tue Oct 22 19:53:38 2019
+Tue Oct 22 21:45:36 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 22 19:53:38 2019 ;
+; EDA Netlist Writer Status ; Successful - Tue Oct 22 21:45:36 2019 ;
 ; Revision Name             ; LOAC_P7_CISC                          ;
 ; Top-level Entity Name     ; LOAC_P7_CISC                          ;
 ; Family                    ; MAX 10                                ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+------------------------------------------------------------------------+
-; Simulation Generated Files                                             ;
-+------------------------------------------------------------------------+
-; Generated Files                                                        ;
-+------------------------------------------------------------------------+
-; C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim//LOAC_P7_CISC.vho ;
-+------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                  ;
++---------------------------------------------------------------------------------------------+
+; Generated Files                                                                             ;
++---------------------------------------------------------------------------------------------+
+; C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim//LOAC_P7_CISC.vho ;
++---------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,13 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 22 19:53:36 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/ LOAC_P7_CISC -c LOAC_P7_CISC
+    Info: Processing started: Tue Oct 22 21:45:34 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file LOAC_P7_CISC.vho in folder "C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file LOAC_P7_CISC.vho in folder "C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Tue Oct 22 19:53:38 2019
+    Info: Peak virtual memory: 4642 megabytes
+    Info: Processing ended: Tue Oct 22 21:45:36 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
