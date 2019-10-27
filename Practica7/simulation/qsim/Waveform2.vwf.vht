@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/21/2019 22:28:29"
+-- Generated on "10/26/2019 21:06:27"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          LOAC_P7_CISC
 -- 

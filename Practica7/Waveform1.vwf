@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/intelFPGA_lite/OyAC/Lab/Practica7/Waveform1.vwf" --testbench_file="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/Waveform1.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/intelFPGA_lite/OyAC/Lab/Practica7/Waveform1.vwf" --testbench_file="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/Waveform1.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform1.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform1.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform1.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform1.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work LOAC_P7_CISC.vho
@@ -20,7 +20,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -39,7 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -1447,6 +1445,136 @@ SIGNAL("N")
 	PARENT = "";
 }
 
+SIGNAL("regInstr")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 12;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("regInstr[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
+SIGNAL("regInstr[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "regInstr";
+}
+
 SIGNAL("RESET")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -2612,11 +2740,119 @@ TRANSITION_LIST("IRQn")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
 TRANSITION_LIST("N")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("regInstr[0]")
 {
 	NODE
 	{
@@ -2639,7 +2875,7 @@ TRANSITION_LIST("XIRQn")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -4021,10 +4257,140 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "RESET";
+	CHANNEL = "regInstr";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 137;
+	TREE_LEVEL = 0;
+	CHILDREN = 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 138;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 139;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 140;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 141;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 142;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 143;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 144;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 145;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 146;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 147;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 148;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "regInstr[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 149;
+	TREE_LEVEL = 1;
+	PARENT = 137;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "RESET";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 150;
 	TREE_LEVEL = 0;
 }
 
@@ -4033,7 +4399,7 @@ DISPLAY_LINE
 	CHANNEL = "XIRQn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 138;
+	TREE_INDEX = 151;
 	TREE_LEVEL = 0;
 }
 
@@ -4042,7 +4408,7 @@ DISPLAY_LINE
 	CHANNEL = "Z";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 139;
+	TREE_INDEX = 152;
 	TREE_LEVEL = 0;
 }
 

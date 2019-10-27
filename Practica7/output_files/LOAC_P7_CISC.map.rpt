@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LOAC_P7_CISC
-Tue Oct 22 21:42:53 2019
+Sat Oct 26 21:51:29 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -17,8 +17,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: secuenciador:inst1|MUX:inst6
- 13. Parameter Settings for User Entity Instance: secuenciador:inst1|BUSMUX:inst5
+ 12. Parameter Settings for User Entity Instance: secuenciador:inst10|MUX:inst6
+ 13. Parameter Settings for User Entity Instance: secuenciador:inst10|BUSMUX:inst5
  14. Post-Synthesis Netlist Statistics for Top Partition
  15. Elapsed Time Per Partition
  16. Analysis & Synthesis Messages
@@ -47,16 +47,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 22 21:42:52 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 26 21:51:28 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LOAC_P7_CISC                                ;
 ; Top-level Entity Name              ; LOAC_P7_CISC                                ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 281                                         ;
-;     Total combinational functions  ; 249                                         ;
-;     Dedicated logic registers      ; 97                                          ;
-; Total registers                    ; 97                                          ;
-; Total pins                         ; 142                                         ;
+; Total logic elements               ; 173                                         ;
+;     Total combinational functions  ; 127                                         ;
+;     Dedicated logic registers      ; 96                                          ;
+; Total registers                    ; 96                                          ;
+; Total pins                         ; 143                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -211,143 +211,142 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 281         ;
-;                                             ;             ;
-; Total combinational functions               ; 249         ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 122         ;
-;     -- 3 input functions                    ; 94          ;
-;     -- <=2 input functions                  ; 33          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 215         ;
-;     -- arithmetic mode                      ; 34          ;
-;                                             ;             ;
-; Total registers                             ; 97          ;
-;     -- Dedicated logic registers            ; 97          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 142         ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; RESET~input ;
-; Maximum fan-out                             ; 90          ;
-; Total fan-out                               ; 1394        ;
-; Average fan-out                             ; 2.21        ;
-+---------------------------------------------+-------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 173       ;
+;                                             ;           ;
+; Total combinational functions               ; 127       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 47        ;
+;     -- 3 input functions                    ; 44        ;
+;     -- <=2 input functions                  ; 36        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 103       ;
+;     -- arithmetic mode                      ; 24        ;
+;                                             ;           ;
+; Total registers                             ; 96        ;
+;     -- Dedicated logic registers            ; 96        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 143       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 80        ;
+; Total fan-out                               ; 930       ;
+; Average fan-out                             ; 1.83      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                   ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                 ; Entity Name          ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
-; |LOAC_P7_CISC                        ; 249 (1)             ; 97 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 142  ; 0            ; 0          ; |LOAC_P7_CISC                                                                       ; LOAC_P7_CISC         ; work         ;
-;    |RegEdos:flags|                   ; 0 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|RegEdos:flags                                                         ; RegEdos              ; work         ;
-;       |registro:tCC|                 ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|RegEdos:flags|registro:tCC                                            ; registro             ; work         ;
-;    |acumulador:AcumuladorA|          ; 18 (18)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorA                                                ; acumulador           ; work         ;
-;    |acumulador:AcumuladorB|          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorB                                                ; acumulador           ; work         ;
-;    |contador:RegAux|                 ; 12 (12)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegAux                                                       ; contador             ; work         ;
-;    |contador:RegPC|                  ; 34 (34)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegPC                                                        ; contador             ; work         ;
-;    |ram:inst|                        ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|ram:inst                                                              ; ram                  ; work         ;
-;    |registro_direccion:dir|          ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_direccion:dir                                                ; registro_direccion   ; work         ;
-;    |registro_instruccion:inst11|     ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_instruccion:inst11                                           ; registro_instruccion ; work         ;
-;    |secuenciador:inst1|              ; 104 (11)            ; 17 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1                                                    ; secuenciador         ; work         ;
-;       |busmux:inst5|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|busmux:inst5                                       ; busmux               ; work         ;
-;          |lpm_mux:$00000|            ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|busmux:inst5|lpm_mux:$00000                        ; lpm_mux              ; work         ;
-;             |mux_f7c:auto_generated| ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c              ; work         ;
-;       |logica_seleccion:inst1|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|logica_seleccion:inst1                             ; logica_seleccion     ; work         ;
-;       |memory:inst|                  ; 40 (40)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|memory:inst                                        ; memory               ; work         ;
-;       |mux:inst6|                    ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|mux:inst6                                          ; mux                  ; work         ;
-;          |lpm_mux:$00001|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|mux:inst6|lpm_mux:$00001                           ; lpm_mux              ; work         ;
-;             |mux_k7c:auto_generated| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated    ; mux_k7c              ; work         ;
-;       |registro_MicroInst:inst2|     ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|registro_MicroInst:inst2                           ; registro_MicroInst   ; work         ;
-;       |registro_sec:inst3|           ; 24 (24)             ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3                                 ; registro_sec         ; work         ;
-;    |upa:upa|                         ; 71 (71)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|upa:upa                                                               ; upa                  ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                  ; Entity Name          ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
+; |LOAC_P7_CISC                        ; 127 (1)             ; 96 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 143  ; 0            ; 0          ; |LOAC_P7_CISC                                                                        ; LOAC_P7_CISC         ; work         ;
+;    |acumulador:AcumuladorA|          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorA                                                 ; acumulador           ; work         ;
+;    |acumulador:AcumuladorB|          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorB                                                 ; acumulador           ; work         ;
+;    |bufferDataBus:inst5|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|bufferDataBus:inst5                                                    ; bufferDataBus        ; work         ;
+;    |contador:RegPC|                  ; 16 (16)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegPC                                                         ; contador             ; work         ;
+;    |contador_ID:RegIndX|             ; 3 (3)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador_ID:RegIndX                                                    ; contador_ID          ; work         ;
+;    |ram:inst|                        ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|ram:inst                                                               ; ram                  ; work         ;
+;    |registro_direccion:dir|          ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_direccion:dir                                                 ; registro_direccion   ; work         ;
+;    |registro_instruccion:inst11|     ; 1 (1)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_instruccion:inst11                                            ; registro_instruccion ; work         ;
+;    |secuenciador:inst10|             ; 82 (9)              ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10                                                    ; secuenciador         ; work         ;
+;       |busmux:inst5|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5                                       ; busmux               ; work         ;
+;          |lpm_mux:$00000|            ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5|lpm_mux:$00000                        ; lpm_mux              ; work         ;
+;             |mux_f7c:auto_generated| ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c              ; work         ;
+;       |logica_seleccion:inst1|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|logica_seleccion:inst1                             ; logica_seleccion     ; work         ;
+;       |memory:inst|                  ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|memory:inst                                        ; memory               ; work         ;
+;       |mux:inst6|                    ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6                                          ; mux                  ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6|lpm_mux:$00001                           ; lpm_mux              ; work         ;
+;             |mux_k7c:auto_generated| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated    ; mux_k7c              ; work         ;
+;       |registro_MicroInst:inst2|     ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|registro_MicroInst:inst2                           ; registro_MicroInst   ; work         ;
+;       |registro_sec:inst3|           ; 11 (11)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3                                 ; registro_sec         ; work         ;
+;    |upa:upa|                         ; 0 (0)               ; 14 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|upa:upa                                                                ; upa                  ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                   ;
-+---------------------------------------------------+------------------------------------------------------------------+
-; Register name                                     ; Reason for Removal                                               ;
-+---------------------------------------------------+------------------------------------------------------------------+
-; inst8                                             ; Stuck at GND due to stuck port clock                             ;
-; contador_ID:RegIndX|data_out[0..15]               ; Stuck at GND due to stuck port clock_enable                      ;
-; registro_instruccion:inst11|valor_interno[0..3]   ; Stuck at GND due to stuck port data_in                           ;
-; secuenciador:inst1|registro_sec:inst3|liga[1..11] ; Stuck at GND due to stuck port data_in                           ;
-; ctrl_interrupciones:inst4|IRQ_flag                ; Stuck at GND due to stuck port data_in                           ;
-; ctrl_interrupciones:inst4|XIRQ_flag               ; Stuck at GND due to stuck port data_in                           ;
-; RegEdos:flags|registro:tCS|valor_interno          ; Stuck at GND due to stuck port clock                             ;
-; RegEdos:flags|registro:tCX|valor_interno          ; Stuck at GND due to stuck port clock                             ;
-; RegEdos:flags|registro:tCI|valor_interno          ; Stuck at GND due to stuck port clock                             ;
-; ctrl_interrupciones:inst4|INT_flag                ; Stuck at GND due to stuck port clock_enable                      ;
-; contador_ID:RegIndY|data_out[2,6]                 ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[5]                      ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[0,10]                ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[7]                      ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[4]                   ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[11]                     ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[8]                   ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[3]                      ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[12,15]               ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[8]                      ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[1]                   ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[12]                     ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[3]                   ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[6]                      ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[5]                   ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[14]                     ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[7]                   ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[4]                      ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[9]                   ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[10]                     ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[11]                  ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[0,2]                    ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[13]                  ; Merged with contador:RegPila|data_out[15]                        ;
-; contador:RegPila|data_out[1,9,13]                 ; Merged with contador:RegPila|data_out[15]                        ;
-; contador_ID:RegIndY|data_out[14]                  ; Merged with contador:RegPila|data_out[15]                        ;
-; upa:upa|Q[7]                                      ; Merged with upa:upa|Banderas[2]                                  ;
-; upa:upa|Yupa_interno[7]                           ; Merged with upa:upa|Banderas[2]                                  ;
-; upa:upa|Yupa_interno[0]                           ; Merged with upa:upa|Q[0]                                         ;
-; upa:upa|Yupa_interno[4]                           ; Merged with upa:upa|Banderas[4]                                  ;
-; secuenciador:inst1|registro_sec:inst3|prueba[3]   ; Merged with secuenciador:inst1|registro_sec:inst3|instruccion[0] ;
-; secuenciador:inst1|registro_sec:inst3|prueba[1,2] ; Merged with secuenciador:inst1|registro_sec:inst3|prueba[0]      ;
-; secuenciador:inst1|registro_sec:inst3|vf          ; Merged with secuenciador:inst1|registro_sec:inst3|prueba[0]      ;
-; upa:upa|Banderas[3]                               ; Merged with upa:upa|Banderas[1]                                  ;
-; contador:RegPila|data_out[15]                     ; Stuck at GND due to stuck port data_in                           ;
-; upa:upa|contador[0..2]                            ; Stuck at GND due to stuck port clock_enable                      ;
-; RegEdos:flags|registro:tCH|valor_interno          ; Lost fanout                                                      ;
-; RegEdos:flags|registro:tCN|valor_interno          ; Lost fanout                                                      ;
-; RegEdos:flags|registro:tCZ|valor_interno          ; Lost fanout                                                      ;
-; upa:upa|Banderas[0]                               ; Lost fanout                                                      ;
-; RegEdos:flags|registro:tCV|valor_interno          ; Lost fanout                                                      ;
-; Total Number of Removed Registers = 87            ;                                                                  ;
-+---------------------------------------------------+------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                     ;
++----------------------------------------------------+-------------------------------------------------------------------+
+; Register name                                      ; Reason for Removal                                                ;
++----------------------------------------------------+-------------------------------------------------------------------+
+; inst8                                              ; Stuck at GND due to stuck port clock                              ;
+; contador_ID:RegIndY|data_out[0..15]                ; Stuck at GND due to stuck port clock_enable                       ;
+; registro_instruccion:inst11|valor_interno[0..3]    ; Stuck at GND due to stuck port data_in                            ;
+; secuenciador:inst10|registro_sec:inst3|liga[1..11] ; Stuck at GND due to stuck port data_in                            ;
+; ctrl_interrupciones:inst4|IRQ_flag                 ; Stuck at GND due to stuck port data_in                            ;
+; ctrl_interrupciones:inst4|XIRQ_flag                ; Stuck at GND due to stuck port data_in                            ;
+; RegEdos:flags|registro:tCS|valor_interno           ; Stuck at GND due to stuck port clock                              ;
+; RegEdos:flags|registro:tCX|valor_interno           ; Stuck at GND due to stuck port clock                              ;
+; RegEdos:flags|registro:tCH|valor_interno           ; Stuck at GND due to stuck port clock                              ;
+; upa:upa|Banderas[4]                                ; Lost fanout                                                       ;
+; RegEdos:flags|registro:tCI|valor_interno           ; Stuck at GND due to stuck port clock                              ;
+; RegEdos:flags|registro:tCC|valor_interno           ; Stuck at GND due to stuck port clock                              ;
+; upa:upa|Banderas[3]                                ; Lost fanout                                                       ;
+; upa:upa|contador[0..2]                             ; Stuck at GND due to stuck port clock_enable                       ;
+; ctrl_interrupciones:inst4|INT_flag                 ; Stuck at GND due to stuck port clock_enable                       ;
+; upa:upa|Banderas[1]                                ; Stuck at GND due to stuck port data_in                            ;
+; RegEdos:flags|registro:tCV|valor_interno           ; Stuck at GND due to stuck port data_in                            ;
+; upa:upa|Yupa_interno[7]                            ; Merged with upa:upa|Banderas[2]                                   ;
+; upa:upa|Q[7]                                       ; Merged with upa:upa|Banderas[2]                                   ;
+; upa:upa|Yupa_interno[0]                            ; Merged with upa:upa|Q[0]                                          ;
+; contador:RegAux|data_out[9,13]                     ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[5]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[5,15]                     ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[7]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[11]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[11]                      ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[7]                        ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[3]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[0,3]                      ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[8]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[14]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[12]                      ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[12]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[6]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[10]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[14]                      ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[8]                        ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[4]                       ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[6]                        ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[10]                      ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[4]                        ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[0,2]                     ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[2]                        ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegPila|data_out[1,9,13]                  ; Merged with contador:RegPila|data_out[15]                         ;
+; contador:RegAux|data_out[1]                        ; Merged with contador:RegPila|data_out[15]                         ;
+; secuenciador:inst10|registro_sec:inst3|prueba[3]   ; Merged with secuenciador:inst10|registro_sec:inst3|instruccion[0] ;
+; secuenciador:inst10|registro_sec:inst3|prueba[1,2] ; Merged with secuenciador:inst10|registro_sec:inst3|prueba[0]      ;
+; contador:RegPila|data_out[15]                      ; Stuck at GND due to stuck port data_in                            ;
+; RegEdos:flags|registro:tCN|valor_interno           ; Lost fanout                                                       ;
+; RegEdos:flags|registro:tCZ|valor_interno           ; Lost fanout                                                       ;
+; upa:upa|Banderas[0]                                ; Lost fanout                                                       ;
+; Total Number of Removed Registers = 88             ;                                                                   ;
++----------------------------------------------------+-------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                           ;
-+------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
-; Register name                                  ; Reason for Removal             ; Registers Removed due to This Register                                              ;
-+------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
-; secuenciador:inst1|registro_sec:inst3|liga[11] ; Stuck at GND                   ; RegEdos:flags|registro:tCS|valor_interno, RegEdos:flags|registro:tCX|valor_interno, ;
-;                                                ; due to stuck port data_in      ; RegEdos:flags|registro:tCI|valor_interno, upa:upa|contador[0], upa:upa|contador[1], ;
-;                                                ;                                ; upa:upa|contador[2], RegEdos:flags|registro:tCH|valor_interno                       ;
-; contador:RegPila|data_out[15]                  ; Stuck at GND                   ; RegEdos:flags|registro:tCZ|valor_interno, RegEdos:flags|registro:tCV|valor_interno  ;
-;                                                ; due to stuck port data_in      ;                                                                                     ;
-; inst8                                          ; Stuck at GND                   ; contador_ID:RegIndX|data_out[8]                                                     ;
-;                                                ; due to stuck port clock        ;                                                                                     ;
-; contador_ID:RegIndX|data_out[0]                ; Stuck at GND                   ; upa:upa|Banderas[0]                                                                 ;
-;                                                ; due to stuck port clock_enable ;                                                                                     ;
-+------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                  ;
++-------------------------------------------------+---------------------------+----------------------------------------------------------------+
+; Register name                                   ; Reason for Removal        ; Registers Removed due to This Register                         ;
++-------------------------------------------------+---------------------------+----------------------------------------------------------------+
+; RegEdos:flags|registro:tCC|valor_interno        ; Stuck at GND              ; upa:upa|Banderas[3], RegEdos:flags|registro:tCN|valor_interno, ;
+;                                                 ; due to stuck port clock   ; RegEdos:flags|registro:tCZ|valor_interno                       ;
+; RegEdos:flags|registro:tCH|valor_interno        ; Stuck at GND              ; upa:upa|Banderas[4], upa:upa|Banderas[1]                       ;
+;                                                 ; due to stuck port clock   ;                                                                ;
+; inst8                                           ; Stuck at GND              ; upa:upa|Banderas[0]                                            ;
+;                                                 ; due to stuck port clock   ;                                                                ;
+; secuenciador:inst10|registro_sec:inst3|liga[11] ; Stuck at GND              ; RegEdos:flags|registro:tCV|valor_interno                       ;
+;                                                 ; due to stuck port data_in ;                                                                ;
++-------------------------------------------------+---------------------------+----------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -355,55 +354,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 97    ;
+; Total registers                              ; 96    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 65    ;
+; Number of registers using Asynchronous Clear ; 66    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 63    ;
+; Number of registers using Clock Enable       ; 47    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3|prueba[0] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador:RegAux|data_out[2]                     ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|acumulador:AcumuladorA|data_out[7]              ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|acumulador:AcumuladorB|data_out[7]              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador:RegPC|data_out[10]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador:RegPC|data_out[2]                      ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |LOAC_P7_CISC|contador:RegAux|data_out[15]                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3|nCRI      ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3|nWA       ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3|B7        ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3|UPA[0]    ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3|CC        ;
-; 20:1               ; 2 bits    ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst1|registro_sec:inst3|PC[0]     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador_ID:RegIndX|data_out[7]              ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |LOAC_P7_CISC|contador_ID:RegIndX|data_out[8]              ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3|nWA   ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 2 LEs                ; 8 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3|B7    ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 2 LEs                ; 10 LEs                 ; No         ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3|nWB   ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3|PC[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: secuenciador:inst1|MUX:inst6 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; WIDTH          ; 32    ; Untyped                                          ;
-; WIDTHS         ; 5     ; Untyped                                          ;
-+----------------+-------+--------------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: secuenciador:inst10|MUX:inst6 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; WIDTH          ; 32    ; Untyped                                           ;
+; WIDTHS         ; 5     ; Untyped                                           ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: secuenciador:inst1|BUSMUX:inst5 ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 12    ; Untyped                                             ;
-+----------------+-------+-----------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: secuenciador:inst10|BUSMUX:inst5 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 12    ; Untyped                                              ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -412,26 +404,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 142                         ;
-; cycloneiii_ff         ; 97                          ;
-;     CLR               ; 33                          ;
-;     ENA               ; 31                          ;
-;     ENA CLR           ; 32                          ;
-;     plain             ; 1                           ;
+; boundary_port         ; 143                         ;
+; cycloneiii_ff         ; 96                          ;
+;     CLR               ; 35                          ;
+;     ENA               ; 16                          ;
+;     ENA CLR           ; 31                          ;
+;     plain             ; 14                          ;
 ; cycloneiii_io_obuf    ; 12                          ;
-; cycloneiii_lcell_comb ; 251                         ;
-;     arith             ; 34                          ;
-;         2 data inputs ; 24                          ;
-;         3 data inputs ; 10                          ;
-;     normal            ; 217                         ;
+; cycloneiii_lcell_comb ; 129                         ;
+;     arith             ; 24                          ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 2                           ;
+;     normal            ; 105                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 84                          ;
-;         4 data inputs ; 122                         ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 42                          ;
+;         4 data inputs ; 47                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 13.00                       ;
-; Average LUT depth     ; 8.16                        ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 4.81                        ;
 +-----------------------+-----------------------------+
 
 
@@ -440,7 +432,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -450,7 +442,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 22 21:42:18 2019
+    Info: Processing started: Sat Oct 26 21:51:02 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -532,11 +524,11 @@ Warning (275080): Converted elements in bus name "Yupa2" using legacy naming rul
 Warning (275011): Block or symbol "contador_ID" of instance "RegIndY" overlaps another block or symbol
 Warning (275011): Block or symbol "contador" of instance "RegAux" overlaps another block or symbol
 Warning (275011): Block or symbol "contador" of instance "RegPila" overlaps another block or symbol
-Warning (275011): Block or symbol "secuenciador" of instance "inst1" overlaps another block or symbol
+Warning (275011): Block or symbol "secuenciador" of instance "inst10" overlaps another block or symbol
 Warning (275013): Port "CLK" of type SRFF and instance "inst8" is missing source signal
 Info (12128): Elaborating entity "contador" for hierarchy "contador:RegAux"
-Info (12128): Elaborating entity "secuenciador" for hierarchy "secuenciador:inst1"
-Info (12128): Elaborating entity "logica_seleccion" for hierarchy "secuenciador:inst1|logica_seleccion:inst1"
+Info (12128): Elaborating entity "secuenciador" for hierarchy "secuenciador:inst10"
+Info (12128): Elaborating entity "logica_seleccion" for hierarchy "secuenciador:inst10|logica_seleccion:inst1"
 Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(18): inferring latch(es) for signal or variable "SELECTOR", which holds its previous value in one or more paths through the process File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
 Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(18): inferring latch(es) for signal or variable "PL", which holds its previous value in one or more paths through the process File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
 Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(18): inferring latch(es) for signal or variable "MAP1", which holds its previous value in one or more paths through the process File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
@@ -547,28 +539,28 @@ Info (10041): Inferred latch for "VECT" at logica_seleccion.vhd(18) File: C:/Use
 Info (10041): Inferred latch for "MAP1" at logica_seleccion.vhd(18) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
 Info (10041): Inferred latch for "PL" at logica_seleccion.vhd(18) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
 Info (10041): Inferred latch for "SELECTOR" at logica_seleccion.vhd(18) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
-Info (12128): Elaborating entity "MUX" for hierarchy "secuenciador:inst1|MUX:inst6"
-Info (12130): Elaborated megafunction instantiation "secuenciador:inst1|MUX:inst6"
-Info (12133): Instantiated megafunction "secuenciador:inst1|MUX:inst6" with the following parameter:
+Info (12128): Elaborating entity "MUX" for hierarchy "secuenciador:inst10|MUX:inst6"
+Info (12130): Elaborated megafunction instantiation "secuenciador:inst10|MUX:inst6"
+Info (12133): Instantiated megafunction "secuenciador:inst10|MUX:inst6" with the following parameter:
     Info (12134): Parameter "WIDTH" = "32"
     Info (12134): Parameter "WIDTHS" = "5"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst1|MUX:inst6|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "secuenciador:inst1|MUX:inst6|lpm_mux:$00001", which is child of megafunction instantiation "secuenciador:inst1|MUX:inst6" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst10|MUX:inst6|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "secuenciador:inst10|MUX:inst6|lpm_mux:$00001", which is child of megafunction instantiation "secuenciador:inst10|MUX:inst6" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_k7c.tdf
     Info (12023): Found entity 1: mux_k7c File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_k7c.tdf Line: 22
-Info (12128): Elaborating entity "mux_k7c" for hierarchy "secuenciador:inst1|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "registro_sec" for hierarchy "secuenciador:inst1|registro_sec:inst3"
-Info (12128): Elaborating entity "memory" for hierarchy "secuenciador:inst1|memory:inst"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "secuenciador:inst1|BUSMUX:inst5"
-Info (12130): Elaborated megafunction instantiation "secuenciador:inst1|BUSMUX:inst5"
-Info (12133): Instantiated megafunction "secuenciador:inst1|BUSMUX:inst5" with the following parameter:
+Info (12128): Elaborating entity "mux_k7c" for hierarchy "secuenciador:inst10|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "registro_sec" for hierarchy "secuenciador:inst10|registro_sec:inst3"
+Info (12128): Elaborating entity "memory" for hierarchy "secuenciador:inst10|memory:inst"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "secuenciador:inst10|BUSMUX:inst5"
+Info (12130): Elaborated megafunction instantiation "secuenciador:inst10|BUSMUX:inst5"
+Info (12133): Instantiated megafunction "secuenciador:inst10|BUSMUX:inst5" with the following parameter:
     Info (12134): Parameter "WIDTH" = "12"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst1|BUSMUX:inst5|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "secuenciador:inst1|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "secuenciador:inst1|BUSMUX:inst5" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst10|BUSMUX:inst5|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "secuenciador:inst10|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "secuenciador:inst10|BUSMUX:inst5" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_f7c.tdf
     Info (12023): Found entity 1: mux_f7c File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 22
-Info (12128): Elaborating entity "mux_f7c" for hierarchy "secuenciador:inst1|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "registro_MicroInst" for hierarchy "secuenciador:inst1|registro_MicroInst:inst2"
+Info (12128): Elaborating entity "mux_f7c" for hierarchy "secuenciador:inst10|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "registro_MicroInst" for hierarchy "secuenciador:inst10|registro_MicroInst:inst2"
 Info (12128): Elaborating entity "registro_instruccion" for hierarchy "registro_instruccion:inst11"
 Info (12128): Elaborating entity "contador_ID" for hierarchy "contador_ID:RegIndX"
 Info (12128): Elaborating entity "acumulador" for hierarchy "acumulador:AcumuladorB"
@@ -2579,30 +2571,6 @@ Info (10041): Inferred latch for "mem[11][4]" at ram.vhd(22) File: C:/Users/Alej
 Info (10041): Inferred latch for "mem[11][5]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Info (10041): Inferred latch for "mem[11][6]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Info (10041): Inferred latch for "mem[11][7]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[10][0]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[10][1]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[10][2]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[10][3]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[10][4]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[10][5]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[10][6]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[10][7]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[9][0]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[9][1]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[9][2]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[9][3]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[9][4]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[9][5]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[9][6]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[9][7]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[8][0]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[8][1]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[8][2]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[8][3]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[8][4]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[8][5]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[8][6]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Info (10041): Inferred latch for "mem[8][7]" at ram.vhd(22) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Info (12128): Elaborating entity "registro_direccion" for hierarchy "registro_direccion:dir"
 Info (12128): Elaborating entity "ctrl_interrupciones" for hierarchy "ctrl_interrupciones:inst4"
 Info (12128): Elaborating entity "concatenador_entradas" for hierarchy "concatenador_entradas:inst2"
@@ -4320,28 +4288,22 @@ Warning (14025): LATCH primitive "ram:inst|mem[11][4]" is permanently disabled F
 Warning (14025): LATCH primitive "ram:inst|mem[11][5]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Warning (14025): LATCH primitive "ram:inst|mem[11][6]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Warning (14025): LATCH primitive "ram:inst|mem[11][7]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[10][1]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[10][2]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[10][3]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[10][4]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[10][5]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[10][6]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[10][7]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[9][1]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[9][2]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[9][3]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[9][4]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[9][5]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[9][6]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[9][7]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[8][1]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[8][2]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[8][3]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[8][4]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[8][5]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[8][6]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[8][7]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Warning (14025): LATCH primitive "ram:inst|mem[255][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
+Warning (14026): LATCH primitive "upa:upa|S[1]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|S[2]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|S[3]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|S[4]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|S[5]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|S[6]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|S[7]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|R[0]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|R[1]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|R[2]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|R[3]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|R[4]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|R[5]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|R[6]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:upa|R[7]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
 Warning (14025): LATCH primitive "ram:inst|mem[255][1]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Warning (14025): LATCH primitive "ram:inst|mem[254][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Warning (14025): LATCH primitive "ram:inst|mem[253][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
@@ -4587,9 +4549,6 @@ Warning (14025): LATCH primitive "ram:inst|mem[14][0]" is permanently disabled F
 Warning (14025): LATCH primitive "ram:inst|mem[13][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Warning (14025): LATCH primitive "ram:inst|mem[12][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Warning (14025): LATCH primitive "ram:inst|mem[11][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[10][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[9][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
-Warning (14025): LATCH primitive "ram:inst|mem[8][0]" is permanently disabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 22
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node feeding "RegEdos:flags|mux3:Zero|output" into a selector File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/mux3.vhd Line: 16
     Warning (13048): Converted tri-state node feeding "RegEdos:flags|mux3:Negative|output" into a selector File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/mux3.vhd Line: 16
@@ -4607,202 +4566,221 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "contador:RegPila|R0~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 18
     Warning (13049): Converted tri-state buffer "contador_ID:RegIndY|R15~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 16
     Warning (13049): Converted tri-state buffer "contador_ID:RegIndY|R0~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "contador_ID:RegIndX|R15~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 16
-    Warning (13049): Converted tri-state buffer "contador_ID:RegIndX|R0~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 17
-Warning (14026): LATCH primitive "upa:upa|S[0]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[1]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[2]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[3]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[4]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[5]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[6]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[7]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[0]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[1]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[2]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[3]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[4]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[5]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[6]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[7]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[0]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[1]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[2]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[3]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[4]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[5]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[6]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|S[7]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[0]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[1]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[2]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[3]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[4]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[5]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[6]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
-Warning (14026): LATCH primitive "upa:upa|R[7]" is permanently enabled File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 53
+    Warning (13049): Converted tri-state buffer "acumulador:AcumuladorA|C[0]~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "acumulador:AcumuladorA|C[1]~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "acumulador:AcumuladorA|C[2]~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "acumulador:AcumuladorA|C[3]~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "acumulador:AcumuladorA|C[4]~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "acumulador:AcumuladorA|C[5]~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "acumulador:AcumuladorA|C[6]~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "acumulador:AcumuladorA|C[7]~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "contador:RegAux|R15~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 17
+    Warning (13049): Converted tri-state buffer "contador:RegAux|R0~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 18
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]~1 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]~2 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]~3 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]~4 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]~5 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]~6 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]~7 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]~8 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]~9 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]~10 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]~11 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]~1 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]~2 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]~3 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]~4 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]~5 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]~6 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]~7 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]~8 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]~9 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]~10 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]~11 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer secuenciador:inst1|logica_seleccion:inst1|SELECTOR~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 9
-    Warning (19017): Found clock multiplexer secuenciador:inst1|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|result_node[0]~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_k7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst10|logica_seleccion:inst1|SELECTOR~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 9
+    Warning (19017): Found clock multiplexer secuenciador:inst10|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|result_node[0]~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_k7c.tdf Line: 29
 Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[7]" to the node "bufferDataBus:inst5|PortR[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[7]" to the node "bufferDataBus:inst5|PortR[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[7]" to the node "bufferDataBus:inst5|PortR[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[6]" to the node "bufferDataBus:inst5|PortR[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[6]" to the node "bufferDataBus:inst5|PortR[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[6]" to the node "bufferDataBus:inst5|PortR[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[5]" to the node "bufferDataBus:inst5|PortR[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[5]" to the node "bufferDataBus:inst5|PortR[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[5]" to the node "bufferDataBus:inst5|PortR[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[4]" to the node "bufferDataBus:inst5|PortR[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[4]" to the node "bufferDataBus:inst5|PortR[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[4]" to the node "bufferDataBus:inst5|PortR[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[3]" to the node "bufferDataBus:inst5|PortR[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[3]" to the node "bufferDataBus:inst5|PortR[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[3]" to the node "bufferDataBus:inst5|PortR[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[2]" to the node "bufferDataBus:inst5|PortR[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[2]" to the node "bufferDataBus:inst5|PortR[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[2]" to the node "bufferDataBus:inst5|PortR[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[1]" to the node "bufferDataBus:inst5|PortR[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[1]" to the node "bufferDataBus:inst5|PortR[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[1]" to the node "bufferDataBus:inst5|PortR[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[0]" to the node "bufferDataBus:inst5|PortR[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[0]" to the node "bufferDataBus:inst5|PortR[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[0]" to the node "bufferDataBus:inst5|PortR[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|A[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|A[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:inst5|PortR[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|A[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|A[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:inst5|PortR[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|A[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|A[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:inst5|PortR[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCH|SALIDA" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|A[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|A[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:inst5|PortR[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|A[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|A[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:inst5|PortR[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCN|SALIDA" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|A[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|A[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:inst5|PortR[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCZ|SALIDA" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|A[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|A[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:inst5|PortR[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCV|SALIDA" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|A[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|A[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:inst5|PortR[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCC|SALIDA" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[7]" to the node "contador:RegAux|data_out[15]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[7]" to the node "contador:RegAux|data_out[15]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[7]" to the node "contador:RegAux|data_out[15]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[6]" to the node "contador:RegAux|data_out[14]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[6]" to the node "contador:RegAux|data_out[14]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[6]" to the node "contador:RegAux|data_out[14]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[5]" to the node "contador:RegAux|data_out[13]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[5]" to the node "contador:RegAux|data_out[13]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[5]" to the node "contador:RegAux|data_out[13]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[4]" to the node "contador:RegAux|data_out[12]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[4]" to the node "contador:RegAux|data_out[12]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[4]" to the node "contador:RegAux|data_out[12]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[3]" to the node "contador:RegAux|data_out[11]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[3]" to the node "contador:RegAux|data_out[11]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[3]" to the node "contador:RegAux|data_out[11]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[2]" to the node "contador:RegAux|data_out[10]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[2]" to the node "contador:RegAux|data_out[10]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[2]" to the node "contador:RegAux|data_out[10]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[1]" to the node "contador:RegAux|data_out[9]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[1]" to the node "contador:RegAux|data_out[9]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[1]" to the node "contador:RegAux|data_out[9]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[0]" to the node "contador:RegAux|data_out[8]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[0]" to the node "contador:RegAux|data_out[8]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[0]" to the node "contador:RegAux|data_out[8]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa2[7]" to the node "bufferDataBus:inst5|PortR[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[7]" to the node "bufferDataBus:inst5|PortR[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[7]" to the node "bufferDataBus:inst5|PortR[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[7]" to the node "bufferDataBus:inst5|PortR[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[7]" to the node "bufferDataBus:inst5|PortR[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa2[6]" to the node "bufferDataBus:inst5|PortR[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[6]" to the node "bufferDataBus:inst5|PortR[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[6]" to the node "bufferDataBus:inst5|PortR[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[6]" to the node "bufferDataBus:inst5|PortR[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[6]" to the node "bufferDataBus:inst5|PortR[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa2[5]" to the node "bufferDataBus:inst5|PortR[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[5]" to the node "bufferDataBus:inst5|PortR[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[5]" to the node "bufferDataBus:inst5|PortR[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[5]" to the node "bufferDataBus:inst5|PortR[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[5]" to the node "bufferDataBus:inst5|PortR[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa2[4]" to the node "bufferDataBus:inst5|PortR[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[4]" to the node "bufferDataBus:inst5|PortR[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[4]" to the node "bufferDataBus:inst5|PortR[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[4]" to the node "bufferDataBus:inst5|PortR[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[4]" to the node "bufferDataBus:inst5|PortR[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa2[3]" to the node "bufferDataBus:inst5|PortR[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[3]" to the node "bufferDataBus:inst5|PortR[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[3]" to the node "bufferDataBus:inst5|PortR[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[3]" to the node "bufferDataBus:inst5|PortR[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[3]" to the node "bufferDataBus:inst5|PortR[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa2[2]" to the node "bufferDataBus:inst5|PortR[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[2]" to the node "bufferDataBus:inst5|PortR[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[2]" to the node "bufferDataBus:inst5|PortR[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[2]" to the node "bufferDataBus:inst5|PortR[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[2]" to the node "bufferDataBus:inst5|PortR[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa2[1]" to the node "bufferDataBus:inst5|PortR[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[1]" to the node "bufferDataBus:inst5|PortR[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[1]" to the node "bufferDataBus:inst5|PortR[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[1]" to the node "bufferDataBus:inst5|PortR[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[1]" to the node "bufferDataBus:inst5|PortR[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa2[0]" to the node "bufferDataBus:inst5|PortR[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|C[0]" to the node "bufferDataBus:inst5|PortR[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorB|B[0]" to the node "bufferDataBus:inst5|PortR[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "acumulador:AcumuladorA|B[0]" to the node "bufferDataBus:inst5|PortR[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[0]" to the node "bufferDataBus:inst5|PortR[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCS|SALIDA" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|D[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|D[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCX|SALIDA" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|D[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|D[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[6]" to the node "bufferDataBus:inst5|PortL[6]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCH|SALIDA" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|D[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|D[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[5]" to the node "bufferDataBus:inst5|PortL[5]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCI|SALIDA" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|D[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|D[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[4]" to the node "bufferDataBus:inst5|PortL[4]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|D[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|D[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[3]" to the node "bufferDataBus:inst5|PortL[3]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|D[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|D[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[2]" to the node "bufferDataBus:inst5|PortL[2]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCV|SALIDA" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|D[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|D[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[1]" to the node "bufferDataBus:inst5|PortL[1]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCC|SALIDA" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|D[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|D[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[0]" to the node "bufferDataBus:inst5|PortL[0]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 12
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "contador:RegAux|R15" to the node "secuenciador:inst1|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|result_node[0]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 17
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorB|C[7]" to the node "upa:upa|Mux35" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorA|C[7]" to the node "upa:upa|Add0" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorB|C[6]" to the node "upa:upa|Mux34" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorA|C[6]" to the node "upa:upa|Add0" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorB|C[5]" to the node "upa:upa|Mux33" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorA|C[5]" to the node "upa:upa|Add0" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorB|C[4]" to the node "upa:upa|Mux32" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorA|C[4]" to the node "upa:upa|Add0" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorB|C[3]" to the node "upa:upa|Mux31" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorA|C[3]" to the node "upa:upa|Add0" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorB|C[2]" to the node "upa:upa|Mux30" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorA|C[2]" to the node "upa:upa|Add0" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorB|C[1]" to the node "upa:upa|Mux29" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorA|C[1]" to the node "upa:upa|Add0" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorB|C[0]" to the node "upa:upa|Mux27" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
-    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:AcumuladorA|C[0]" to the node "upa:upa|Add0" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/acumulador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[7]" to the node "contador_ID:RegIndX|data_out[15]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|C[7]" to the node "contador_ID:RegIndX|data_out[15]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[7]" to the node "contador_ID:RegIndX|data_out[15]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[6]" to the node "contador_ID:RegIndX|data_out[14]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|C[6]" to the node "contador_ID:RegIndX|data_out[14]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[6]" to the node "contador_ID:RegIndX|data_out[14]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[5]" to the node "contador_ID:RegIndX|data_out[13]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|C[5]" to the node "contador_ID:RegIndX|data_out[13]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[5]" to the node "contador_ID:RegIndX|data_out[13]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[4]" to the node "contador_ID:RegIndX|data_out[12]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|C[4]" to the node "contador_ID:RegIndX|data_out[12]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[4]" to the node "contador_ID:RegIndX|data_out[12]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[3]" to the node "contador_ID:RegIndX|data_out[11]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|C[3]" to the node "contador_ID:RegIndX|data_out[11]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[3]" to the node "contador_ID:RegIndX|data_out[11]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[2]" to the node "contador_ID:RegIndX|data_out[10]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|C[2]" to the node "contador_ID:RegIndX|data_out[10]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[2]" to the node "contador_ID:RegIndX|data_out[10]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[1]" to the node "contador_ID:RegIndX|data_out[9]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|C[1]" to the node "contador_ID:RegIndX|data_out[9]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[1]" to the node "contador_ID:RegIndX|data_out[9]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndY|C[0]" to the node "contador_ID:RegIndX|data_out[8]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegAux|C[0]" to the node "contador_ID:RegIndX|data_out[8]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[0]" to the node "contador_ID:RegIndX|data_out[8]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 11
 Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s) are removed
-    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst1|inst8[3]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]" into a wire
-    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst1|inst8[2]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]" into a wire
-    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst1|inst8[1]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]" into a wire
+    Warning (13051): Converted the fanout from the open-drain buffer "ram:inst|data[5]" to the node "registro_instruccion:inst11|valor_interno[9]" into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[7]" to the node "contador:RegAux|data_out[15]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[6]" to the node "contador:RegAux|data_out[14]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[5]" to the node "contador:RegAux|data_out[13]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[4]" to the node "contador:RegAux|data_out[12]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[3]" to the node "contador:RegAux|data_out[11]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[2]" to the node "contador:RegAux|data_out[10]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[1]" to the node "contador:RegAux|data_out[9]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[0]" to the node "contador:RegAux|data_out[8]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 26
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[7]" to the node "registro_instruccion:inst11|valor_interno[11]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[6]" to the node "registro_instruccion:inst11|valor_interno[10]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[5]" to the node "registro_instruccion:inst11|valor_interno[9]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[4]" to the node "registro_instruccion:inst11|valor_interno[8]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[3]" to the node "registro_instruccion:inst11|valor_interno[7]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[2]" to the node "registro_instruccion:inst11|valor_interno[6]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[1]" to the node "registro_instruccion:inst11|valor_interno[5]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[0]" to the node "registro_instruccion:inst11|valor_interno[4]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst1|inst8[11]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst1|inst8[10]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst1|inst8[9]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst1|inst8[8]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst1|inst8[7]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst1|inst8[6]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst1|inst8[5]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst1|inst8[4]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst12[0]" to the node "secuenciador:inst1|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "contador_ID:RegIndX|R0" to the node "secuenciador:inst10|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|result_node[0]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[7]" to the node "contador_ID:RegIndX|data_out[15]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[6]" to the node "contador_ID:RegIndX|data_out[14]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[5]" to the node "contador_ID:RegIndX|data_out[13]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[4]" to the node "contador_ID:RegIndX|data_out[12]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[3]" to the node "contador_ID:RegIndX|data_out[11]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[2]" to the node "contador_ID:RegIndX|data_out[10]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[1]" to the node "contador_ID:RegIndX|data_out[9]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[0]" to the node "contador_ID:RegIndX|data_out[8]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[7]" to the node "registro_instruccion:inst11|valor_interno[11]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[6]" to the node "registro_instruccion:inst11|valor_interno[10]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[4]" to the node "registro_instruccion:inst11|valor_interno[8]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[3]" to the node "registro_instruccion:inst11|valor_interno[7]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[2]" to the node "registro_instruccion:inst11|valor_interno[6]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[1]" to the node "registro_instruccion:inst11|valor_interno[5]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[0]" to the node "registro_instruccion:inst11|valor_interno[4]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[7]" to the node "bufferDataBus:inst5|PortL[7]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[6]" to the node "bufferDataBus:inst5|PortL[6]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[4]" to the node "bufferDataBus:inst5|PortL[4]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[3]" to the node "bufferDataBus:inst5|PortL[3]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[2]" to the node "bufferDataBus:inst5|PortL[2]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[1]" to the node "bufferDataBus:inst5|PortL[1]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+    Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[0]" to the node "bufferDataBus:inst5|PortL[0]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
+Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s) are removed
+    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst10|inst8[3]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]" into a wire
+    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst10|inst8[2]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]" into a wire
+    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst10|inst8[1]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]" into a wire
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[11]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[10]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[9]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[8]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[7]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[6]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[5]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[4]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst12[0]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]" into an OR gate
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Z" is stuck at VCC
+    Warning (13410): Pin "N" is stuck at GND
+    Warning (13410): Pin "SalidaRS" is stuck at GND
     Warning (13410): Pin "DebugAP[15]" is stuck at GND
     Warning (13410): Pin "DebugAP[14]" is stuck at GND
     Warning (13410): Pin "DebugAP[13]" is stuck at GND
@@ -4819,22 +4797,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DebugAP[2]" is stuck at GND
     Warning (13410): Pin "DebugAP[1]" is stuck at GND
     Warning (13410): Pin "DebugAP[0]" is stuck at GND
-    Warning (13410): Pin "DebugIX[15]" is stuck at GND
-    Warning (13410): Pin "DebugIX[14]" is stuck at GND
-    Warning (13410): Pin "DebugIX[13]" is stuck at GND
-    Warning (13410): Pin "DebugIX[12]" is stuck at GND
-    Warning (13410): Pin "DebugIX[11]" is stuck at GND
-    Warning (13410): Pin "DebugIX[10]" is stuck at GND
-    Warning (13410): Pin "DebugIX[9]" is stuck at GND
-    Warning (13410): Pin "DebugIX[8]" is stuck at GND
-    Warning (13410): Pin "DebugIX[7]" is stuck at GND
-    Warning (13410): Pin "DebugIX[6]" is stuck at GND
-    Warning (13410): Pin "DebugIX[5]" is stuck at GND
-    Warning (13410): Pin "DebugIX[4]" is stuck at GND
-    Warning (13410): Pin "DebugIX[3]" is stuck at GND
-    Warning (13410): Pin "DebugIX[2]" is stuck at GND
-    Warning (13410): Pin "DebugIX[1]" is stuck at GND
-    Warning (13410): Pin "DebugIX[0]" is stuck at GND
     Warning (13410): Pin "DebugIY[15]" is stuck at GND
     Warning (13410): Pin "DebugIY[14]" is stuck at GND
     Warning (13410): Pin "DebugIY[13]" is stuck at GND
@@ -4851,6 +4813,22 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DebugIY[2]" is stuck at GND
     Warning (13410): Pin "DebugIY[1]" is stuck at GND
     Warning (13410): Pin "DebugIY[0]" is stuck at GND
+    Warning (13410): Pin "DebugRA[15]" is stuck at GND
+    Warning (13410): Pin "DebugRA[14]" is stuck at GND
+    Warning (13410): Pin "DebugRA[13]" is stuck at GND
+    Warning (13410): Pin "DebugRA[12]" is stuck at GND
+    Warning (13410): Pin "DebugRA[11]" is stuck at GND
+    Warning (13410): Pin "DebugRA[10]" is stuck at GND
+    Warning (13410): Pin "DebugRA[9]" is stuck at GND
+    Warning (13410): Pin "DebugRA[8]" is stuck at GND
+    Warning (13410): Pin "DebugRA[7]" is stuck at GND
+    Warning (13410): Pin "DebugRA[6]" is stuck at GND
+    Warning (13410): Pin "DebugRA[5]" is stuck at GND
+    Warning (13410): Pin "DebugRA[4]" is stuck at GND
+    Warning (13410): Pin "DebugRA[3]" is stuck at GND
+    Warning (13410): Pin "DebugRA[2]" is stuck at GND
+    Warning (13410): Pin "DebugRA[1]" is stuck at GND
+    Warning (13410): Pin "DebugRA[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -4858,14 +4836,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IRQn"
     Warning (15610): No output dependent on input pin "XIRQn"
-Info (21057): Implemented 446 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 325 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 138 output pins
-    Info (21061): Implemented 304 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2275 warnings
-    Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Tue Oct 22 21:42:53 2019
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:00:56
+    Info (21059): Implemented 139 output pins
+    Info (21061): Implemented 182 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2285 warnings
+    Info: Peak virtual memory: 4812 megabytes
+    Info: Processing ended: Sat Oct 26 21:51:29 2019
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:44
 
 

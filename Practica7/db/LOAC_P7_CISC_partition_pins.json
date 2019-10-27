@@ -4,14 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Z",
-					"strict" : false
-				},
-				{
-					"name" : "N",
-					"strict" : false
-				},
-				{
 					"name" : "CurrentState[11]",
 					"strict" : false
 				},
@@ -188,6 +180,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "DebugIX[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIX[0]",
+					"strict" : false
+				},
+				{
 					"name" : "DebugPC[15]",
 					"strict" : false
 				},
@@ -252,70 +308,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "DebugRA[15]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[14]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[13]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[12]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[11]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[10]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[9]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[8]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[7]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[6]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[5]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[4]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[3]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[2]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[1]",
-					"strict" : false
-				},
-				{
-					"name" : "DebugRA[0]",
-					"strict" : false
-				},
-				{
 					"name" : "regInstr[11]",
 					"strict" : false
 				},
@@ -364,11 +356,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "RESET",
+					"name" : "CLK",
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "RESET",
 					"strict" : false
 				}
 			]

@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/intelFPGA_lite/OyAC/Lab/Practica7/Waveform3.vwf" --testbench_file="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/Waveform3.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/intelFPGA_lite/OyAC/Lab/Practica7/Waveform3.vwf" --testbench_file="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/Waveform3.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform3.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform3.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform3.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform3.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work LOAC_P7_CISC.vho
@@ -395,7 +395,7 @@ SIGNAL("DebugACUMB[0]")
 	PARENT = "DebugACUMB";
 }
 
-SIGNAL("DebugAP")
+SIGNAL("DebugIX")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -405,164 +405,334 @@ SIGNAL("DebugAP")
 	PARENT = "";
 }
 
-SIGNAL("DebugAP[15]")
+SIGNAL("DebugIX[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[14]")
+SIGNAL("DebugIX[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[13]")
+SIGNAL("DebugIX[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[12]")
+SIGNAL("DebugIX[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[11]")
+SIGNAL("DebugIX[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[10]")
+SIGNAL("DebugIX[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[9]")
+SIGNAL("DebugIX[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[8]")
+SIGNAL("DebugIX[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[7]")
+SIGNAL("DebugIX[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[6]")
+SIGNAL("DebugIX[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[5]")
+SIGNAL("DebugIX[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[4]")
+SIGNAL("DebugIX[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[3]")
+SIGNAL("DebugIX[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[2]")
+SIGNAL("DebugIX[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[1]")
+SIGNAL("DebugIX[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
 }
 
-SIGNAL("DebugAP[0]")
+SIGNAL("DebugIX[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "DebugAP";
+	PARENT = "DebugIX";
+}
+
+SIGNAL("DebugIY")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 16;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("DebugIY[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
+}
+
+SIGNAL("DebugIY[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DebugIY";
 }
 
 SIGNAL("DebugPC")
@@ -735,7 +905,7 @@ SIGNAL("DebugPC[0]")
 	PARENT = "DebugPC";
 }
 
-SIGNAL("IRQn")
+SIGNAL("XIRQn")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -745,134 +915,14 @@ SIGNAL("IRQn")
 	PARENT = "";
 }
 
-SIGNAL("regInstr")
+SIGNAL("SalidaRS")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 12;
-	LSB_INDEX = 0;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
-}
-
-SIGNAL("regInstr[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
-}
-
-SIGNAL("regInstr[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "regInstr";
 }
 
 SIGNAL("RESET")
@@ -885,7 +935,7 @@ SIGNAL("RESET")
 	PARENT = "";
 }
 
-SIGNAL("XIRQn")
+SIGNAL("IRQn")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1161,7 +1211,7 @@ TRANSITION_LIST("DebugACUMB[0]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[15]")
+TRANSITION_LIST("DebugIX[15]")
 {
 	NODE
 	{
@@ -1170,7 +1220,7 @@ TRANSITION_LIST("DebugAP[15]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[14]")
+TRANSITION_LIST("DebugIX[14]")
 {
 	NODE
 	{
@@ -1179,7 +1229,7 @@ TRANSITION_LIST("DebugAP[14]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[13]")
+TRANSITION_LIST("DebugIX[13]")
 {
 	NODE
 	{
@@ -1188,7 +1238,7 @@ TRANSITION_LIST("DebugAP[13]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[12]")
+TRANSITION_LIST("DebugIX[12]")
 {
 	NODE
 	{
@@ -1197,7 +1247,7 @@ TRANSITION_LIST("DebugAP[12]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[11]")
+TRANSITION_LIST("DebugIX[11]")
 {
 	NODE
 	{
@@ -1206,7 +1256,7 @@ TRANSITION_LIST("DebugAP[11]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[10]")
+TRANSITION_LIST("DebugIX[10]")
 {
 	NODE
 	{
@@ -1215,7 +1265,7 @@ TRANSITION_LIST("DebugAP[10]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[9]")
+TRANSITION_LIST("DebugIX[9]")
 {
 	NODE
 	{
@@ -1224,7 +1274,7 @@ TRANSITION_LIST("DebugAP[9]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[8]")
+TRANSITION_LIST("DebugIX[8]")
 {
 	NODE
 	{
@@ -1233,7 +1283,7 @@ TRANSITION_LIST("DebugAP[8]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[7]")
+TRANSITION_LIST("DebugIX[7]")
 {
 	NODE
 	{
@@ -1242,7 +1292,7 @@ TRANSITION_LIST("DebugAP[7]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[6]")
+TRANSITION_LIST("DebugIX[6]")
 {
 	NODE
 	{
@@ -1251,7 +1301,7 @@ TRANSITION_LIST("DebugAP[6]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[5]")
+TRANSITION_LIST("DebugIX[5]")
 {
 	NODE
 	{
@@ -1260,7 +1310,7 @@ TRANSITION_LIST("DebugAP[5]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[4]")
+TRANSITION_LIST("DebugIX[4]")
 {
 	NODE
 	{
@@ -1269,7 +1319,7 @@ TRANSITION_LIST("DebugAP[4]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[3]")
+TRANSITION_LIST("DebugIX[3]")
 {
 	NODE
 	{
@@ -1278,7 +1328,7 @@ TRANSITION_LIST("DebugAP[3]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[2]")
+TRANSITION_LIST("DebugIX[2]")
 {
 	NODE
 	{
@@ -1287,7 +1337,7 @@ TRANSITION_LIST("DebugAP[2]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[1]")
+TRANSITION_LIST("DebugIX[1]")
 {
 	NODE
 	{
@@ -1296,7 +1346,151 @@ TRANSITION_LIST("DebugAP[1]")
 	}
 }
 
-TRANSITION_LIST("DebugAP[0]")
+TRANSITION_LIST("DebugIX[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DebugIY[0]")
 {
 	NODE
 	{
@@ -1449,7 +1643,7 @@ TRANSITION_LIST("DebugPC[0]")
 	}
 }
 
-TRANSITION_LIST("IRQn")
+TRANSITION_LIST("XIRQn")
 {
 	NODE
 	{
@@ -1458,106 +1652,7 @@ TRANSITION_LIST("IRQn")
 	}
 }
 
-TRANSITION_LIST("regInstr[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("regInstr[0]")
+TRANSITION_LIST("SalidaRS")
 {
 	NODE
 	{
@@ -1575,7 +1670,7 @@ TRANSITION_LIST("RESET")
 	}
 }
 
-TRANSITION_LIST("XIRQn")
+TRANSITION_LIST("IRQn")
 {
 	NODE
 	{
@@ -1905,7 +2000,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP";
+	CHANNEL = "DebugIX";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -1915,7 +2010,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[15]";
+	CHANNEL = "DebugIX[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
@@ -1925,7 +2020,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[14]";
+	CHANNEL = "DebugIX[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -1935,7 +2030,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[13]";
+	CHANNEL = "DebugIX[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -1945,7 +2040,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[12]";
+	CHANNEL = "DebugIX[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -1955,7 +2050,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[11]";
+	CHANNEL = "DebugIX[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -1965,7 +2060,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[10]";
+	CHANNEL = "DebugIX[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -1975,7 +2070,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[9]";
+	CHANNEL = "DebugIX[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -1985,7 +2080,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[8]";
+	CHANNEL = "DebugIX[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -1995,7 +2090,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[7]";
+	CHANNEL = "DebugIX[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -2005,7 +2100,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[6]";
+	CHANNEL = "DebugIX[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -2015,7 +2110,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[5]";
+	CHANNEL = "DebugIX[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -2025,7 +2120,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[4]";
+	CHANNEL = "DebugIX[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -2035,7 +2130,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[3]";
+	CHANNEL = "DebugIX[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -2045,7 +2140,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[2]";
+	CHANNEL = "DebugIX[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 46;
@@ -2055,7 +2150,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[1]";
+	CHANNEL = "DebugIX[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 47;
@@ -2065,7 +2160,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugAP[0]";
+	CHANNEL = "DebugIX[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 48;
@@ -2075,7 +2170,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC";
+	CHANNEL = "DebugIY";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
@@ -2085,7 +2180,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[15]";
+	CHANNEL = "DebugIY[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -2095,7 +2190,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[14]";
+	CHANNEL = "DebugIY[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -2105,7 +2200,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[13]";
+	CHANNEL = "DebugIY[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -2115,7 +2210,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[12]";
+	CHANNEL = "DebugIY[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -2125,7 +2220,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[11]";
+	CHANNEL = "DebugIY[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
@@ -2135,7 +2230,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[10]";
+	CHANNEL = "DebugIY[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
@@ -2145,7 +2240,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[9]";
+	CHANNEL = "DebugIY[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
@@ -2155,7 +2250,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[8]";
+	CHANNEL = "DebugIY[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -2165,7 +2260,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[7]";
+	CHANNEL = "DebugIY[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -2175,7 +2270,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[6]";
+	CHANNEL = "DebugIY[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -2185,7 +2280,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[5]";
+	CHANNEL = "DebugIY[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -2195,7 +2290,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[4]";
+	CHANNEL = "DebugIY[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -2205,7 +2300,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[3]";
+	CHANNEL = "DebugIY[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -2215,7 +2310,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[2]";
+	CHANNEL = "DebugIY[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -2225,7 +2320,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[1]";
+	CHANNEL = "DebugIY[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -2235,7 +2330,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "DebugPC[0]";
+	CHANNEL = "DebugIY[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -2245,150 +2340,172 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "IRQn";
+	CHANNEL = "DebugPC";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
 	TREE_LEVEL = 0;
+	CHILDREN = 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr";
+	CHANNEL = "DebugPC[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
-	TREE_LEVEL = 0;
-	CHILDREN = 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79;
+	TREE_LEVEL = 1;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[11]";
+	CHANNEL = "DebugPC[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[10]";
+	CHANNEL = "DebugPC[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[9]";
+	CHANNEL = "DebugPC[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[8]";
+	CHANNEL = "DebugPC[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[7]";
+	CHANNEL = "DebugPC[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[6]";
+	CHANNEL = "DebugPC[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[5]";
+	CHANNEL = "DebugPC[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[4]";
+	CHANNEL = "DebugPC[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[3]";
+	CHANNEL = "DebugPC[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[2]";
+	CHANNEL = "DebugPC[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[1]";
+	CHANNEL = "DebugPC[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "regInstr[0]";
+	CHANNEL = "DebugPC[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
 	TREE_LEVEL = 1;
-	PARENT = 67;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "RESET";
+	CHANNEL = "DebugPC[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 66;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DebugPC[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 81;
+	TREE_LEVEL = 1;
+	PARENT = 66;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DebugPC[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 82;
+	TREE_LEVEL = 1;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
@@ -2396,7 +2513,34 @@ DISPLAY_LINE
 	CHANNEL = "XIRQn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 81;
+	TREE_INDEX = 83;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SalidaRS";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 84;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "RESET";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 85;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "IRQn";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 86;
 	TREE_LEVEL = 0;
 }
 

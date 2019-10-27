@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/intelFPGA_lite/OyAC/Lab/Practica7/Waveform6.vwf" --testbench_file="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/Waveform6.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/intelFPGA_lite/OyAC/Lab/Practica7/Waveform6.vwf" --testbench_file="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/Waveform6.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform6.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform6.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform6.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform6.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work LOAC_P7_CISC.vho
@@ -1585,6 +1585,16 @@ SIGNAL("RESET")
 	PARENT = "";
 }
 
+SIGNAL("SalidaRS")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
 SIGNAL("XIRQn")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -2867,6 +2877,15 @@ TRANSITION_LIST("RESET")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("SalidaRS")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -4396,7 +4415,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "XIRQn";
+	CHANNEL = "SalidaRS";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 151;
@@ -4405,10 +4424,19 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Z";
+	CHANNEL = "XIRQn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 152;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Z";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 153;
 	TREE_LEVEL = 0;
 }
 

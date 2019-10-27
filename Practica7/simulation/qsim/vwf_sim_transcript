@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform11.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform11.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform6.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform6.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,11 +25,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 22 21:45:31 2019
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform11.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform11.vwf.vht"
+    Info: Processing started: Sat Oct 26 21:54:09 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform6.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform6.vwf.vht"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-es
+
 
 Completed successfully. 
 
@@ -53,15 +53,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 22 21:45:34 2019
+    Info: Processing started: Sat Oct 26 21:54:12 2019
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file LOAC_P7_CISC.vho in folder "C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Tue Oct 22 21:45:36 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Sat Oct 26 21:54:15 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
@@ -77,7 +77,6 @@ C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vsim -c -do LOAC_P7_CISC.do
 
 Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
-
 # 10.5b
 
 
@@ -85,9 +84,8 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:39 on Oct 22,2019
+# Start time: 21:54:16 on Oct 26,2019
 # vcom -work work LOAC_P7_CISC.vho 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -102,12 +100,12 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity LOAC_P7_CISC
 # -- Compiling architecture structure of LOAC_P7_CISC
 
-# End time: 21:45:40 on Oct 22,2019, Elapsed time: 0:00:01
+# End time: 21:54:16 on Oct 26,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:40 on Oct 22,2019
-# vcom -work work Waveform11.vwf.vht 
+# Start time: 21:54:17 on Oct 26,2019
+# vcom -work work Waveform6.vwf.vht 
 # -- Loading package STANDARD
 
 # -- Loading package TEXTIO
@@ -115,11 +113,11 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity LOAC_P7_CISC_vhd_vec_tst
 # -- Compiling architecture LOAC_P7_CISC_arch of LOAC_P7_CISC_vhd_vec_tst
 
-# End time: 21:45:40 on Oct 22,2019, Elapsed time: 0:00:00
+# End time: 21:54:17 on Oct 26,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.LOAC_P7_CISC_vhd_vec_tst 
-# Start time: 21:45:41 on Oct 22,2019
+# Start time: 21:54:17 on Oct 26,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -140,24 +138,25 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading fiftyfivenm.fiftyfivenm_ena_reg(behave)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
-# ** Warning: Design size of 49706 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 40302 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
+
 # after#35
 
-# End time: 21:45:45 on Oct 22,2019, Elapsed time: 0:00:04
+# End time: 21:54:19 on Oct 26,2019, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform11.vwf...
+Reading C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform6.vwf...
 
 Reading C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/LOAC_P7_CISC.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/LOAC_P7_CISC_20191022214545.sim.vwf
+Writing the resulting VWF to C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/LOAC_P7_CISC_20191026215420.sim.vwf
 
 Finished VCD to VWF conversion.
 
