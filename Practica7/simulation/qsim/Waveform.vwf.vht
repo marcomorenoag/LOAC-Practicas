@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/26/2019 20:39:29"
+-- Generated on "10/26/2019 22:09:35"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          LOAC_P7_CISC
 -- 
@@ -48,6 +48,7 @@ SIGNAL IRQn : STD_LOGIC;
 SIGNAL N : STD_LOGIC;
 SIGNAL regInstr : STD_LOGIC_VECTOR(11 DOWNTO 0);
 SIGNAL RESET : STD_LOGIC;
+SIGNAL SalidaRS : STD_LOGIC;
 SIGNAL XIRQn : STD_LOGIC;
 SIGNAL Z : STD_LOGIC;
 COMPONENT LOAC_P7_CISC
@@ -67,6 +68,7 @@ COMPONENT LOAC_P7_CISC
 	N : OUT STD_LOGIC;
 	regInstr : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
 	RESET : IN STD_LOGIC;
+	SalidaRS : OUT STD_LOGIC;
 	XIRQn : IN STD_LOGIC;
 	Z : OUT STD_LOGIC
 	);
@@ -90,6 +92,7 @@ BEGIN
 	N => N,
 	regInstr => regInstr,
 	RESET => RESET,
+	SalidaRS => SalidaRS,
 	XIRQn => XIRQn,
 	Z => Z
 	);

@@ -22,21 +22,25 @@ begin
 			PL <= '0';
 			MAP1 <= '0';
 			VECT <= '0';
+			RESETFF <= '0';
 		elsif (inst = "01" and CC = '1') then 
 			SELECTOR <= '1';
 			PL <= '1';
 			MAP1 <= '0';
 			VECT <= '0';
+			RESETFF <= '0';
 		elsif (inst = "01" and CC = '0') then 
 			SELECTOR <= '0';
 			PL <= '1';
 			MAP1 <= '0';
 			VECT <= '0';
+			RESETFF <= '0';
 		elsif inst = "10" then 
 			SELECTOR <= '1';
 			PL <= '0';
 			MAP1 <= '1';
 			VECT <= '0';
+			RESETFF <= '0';
 		elsif (inst = "11" and CC = '1') then 
 			SELECTOR <= '1';
 			PL <= '0';

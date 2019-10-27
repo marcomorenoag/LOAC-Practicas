@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LOAC_P7_CISC
-Sat Oct 26 21:51:29 2019
+Sat Oct 26 22:30:35 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -17,8 +17,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: secuenciador:inst10|MUX:inst6
- 13. Parameter Settings for User Entity Instance: secuenciador:inst10|BUSMUX:inst5
+ 12. Parameter Settings for User Entity Instance: secuenciador:inst6|MUX:inst6
+ 13. Parameter Settings for User Entity Instance: secuenciador:inst6|BUSMUX:inst5
  14. Post-Synthesis Netlist Statistics for Top Partition
  15. Elapsed Time Per Partition
  16. Analysis & Synthesis Messages
@@ -47,7 +47,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 26 21:51:28 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 26 22:30:34 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LOAC_P7_CISC                                ;
 ; Top-level Entity Name              ; LOAC_P7_CISC                                ;
@@ -243,110 +243,110 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                  ; Entity Name          ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
-; |LOAC_P7_CISC                        ; 127 (1)             ; 96 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 143  ; 0            ; 0          ; |LOAC_P7_CISC                                                                        ; LOAC_P7_CISC         ; work         ;
-;    |acumulador:AcumuladorA|          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorA                                                 ; acumulador           ; work         ;
-;    |acumulador:AcumuladorB|          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorB                                                 ; acumulador           ; work         ;
-;    |bufferDataBus:inst5|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|bufferDataBus:inst5                                                    ; bufferDataBus        ; work         ;
-;    |contador:RegPC|                  ; 16 (16)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegPC                                                         ; contador             ; work         ;
-;    |contador_ID:RegIndX|             ; 3 (3)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador_ID:RegIndX                                                    ; contador_ID          ; work         ;
-;    |ram:inst|                        ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|ram:inst                                                               ; ram                  ; work         ;
-;    |registro_direccion:dir|          ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_direccion:dir                                                 ; registro_direccion   ; work         ;
-;    |registro_instruccion:inst11|     ; 1 (1)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_instruccion:inst11                                            ; registro_instruccion ; work         ;
-;    |secuenciador:inst10|             ; 82 (9)              ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10                                                    ; secuenciador         ; work         ;
-;       |busmux:inst5|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5                                       ; busmux               ; work         ;
-;          |lpm_mux:$00000|            ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5|lpm_mux:$00000                        ; lpm_mux              ; work         ;
-;             |mux_f7c:auto_generated| ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c              ; work         ;
-;       |logica_seleccion:inst1|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|logica_seleccion:inst1                             ; logica_seleccion     ; work         ;
-;       |memory:inst|                  ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|memory:inst                                        ; memory               ; work         ;
-;       |mux:inst6|                    ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6                                          ; mux                  ; work         ;
-;          |lpm_mux:$00001|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6|lpm_mux:$00001                           ; lpm_mux              ; work         ;
-;             |mux_k7c:auto_generated| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated    ; mux_k7c              ; work         ;
-;       |registro_MicroInst:inst2|     ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|registro_MicroInst:inst2                           ; registro_MicroInst   ; work         ;
-;       |registro_sec:inst3|           ; 11 (11)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3                                 ; registro_sec         ; work         ;
-;    |upa:upa|                         ; 0 (0)               ; 14 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|upa:upa                                                                ; upa                  ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                   ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                 ; Entity Name          ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
+; |LOAC_P7_CISC                        ; 127 (1)             ; 96 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 143  ; 0            ; 0          ; |LOAC_P7_CISC                                                                       ; LOAC_P7_CISC         ; work         ;
+;    |acumulador:AcumuladorA|          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorA                                                ; acumulador           ; work         ;
+;    |acumulador:AcumuladorB|          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorB                                                ; acumulador           ; work         ;
+;    |bufferDataBus:inst5|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|bufferDataBus:inst5                                                   ; bufferDataBus        ; work         ;
+;    |contador:RegPC|                  ; 16 (16)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegPC                                                        ; contador             ; work         ;
+;    |contador_ID:RegIndX|             ; 3 (3)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador_ID:RegIndX                                                   ; contador_ID          ; work         ;
+;    |ram:inst|                        ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|ram:inst                                                              ; ram                  ; work         ;
+;    |registro_direccion:dir|          ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_direccion:dir                                                ; registro_direccion   ; work         ;
+;    |registro_instruccion:inst11|     ; 1 (1)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_instruccion:inst11                                           ; registro_instruccion ; work         ;
+;    |secuenciador:inst6|              ; 82 (9)              ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6                                                    ; secuenciador         ; work         ;
+;       |busmux:inst5|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5                                       ; busmux               ; work         ;
+;          |lpm_mux:$00000|            ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5|lpm_mux:$00000                        ; lpm_mux              ; work         ;
+;             |mux_f7c:auto_generated| ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c              ; work         ;
+;       |logica_seleccion:inst1|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|logica_seleccion:inst1                             ; logica_seleccion     ; work         ;
+;       |memory:inst|                  ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst                                        ; memory               ; work         ;
+;       |mux:inst6|                    ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6                                          ; mux                  ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6|lpm_mux:$00001                           ; lpm_mux              ; work         ;
+;             |mux_k7c:auto_generated| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated    ; mux_k7c              ; work         ;
+;       |registro_MicroInst:inst2|     ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|registro_MicroInst:inst2                           ; registro_MicroInst   ; work         ;
+;       |registro_sec:inst3|           ; 11 (11)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3                                 ; registro_sec         ; work         ;
+;    |upa:upa|                         ; 0 (0)               ; 14 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|upa:upa                                                               ; upa                  ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                     ;
-+----------------------------------------------------+-------------------------------------------------------------------+
-; Register name                                      ; Reason for Removal                                                ;
-+----------------------------------------------------+-------------------------------------------------------------------+
-; inst8                                              ; Stuck at GND due to stuck port clock                              ;
-; contador_ID:RegIndY|data_out[0..15]                ; Stuck at GND due to stuck port clock_enable                       ;
-; registro_instruccion:inst11|valor_interno[0..3]    ; Stuck at GND due to stuck port data_in                            ;
-; secuenciador:inst10|registro_sec:inst3|liga[1..11] ; Stuck at GND due to stuck port data_in                            ;
-; ctrl_interrupciones:inst4|IRQ_flag                 ; Stuck at GND due to stuck port data_in                            ;
-; ctrl_interrupciones:inst4|XIRQ_flag                ; Stuck at GND due to stuck port data_in                            ;
-; RegEdos:flags|registro:tCS|valor_interno           ; Stuck at GND due to stuck port clock                              ;
-; RegEdos:flags|registro:tCX|valor_interno           ; Stuck at GND due to stuck port clock                              ;
-; RegEdos:flags|registro:tCH|valor_interno           ; Stuck at GND due to stuck port clock                              ;
-; upa:upa|Banderas[4]                                ; Lost fanout                                                       ;
-; RegEdos:flags|registro:tCI|valor_interno           ; Stuck at GND due to stuck port clock                              ;
-; RegEdos:flags|registro:tCC|valor_interno           ; Stuck at GND due to stuck port clock                              ;
-; upa:upa|Banderas[3]                                ; Lost fanout                                                       ;
-; upa:upa|contador[0..2]                             ; Stuck at GND due to stuck port clock_enable                       ;
-; ctrl_interrupciones:inst4|INT_flag                 ; Stuck at GND due to stuck port clock_enable                       ;
-; upa:upa|Banderas[1]                                ; Stuck at GND due to stuck port data_in                            ;
-; RegEdos:flags|registro:tCV|valor_interno           ; Stuck at GND due to stuck port data_in                            ;
-; upa:upa|Yupa_interno[7]                            ; Merged with upa:upa|Banderas[2]                                   ;
-; upa:upa|Q[7]                                       ; Merged with upa:upa|Banderas[2]                                   ;
-; upa:upa|Yupa_interno[0]                            ; Merged with upa:upa|Q[0]                                          ;
-; contador:RegAux|data_out[9,13]                     ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[5]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[5,15]                     ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[7]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[11]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[11]                      ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[7]                        ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[3]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[0,3]                      ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[8]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[14]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[12]                      ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[12]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[6]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[10]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[14]                      ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[8]                        ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[4]                       ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[6]                        ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[10]                      ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[4]                        ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[0,2]                     ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[2]                        ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegPila|data_out[1,9,13]                  ; Merged with contador:RegPila|data_out[15]                         ;
-; contador:RegAux|data_out[1]                        ; Merged with contador:RegPila|data_out[15]                         ;
-; secuenciador:inst10|registro_sec:inst3|prueba[3]   ; Merged with secuenciador:inst10|registro_sec:inst3|instruccion[0] ;
-; secuenciador:inst10|registro_sec:inst3|prueba[1,2] ; Merged with secuenciador:inst10|registro_sec:inst3|prueba[0]      ;
-; contador:RegPila|data_out[15]                      ; Stuck at GND due to stuck port data_in                            ;
-; RegEdos:flags|registro:tCN|valor_interno           ; Lost fanout                                                       ;
-; RegEdos:flags|registro:tCZ|valor_interno           ; Lost fanout                                                       ;
-; upa:upa|Banderas[0]                                ; Lost fanout                                                       ;
-; Total Number of Removed Registers = 88             ;                                                                   ;
-+----------------------------------------------------+-------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                   ;
++---------------------------------------------------+------------------------------------------------------------------+
+; Register name                                     ; Reason for Removal                                               ;
++---------------------------------------------------+------------------------------------------------------------------+
+; inst8                                             ; Stuck at GND due to stuck port clock                             ;
+; contador_ID:RegIndY|data_out[0..15]               ; Stuck at GND due to stuck port clock_enable                      ;
+; registro_instruccion:inst11|valor_interno[0..3]   ; Stuck at GND due to stuck port data_in                           ;
+; secuenciador:inst6|registro_sec:inst3|liga[1..11] ; Stuck at GND due to stuck port data_in                           ;
+; ctrl_interrupciones:inst4|IRQ_flag                ; Stuck at GND due to stuck port data_in                           ;
+; ctrl_interrupciones:inst4|XIRQ_flag               ; Stuck at GND due to stuck port data_in                           ;
+; RegEdos:flags|registro:tCS|valor_interno          ; Stuck at GND due to stuck port clock                             ;
+; RegEdos:flags|registro:tCX|valor_interno          ; Stuck at GND due to stuck port clock                             ;
+; RegEdos:flags|registro:tCH|valor_interno          ; Stuck at GND due to stuck port clock                             ;
+; upa:upa|Banderas[4]                               ; Lost fanout                                                      ;
+; RegEdos:flags|registro:tCI|valor_interno          ; Stuck at GND due to stuck port clock                             ;
+; RegEdos:flags|registro:tCC|valor_interno          ; Stuck at GND due to stuck port clock                             ;
+; upa:upa|Banderas[3]                               ; Lost fanout                                                      ;
+; upa:upa|contador[0..2]                            ; Stuck at GND due to stuck port clock_enable                      ;
+; ctrl_interrupciones:inst4|INT_flag                ; Stuck at GND due to stuck port clock_enable                      ;
+; upa:upa|Banderas[1]                               ; Stuck at GND due to stuck port data_in                           ;
+; RegEdos:flags|registro:tCV|valor_interno          ; Stuck at GND due to stuck port data_in                           ;
+; upa:upa|Yupa_interno[7]                           ; Merged with upa:upa|Banderas[2]                                  ;
+; upa:upa|Q[7]                                      ; Merged with upa:upa|Banderas[2]                                  ;
+; upa:upa|Yupa_interno[0]                           ; Merged with upa:upa|Q[0]                                         ;
+; contador:RegAux|data_out[9,13]                    ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[5]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[5,15]                    ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[7]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[11]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[11]                     ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[7]                       ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[3]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[0,3]                     ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[8]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[14]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[12]                     ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[12]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[6]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[10]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[14]                     ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[8]                       ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[4]                      ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[6]                       ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[10]                     ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[4]                       ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[0,2]                    ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[2]                       ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegPila|data_out[1,9,13]                 ; Merged with contador:RegPila|data_out[15]                        ;
+; contador:RegAux|data_out[1]                       ; Merged with contador:RegPila|data_out[15]                        ;
+; secuenciador:inst6|registro_sec:inst3|prueba[3]   ; Merged with secuenciador:inst6|registro_sec:inst3|instruccion[0] ;
+; secuenciador:inst6|registro_sec:inst3|prueba[1,2] ; Merged with secuenciador:inst6|registro_sec:inst3|prueba[0]      ;
+; contador:RegPila|data_out[15]                     ; Stuck at GND due to stuck port data_in                           ;
+; RegEdos:flags|registro:tCN|valor_interno          ; Lost fanout                                                      ;
+; RegEdos:flags|registro:tCZ|valor_interno          ; Lost fanout                                                      ;
+; upa:upa|Banderas[0]                               ; Lost fanout                                                      ;
+; Total Number of Removed Registers = 88            ;                                                                  ;
++---------------------------------------------------+------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                  ;
-+-------------------------------------------------+---------------------------+----------------------------------------------------------------+
-; Register name                                   ; Reason for Removal        ; Registers Removed due to This Register                         ;
-+-------------------------------------------------+---------------------------+----------------------------------------------------------------+
-; RegEdos:flags|registro:tCC|valor_interno        ; Stuck at GND              ; upa:upa|Banderas[3], RegEdos:flags|registro:tCN|valor_interno, ;
-;                                                 ; due to stuck port clock   ; RegEdos:flags|registro:tCZ|valor_interno                       ;
-; RegEdos:flags|registro:tCH|valor_interno        ; Stuck at GND              ; upa:upa|Banderas[4], upa:upa|Banderas[1]                       ;
-;                                                 ; due to stuck port clock   ;                                                                ;
-; inst8                                           ; Stuck at GND              ; upa:upa|Banderas[0]                                            ;
-;                                                 ; due to stuck port clock   ;                                                                ;
-; secuenciador:inst10|registro_sec:inst3|liga[11] ; Stuck at GND              ; RegEdos:flags|registro:tCV|valor_interno                       ;
-;                                                 ; due to stuck port data_in ;                                                                ;
-+-------------------------------------------------+---------------------------+----------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                 ;
++------------------------------------------------+---------------------------+----------------------------------------------------------------+
+; Register name                                  ; Reason for Removal        ; Registers Removed due to This Register                         ;
++------------------------------------------------+---------------------------+----------------------------------------------------------------+
+; RegEdos:flags|registro:tCC|valor_interno       ; Stuck at GND              ; upa:upa|Banderas[3], RegEdos:flags|registro:tCN|valor_interno, ;
+;                                                ; due to stuck port clock   ; RegEdos:flags|registro:tCZ|valor_interno                       ;
+; RegEdos:flags|registro:tCH|valor_interno       ; Stuck at GND              ; upa:upa|Banderas[4], upa:upa|Banderas[1]                       ;
+;                                                ; due to stuck port clock   ;                                                                ;
+; inst8                                          ; Stuck at GND              ; upa:upa|Banderas[0]                                            ;
+;                                                ; due to stuck port clock   ;                                                                ;
+; secuenciador:inst6|registro_sec:inst3|liga[11] ; Stuck at GND              ; RegEdos:flags|registro:tCV|valor_interno                       ;
+;                                                ; due to stuck port data_in ;                                                                ;
++------------------------------------------------+---------------------------+----------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -364,38 +364,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador_ID:RegIndX|data_out[7]              ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |LOAC_P7_CISC|contador_ID:RegIndX|data_out[8]              ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3|nWA   ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 2 LEs                ; 8 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3|B7    ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 2 LEs                ; 10 LEs                 ; No         ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3|nWB   ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3|PC[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador_ID:RegIndX|data_out[7]             ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |LOAC_P7_CISC|contador_ID:RegIndX|data_out[8]             ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|nWA   ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 2 LEs                ; 8 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|B7    ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 2 LEs                ; 10 LEs                 ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|nWB   ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|PC[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: secuenciador:inst10|MUX:inst6 ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; WIDTH          ; 32    ; Untyped                                           ;
-; WIDTHS         ; 5     ; Untyped                                           ;
-+----------------+-------+---------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: secuenciador:inst6|MUX:inst6 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Untyped                                          ;
+; WIDTHS         ; 5     ; Untyped                                          ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: secuenciador:inst10|BUSMUX:inst5 ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; WIDTH          ; 12    ; Untyped                                              ;
-+----------------+-------+------------------------------------------------------+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: secuenciador:inst6|BUSMUX:inst5 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 12    ; Untyped                                             ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -432,7 +432,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -442,7 +442,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Oct 26 21:51:02 2019
+    Info: Processing started: Sat Oct 26 22:29:57 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -524,11 +524,11 @@ Warning (275080): Converted elements in bus name "Yupa2" using legacy naming rul
 Warning (275011): Block or symbol "contador_ID" of instance "RegIndY" overlaps another block or symbol
 Warning (275011): Block or symbol "contador" of instance "RegAux" overlaps another block or symbol
 Warning (275011): Block or symbol "contador" of instance "RegPila" overlaps another block or symbol
-Warning (275011): Block or symbol "secuenciador" of instance "inst10" overlaps another block or symbol
+Warning (275011): Block or symbol "secuenciador" of instance "inst6" overlaps another block or symbol
 Warning (275013): Port "CLK" of type SRFF and instance "inst8" is missing source signal
 Info (12128): Elaborating entity "contador" for hierarchy "contador:RegAux"
-Info (12128): Elaborating entity "secuenciador" for hierarchy "secuenciador:inst10"
-Info (12128): Elaborating entity "logica_seleccion" for hierarchy "secuenciador:inst10|logica_seleccion:inst1"
+Info (12128): Elaborating entity "secuenciador" for hierarchy "secuenciador:inst6"
+Info (12128): Elaborating entity "logica_seleccion" for hierarchy "secuenciador:inst6|logica_seleccion:inst1"
 Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(18): inferring latch(es) for signal or variable "SELECTOR", which holds its previous value in one or more paths through the process File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
 Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(18): inferring latch(es) for signal or variable "PL", which holds its previous value in one or more paths through the process File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
 Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(18): inferring latch(es) for signal or variable "MAP1", which holds its previous value in one or more paths through the process File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
@@ -539,28 +539,28 @@ Info (10041): Inferred latch for "VECT" at logica_seleccion.vhd(18) File: C:/Use
 Info (10041): Inferred latch for "MAP1" at logica_seleccion.vhd(18) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
 Info (10041): Inferred latch for "PL" at logica_seleccion.vhd(18) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
 Info (10041): Inferred latch for "SELECTOR" at logica_seleccion.vhd(18) File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 18
-Info (12128): Elaborating entity "MUX" for hierarchy "secuenciador:inst10|MUX:inst6"
-Info (12130): Elaborated megafunction instantiation "secuenciador:inst10|MUX:inst6"
-Info (12133): Instantiated megafunction "secuenciador:inst10|MUX:inst6" with the following parameter:
+Info (12128): Elaborating entity "MUX" for hierarchy "secuenciador:inst6|MUX:inst6"
+Info (12130): Elaborated megafunction instantiation "secuenciador:inst6|MUX:inst6"
+Info (12133): Instantiated megafunction "secuenciador:inst6|MUX:inst6" with the following parameter:
     Info (12134): Parameter "WIDTH" = "32"
     Info (12134): Parameter "WIDTHS" = "5"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst10|MUX:inst6|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "secuenciador:inst10|MUX:inst6|lpm_mux:$00001", which is child of megafunction instantiation "secuenciador:inst10|MUX:inst6" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst6|MUX:inst6|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "secuenciador:inst6|MUX:inst6|lpm_mux:$00001", which is child of megafunction instantiation "secuenciador:inst6|MUX:inst6" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_k7c.tdf
     Info (12023): Found entity 1: mux_k7c File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_k7c.tdf Line: 22
-Info (12128): Elaborating entity "mux_k7c" for hierarchy "secuenciador:inst10|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "registro_sec" for hierarchy "secuenciador:inst10|registro_sec:inst3"
-Info (12128): Elaborating entity "memory" for hierarchy "secuenciador:inst10|memory:inst"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "secuenciador:inst10|BUSMUX:inst5"
-Info (12130): Elaborated megafunction instantiation "secuenciador:inst10|BUSMUX:inst5"
-Info (12133): Instantiated megafunction "secuenciador:inst10|BUSMUX:inst5" with the following parameter:
+Info (12128): Elaborating entity "mux_k7c" for hierarchy "secuenciador:inst6|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "registro_sec" for hierarchy "secuenciador:inst6|registro_sec:inst3"
+Info (12128): Elaborating entity "memory" for hierarchy "secuenciador:inst6|memory:inst"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "secuenciador:inst6|BUSMUX:inst5"
+Info (12130): Elaborated megafunction instantiation "secuenciador:inst6|BUSMUX:inst5"
+Info (12133): Instantiated megafunction "secuenciador:inst6|BUSMUX:inst5" with the following parameter:
     Info (12134): Parameter "WIDTH" = "12"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst10|BUSMUX:inst5|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "secuenciador:inst10|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "secuenciador:inst10|BUSMUX:inst5" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst6|BUSMUX:inst5|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "secuenciador:inst6|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "secuenciador:inst6|BUSMUX:inst5" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_f7c.tdf
     Info (12023): Found entity 1: mux_f7c File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 22
-Info (12128): Elaborating entity "mux_f7c" for hierarchy "secuenciador:inst10|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "registro_MicroInst" for hierarchy "secuenciador:inst10|registro_MicroInst:inst2"
+Info (12128): Elaborating entity "mux_f7c" for hierarchy "secuenciador:inst6|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "registro_MicroInst" for hierarchy "secuenciador:inst6|registro_MicroInst:inst2"
 Info (12128): Elaborating entity "registro_instruccion" for hierarchy "registro_instruccion:inst11"
 Info (12128): Elaborating entity "contador_ID" for hierarchy "contador_ID:RegIndX"
 Info (12128): Elaborating entity "acumulador" for hierarchy "acumulador:AcumuladorB"
@@ -4577,21 +4577,21 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "contador:RegAux|R15~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 17
     Warning (13049): Converted tri-state buffer "contador:RegAux|R0~synth" feeding internal logic into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador.vhd Line: 18
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]~1 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]~2 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]~3 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]~4 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]~5 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]~6 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]~7 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]~8 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]~9 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]~10 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (19017): Found clock multiplexer secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]~11 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]~1 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]~2 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]~3 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]~4 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]~5 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]~6 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]~7 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]~8 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]~9 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]~10 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]~11 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer secuenciador:inst10|logica_seleccion:inst1|SELECTOR~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 9
-    Warning (19017): Found clock multiplexer secuenciador:inst10|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|result_node[0]~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_k7c.tdf Line: 29
+    Warning (19017): Found clock multiplexer secuenciador:inst6|logica_seleccion:inst1|SELECTOR~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/logica_seleccion.vhd Line: 9
+    Warning (19017): Found clock multiplexer secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|result_node[0]~0 File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_k7c.tdf Line: 29
 Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "upa:upa|Yupa[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 25
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:RegIndX|D[7]" to the node "bufferDataBus:inst5|PortL[7]" File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 11
@@ -4740,7 +4740,7 @@ Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
 Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s) are removed
     Warning (13051): Converted the fanout from the open-drain buffer "ram:inst|data[5]" to the node "registro_instruccion:inst11|valor_interno[9]" into a wire File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "contador_ID:RegIndX|R0" to the node "secuenciador:inst10|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|result_node[0]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "contador_ID:RegIndX|R0" to the node "secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|result_node[0]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 17
     Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[7]" to the node "contador_ID:RegIndX|data_out[15]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
     Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[6]" to the node "contador_ID:RegIndX|data_out[14]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
     Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst5|PortL[5]" to the node "contador_ID:RegIndX|data_out[13]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/bufferDataBus.vhd Line: 7
@@ -4764,19 +4764,19 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[1]" to the node "bufferDataBus:inst5|PortL[1]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
     Warning (13047): Converted the fan-out from the tri-state buffer "ram:inst|data[0]" to the node "bufferDataBus:inst5|PortL[0]" into an OR gate File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/ram.vhd Line: 8
 Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s) are removed
-    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst10|inst8[3]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]" into a wire
-    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst10|inst8[2]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]" into a wire
-    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst10|inst8[1]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]" into a wire
+    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst6|inst8[3]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]" into a wire
+    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst6|inst8[2]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]" into a wire
+    Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst6|inst8[1]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]" into a wire
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[11]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[10]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[9]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[8]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[7]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[6]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[5]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst10|inst8[4]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst12[0]" to the node "secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst6|inst8[11]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst6|inst8[10]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst6|inst8[9]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst6|inst8[8]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst6|inst8[7]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst6|inst8[6]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst6|inst8[5]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "secuenciador:inst6|inst8[4]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst12[0]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]" into an OR gate
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Z" is stuck at VCC
     Warning (13410): Pin "N" is stuck at GND
@@ -4841,9 +4841,9 @@ Info (21057): Implemented 325 device resources after synthesis - the final resou
     Info (21059): Implemented 139 output pins
     Info (21061): Implemented 182 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2285 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Sat Oct 26 21:51:29 2019
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Sat Oct 26 22:30:35 2019
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:00:43
 
 

@@ -1,5 +1,5 @@
 Fitter report for LOAC_P7_CISC
-Sat Oct 26 21:52:36 2019
+Sat Oct 26 22:32:11 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Oct 26 21:52:36 2019       ;
+; Fitter Status                      ; Successful - Sat Oct 26 22:32:11 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LOAC_P7_CISC                                ;
 ; Top-level Entity Name              ; LOAC_P7_CISC                                ;
@@ -153,12 +153,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.7%      ;
+;     Processor 2            ;   1.4%      ;
 +----------------------------+-------------+
 
 
@@ -1309,33 +1309,33 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------+-------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                       ;
-+--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node           ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                  ; Entity Name          ; Library Name ;
-+--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
-; |LOAC_P7_CISC                        ; 171 (1)     ; 96 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 143  ; 0            ; 75 (1)       ; 43 (0)            ; 53 (1)           ; 0          ; |LOAC_P7_CISC                                                                        ; LOAC_P7_CISC         ; work         ;
-;    |acumulador:AcumuladorA|          ; 9 (9)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 7 (7)             ; 1 (1)            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorA                                                 ; acumulador           ; work         ;
-;    |acumulador:AcumuladorB|          ; 9 (9)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 7 (7)             ; 1 (1)            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorB                                                 ; acumulador           ; work         ;
-;    |bufferDataBus:inst5|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 0          ; |LOAC_P7_CISC|bufferDataBus:inst5                                                    ; bufferDataBus        ; work         ;
-;    |contador:RegPC|                  ; 17 (17)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 15 (15)          ; 0          ; |LOAC_P7_CISC|contador:RegPC                                                         ; contador             ; work         ;
-;    |contador_ID:RegIndX|             ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 7 (7)             ; 9 (9)            ; 0          ; |LOAC_P7_CISC|contador_ID:RegIndX                                                    ; contador_ID          ; work         ;
-;    |ram:inst|                        ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|ram:inst                                                               ; ram                  ; work         ;
-;    |registro_direccion:dir|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|registro_direccion:dir                                                 ; registro_direccion   ; work         ;
-;    |registro_instruccion:inst11|     ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |LOAC_P7_CISC|registro_instruccion:inst11                                            ; registro_instruccion ; work         ;
-;    |secuenciador:inst10|             ; 83 (8)      ; 18 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (1)       ; 0 (0)             ; 26 (8)           ; 0          ; |LOAC_P7_CISC|secuenciador:inst10                                                    ; secuenciador         ; work         ;
-;       |busmux:inst5|                 ; 12 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5                                       ; busmux               ; work         ;
-;          |lpm_mux:$00000|            ; 12 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5|lpm_mux:$00000                        ; lpm_mux              ; work         ;
-;             |mux_f7c:auto_generated| ; 12 (12)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c              ; work         ;
-;       |logica_seleccion:inst1|       ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|logica_seleccion:inst1                             ; logica_seleccion     ; work         ;
-;       |memory:inst|                  ; 34 (34)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 4 (4)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|memory:inst                                        ; memory               ; work         ;
-;       |mux:inst6|                    ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6                                          ; mux                  ; work         ;
-;          |lpm_mux:$00001|            ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6|lpm_mux:$00001                           ; lpm_mux              ; work         ;
-;             |mux_k7c:auto_generated| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated    ; mux_k7c              ; work         ;
-;       |registro_MicroInst:inst2|     ; 12 (12)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 12 (12)          ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|registro_MicroInst:inst2                           ; registro_MicroInst   ; work         ;
-;       |registro_sec:inst3|           ; 17 (17)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 6 (6)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst10|registro_sec:inst3                                 ; registro_sec         ; work         ;
-;    |upa:upa|                         ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 13 (13)           ; 1 (1)            ; 0          ; |LOAC_P7_CISC|upa:upa                                                                ; upa                  ; work         ;
-+--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------------------------------------------------+----------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                      ;
++--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node           ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                 ; Entity Name          ; Library Name ;
++--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
+; |LOAC_P7_CISC                        ; 171 (1)     ; 96 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 143  ; 0            ; 75 (1)       ; 43 (0)            ; 53 (1)           ; 0          ; |LOAC_P7_CISC                                                                       ; LOAC_P7_CISC         ; work         ;
+;    |acumulador:AcumuladorA|          ; 9 (9)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 7 (7)             ; 1 (1)            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorA                                                ; acumulador           ; work         ;
+;    |acumulador:AcumuladorB|          ; 9 (9)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 7 (7)             ; 1 (1)            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorB                                                ; acumulador           ; work         ;
+;    |bufferDataBus:inst5|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; 0          ; |LOAC_P7_CISC|bufferDataBus:inst5                                                   ; bufferDataBus        ; work         ;
+;    |contador:RegPC|                  ; 17 (17)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 15 (15)          ; 0          ; |LOAC_P7_CISC|contador:RegPC                                                        ; contador             ; work         ;
+;    |contador_ID:RegIndX|             ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 7 (7)             ; 9 (9)            ; 0          ; |LOAC_P7_CISC|contador_ID:RegIndX                                                   ; contador_ID          ; work         ;
+;    |ram:inst|                        ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|ram:inst                                                              ; ram                  ; work         ;
+;    |registro_direccion:dir|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|registro_direccion:dir                                                ; registro_direccion   ; work         ;
+;    |registro_instruccion:inst11|     ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |LOAC_P7_CISC|registro_instruccion:inst11                                           ; registro_instruccion ; work         ;
+;    |secuenciador:inst6|              ; 83 (8)      ; 18 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (1)       ; 0 (0)             ; 26 (8)           ; 0          ; |LOAC_P7_CISC|secuenciador:inst6                                                    ; secuenciador         ; work         ;
+;       |busmux:inst5|                 ; 12 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5                                       ; busmux               ; work         ;
+;          |lpm_mux:$00000|            ; 12 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5|lpm_mux:$00000                        ; lpm_mux              ; work         ;
+;             |mux_f7c:auto_generated| ; 12 (12)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c              ; work         ;
+;       |logica_seleccion:inst1|       ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|logica_seleccion:inst1                             ; logica_seleccion     ; work         ;
+;       |memory:inst|                  ; 34 (34)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 4 (4)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst                                        ; memory               ; work         ;
+;       |mux:inst6|                    ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6                                          ; mux                  ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6|lpm_mux:$00001                           ; lpm_mux              ; work         ;
+;             |mux_k7c:auto_generated| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated    ; mux_k7c              ; work         ;
+;       |registro_MicroInst:inst2|     ; 12 (12)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 12 (12)          ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|registro_MicroInst:inst2                           ; registro_MicroInst   ; work         ;
+;       |registro_sec:inst3|           ; 17 (17)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 6 (6)            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3                                 ; registro_sec         ; work         ;
+;    |upa:upa|                         ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 13 (13)           ; 1 (1)            ; 0          ; |LOAC_P7_CISC|upa:upa                                                               ; upa                  ; work         ;
++--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1490,143 +1490,143 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                      ;
-+-----------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                   ; Pad To Core Index ; Setting ;
-+-----------------------------------------------------------------------+-------------------+---------+
-; IRQn                                                                  ;                   ;         ;
-; XIRQn                                                                 ;                   ;         ;
-; CLK                                                                   ;                   ;         ;
-;      - secuenciador:inst10|registro_sec:inst3|liga[0]                 ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|instruccion[0]          ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|instruccion[1]          ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[0]  ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[0]                                ; 1                 ; 0       ;
-;      - upa:upa|Banderas[2]                                            ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[11] ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[10] ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[9]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[8]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[7]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[6]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[5]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[4]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[3]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[2]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[1]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|vf                      ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|prueba[4]               ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|prueba[0]               ; 1                 ; 0       ;
-; RESET                                                                 ;                   ;         ;
-;      - secuenciador:inst10|registro_sec:inst3|liga[0]                 ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|instruccion[0]          ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|instruccion[1]          ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[0]  ; 1                 ; 0       ;
-;      - registro_instruccion:inst11|valor_interno[4]                   ; 1                 ; 0       ;
-;      - registro_instruccion:inst11|valor_interno[5]                   ; 1                 ; 0       ;
-;      - registro_instruccion:inst11|valor_interno[6]                   ; 1                 ; 0       ;
-;      - registro_instruccion:inst11|valor_interno[7]                   ; 1                 ; 0       ;
-;      - registro_instruccion:inst11|valor_interno[8]                   ; 1                 ; 0       ;
-;      - registro_instruccion:inst11|valor_interno[9]                   ; 1                 ; 0       ;
-;      - registro_instruccion:inst11|valor_interno[10]                  ; 1                 ; 0       ;
-;      - registro_instruccion:inst11|valor_interno[11]                  ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[0]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[1]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[2]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[3]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[4]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[5]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[6]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[7]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[8]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[9]                                ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[10]                               ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[11]                               ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[12]                               ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[13]                               ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[14]                               ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[15]                               ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[0]                                     ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[11] ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[10] ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[9]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[8]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[7]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[6]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[5]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[4]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[3]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[2]  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_MicroInst:inst2|valor_interno[1]  ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[15]                                    ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[14]                                    ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[13]                                    ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[12]                                    ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[11]                                    ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[10]                                    ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[9]                                     ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[8]                                     ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[7]                                     ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[6]                                     ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[5]                                     ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[4]                                     ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[3]                                     ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[2]                                     ; 1                 ; 0       ;
-;      - contador:RegPC|data_out[1]                                     ; 1                 ; 0       ;
-;      - registro_direccion:dir|valor_interno[7]                        ; 1                 ; 0       ;
-;      - registro_direccion:dir|valor_interno[6]                        ; 1                 ; 0       ;
-;      - registro_direccion:dir|valor_interno[5]                        ; 1                 ; 0       ;
-;      - registro_direccion:dir|valor_interno[4]                        ; 1                 ; 0       ;
-;      - registro_direccion:dir|valor_interno[0]                        ; 1                 ; 0       ;
-;      - registro_direccion:dir|valor_interno[1]                        ; 1                 ; 0       ;
-;      - registro_direccion:dir|valor_interno[2]                        ; 1                 ; 0       ;
-;      - registro_direccion:dir|valor_interno[3]                        ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|PC[0]~8                 ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|PC[0]~10                ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|vf                      ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|prueba[4]               ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|R0~0                                       ; 0                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|prueba[0]               ; 1                 ; 0       ;
-;      - acumulador:AcumuladorA|data_out[7]~0                           ; 1                 ; 0       ;
-;      - acumulador:AcumuladorB|data_out[7]~0                           ; 1                 ; 0       ;
-;      - contador_ID:RegIndX|data_out[8]~0                              ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|X[0]~0                  ; 1                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|nCRI                    ; 0                 ; 0       ;
-;      - secuenciador:inst10|registro_sec:inst3|nCBD                    ; 0                 ; 0       ;
-;      - bufferDataBus:inst5|PortL[5]~8                                 ; 1                 ; 0       ;
-+-----------------------------------------------------------------------+-------------------+---------+
++----------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                     ;
++----------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                  ; Pad To Core Index ; Setting ;
++----------------------------------------------------------------------+-------------------+---------+
+; IRQn                                                                 ;                   ;         ;
+; XIRQn                                                                ;                   ;         ;
+; CLK                                                                  ;                   ;         ;
+;      - secuenciador:inst6|registro_sec:inst3|liga[0]                 ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|instruccion[0]          ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|instruccion[1]          ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[0]  ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[0]                               ; 1                 ; 0       ;
+;      - upa:upa|Banderas[2]                                           ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[11] ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[10] ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[9]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[8]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[7]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[6]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[5]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[4]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[3]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[2]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[1]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|vf                      ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|prueba[4]               ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|prueba[0]               ; 1                 ; 0       ;
+; RESET                                                                ;                   ;         ;
+;      - secuenciador:inst6|registro_sec:inst3|liga[0]                 ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|instruccion[0]          ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|instruccion[1]          ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[0]  ; 1                 ; 0       ;
+;      - registro_instruccion:inst11|valor_interno[4]                  ; 1                 ; 0       ;
+;      - registro_instruccion:inst11|valor_interno[5]                  ; 1                 ; 0       ;
+;      - registro_instruccion:inst11|valor_interno[6]                  ; 1                 ; 0       ;
+;      - registro_instruccion:inst11|valor_interno[7]                  ; 1                 ; 0       ;
+;      - registro_instruccion:inst11|valor_interno[8]                  ; 1                 ; 0       ;
+;      - registro_instruccion:inst11|valor_interno[9]                  ; 1                 ; 0       ;
+;      - registro_instruccion:inst11|valor_interno[10]                 ; 1                 ; 0       ;
+;      - registro_instruccion:inst11|valor_interno[11]                 ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[0]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[1]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[2]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[3]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[4]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[5]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[6]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[7]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[8]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[9]                               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[10]                              ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[11]                              ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[12]                              ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[13]                              ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[14]                              ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[15]                              ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[0]                                    ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[11] ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[10] ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[9]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[8]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[7]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[6]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[5]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[4]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[3]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[2]  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_MicroInst:inst2|valor_interno[1]  ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[15]                                   ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[14]                                   ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[13]                                   ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[12]                                   ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[11]                                   ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[10]                                   ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[9]                                    ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[8]                                    ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[7]                                    ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[6]                                    ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[5]                                    ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[4]                                    ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[3]                                    ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[2]                                    ; 1                 ; 0       ;
+;      - contador:RegPC|data_out[1]                                    ; 1                 ; 0       ;
+;      - registro_direccion:dir|valor_interno[7]                       ; 1                 ; 0       ;
+;      - registro_direccion:dir|valor_interno[6]                       ; 1                 ; 0       ;
+;      - registro_direccion:dir|valor_interno[5]                       ; 1                 ; 0       ;
+;      - registro_direccion:dir|valor_interno[4]                       ; 1                 ; 0       ;
+;      - registro_direccion:dir|valor_interno[0]                       ; 1                 ; 0       ;
+;      - registro_direccion:dir|valor_interno[1]                       ; 1                 ; 0       ;
+;      - registro_direccion:dir|valor_interno[2]                       ; 1                 ; 0       ;
+;      - registro_direccion:dir|valor_interno[3]                       ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|PC[0]~8                 ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|PC[0]~10                ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|vf                      ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|prueba[4]               ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|R0~0                                      ; 0                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|prueba[0]               ; 1                 ; 0       ;
+;      - acumulador:AcumuladorA|data_out[7]~0                          ; 1                 ; 0       ;
+;      - acumulador:AcumuladorB|data_out[7]~0                          ; 1                 ; 0       ;
+;      - contador_ID:RegIndX|data_out[8]~0                             ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|X[0]~0                  ; 1                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|nCRI                    ; 0                 ; 0       ;
+;      - secuenciador:inst6|registro_sec:inst3|nCBD                    ; 0                 ; 0       ;
+;      - bufferDataBus:inst5|PortL[5]~8                                ; 1                 ; 0       ;
++----------------------------------------------------------------------+-------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                    ;
-+-------------------------------------------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
-; Name                                                  ; Location          ; Fan-Out ; Usage         ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
-; CLK                                                   ; PIN_M8            ; 21      ; Clock         ; no     ; --                   ; --               ; --                        ;
-; CLK                                                   ; PIN_M8            ; 60      ; Clock         ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; RESET                                                 ; PIN_AB2           ; 76      ; Async. clear  ; no     ; --                   ; --               ; --                        ;
-; acumulador:AcumuladorA|data_out[7]~0                  ; LCCOMB_X19_Y5_N8  ; 8       ; Clock enable  ; no     ; --                   ; --               ; --                        ;
-; acumulador:AcumuladorB|data_out[7]~0                  ; LCCOMB_X27_Y5_N14 ; 8       ; Clock enable  ; no     ; --                   ; --               ; --                        ;
-; contador_ID:RegIndX|data_out[8]~0                     ; LCCOMB_X24_Y5_N14 ; 14      ; Clock enable  ; no     ; --                   ; --               ; --                        ;
-; secuenciador:inst10|logica_seleccion:inst1|SELECTOR~2 ; LCCOMB_X20_Y5_N20 ; 16      ; Output enable ; no     ; --                   ; --               ; --                        ;
-; secuenciador:inst10|registro_sec:inst3|PC[0]~10       ; LCCOMB_X25_Y5_N20 ; 33      ; Clock enable  ; no     ; --                   ; --               ; --                        ;
-; secuenciador:inst10|registro_sec:inst3|X[0]~0         ; LCCOMB_X24_Y5_N18 ; 8       ; Clock enable  ; no     ; --                   ; --               ; --                        ;
-; secuenciador:inst10|registro_sec:inst3|nCBD           ; LCCOMB_X23_Y5_N22 ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK16           ; --                        ;
-; secuenciador:inst10|registro_sec:inst3|nCRI           ; LCCOMB_X23_Y5_N24 ; 2       ; Clock         ; no     ; --                   ; --               ; --                        ;
-; secuenciador:inst10|registro_sec:inst3|nCRI           ; LCCOMB_X23_Y5_N24 ; 7       ; Clock         ; yes    ; Global Clock         ; GCLK17           ; --                        ;
-+-------------------------------------------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                   ;
++------------------------------------------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
+; Name                                                 ; Location          ; Fan-Out ; Usage         ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------------------------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
+; CLK                                                  ; PIN_M8            ; 21      ; Clock         ; no     ; --                   ; --               ; --                        ;
+; CLK                                                  ; PIN_M8            ; 60      ; Clock         ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; RESET                                                ; PIN_AB2           ; 76      ; Async. clear  ; no     ; --                   ; --               ; --                        ;
+; acumulador:AcumuladorA|data_out[7]~0                 ; LCCOMB_X19_Y5_N8  ; 8       ; Clock enable  ; no     ; --                   ; --               ; --                        ;
+; acumulador:AcumuladorB|data_out[7]~0                 ; LCCOMB_X27_Y5_N14 ; 8       ; Clock enable  ; no     ; --                   ; --               ; --                        ;
+; contador_ID:RegIndX|data_out[8]~0                    ; LCCOMB_X24_Y5_N14 ; 14      ; Clock enable  ; no     ; --                   ; --               ; --                        ;
+; secuenciador:inst6|logica_seleccion:inst1|SELECTOR~2 ; LCCOMB_X20_Y5_N20 ; 16      ; Output enable ; no     ; --                   ; --               ; --                        ;
+; secuenciador:inst6|registro_sec:inst3|PC[0]~10       ; LCCOMB_X25_Y5_N20 ; 33      ; Clock enable  ; no     ; --                   ; --               ; --                        ;
+; secuenciador:inst6|registro_sec:inst3|X[0]~0         ; LCCOMB_X24_Y5_N18 ; 8       ; Clock enable  ; no     ; --                   ; --               ; --                        ;
+; secuenciador:inst6|registro_sec:inst3|nCBD           ; LCCOMB_X23_Y5_N22 ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK16           ; --                        ;
+; secuenciador:inst6|registro_sec:inst3|nCRI           ; LCCOMB_X23_Y5_N24 ; 2       ; Clock         ; no     ; --                   ; --               ; --                        ;
+; secuenciador:inst6|registro_sec:inst3|nCRI           ; LCCOMB_X23_Y5_N24 ; 7       ; Clock         ; yes    ; Global Clock         ; GCLK17           ; --                        ;
++------------------------------------------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                            ;
-+---------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                        ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLK                                         ; PIN_M8            ; 60      ; 47                                   ; Global Clock         ; GCLK3            ; --                        ;
-; secuenciador:inst10|registro_sec:inst3|nCBD ; LCCOMB_X23_Y5_N22 ; 8       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
-; secuenciador:inst10|registro_sec:inst3|nCRI ; LCCOMB_X23_Y5_N24 ; 7       ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
-+---------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                           ;
++--------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                       ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; CLK                                        ; PIN_M8            ; 60      ; 47                                   ; Global Clock         ; GCLK3            ; --                        ;
+; secuenciador:inst6|registro_sec:inst3|nCBD ; LCCOMB_X23_Y5_N22 ; 8       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
+; secuenciador:inst6|registro_sec:inst3|nCRI ; LCCOMB_X23_Y5_N24 ; 7       ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
++--------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------+
@@ -2050,58 +2050,58 @@ Note: For more information on problematic transfers, consider running the Fitter
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                         ;
-+----------------------------------------------------------------+--------------------------------------------------+-------------------+
-; Source Register                                                ; Destination Register                             ; Delay Added in ns ;
-+----------------------------------------------------------------+--------------------------------------------------+-------------------+
-; RESET                                                          ; registro_instruccion:inst11|valor_interno[9]     ; 12.416            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[0]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_sec:inst3|liga[0]                 ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_sec:inst3|vf                      ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_sec:inst3|prueba[4]               ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; contador_ID:RegIndX|data_out[0]                                ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; upa:upa|Banderas[2]                                            ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[8]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; registro_instruccion:inst11|valor_interno[8]                   ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[1]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[7]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[4]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; registro_instruccion:inst11|valor_interno[11]                  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[10] ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; registro_instruccion:inst11|valor_interno[10]                  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[6]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; registro_instruccion:inst11|valor_interno[6]                   ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[5]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[9]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; registro_instruccion:inst11|valor_interno[9]                   ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; registro_instruccion:inst11|valor_interno[5]                   ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; registro_instruccion:inst11|valor_interno[4]                   ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[3]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[2]  ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; registro_instruccion:inst11|valor_interno[7]                   ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_sec:inst3|instruccion[1]          ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_sec:inst3|instruccion[0]          ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_sec:inst3|prueba[0]               ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; secuenciador:inst10|registro_MicroInst:inst2|valor_interno[11] ; registro_instruccion:inst11|valor_interno[9]     ; 10.848            ;
-; contador:RegPC|data_out[0]                                     ; registro_direccion:dir|valor_interno[0]          ; 9.359             ;
-; contador:RegPC|data_out[5]                                     ; registro_direccion:dir|valor_interno[5]          ; 9.196             ;
-; contador:RegPC|data_out[7]                                     ; registro_direccion:dir|valor_interno[7]          ; 9.142             ;
-; contador:RegPC|data_out[6]                                     ; registro_direccion:dir|valor_interno[6]          ; 9.142             ;
-; contador:RegPC|data_out[2]                                     ; registro_direccion:dir|valor_interno[2]          ; 9.142             ;
-; contador:RegPC|data_out[4]                                     ; registro_direccion:dir|valor_interno[4]          ; 9.058             ;
-; contador:RegPC|data_out[1]                                     ; registro_direccion:dir|valor_interno[1]          ; 8.979             ;
-; contador:RegPC|data_out[3]                                     ; registro_direccion:dir|valor_interno[3]          ; 8.979             ;
-; registro_direccion:dir|valor_interno[1]                        ; registro_instruccion:inst11|valor_interno[4]     ; 4.954             ;
-; registro_direccion:dir|valor_interno[0]                        ; registro_instruccion:inst11|valor_interno[4]     ; 4.905             ;
-; registro_direccion:dir|valor_interno[2]                        ; registro_instruccion:inst11|valor_interno[4]     ; 4.863             ;
-; registro_direccion:dir|valor_interno[7]                        ; registro_instruccion:inst11|valor_interno[4]     ; 4.858             ;
-; registro_direccion:dir|valor_interno[6]                        ; registro_instruccion:inst11|valor_interno[4]     ; 4.852             ;
-; registro_direccion:dir|valor_interno[3]                        ; registro_instruccion:inst11|valor_interno[4]     ; 4.842             ;
-; registro_direccion:dir|valor_interno[4]                        ; registro_instruccion:inst11|valor_interno[4]     ; 4.814             ;
-; registro_direccion:dir|valor_interno[5]                        ; registro_instruccion:inst11|valor_interno[4]     ; 4.659             ;
-; CLK                                                            ; secuenciador:inst10|registro_sec:inst3|prueba[4] ; 0.270             ;
-+----------------------------------------------------------------+--------------------------------------------------+-------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                       ;
++---------------------------------------------------------------+-------------------------------------------------+-------------------+
+; Source Register                                               ; Destination Register                            ; Delay Added in ns ;
++---------------------------------------------------------------+-------------------------------------------------+-------------------+
+; RESET                                                         ; registro_instruccion:inst11|valor_interno[9]    ; 12.416            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[0]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_sec:inst3|liga[0]                 ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_sec:inst3|vf                      ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_sec:inst3|prueba[4]               ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; contador_ID:RegIndX|data_out[0]                               ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; upa:upa|Banderas[2]                                           ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[8]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; registro_instruccion:inst11|valor_interno[8]                  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[1]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[7]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[4]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; registro_instruccion:inst11|valor_interno[11]                 ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[10] ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; registro_instruccion:inst11|valor_interno[10]                 ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[6]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; registro_instruccion:inst11|valor_interno[6]                  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[5]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[9]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; registro_instruccion:inst11|valor_interno[9]                  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; registro_instruccion:inst11|valor_interno[5]                  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; registro_instruccion:inst11|valor_interno[4]                  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[3]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[2]  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; registro_instruccion:inst11|valor_interno[7]                  ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_sec:inst3|instruccion[1]          ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_sec:inst3|instruccion[0]          ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_sec:inst3|prueba[0]               ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; secuenciador:inst6|registro_MicroInst:inst2|valor_interno[11] ; registro_instruccion:inst11|valor_interno[9]    ; 10.848            ;
+; contador:RegPC|data_out[0]                                    ; registro_direccion:dir|valor_interno[0]         ; 9.359             ;
+; contador:RegPC|data_out[5]                                    ; registro_direccion:dir|valor_interno[5]         ; 9.196             ;
+; contador:RegPC|data_out[7]                                    ; registro_direccion:dir|valor_interno[7]         ; 9.142             ;
+; contador:RegPC|data_out[6]                                    ; registro_direccion:dir|valor_interno[6]         ; 9.142             ;
+; contador:RegPC|data_out[2]                                    ; registro_direccion:dir|valor_interno[2]         ; 9.142             ;
+; contador:RegPC|data_out[4]                                    ; registro_direccion:dir|valor_interno[4]         ; 9.058             ;
+; contador:RegPC|data_out[1]                                    ; registro_direccion:dir|valor_interno[1]         ; 8.979             ;
+; contador:RegPC|data_out[3]                                    ; registro_direccion:dir|valor_interno[3]         ; 8.979             ;
+; registro_direccion:dir|valor_interno[1]                       ; registro_instruccion:inst11|valor_interno[4]    ; 4.954             ;
+; registro_direccion:dir|valor_interno[0]                       ; registro_instruccion:inst11|valor_interno[4]    ; 4.905             ;
+; registro_direccion:dir|valor_interno[2]                       ; registro_instruccion:inst11|valor_interno[4]    ; 4.863             ;
+; registro_direccion:dir|valor_interno[7]                       ; registro_instruccion:inst11|valor_interno[4]    ; 4.858             ;
+; registro_direccion:dir|valor_interno[6]                       ; registro_instruccion:inst11|valor_interno[4]    ; 4.852             ;
+; registro_direccion:dir|valor_interno[3]                       ; registro_instruccion:inst11|valor_interno[4]    ; 4.842             ;
+; registro_direccion:dir|valor_interno[4]                       ; registro_instruccion:inst11|valor_interno[4]    ; 4.814             ;
+; registro_direccion:dir|valor_interno[5]                       ; registro_instruccion:inst11|valor_interno[4]    ; 4.659             ;
+; CLK                                                           ; secuenciador:inst6|registro_sec:inst3|prueba[4] ; 0.270             ;
++---------------------------------------------------------------+-------------------------------------------------+-------------------+
 Note: This table only shows the top 46 path(s) that have the largest delay added for hold.
 
 
@@ -2145,90 +2145,90 @@ Critical Warning (169085): No exact pin location assignment(s) for 143 pins of 1
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'LOAC_P7_CISC.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Warning (332125): Found combinational loop of 62 nodes File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/db/mux_f7c.tdf Line: 29
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[11]~11|combout"
-    Warning (332126): Node "inst10|inst|Equal3~1|dataa"
-    Warning (332126): Node "inst10|inst|Equal3~1|combout"
-    Warning (332126): Node "inst10|inst|Equal14~0|datac"
-    Warning (332126): Node "inst10|inst|Equal14~0|combout"
-    Warning (332126): Node "inst10|inst|Equal14~1|datab"
-    Warning (332126): Node "inst10|inst|Equal14~1|combout"
-    Warning (332126): Node "inst10|inst|Equal17~0|datac"
-    Warning (332126): Node "inst10|inst|Equal17~0|combout"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[11]~11|combout"
+    Warning (332126): Node "inst6|inst|Equal3~1|dataa"
+    Warning (332126): Node "inst6|inst|Equal3~1|combout"
+    Warning (332126): Node "inst6|inst|Equal14~0|datac"
+    Warning (332126): Node "inst6|inst|Equal14~0|combout"
+    Warning (332126): Node "inst6|inst|Equal14~1|datab"
+    Warning (332126): Node "inst6|inst|Equal14~1|combout"
+    Warning (332126): Node "inst6|inst|Equal17~0|datac"
+    Warning (332126): Node "inst6|inst|Equal17~0|combout"
     Warning (332126): Node "RegIndX|R0~0|datad"
     Warning (332126): Node "RegIndX|R0~0|combout"
-    Warning (332126): Node "inst10|inst6|$00001|auto_generated|result_node[0]~0|dataa"
-    Warning (332126): Node "inst10|inst6|$00001|auto_generated|result_node[0]~0|combout"
-    Warning (332126): Node "inst10|inst7|datad"
-    Warning (332126): Node "inst10|inst7|combout"
-    Warning (332126): Node "inst10|inst1|SELECTOR~0|datac"
-    Warning (332126): Node "inst10|inst1|SELECTOR~0|combout"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[11]~11|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[10]~10|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[10]~10|combout"
-    Warning (332126): Node "inst10|inst|Equal14~0|dataa"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[6]~6|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[6]~6|combout"
-    Warning (332126): Node "inst10|inst|Equal3~1|datab"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[9]~9|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[9]~9|combout"
-    Warning (332126): Node "inst10|inst|Equal3~0|datab"
-    Warning (332126): Node "inst10|inst|Equal3~0|combout"
-    Warning (332126): Node "inst10|inst|Equal14~0|datab"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[5]~5|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[5]~5|combout"
-    Warning (332126): Node "inst10|inst|Equal3~0|dataa"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[4]~4|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[4]~4|combout"
-    Warning (332126): Node "inst10|inst|Equal3~0|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[3]~3|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[3]~3|combout"
-    Warning (332126): Node "inst10|inst|Equal3~0|datad"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[2]~2|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[2]~2|combout"
-    Warning (332126): Node "inst10|inst|Equal14~1|datad"
-    Warning (332126): Node "inst10|inst|Equal15~0|datad"
-    Warning (332126): Node "inst10|inst|Equal15~0|combout"
+    Warning (332126): Node "inst6|inst6|$00001|auto_generated|result_node[0]~0|dataa"
+    Warning (332126): Node "inst6|inst6|$00001|auto_generated|result_node[0]~0|combout"
+    Warning (332126): Node "inst6|inst7|datad"
+    Warning (332126): Node "inst6|inst7|combout"
+    Warning (332126): Node "inst6|inst1|SELECTOR~0|datac"
+    Warning (332126): Node "inst6|inst1|SELECTOR~0|combout"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[11]~11|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[10]~10|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[10]~10|combout"
+    Warning (332126): Node "inst6|inst|Equal14~0|dataa"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[6]~6|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[6]~6|combout"
+    Warning (332126): Node "inst6|inst|Equal3~1|datab"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[9]~9|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[9]~9|combout"
+    Warning (332126): Node "inst6|inst|Equal3~0|datab"
+    Warning (332126): Node "inst6|inst|Equal3~0|combout"
+    Warning (332126): Node "inst6|inst|Equal14~0|datab"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[5]~5|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[5]~5|combout"
+    Warning (332126): Node "inst6|inst|Equal3~0|dataa"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[4]~4|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[4]~4|combout"
+    Warning (332126): Node "inst6|inst|Equal3~0|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[3]~3|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[3]~3|combout"
+    Warning (332126): Node "inst6|inst|Equal3~0|datad"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[2]~2|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[2]~2|combout"
+    Warning (332126): Node "inst6|inst|Equal14~1|datad"
+    Warning (332126): Node "inst6|inst|Equal15~0|datad"
+    Warning (332126): Node "inst6|inst|Equal15~0|combout"
     Warning (332126): Node "RegIndX|R0~0|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[7]~7|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[7]~7|combout"
-    Warning (332126): Node "inst10|inst|Equal14~1|dataa"
-    Warning (332126): Node "inst10|inst|Equal15~0|dataa"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[1]~1|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[1]~1|combout"
-    Warning (332126): Node "inst10|inst|Equal17~0|dataa"
-    Warning (332126): Node "inst10|inst|Equal1~0|datad"
-    Warning (332126): Node "inst10|inst|Equal1~0|combout"
-    Warning (332126): Node "inst10|inst|Equal15~0|datab"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[8]~8|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[8]~8|combout"
-    Warning (332126): Node "inst10|inst|Equal3~1|datad"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[0]~0|datac"
-    Warning (332126): Node "inst10|inst5|$00000|auto_generated|result_node[0]~0|combout"
-    Warning (332126): Node "inst10|inst|Equal17~0|datab"
-    Warning (332126): Node "inst10|inst|Equal1~0|dataa"
-    Warning (332126): Node "inst10|inst|Equal15~0|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[7]~7|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[7]~7|combout"
+    Warning (332126): Node "inst6|inst|Equal14~1|dataa"
+    Warning (332126): Node "inst6|inst|Equal15~0|dataa"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[1]~1|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[1]~1|combout"
+    Warning (332126): Node "inst6|inst|Equal17~0|dataa"
+    Warning (332126): Node "inst6|inst|Equal1~0|datad"
+    Warning (332126): Node "inst6|inst|Equal1~0|combout"
+    Warning (332126): Node "inst6|inst|Equal15~0|datab"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[8]~8|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[8]~8|combout"
+    Warning (332126): Node "inst6|inst|Equal3~1|datad"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[0]~0|datac"
+    Warning (332126): Node "inst6|inst5|$00000|auto_generated|result_node[0]~0|combout"
+    Warning (332126): Node "inst6|inst|Equal17~0|datab"
+    Warning (332126): Node "inst6|inst|Equal1~0|dataa"
+    Warning (332126): Node "inst6|inst|Equal15~0|datac"
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): From: RegIndX|R0~0|datab  to: inst10|inst5|$00000|auto_generated|result_node[0]~0|combout
+    Info (332098): From: RegIndX|R0~0|datab  to: inst6|inst5|$00000|auto_generated|result_node[0]~0|combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node CLK~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node secuenciador:inst10|registro_sec:inst3|liga[0] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 138
-        Info (176357): Destination node secuenciador:inst10|registro_sec:inst3|instruccion[0] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 138
-        Info (176357): Destination node secuenciador:inst10|registro_sec:inst3|instruccion[1] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 138
-        Info (176357): Destination node secuenciador:inst10|registro_MicroInst:inst2|valor_interno[0] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
+        Info (176357): Destination node secuenciador:inst6|registro_sec:inst3|liga[0] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 138
+        Info (176357): Destination node secuenciador:inst6|registro_sec:inst3|instruccion[0] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 138
+        Info (176357): Destination node secuenciador:inst6|registro_sec:inst3|instruccion[1] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 138
+        Info (176357): Destination node secuenciador:inst6|registro_MicroInst:inst2|valor_interno[0] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
         Info (176357): Destination node contador_ID:RegIndX|data_out[0] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/contador_ID.vhd Line: 49
         Info (176357): Destination node upa:upa|Banderas[2] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/upa.vhd Line: 157
-        Info (176357): Destination node secuenciador:inst10|registro_MicroInst:inst2|valor_interno[11] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
-        Info (176357): Destination node secuenciador:inst10|registro_MicroInst:inst2|valor_interno[10] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
-        Info (176357): Destination node secuenciador:inst10|registro_MicroInst:inst2|valor_interno[9] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
-        Info (176357): Destination node secuenciador:inst10|registro_MicroInst:inst2|valor_interno[8] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
+        Info (176357): Destination node secuenciador:inst6|registro_MicroInst:inst2|valor_interno[11] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
+        Info (176357): Destination node secuenciador:inst6|registro_MicroInst:inst2|valor_interno[10] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
+        Info (176357): Destination node secuenciador:inst6|registro_MicroInst:inst2|valor_interno[9] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
+        Info (176357): Destination node secuenciador:inst6|registro_MicroInst:inst2|valor_interno[8] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_MicroInst.vhd Line: 18
         Info (176358): Non-global destination nodes limited to 10 nodes
-Info (176353): Automatically promoted node secuenciador:inst10|registro_sec:inst3|nCBD  File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 39
+Info (176353): Automatically promoted node secuenciador:inst6|registro_sec:inst3|nCBD  File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 39
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node secuenciador:inst10|registro_sec:inst3|nCRI  File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 12
+Info (176353): Automatically promoted node secuenciador:inst6|registro_sec:inst3|nCRI  File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_sec.vhd Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node registro_instruccion:inst11|valor_interno[8] File: C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/registro_instruccion.vhd Line: 18
@@ -2249,31 +2249,31 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  60 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  52 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:11
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:37
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:39
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 5% of the available device resources in the region that extends from location X22_Y0 to location X32_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:10
-Info (11888): Total time spent on timing analysis during the Fitter is 7.19 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:12
+Info (11888): Total time spent on timing analysis during the Fitter is 8.43 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:07
 Info (144001): Generated suppressed messages file C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/output_files/LOAC_P7_CISC.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 5455 megabytes
-    Info: Processing ended: Sat Oct 26 21:52:38 2019
-    Info: Elapsed time: 00:01:08
-    Info: Total CPU time (on all processors): 00:01:04
+    Info: Peak virtual memory: 5354 megabytes
+    Info: Processing ended: Sat Oct 26 22:32:13 2019
+    Info: Elapsed time: 00:01:35
+    Info: Total CPU time (on all processors): 00:01:14
 
 
 +----------------------------+

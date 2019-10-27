@@ -1,7 +1,7 @@
 # do LOAC_P7_CISC.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:16 on Oct 26,2019
+# Start time: 22:34:19 on Oct 26,2019
 # vcom -work work LOAC_P7_CISC.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -16,20 +16,20 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity LOAC_P7_CISC
 # -- Compiling architecture structure of LOAC_P7_CISC
-# End time: 21:54:16 on Oct 26,2019, Elapsed time: 0:00:00
+# End time: 22:34:22 on Oct 26,2019, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:17 on Oct 26,2019
-# vcom -work work Waveform6.vwf.vht 
+# Start time: 22:34:22 on Oct 26,2019
+# vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity LOAC_P7_CISC_vhd_vec_tst
 # -- Compiling architecture LOAC_P7_CISC_arch of LOAC_P7_CISC_vhd_vec_tst
-# End time: 21:54:17 on Oct 26,2019, Elapsed time: 0:00:00
+# End time: 22:34:22 on Oct 26,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.LOAC_P7_CISC_vhd_vec_tst 
-# Start time: 21:54:17 on Oct 26,2019
+# Start time: 22:34:28 on Oct 26,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -53,5 +53,5 @@
 # ** Warning: Design size of 40302 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#35
-# End time: 21:54:19 on Oct 26,2019, Elapsed time: 0:00:02
+# End time: 22:34:31 on Oct 26,2019, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 1

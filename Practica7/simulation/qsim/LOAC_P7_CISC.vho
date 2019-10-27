@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "10/26/2019 21:54:14"
+-- DATE "10/26/2019 22:34:05"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -286,8 +286,8 @@ SIGNAL ww_DebugRA : std_logic_vector(15 DOWNTO 0);
 SIGNAL ww_regInstr : std_logic_vector(11 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
-SIGNAL \inst10|inst3|nCRI~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \inst10|inst3|nCBD~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \inst6|inst3|nCRI~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \inst6|inst3|nCBD~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \CLK~inputclkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \IRQn~input_o\ : std_logic;
 SIGNAL \XIRQn~input_o\ : std_logic;
@@ -436,15 +436,15 @@ SIGNAL \DebugRA[1]~output_o\ : std_logic;
 SIGNAL \DebugRA[0]~output_o\ : std_logic;
 SIGNAL \CLK~input_o\ : std_logic;
 SIGNAL \RESET~input_o\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[1]~11_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[1]~12\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[2]~13_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[7]~24\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[8]~25_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[2]~14\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[3]~15_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[1]~11_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[1]~12\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[2]~13_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[7]~24\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[8]~25_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[2]~14\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[3]~15_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\ : std_logic;
 SIGNAL \CLK~inputclkctrl_outclk\ : std_logic;
 SIGNAL \RegPC|data_out[0]~45_combout\ : std_logic;
 SIGNAL \RegPC|data_out[0]~feeder_combout\ : std_logic;
@@ -471,108 +471,108 @@ SIGNAL \dir|valor_interno[5]~feeder_combout\ : std_logic;
 SIGNAL \dir|valor_interno[4]~feeder_combout\ : std_logic;
 SIGNAL \inst|data_out[7]~0_combout\ : std_logic;
 SIGNAL \inst|data[1]~4_combout\ : std_logic;
-SIGNAL \inst10|inst8[5]~6_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[3]~16\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[4]~17_combout\ : std_logic;
+SIGNAL \inst6|inst8[5]~6_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[3]~16\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[4]~17_combout\ : std_logic;
 SIGNAL \inst|Mux7~0_combout\ : std_logic;
 SIGNAL \inst|data[0]~5_combout\ : std_logic;
-SIGNAL \inst10|inst8[4]~7_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[4]~18\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[5]~19_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[8]~26\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[9]~27_combout\ : std_logic;
+SIGNAL \inst6|inst8[4]~7_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[4]~18\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[5]~19_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[8]~26\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[9]~27_combout\ : std_logic;
 SIGNAL \inst11|valor_interno[9]~0_combout\ : std_logic;
-SIGNAL \inst10|inst8[9]~2_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal3~0_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal14~0_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal0~3_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal14~2_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal0~0_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal12~0_combout\ : std_logic;
-SIGNAL \inst10|inst3|PC[0]~6_combout\ : std_logic;
-SIGNAL \inst10|inst3|PC[0]~12_combout\ : std_logic;
-SIGNAL \inst10|inst|data~17_combout\ : std_logic;
-SIGNAL \inst10|inst|data[87]~28_combout\ : std_logic;
-SIGNAL \inst10|inst3|PC[0]~11_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal11~0_combout\ : std_logic;
-SIGNAL \inst10|inst|data[87]~27_combout\ : std_logic;
-SIGNAL \inst10|inst|data[87]~16_combout\ : std_logic;
-SIGNAL \inst10|inst|data[87]~18_combout\ : std_logic;
-SIGNAL \inst10|inst|data[87]~26_combout\ : std_logic;
-SIGNAL \inst10|inst3|PC[0]~7_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal14~1_combout\ : std_logic;
-SIGNAL \inst10|inst3|PC[0]~8_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal15~0_combout\ : std_logic;
-SIGNAL \inst10|inst3|PC[0]~13_combout\ : std_logic;
-SIGNAL \inst10|inst3|PC[0]~9_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal17~0_combout\ : std_logic;
-SIGNAL \inst10|inst3|PC[0]~10_combout\ : std_logic;
+SIGNAL \inst6|inst8[9]~2_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal3~0_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal14~0_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal0~3_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal14~2_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal0~0_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal12~0_combout\ : std_logic;
+SIGNAL \inst6|inst3|PC[0]~6_combout\ : std_logic;
+SIGNAL \inst6|inst3|PC[0]~12_combout\ : std_logic;
+SIGNAL \inst6|inst|data~17_combout\ : std_logic;
+SIGNAL \inst6|inst|data[87]~28_combout\ : std_logic;
+SIGNAL \inst6|inst3|PC[0]~11_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal11~0_combout\ : std_logic;
+SIGNAL \inst6|inst|data[87]~27_combout\ : std_logic;
+SIGNAL \inst6|inst|data[87]~16_combout\ : std_logic;
+SIGNAL \inst6|inst|data[87]~18_combout\ : std_logic;
+SIGNAL \inst6|inst|data[87]~26_combout\ : std_logic;
+SIGNAL \inst6|inst3|PC[0]~7_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal14~1_combout\ : std_logic;
+SIGNAL \inst6|inst3|PC[0]~8_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal15~0_combout\ : std_logic;
+SIGNAL \inst6|inst3|PC[0]~13_combout\ : std_logic;
+SIGNAL \inst6|inst3|PC[0]~9_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal17~0_combout\ : std_logic;
+SIGNAL \inst6|inst3|PC[0]~10_combout\ : std_logic;
 SIGNAL \inst|Mux1~0_combout\ : std_logic;
 SIGNAL \inst|data[6]~1_combout\ : std_logic;
-SIGNAL \inst10|inst8[10]~1_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[9]~28\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[10]~29_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[10]~30\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[11]~31_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal0~1_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal0~2_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal2~0_combout\ : std_logic;
-SIGNAL \inst10|inst|data[27]~25_combout\ : std_logic;
-SIGNAL \inst10|inst|data[27]~21_combout\ : std_logic;
-SIGNAL \inst10|inst3|nCBD~combout\ : std_logic;
-SIGNAL \inst10|inst3|nCBD~clkctrl_outclk\ : std_logic;
+SIGNAL \inst6|inst8[10]~1_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[9]~28\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[10]~29_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[10]~30\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[11]~31_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal0~1_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal0~2_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal2~0_combout\ : std_logic;
+SIGNAL \inst6|inst|data[27]~25_combout\ : std_logic;
+SIGNAL \inst6|inst|data[27]~21_combout\ : std_logic;
+SIGNAL \inst6|inst3|nCBD~combout\ : std_logic;
+SIGNAL \inst6|inst3|nCBD~clkctrl_outclk\ : std_logic;
 SIGNAL \dir|valor_interno[0]~feeder_combout\ : std_logic;
 SIGNAL \inst|data_out[4]~1_combout\ : std_logic;
 SIGNAL \inst|data[4]~2_combout\ : std_logic;
-SIGNAL \inst10|inst8[8]~3_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal3~1_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal3~2_combout\ : std_logic;
-SIGNAL \inst10|inst|data~30_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal18~0_combout\ : std_logic;
-SIGNAL \inst10|inst|data[86]~22_combout\ : std_logic;
-SIGNAL \inst10|inst1|SELECTOR~2_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ : std_logic;
-SIGNAL \inst10|inst|Equal1~0_combout\ : std_logic;
-SIGNAL \inst10|inst|data[73]~24_combout\ : std_logic;
-SIGNAL \inst10|inst3|nCRI~combout\ : std_logic;
-SIGNAL \inst10|inst3|nCRI~clkctrl_outclk\ : std_logic;
+SIGNAL \inst6|inst8[8]~3_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal3~1_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal3~2_combout\ : std_logic;
+SIGNAL \inst6|inst|data~30_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal18~0_combout\ : std_logic;
+SIGNAL \inst6|inst|data[86]~22_combout\ : std_logic;
+SIGNAL \inst6|inst1|SELECTOR~2_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ : std_logic;
+SIGNAL \inst6|inst|Equal1~0_combout\ : std_logic;
+SIGNAL \inst6|inst|data[73]~24_combout\ : std_logic;
+SIGNAL \inst6|inst3|nCRI~combout\ : std_logic;
+SIGNAL \inst6|inst3|nCRI~clkctrl_outclk\ : std_logic;
 SIGNAL \inst|Mux0~0_combout\ : std_logic;
 SIGNAL \inst|data[7]~0_combout\ : std_logic;
-SIGNAL \inst10|inst8[6]~5_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[5]~20\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[6]~21_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[6]~22\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[7]~23_combout\ : std_logic;
+SIGNAL \inst6|inst8[6]~5_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[5]~20\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[6]~21_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[6]~22\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[7]~23_combout\ : std_logic;
 SIGNAL \inst|Mux4~0_combout\ : std_logic;
 SIGNAL \inst|data[3]~3_combout\ : std_logic;
-SIGNAL \inst10|inst8[7]~4_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ : std_logic;
-SIGNAL \inst10|inst|data[86]~32_combout\ : std_logic;
-SIGNAL \inst10|inst|data[86]~20_combout\ : std_logic;
-SIGNAL \inst10|inst|data~23_combout\ : std_logic;
-SIGNAL \inst10|inst3|X[0]~0_combout\ : std_logic;
+SIGNAL \inst6|inst8[7]~4_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ : std_logic;
+SIGNAL \inst6|inst|data[86]~32_combout\ : std_logic;
+SIGNAL \inst6|inst|data[86]~20_combout\ : std_logic;
+SIGNAL \inst6|inst|data~23_combout\ : std_logic;
+SIGNAL \inst6|inst3|X[0]~0_combout\ : std_logic;
 SIGNAL \RegIndX|R0~0_combout\ : std_logic;
 SIGNAL \AcumuladorA|data_out[7]~feeder_combout\ : std_logic;
 SIGNAL \AcumuladorA|data_out[7]~0_combout\ : std_logic;
-SIGNAL \inst10|inst|data[86]~31_combout\ : std_logic;
-SIGNAL \inst10|inst6|$00001|auto_generated|result_node[0]~0_combout\ : std_logic;
-SIGNAL \inst10|inst3|vf~q\ : std_logic;
-SIGNAL \inst10|inst7~combout\ : std_logic;
-SIGNAL \inst10|inst1|SELECTOR~3_combout\ : std_logic;
-SIGNAL \inst10|inst1|SELECTOR~0_combout\ : std_logic;
-SIGNAL \inst10|inst2|valor_interno[0]~33_combout\ : std_logic;
+SIGNAL \inst6|inst|data[86]~31_combout\ : std_logic;
+SIGNAL \inst6|inst6|$00001|auto_generated|result_node[0]~0_combout\ : std_logic;
+SIGNAL \inst6|inst3|vf~q\ : std_logic;
+SIGNAL \inst6|inst7~combout\ : std_logic;
+SIGNAL \inst6|inst1|SELECTOR~3_combout\ : std_logic;
+SIGNAL \inst6|inst1|SELECTOR~0_combout\ : std_logic;
+SIGNAL \inst6|inst2|valor_interno[0]~33_combout\ : std_logic;
 SIGNAL \inst12[0]~0_combout\ : std_logic;
-SIGNAL \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ : std_logic;
-SIGNAL \inst10|inst|data[87]~29_combout\ : std_logic;
-SIGNAL \inst10|inst|data[87]~19_combout\ : std_logic;
-SIGNAL \inst10|inst8[11]~0_combout\ : std_logic;
+SIGNAL \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ : std_logic;
+SIGNAL \inst6|inst|data[87]~29_combout\ : std_logic;
+SIGNAL \inst6|inst|data[87]~19_combout\ : std_logic;
+SIGNAL \inst6|inst8[11]~0_combout\ : std_logic;
 SIGNAL \AcumuladorA|data_out[6]~feeder_combout\ : std_logic;
 SIGNAL \upa|Q[6]~feeder_combout\ : std_logic;
 SIGNAL \AcumuladorA|data_out[5]~1_combout\ : std_logic;
@@ -633,19 +633,19 @@ SIGNAL \RegPC|data_out[14]~41_combout\ : std_logic;
 SIGNAL \RegPC|data_out[14]~42\ : std_logic;
 SIGNAL \RegPC|data_out[15]~43_combout\ : std_logic;
 SIGNAL \AcumuladorA|data_out\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \inst10|inst2|valor_interno\ : std_logic_vector(11 DOWNTO 0);
+SIGNAL \inst6|inst2|valor_interno\ : std_logic_vector(11 DOWNTO 0);
 SIGNAL \inst11|valor_interno\ : std_logic_vector(11 DOWNTO 0);
 SIGNAL \RegPC|data_out\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \upa|Banderas\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \dir|valor_interno\ : std_logic_vector(15 DOWNTO 0);
-SIGNAL \inst10|inst3|instruccion\ : std_logic_vector(1 DOWNTO 0);
+SIGNAL \inst6|inst3|instruccion\ : std_logic_vector(1 DOWNTO 0);
 SIGNAL \upa|Q\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \inst10|inst3|liga\ : std_logic_vector(11 DOWNTO 0);
+SIGNAL \inst6|inst3|liga\ : std_logic_vector(11 DOWNTO 0);
 SIGNAL \upa|Yupa_interno\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \AcumuladorB|data_out\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \RegIndX|data_out\ : std_logic_vector(15 DOWNTO 0);
-SIGNAL \inst10|inst3|prueba\ : std_logic_vector(4 DOWNTO 0);
-SIGNAL \inst10|inst1|ALT_INV_SELECTOR~2_combout\ : std_logic;
+SIGNAL \inst6|inst3|prueba\ : std_logic_vector(4 DOWNTO 0);
+SIGNAL \inst6|inst1|ALT_INV_SELECTOR~2_combout\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -682,12 +682,12 @@ ww_devpor <= devpor;
 
 \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ <= (\~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\);
 
-\inst10|inst3|nCRI~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst10|inst3|nCRI~combout\);
+\inst6|inst3|nCRI~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst6|inst3|nCRI~combout\);
 
-\inst10|inst3|nCBD~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst10|inst3|nCBD~combout\);
+\inst6|inst3|nCBD~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst6|inst3|nCBD~combout\);
 
 \CLK~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \CLK~input_o\);
-\inst10|inst1|ALT_INV_SELECTOR~2_combout\ <= NOT \inst10|inst1|SELECTOR~2_combout\;
+\inst6|inst1|ALT_INV_SELECTOR~2_combout\ <= NOT \inst6|inst1|SELECTOR~2_combout\;
 auto_generated_inst : hard_block
 PORT MAP (
 	devoe => ww_devoe,
@@ -715,8 +715,8 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst8[11]~0_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	i => \inst6|inst8[11]~0_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[11]~output_o\);
 
@@ -728,8 +728,8 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst8[10]~1_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	i => \inst6|inst8[10]~1_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[10]~output_o\);
 
@@ -741,8 +741,8 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst8[9]~2_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	i => \inst6|inst8[9]~2_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[9]~output_o\);
 
@@ -754,8 +754,8 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst8[8]~3_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	i => \inst6|inst8[8]~3_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[8]~output_o\);
 
@@ -767,8 +767,8 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst8[7]~4_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	i => \inst6|inst8[7]~4_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[7]~output_o\);
 
@@ -780,8 +780,8 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst8[6]~5_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	i => \inst6|inst8[6]~5_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[6]~output_o\);
 
@@ -793,8 +793,8 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst8[5]~6_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	i => \inst6|inst8[5]~6_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[5]~output_o\);
 
@@ -806,8 +806,8 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst8[4]~7_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	i => \inst6|inst8[4]~7_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[4]~output_o\);
 
@@ -819,7 +819,7 @@ GENERIC MAP (
 	open_drain_output => "true")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst1|ALT_INV_SELECTOR~2_combout\,
+	i => \inst6|inst1|ALT_INV_SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[3]~output_o\);
 
@@ -831,7 +831,7 @@ GENERIC MAP (
 	open_drain_output => "true")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst1|ALT_INV_SELECTOR~2_combout\,
+	i => \inst6|inst1|ALT_INV_SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[2]~output_o\);
 
@@ -843,7 +843,7 @@ GENERIC MAP (
 	open_drain_output => "true")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst1|ALT_INV_SELECTOR~2_combout\,
+	i => \inst6|inst1|ALT_INV_SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[1]~output_o\);
 
@@ -856,7 +856,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	i => \inst12[0]~0_combout\,
-	oe => \inst10|inst1|SELECTOR~2_combout\,
+	oe => \inst6|inst1|SELECTOR~2_combout\,
 	devoe => ww_devoe,
 	o => \regInstr[0]~output_o\);
 
@@ -904,7 +904,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[11]~output_o\);
 
@@ -916,7 +916,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[10]~output_o\);
 
@@ -928,7 +928,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[9]~output_o\);
 
@@ -940,7 +940,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[8]~output_o\);
 
@@ -952,7 +952,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[7]~output_o\);
 
@@ -964,7 +964,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[6]~output_o\);
 
@@ -976,7 +976,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[5]~output_o\);
 
@@ -988,7 +988,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[4]~output_o\);
 
@@ -1000,7 +1000,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[3]~output_o\);
 
@@ -1012,7 +1012,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[2]~output_o\);
 
@@ -1024,7 +1024,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[1]~output_o\);
 
@@ -1036,7 +1036,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	i => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
 	devoe => ww_devoe,
 	o => \CurrentState[0]~output_o\);
 
@@ -2409,11 +2409,11 @@ PORT MAP (
 	o => \RESET~input_o\);
 
 -- Location: LCCOMB_X21_Y5_N0
-\inst10|inst2|valor_interno[1]~11\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[1]~11\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[1]~11_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ $ (VCC))) # (!\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & 
--- (\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & VCC))
--- \inst10|inst2|valor_interno[1]~12\ = CARRY((\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\))
+-- \inst6|inst2|valor_interno[1]~11_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ $ (VCC))) # (!\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & 
+-- (\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & VCC))
+-- \inst6|inst2|valor_interno[1]~12\ = CARRY((\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2421,14 +2421,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
 	datad => VCC,
-	combout => \inst10|inst2|valor_interno[1]~11_combout\,
-	cout => \inst10|inst2|valor_interno[1]~12\);
+	combout => \inst6|inst2|valor_interno[1]~11_combout\,
+	cout => \inst6|inst2|valor_interno[1]~12\);
 
 -- Location: FF_X21_Y5_N1
-\inst10|inst2|valor_interno[1]\ : dffeas
+\inst6|inst2|valor_interno[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -2436,18 +2436,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[1]~11_combout\,
+	d => \inst6|inst2|valor_interno[1]~11_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(1));
+	q => \inst6|inst2|valor_interno\(1));
 
 -- Location: LCCOMB_X21_Y5_N2
-\inst10|inst2|valor_interno[2]~13\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[2]~13\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[2]~13_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (!\inst10|inst2|valor_interno[1]~12\)) # (!\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ & ((\inst10|inst2|valor_interno[1]~12\) 
--- # (GND)))
--- \inst10|inst2|valor_interno[2]~14\ = CARRY((!\inst10|inst2|valor_interno[1]~12\) # (!\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\))
+-- \inst6|inst2|valor_interno[2]~13_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (!\inst6|inst2|valor_interno[1]~12\)) # (!\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ & ((\inst6|inst2|valor_interno[1]~12\) # 
+-- (GND)))
+-- \inst6|inst2|valor_interno[2]~14\ = CARRY((!\inst6|inst2|valor_interno[1]~12\) # (!\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2455,14 +2455,14 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[1]~12\,
-	combout => \inst10|inst2|valor_interno[2]~13_combout\,
-	cout => \inst10|inst2|valor_interno[2]~14\);
+	cin => \inst6|inst2|valor_interno[1]~12\,
+	combout => \inst6|inst2|valor_interno[2]~13_combout\,
+	cout => \inst6|inst2|valor_interno[2]~14\);
 
 -- Location: FF_X21_Y5_N3
-\inst10|inst2|valor_interno[2]\ : dffeas
+\inst6|inst2|valor_interno[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -2470,16 +2470,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[2]~13_combout\,
+	d => \inst6|inst2|valor_interno[2]~13_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(2));
+	q => \inst6|inst2|valor_interno\(2));
 
 -- Location: LCCOMB_X26_Y5_N28
-\inst10|inst5|$00000|auto_generated|result_node[2]~2\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[2]~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & (!\inst10|inst1|SELECTOR~2_combout\)) # (!\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst2|valor_interno\(2))))
+-- \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & (!\inst6|inst1|SELECTOR~2_combout\)) # (!\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst2|valor_interno\(2))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2487,17 +2487,17 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst1|SELECTOR~2_combout\,
-	datad => \inst10|inst2|valor_interno\(2),
-	combout => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\);
+	datab => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst1|SELECTOR~2_combout\,
+	datad => \inst6|inst2|valor_interno\(2),
+	combout => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\);
 
 -- Location: LCCOMB_X21_Y5_N12
-\inst10|inst2|valor_interno[7]~23\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[7]~23\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[7]~23_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (\inst10|inst2|valor_interno[6]~22\ $ (GND))) # (!\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & 
--- (!\inst10|inst2|valor_interno[6]~22\ & VCC))
--- \inst10|inst2|valor_interno[7]~24\ = CARRY((\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & !\inst10|inst2|valor_interno[6]~22\))
+-- \inst6|inst2|valor_interno[7]~23_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (\inst6|inst2|valor_interno[6]~22\ $ (GND))) # (!\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst6|inst2|valor_interno[6]~22\ 
+-- & VCC))
+-- \inst6|inst2|valor_interno[7]~24\ = CARRY((\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & !\inst6|inst2|valor_interno[6]~22\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2505,18 +2505,18 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[6]~22\,
-	combout => \inst10|inst2|valor_interno[7]~23_combout\,
-	cout => \inst10|inst2|valor_interno[7]~24\);
+	cin => \inst6|inst2|valor_interno[6]~22\,
+	combout => \inst6|inst2|valor_interno[7]~23_combout\,
+	cout => \inst6|inst2|valor_interno[7]~24\);
 
 -- Location: LCCOMB_X21_Y5_N14
-\inst10|inst2|valor_interno[8]~25\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[8]~25\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[8]~25_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ & (!\inst10|inst2|valor_interno[7]~24\)) # (!\inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ & ((\inst10|inst2|valor_interno[7]~24\) 
--- # (GND)))
--- \inst10|inst2|valor_interno[8]~26\ = CARRY((!\inst10|inst2|valor_interno[7]~24\) # (!\inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\))
+-- \inst6|inst2|valor_interno[8]~25_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ & (!\inst6|inst2|valor_interno[7]~24\)) # (!\inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ & ((\inst6|inst2|valor_interno[7]~24\) # 
+-- (GND)))
+-- \inst6|inst2|valor_interno[8]~26\ = CARRY((!\inst6|inst2|valor_interno[7]~24\) # (!\inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2524,14 +2524,14 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[7]~24\,
-	combout => \inst10|inst2|valor_interno[8]~25_combout\,
-	cout => \inst10|inst2|valor_interno[8]~26\);
+	cin => \inst6|inst2|valor_interno[7]~24\,
+	combout => \inst6|inst2|valor_interno[8]~25_combout\,
+	cout => \inst6|inst2|valor_interno[8]~26\);
 
 -- Location: FF_X21_Y5_N15
-\inst10|inst2|valor_interno[8]\ : dffeas
+\inst6|inst2|valor_interno[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -2539,18 +2539,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[8]~25_combout\,
+	d => \inst6|inst2|valor_interno[8]~25_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(8));
+	q => \inst6|inst2|valor_interno\(8));
 
 -- Location: LCCOMB_X21_Y5_N4
-\inst10|inst2|valor_interno[3]~15\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[3]~15\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[3]~15_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\ & (\inst10|inst2|valor_interno[2]~14\ $ (GND))) # (!\inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\ & 
--- (!\inst10|inst2|valor_interno[2]~14\ & VCC))
--- \inst10|inst2|valor_interno[3]~16\ = CARRY((\inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\ & !\inst10|inst2|valor_interno[2]~14\))
+-- \inst6|inst2|valor_interno[3]~15_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\ & (\inst6|inst2|valor_interno[2]~14\ $ (GND))) # (!\inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\ & (!\inst6|inst2|valor_interno[2]~14\ 
+-- & VCC))
+-- \inst6|inst2|valor_interno[3]~16\ = CARRY((\inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\ & !\inst6|inst2|valor_interno[2]~14\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2558,14 +2558,14 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[2]~14\,
-	combout => \inst10|inst2|valor_interno[3]~15_combout\,
-	cout => \inst10|inst2|valor_interno[3]~16\);
+	cin => \inst6|inst2|valor_interno[2]~14\,
+	combout => \inst6|inst2|valor_interno[3]~15_combout\,
+	cout => \inst6|inst2|valor_interno[3]~16\);
 
 -- Location: FF_X21_Y5_N5
-\inst10|inst2|valor_interno[3]\ : dffeas
+\inst6|inst2|valor_interno[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -2573,16 +2573,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[3]~15_combout\,
+	d => \inst6|inst2|valor_interno[3]~15_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(3));
+	q => \inst6|inst2|valor_interno\(3));
 
 -- Location: LCCOMB_X20_Y5_N6
-\inst10|inst5|$00000|auto_generated|result_node[3]~3\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[3]~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & ((!\inst10|inst1|SELECTOR~2_combout\))) # (!\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst2|valor_interno\(3)))
+-- \inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & ((!\inst6|inst1|SELECTOR~2_combout\))) # (!\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst2|valor_interno\(3)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2590,10 +2590,10 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst2|valor_interno\(3),
-	datad => \inst10|inst1|SELECTOR~2_combout\,
-	combout => \inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\);
+	dataa => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst2|valor_interno\(3),
+	datad => \inst6|inst1|SELECTOR~2_combout\,
+	combout => \inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\);
 
 -- Location: CLKCTRL_G3
 \CLK~inputclkctrl\ : fiftyfivenm_clkctrl
@@ -2611,7 +2611,7 @@ PORT MAP (
 -- Location: LCCOMB_X30_Y5_N10
 \RegPC|data_out[0]~45\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \RegPC|data_out[0]~45_combout\ = \RegPC|data_out\(0) $ (\inst10|inst3|PC[0]~10_combout\)
+-- \RegPC|data_out[0]~45_combout\ = \RegPC|data_out\(0) $ (\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2620,7 +2620,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datac => \RegPC|data_out\(0),
-	datad => \inst10|inst3|PC[0]~10_combout\,
+	datad => \inst6|inst3|PC[0]~10_combout\,
 	combout => \RegPC|data_out[0]~45_combout\);
 
 -- Location: LCCOMB_X30_Y5_N8
@@ -2681,7 +2681,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[1]~15_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(1));
@@ -2708,7 +2708,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCBD~clkctrl_outclk\,
+	clk => \inst6|inst3|nCBD~clkctrl_outclk\,
 	d => \dir|valor_interno[1]~feeder_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -2744,7 +2744,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[2]~17_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(2));
@@ -2778,7 +2778,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[3]~19_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(3));
@@ -2805,7 +2805,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCBD~clkctrl_outclk\,
+	clk => \inst6|inst3|nCBD~clkctrl_outclk\,
 	d => \dir|valor_interno[3]~feeder_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -2834,7 +2834,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCBD~clkctrl_outclk\,
+	clk => \inst6|inst3|nCBD~clkctrl_outclk\,
 	d => \dir|valor_interno[2]~feeder_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -2887,7 +2887,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[4]~21_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(4));
@@ -2921,7 +2921,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[5]~23_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(5));
@@ -2955,7 +2955,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[6]~25_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(6));
@@ -2982,7 +2982,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCBD~clkctrl_outclk\,
+	clk => \inst6|inst3|nCBD~clkctrl_outclk\,
 	d => \dir|valor_interno[6]~feeder_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -3018,7 +3018,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[7]~27_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(7));
@@ -3045,7 +3045,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCBD~clkctrl_outclk\,
+	clk => \inst6|inst3|nCBD~clkctrl_outclk\,
 	d => \dir|valor_interno[7]~feeder_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -3074,7 +3074,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCBD~clkctrl_outclk\,
+	clk => \inst6|inst3|nCBD~clkctrl_outclk\,
 	d => \dir|valor_interno[5]~feeder_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -3103,7 +3103,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCBD~clkctrl_outclk\,
+	clk => \inst6|inst3|nCBD~clkctrl_outclk\,
 	d => \dir|valor_interno[4]~feeder_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -3130,7 +3130,7 @@ PORT MAP (
 -- Location: LCCOMB_X22_Y5_N20
 \inst|data[1]~4\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|data[1]~4_combout\ = ((!\inst|Mux6~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst|data[1]~4_combout\ = ((!\inst|Mux6~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3139,7 +3139,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \inst|Mux6~0_combout\,
-	datab => \inst10|inst3|PC[0]~10_combout\,
+	datab => \inst6|inst3|PC[0]~10_combout\,
 	datad => \inst|data_out[7]~0_combout\,
 	combout => \inst|data[1]~4_combout\);
 
@@ -3151,7 +3151,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCRI~clkctrl_outclk\,
+	clk => \inst6|inst3|nCRI~clkctrl_outclk\,
 	asdata => \inst|data[1]~4_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
@@ -3160,9 +3160,9 @@ PORT MAP (
 	q => \inst11|valor_interno\(5));
 
 -- Location: LCCOMB_X22_Y5_N8
-\inst10|inst8[5]~6\ : fiftyfivenm_lcell_comb
+\inst6|inst8[5]~6\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst8[5]~6_combout\ = (!\inst10|inst3|instruccion\(0) & ((\inst11|valor_interno\(5)) # (!\inst10|inst3|instruccion\(1))))
+-- \inst6|inst8[5]~6_combout\ = (!\inst6|inst3|instruccion\(0) & ((\inst11|valor_interno\(5)) # (!\inst6|inst3|instruccion\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3170,17 +3170,17 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst3|instruccion\(1),
+	datab => \inst6|inst3|instruccion\(1),
 	datac => \inst11|valor_interno\(5),
-	datad => \inst10|inst3|instruccion\(0),
-	combout => \inst10|inst8[5]~6_combout\);
+	datad => \inst6|inst3|instruccion\(0),
+	combout => \inst6|inst8[5]~6_combout\);
 
 -- Location: LCCOMB_X21_Y5_N6
-\inst10|inst2|valor_interno[4]~17\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[4]~17\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[4]~17_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\ & (!\inst10|inst2|valor_interno[3]~16\)) # (!\inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\ & ((\inst10|inst2|valor_interno[3]~16\) 
--- # (GND)))
--- \inst10|inst2|valor_interno[4]~18\ = CARRY((!\inst10|inst2|valor_interno[3]~16\) # (!\inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\))
+-- \inst6|inst2|valor_interno[4]~17_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\ & (!\inst6|inst2|valor_interno[3]~16\)) # (!\inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\ & ((\inst6|inst2|valor_interno[3]~16\) # 
+-- (GND)))
+-- \inst6|inst2|valor_interno[4]~18\ = CARRY((!\inst6|inst2|valor_interno[3]~16\) # (!\inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3188,14 +3188,14 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[3]~16\,
-	combout => \inst10|inst2|valor_interno[4]~17_combout\,
-	cout => \inst10|inst2|valor_interno[4]~18\);
+	cin => \inst6|inst2|valor_interno[3]~16\,
+	combout => \inst6|inst2|valor_interno[4]~17_combout\,
+	cout => \inst6|inst2|valor_interno[4]~18\);
 
 -- Location: FF_X21_Y5_N7
-\inst10|inst2|valor_interno[4]\ : dffeas
+\inst6|inst2|valor_interno[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3203,11 +3203,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[4]~17_combout\,
+	d => \inst6|inst2|valor_interno[4]~17_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(4));
+	q => \inst6|inst2|valor_interno\(4));
 
 -- Location: LCCOMB_X30_Y5_N12
 \inst|Mux7~0\ : fiftyfivenm_lcell_comb
@@ -3229,7 +3229,7 @@ PORT MAP (
 -- Location: LCCOMB_X26_Y5_N30
 \inst|data[0]~5\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|data[0]~5_combout\ = ((\inst|data_out[7]~0_combout\ & \inst|Mux7~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst|data[0]~5_combout\ = ((\inst|data_out[7]~0_combout\ & \inst|Mux7~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3239,7 +3239,7 @@ GENERIC MAP (
 PORT MAP (
 	datab => \inst|data_out[7]~0_combout\,
 	datac => \inst|Mux7~0_combout\,
-	datad => \inst10|inst3|PC[0]~10_combout\,
+	datad => \inst6|inst3|PC[0]~10_combout\,
 	combout => \inst|data[0]~5_combout\);
 
 -- Location: FF_X26_Y5_N21
@@ -3250,7 +3250,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCRI~clkctrl_outclk\,
+	clk => \inst6|inst3|nCRI~clkctrl_outclk\,
 	asdata => \inst|data[0]~5_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
@@ -3259,9 +3259,9 @@ PORT MAP (
 	q => \inst11|valor_interno\(4));
 
 -- Location: LCCOMB_X26_Y5_N20
-\inst10|inst8[4]~7\ : fiftyfivenm_lcell_comb
+\inst6|inst8[4]~7\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst8[4]~7_combout\ = (!\inst10|inst3|instruccion\(0) & ((\inst11|valor_interno\(4)) # (!\inst10|inst3|instruccion\(1))))
+-- \inst6|inst8[4]~7_combout\ = (!\inst6|inst3|instruccion\(0) & ((\inst11|valor_interno\(4)) # (!\inst6|inst3|instruccion\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3269,15 +3269,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|instruccion\(1),
+	dataa => \inst6|inst3|instruccion\(1),
 	datac => \inst11|valor_interno\(4),
-	datad => \inst10|inst3|instruccion\(0),
-	combout => \inst10|inst8[4]~7_combout\);
+	datad => \inst6|inst3|instruccion\(0),
+	combout => \inst6|inst8[4]~7_combout\);
 
 -- Location: LCCOMB_X26_Y5_N12
-\inst10|inst5|$00000|auto_generated|result_node[4]~4\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[4]~4\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst8[4]~7_combout\))) # (!\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst2|valor_interno\(4)))
+-- \inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst8[4]~7_combout\))) # (!\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst2|valor_interno\(4)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3285,17 +3285,17 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst2|valor_interno\(4),
-	datad => \inst10|inst8[4]~7_combout\,
-	combout => \inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\);
+	datab => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst2|valor_interno\(4),
+	datad => \inst6|inst8[4]~7_combout\,
+	combout => \inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\);
 
 -- Location: LCCOMB_X21_Y5_N8
-\inst10|inst2|valor_interno[5]~19\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[5]~19\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[5]~19_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\ & (\inst10|inst2|valor_interno[4]~18\ $ (GND))) # (!\inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\ & 
--- (!\inst10|inst2|valor_interno[4]~18\ & VCC))
--- \inst10|inst2|valor_interno[5]~20\ = CARRY((\inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\ & !\inst10|inst2|valor_interno[4]~18\))
+-- \inst6|inst2|valor_interno[5]~19_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\ & (\inst6|inst2|valor_interno[4]~18\ $ (GND))) # (!\inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\ & (!\inst6|inst2|valor_interno[4]~18\ 
+-- & VCC))
+-- \inst6|inst2|valor_interno[5]~20\ = CARRY((\inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\ & !\inst6|inst2|valor_interno[4]~18\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3303,14 +3303,14 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[4]~18\,
-	combout => \inst10|inst2|valor_interno[5]~19_combout\,
-	cout => \inst10|inst2|valor_interno[5]~20\);
+	cin => \inst6|inst2|valor_interno[4]~18\,
+	combout => \inst6|inst2|valor_interno[5]~19_combout\,
+	cout => \inst6|inst2|valor_interno[5]~20\);
 
 -- Location: FF_X21_Y5_N9
-\inst10|inst2|valor_interno[5]\ : dffeas
+\inst6|inst2|valor_interno[5]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3318,16 +3318,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[5]~19_combout\,
+	d => \inst6|inst2|valor_interno[5]~19_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(5));
+	q => \inst6|inst2|valor_interno\(5));
 
 -- Location: LCCOMB_X22_Y5_N0
-\inst10|inst5|$00000|auto_generated|result_node[5]~5\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[5]~5\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst8[5]~6_combout\)) # (!\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst2|valor_interno\(5))))
+-- \inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst8[5]~6_combout\)) # (!\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst2|valor_interno\(5))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3335,17 +3335,17 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst8[5]~6_combout\,
-	datad => \inst10|inst2|valor_interno\(5),
-	combout => \inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\);
+	datab => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst8[5]~6_combout\,
+	datad => \inst6|inst2|valor_interno\(5),
+	combout => \inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\);
 
 -- Location: LCCOMB_X21_Y5_N16
-\inst10|inst2|valor_interno[9]~27\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[9]~27\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[9]~27_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\ & (\inst10|inst2|valor_interno[8]~26\ $ (GND))) # (!\inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\ & 
--- (!\inst10|inst2|valor_interno[8]~26\ & VCC))
--- \inst10|inst2|valor_interno[9]~28\ = CARRY((\inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\ & !\inst10|inst2|valor_interno[8]~26\))
+-- \inst6|inst2|valor_interno[9]~27_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\ & (\inst6|inst2|valor_interno[8]~26\ $ (GND))) # (!\inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\ & (!\inst6|inst2|valor_interno[8]~26\ 
+-- & VCC))
+-- \inst6|inst2|valor_interno[9]~28\ = CARRY((\inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\ & !\inst6|inst2|valor_interno[8]~26\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3353,14 +3353,14 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\,
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[8]~26\,
-	combout => \inst10|inst2|valor_interno[9]~27_combout\,
-	cout => \inst10|inst2|valor_interno[9]~28\);
+	cin => \inst6|inst2|valor_interno[8]~26\,
+	combout => \inst6|inst2|valor_interno[9]~27_combout\,
+	cout => \inst6|inst2|valor_interno[9]~28\);
 
 -- Location: FF_X21_Y5_N17
-\inst10|inst2|valor_interno[9]\ : dffeas
+\inst6|inst2|valor_interno[9]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3368,16 +3368,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[9]~27_combout\,
+	d => \inst6|inst2|valor_interno[9]~27_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(9));
+	q => \inst6|inst2|valor_interno\(9));
 
 -- Location: LCCOMB_X24_Y5_N20
 \inst11|valor_interno[9]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst11|valor_interno[9]~0_combout\ = !\inst10|inst3|PC[0]~10_combout\
+-- \inst11|valor_interno[9]~0_combout\ = !\inst6|inst3|PC[0]~10_combout\
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3385,7 +3385,7 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \inst10|inst3|PC[0]~10_combout\,
+	datac => \inst6|inst3|PC[0]~10_combout\,
 	combout => \inst11|valor_interno[9]~0_combout\);
 
 -- Location: FF_X24_Y5_N21
@@ -3396,7 +3396,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCRI~clkctrl_outclk\,
+	clk => \inst6|inst3|nCRI~clkctrl_outclk\,
 	d => \inst11|valor_interno[9]~0_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -3404,9 +3404,9 @@ PORT MAP (
 	q => \inst11|valor_interno\(9));
 
 -- Location: LCCOMB_X20_Y5_N18
-\inst10|inst8[9]~2\ : fiftyfivenm_lcell_comb
+\inst6|inst8[9]~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst8[9]~2_combout\ = (!\inst10|inst3|instruccion\(0) & ((\inst11|valor_interno\(9)) # (!\inst10|inst3|instruccion\(1))))
+-- \inst6|inst8[9]~2_combout\ = (!\inst6|inst3|instruccion\(0) & ((\inst11|valor_interno\(9)) # (!\inst6|inst3|instruccion\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3414,15 +3414,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|instruccion\(1),
-	datac => \inst10|inst3|instruccion\(0),
+	dataa => \inst6|inst3|instruccion\(1),
+	datac => \inst6|inst3|instruccion\(0),
 	datad => \inst11|valor_interno\(9),
-	combout => \inst10|inst8[9]~2_combout\);
+	combout => \inst6|inst8[9]~2_combout\);
 
 -- Location: LCCOMB_X20_Y5_N16
-\inst10|inst5|$00000|auto_generated|result_node[9]~9\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[9]~9\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst8[9]~2_combout\))) # (!\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst2|valor_interno\(9)))
+-- \inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst8[9]~2_combout\))) # (!\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst2|valor_interno\(9)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3430,16 +3430,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst2|valor_interno\(9),
-	datad => \inst10|inst8[9]~2_combout\,
-	combout => \inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\);
+	dataa => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst2|valor_interno\(9),
+	datad => \inst6|inst8[9]~2_combout\,
+	combout => \inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\);
 
 -- Location: LCCOMB_X26_Y5_N24
-\inst10|inst|Equal3~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal3~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal3~0_combout\ = (!\inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\ & 
--- !\inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\)))
+-- \inst6|inst|Equal3~0_combout\ = (!\inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\ & 
+-- !\inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3447,16 +3447,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\,
-	combout => \inst10|inst|Equal3~0_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\,
+	combout => \inst6|inst|Equal3~0_combout\);
 
 -- Location: LCCOMB_X27_Y5_N12
-\inst10|inst|Equal14~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal14~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal14~0_combout\ = (\inst10|inst|Equal3~0_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\ & \inst10|inst|Equal3~1_combout\))
+-- \inst6|inst|Equal14~0_combout\ = (\inst6|inst|Equal3~0_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\ & \inst6|inst|Equal3~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3464,15 +3464,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal3~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\,
-	datac => \inst10|inst|Equal3~1_combout\,
-	combout => \inst10|inst|Equal14~0_combout\);
+	dataa => \inst6|inst|Equal3~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\,
+	datac => \inst6|inst|Equal3~1_combout\,
+	combout => \inst6|inst|Equal14~0_combout\);
 
 -- Location: LCCOMB_X23_Y5_N14
-\inst10|inst|Equal0~3\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal0~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal0~3_combout\ = (!\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & !\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\)
+-- \inst6|inst|Equal0~3_combout\ = (!\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & !\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3480,14 +3480,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	combout => \inst10|inst|Equal0~3_combout\);
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	combout => \inst6|inst|Equal0~3_combout\);
 
 -- Location: LCCOMB_X26_Y5_N0
-\inst10|inst|Equal14~2\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal14~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal14~2_combout\ = (\inst10|inst|Equal14~0_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & \inst10|inst|Equal0~3_combout\)))
+-- \inst6|inst|Equal14~2_combout\ = (\inst6|inst|Equal14~0_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & \inst6|inst|Equal0~3_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3495,17 +3495,17 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal14~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datad => \inst10|inst|Equal0~3_combout\,
-	combout => \inst10|inst|Equal14~2_combout\);
+	dataa => \inst6|inst|Equal14~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datad => \inst6|inst|Equal0~3_combout\,
+	combout => \inst6|inst|Equal14~2_combout\);
 
 -- Location: LCCOMB_X21_Y5_N24
-\inst10|inst|Equal0~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal0~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal0~0_combout\ = (!\inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\ & 
--- !\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\)))
+-- \inst6|inst|Equal0~0_combout\ = (!\inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\ & 
+-- !\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3513,16 +3513,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
-	combout => \inst10|inst|Equal0~0_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	combout => \inst6|inst|Equal0~0_combout\);
 
 -- Location: LCCOMB_X21_Y5_N28
-\inst10|inst|Equal12~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal12~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal12~0_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ & (\inst10|inst|Equal0~1_combout\ & \inst10|inst|Equal0~0_combout\))
+-- \inst6|inst|Equal12~0_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ & (\inst6|inst|Equal0~1_combout\ & \inst6|inst|Equal0~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3530,15 +3530,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\,
-	datac => \inst10|inst|Equal0~1_combout\,
-	datad => \inst10|inst|Equal0~0_combout\,
-	combout => \inst10|inst|Equal12~0_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\,
+	datac => \inst6|inst|Equal0~1_combout\,
+	datad => \inst6|inst|Equal0~0_combout\,
+	combout => \inst6|inst|Equal12~0_combout\);
 
 -- Location: LCCOMB_X25_Y5_N14
-\inst10|inst3|PC[0]~6\ : fiftyfivenm_lcell_comb
+\inst6|inst3|PC[0]~6\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|PC[0]~6_combout\ = ((!\inst10|inst|Equal0~2_combout\ & ((!\inst10|inst|Equal12~0_combout\) # (!\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\)))) # (!\inst10|inst|Equal1~0_combout\)
+-- \inst6|inst3|PC[0]~6_combout\ = ((!\inst6|inst|Equal0~2_combout\ & ((!\inst6|inst|Equal12~0_combout\) # (!\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\)))) # (!\inst6|inst|Equal1~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3546,16 +3546,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal1~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datac => \inst10|inst|Equal12~0_combout\,
-	datad => \inst10|inst|Equal0~2_combout\,
-	combout => \inst10|inst3|PC[0]~6_combout\);
+	dataa => \inst6|inst|Equal1~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datac => \inst6|inst|Equal12~0_combout\,
+	datad => \inst6|inst|Equal0~2_combout\,
+	combout => \inst6|inst3|PC[0]~6_combout\);
 
 -- Location: LCCOMB_X25_Y5_N18
-\inst10|inst3|PC[0]~12\ : fiftyfivenm_lcell_comb
+\inst6|inst3|PC[0]~12\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|PC[0]~12_combout\ = ((\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \inst10|inst|Equal3~2_combout\))) # (!\inst10|inst3|PC[0]~6_combout\)
+-- \inst6|inst3|PC[0]~12_combout\ = ((\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \inst6|inst|Equal3~2_combout\))) # (!\inst6|inst3|PC[0]~6_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3563,16 +3563,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|PC[0]~6_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datad => \inst10|inst|Equal3~2_combout\,
-	combout => \inst10|inst3|PC[0]~12_combout\);
+	dataa => \inst6|inst3|PC[0]~6_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datad => \inst6|inst|Equal3~2_combout\,
+	combout => \inst6|inst3|PC[0]~12_combout\);
 
 -- Location: LCCOMB_X26_Y5_N10
-\inst10|inst|data~17\ : fiftyfivenm_lcell_comb
+\inst6|inst|data~17\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data~17_combout\ = ((!\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\) # (!\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\)) # (!\inst10|inst|Equal3~2_combout\)
+-- \inst6|inst|data~17_combout\ = ((!\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\) # (!\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\)) # (!\inst6|inst|Equal3~2_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3580,15 +3580,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal3~2_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	combout => \inst10|inst|data~17_combout\);
+	dataa => \inst6|inst|Equal3~2_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	combout => \inst6|inst|data~17_combout\);
 
 -- Location: LCCOMB_X25_Y5_N2
-\inst10|inst|data[87]~28\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[87]~28\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[87]~28_combout\ = ((\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\) # ((!\inst10|inst|Equal0~2_combout\ & !\inst10|inst|Equal3~2_combout\))) # (!\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\)
+-- \inst6|inst|data[87]~28_combout\ = ((\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\) # ((!\inst6|inst|Equal0~2_combout\ & !\inst6|inst|Equal3~2_combout\))) # (!\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3596,16 +3596,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal0~2_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst|Equal3~2_combout\,
-	combout => \inst10|inst|data[87]~28_combout\);
+	dataa => \inst6|inst|Equal0~2_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst|Equal3~2_combout\,
+	combout => \inst6|inst|data[87]~28_combout\);
 
 -- Location: LCCOMB_X26_Y5_N14
-\inst10|inst3|PC[0]~11\ : fiftyfivenm_lcell_comb
+\inst6|inst3|PC[0]~11\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|PC[0]~11_combout\ = ((\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\) # (!\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\)) # (!\inst10|inst|Equal3~2_combout\)
+-- \inst6|inst3|PC[0]~11_combout\ = ((\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\) # (!\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\)) # (!\inst6|inst|Equal3~2_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3613,15 +3613,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal3~2_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	combout => \inst10|inst3|PC[0]~11_combout\);
+	dataa => \inst6|inst|Equal3~2_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	combout => \inst6|inst3|PC[0]~11_combout\);
 
 -- Location: LCCOMB_X21_Y5_N30
-\inst10|inst|Equal11~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal11~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal11~0_combout\ = (\inst10|inst|Equal0~1_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & \inst10|inst|Equal0~0_combout\)))
+-- \inst6|inst|Equal11~0_combout\ = (\inst6|inst|Equal0~1_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & \inst6|inst|Equal0~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3629,16 +3629,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal0~1_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datad => \inst10|inst|Equal0~0_combout\,
-	combout => \inst10|inst|Equal11~0_combout\);
+	dataa => \inst6|inst|Equal0~1_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datad => \inst6|inst|Equal0~0_combout\,
+	combout => \inst6|inst|Equal11~0_combout\);
 
 -- Location: LCCOMB_X25_Y5_N10
-\inst10|inst|data[87]~27\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[87]~27\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[87]~27_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\) # ((\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\) # ((!\inst10|inst|Equal11~0_combout\ & !\inst10|inst|Equal3~2_combout\)))
+-- \inst6|inst|data[87]~27_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\) # ((\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\) # ((!\inst6|inst|Equal11~0_combout\ & !\inst6|inst|Equal3~2_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3646,16 +3646,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal11~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst|Equal3~2_combout\,
-	combout => \inst10|inst|data[87]~27_combout\);
+	dataa => \inst6|inst|Equal11~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst|Equal3~2_combout\,
+	combout => \inst6|inst|data[87]~27_combout\);
 
 -- Location: LCCOMB_X25_Y5_N24
-\inst10|inst|data[87]~16\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[87]~16\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[87]~16_combout\ = (\inst10|inst|data[87]~28_combout\ & (\inst10|inst3|PC[0]~11_combout\ & \inst10|inst|data[87]~27_combout\))
+-- \inst6|inst|data[87]~16_combout\ = (\inst6|inst|data[87]~28_combout\ & (\inst6|inst3|PC[0]~11_combout\ & \inst6|inst|data[87]~27_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3663,15 +3663,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst|data[87]~28_combout\,
-	datac => \inst10|inst3|PC[0]~11_combout\,
-	datad => \inst10|inst|data[87]~27_combout\,
-	combout => \inst10|inst|data[87]~16_combout\);
+	datab => \inst6|inst|data[87]~28_combout\,
+	datac => \inst6|inst3|PC[0]~11_combout\,
+	datad => \inst6|inst|data[87]~27_combout\,
+	combout => \inst6|inst|data[87]~16_combout\);
 
 -- Location: LCCOMB_X25_Y5_N0
-\inst10|inst|data[87]~18\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[87]~18\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[87]~18_combout\ = (\inst10|inst|data~17_combout\ & (\inst10|inst|data[87]~16_combout\ & ((!\inst10|inst|Equal0~2_combout\) # (!\inst10|inst|Equal0~3_combout\))))
+-- \inst6|inst|data[87]~18_combout\ = (\inst6|inst|data~17_combout\ & (\inst6|inst|data[87]~16_combout\ & ((!\inst6|inst|Equal0~2_combout\) # (!\inst6|inst|Equal0~3_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3679,16 +3679,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal0~3_combout\,
-	datab => \inst10|inst|data~17_combout\,
-	datac => \inst10|inst|Equal0~2_combout\,
-	datad => \inst10|inst|data[87]~16_combout\,
-	combout => \inst10|inst|data[87]~18_combout\);
+	dataa => \inst6|inst|Equal0~3_combout\,
+	datab => \inst6|inst|data~17_combout\,
+	datac => \inst6|inst|Equal0~2_combout\,
+	datad => \inst6|inst|data[87]~16_combout\,
+	combout => \inst6|inst|data[87]~18_combout\);
 
 -- Location: LCCOMB_X25_Y5_N30
-\inst10|inst|data[87]~26\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[87]~26\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[87]~26_combout\ = (\inst10|inst3|PC[0]~6_combout\ & (((\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\) # (!\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\)) # (!\inst10|inst|Equal11~0_combout\)))
+-- \inst6|inst|data[87]~26_combout\ = (\inst6|inst3|PC[0]~6_combout\ & (((\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\) # (!\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\)) # (!\inst6|inst|Equal11~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3696,16 +3696,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal11~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst3|PC[0]~6_combout\,
-	combout => \inst10|inst|data[87]~26_combout\);
+	dataa => \inst6|inst|Equal11~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst3|PC[0]~6_combout\,
+	combout => \inst6|inst|data[87]~26_combout\);
 
 -- Location: LCCOMB_X25_Y5_N12
-\inst10|inst3|PC[0]~7\ : fiftyfivenm_lcell_comb
+\inst6|inst3|PC[0]~7\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|PC[0]~7_combout\ = (\inst10|inst3|PC[0]~12_combout\) # ((!\inst10|inst|Equal14~2_combout\ & (\inst10|inst|data[87]~18_combout\ & \inst10|inst|data[87]~26_combout\)))
+-- \inst6|inst3|PC[0]~7_combout\ = (\inst6|inst3|PC[0]~12_combout\) # ((!\inst6|inst|Equal14~2_combout\ & (\inst6|inst|data[87]~18_combout\ & \inst6|inst|data[87]~26_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3713,16 +3713,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal14~2_combout\,
-	datab => \inst10|inst3|PC[0]~12_combout\,
-	datac => \inst10|inst|data[87]~18_combout\,
-	datad => \inst10|inst|data[87]~26_combout\,
-	combout => \inst10|inst3|PC[0]~7_combout\);
+	dataa => \inst6|inst|Equal14~2_combout\,
+	datab => \inst6|inst3|PC[0]~12_combout\,
+	datac => \inst6|inst|data[87]~18_combout\,
+	datad => \inst6|inst|data[87]~26_combout\,
+	combout => \inst6|inst3|PC[0]~7_combout\);
 
 -- Location: LCCOMB_X24_Y5_N2
-\inst10|inst|Equal14~1\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal14~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal14~1_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ & \inst10|inst|Equal14~0_combout\))
+-- \inst6|inst|Equal14~1_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ & \inst6|inst|Equal14~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3730,15 +3730,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
-	datad => \inst10|inst|Equal14~0_combout\,
-	combout => \inst10|inst|Equal14~1_combout\);
+	datab => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	datad => \inst6|inst|Equal14~0_combout\,
+	combout => \inst6|inst|Equal14~1_combout\);
 
 -- Location: LCCOMB_X25_Y5_N22
-\inst10|inst3|PC[0]~8\ : fiftyfivenm_lcell_comb
+\inst6|inst3|PC[0]~8\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|PC[0]~8_combout\ = (\RESET~input_o\ & (((!\inst10|inst|Equal14~1_combout\ & !\inst10|inst|Equal0~2_combout\)) # (!\inst10|inst|Equal0~3_combout\)))
+-- \inst6|inst3|PC[0]~8_combout\ = (\RESET~input_o\ & (((!\inst6|inst|Equal14~1_combout\ & !\inst6|inst|Equal0~2_combout\)) # (!\inst6|inst|Equal0~3_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3746,16 +3746,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal14~1_combout\,
-	datab => \inst10|inst|Equal0~2_combout\,
+	dataa => \inst6|inst|Equal14~1_combout\,
+	datab => \inst6|inst|Equal0~2_combout\,
 	datac => \RESET~input_o\,
-	datad => \inst10|inst|Equal0~3_combout\,
-	combout => \inst10|inst3|PC[0]~8_combout\);
+	datad => \inst6|inst|Equal0~3_combout\,
+	combout => \inst6|inst3|PC[0]~8_combout\);
 
 -- Location: LCCOMB_X26_Y5_N18
-\inst10|inst|Equal15~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal15~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal15~0_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (\inst10|inst|Equal14~0_combout\ & \inst10|inst|Equal1~0_combout\)))
+-- \inst6|inst|Equal15~0_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (\inst6|inst|Equal14~0_combout\ & \inst6|inst|Equal1~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3763,16 +3763,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
-	datac => \inst10|inst|Equal14~0_combout\,
-	datad => \inst10|inst|Equal1~0_combout\,
-	combout => \inst10|inst|Equal15~0_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	datac => \inst6|inst|Equal14~0_combout\,
+	datad => \inst6|inst|Equal1~0_combout\,
+	combout => \inst6|inst|Equal15~0_combout\);
 
 -- Location: LCCOMB_X26_Y5_N6
-\inst10|inst3|PC[0]~13\ : fiftyfivenm_lcell_comb
+\inst6|inst3|PC[0]~13\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|PC[0]~13_combout\ = (!\inst10|inst|Equal15~0_combout\ & (((!\inst10|inst|Equal3~2_combout\) # (!\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\)) # (!\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\)))
+-- \inst6|inst3|PC[0]~13_combout\ = (!\inst6|inst|Equal15~0_combout\ & (((!\inst6|inst|Equal3~2_combout\) # (!\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\)) # (!\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3780,16 +3780,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datac => \inst10|inst|Equal3~2_combout\,
-	datad => \inst10|inst|Equal15~0_combout\,
-	combout => \inst10|inst3|PC[0]~13_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datac => \inst6|inst|Equal3~2_combout\,
+	datad => \inst6|inst|Equal15~0_combout\,
+	combout => \inst6|inst3|PC[0]~13_combout\);
 
 -- Location: LCCOMB_X25_Y5_N26
-\inst10|inst3|PC[0]~9\ : fiftyfivenm_lcell_comb
+\inst6|inst3|PC[0]~9\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|PC[0]~9_combout\ = (\inst10|inst3|PC[0]~8_combout\ & (\inst10|inst|data[87]~16_combout\ & (\inst10|inst3|PC[0]~13_combout\ & \inst10|inst|data[87]~26_combout\)))
+-- \inst6|inst3|PC[0]~9_combout\ = (\inst6|inst3|PC[0]~8_combout\ & (\inst6|inst|data[87]~16_combout\ & (\inst6|inst3|PC[0]~13_combout\ & \inst6|inst|data[87]~26_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3797,16 +3797,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|PC[0]~8_combout\,
-	datab => \inst10|inst|data[87]~16_combout\,
-	datac => \inst10|inst3|PC[0]~13_combout\,
-	datad => \inst10|inst|data[87]~26_combout\,
-	combout => \inst10|inst3|PC[0]~9_combout\);
+	dataa => \inst6|inst3|PC[0]~8_combout\,
+	datab => \inst6|inst|data[87]~16_combout\,
+	datac => \inst6|inst3|PC[0]~13_combout\,
+	datad => \inst6|inst|data[87]~26_combout\,
+	combout => \inst6|inst3|PC[0]~9_combout\);
 
 -- Location: LCCOMB_X25_Y5_N4
-\inst10|inst|Equal17~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal17~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal17~0_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & \inst10|inst|Equal14~1_combout\))
+-- \inst6|inst|Equal17~0_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & \inst6|inst|Equal14~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3814,15 +3814,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst|Equal14~1_combout\,
-	combout => \inst10|inst|Equal17~0_combout\);
+	datab => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst|Equal14~1_combout\,
+	combout => \inst6|inst|Equal17~0_combout\);
 
 -- Location: LCCOMB_X25_Y5_N20
-\inst10|inst3|PC[0]~10\ : fiftyfivenm_lcell_comb
+\inst6|inst3|PC[0]~10\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|PC[0]~10_combout\ = (\inst10|inst3|PC[0]~9_combout\ & (((\inst10|inst|Equal17~0_combout\)))) # (!\inst10|inst3|PC[0]~9_combout\ & (\inst10|inst3|PC[0]~7_combout\ & (\RESET~input_o\)))
+-- \inst6|inst3|PC[0]~10_combout\ = (\inst6|inst3|PC[0]~9_combout\ & (((\inst6|inst|Equal17~0_combout\)))) # (!\inst6|inst3|PC[0]~9_combout\ & (\inst6|inst3|PC[0]~7_combout\ & (\RESET~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3830,11 +3830,11 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|PC[0]~7_combout\,
-	datab => \inst10|inst3|PC[0]~9_combout\,
+	dataa => \inst6|inst3|PC[0]~7_combout\,
+	datab => \inst6|inst3|PC[0]~9_combout\,
 	datac => \RESET~input_o\,
-	datad => \inst10|inst|Equal17~0_combout\,
-	combout => \inst10|inst3|PC[0]~10_combout\);
+	datad => \inst6|inst|Equal17~0_combout\,
+	combout => \inst6|inst3|PC[0]~10_combout\);
 
 -- Location: LCCOMB_X30_Y5_N24
 \inst|Mux1~0\ : fiftyfivenm_lcell_comb
@@ -3856,7 +3856,7 @@ PORT MAP (
 -- Location: LCCOMB_X20_Y5_N26
 \inst|data[6]~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|data[6]~1_combout\ = ((\inst|data_out[7]~0_combout\ & \inst|Mux1~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst|data[6]~1_combout\ = ((\inst|data_out[7]~0_combout\ & \inst|Mux1~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3864,7 +3864,7 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst3|PC[0]~10_combout\,
+	datab => \inst6|inst3|PC[0]~10_combout\,
 	datac => \inst|data_out[7]~0_combout\,
 	datad => \inst|Mux1~0_combout\,
 	combout => \inst|data[6]~1_combout\);
@@ -3877,7 +3877,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCRI~clkctrl_outclk\,
+	clk => \inst6|inst3|nCRI~clkctrl_outclk\,
 	asdata => \inst|data[6]~1_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
@@ -3886,9 +3886,9 @@ PORT MAP (
 	q => \inst11|valor_interno\(10));
 
 -- Location: LCCOMB_X20_Y5_N22
-\inst10|inst8[10]~1\ : fiftyfivenm_lcell_comb
+\inst6|inst8[10]~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst8[10]~1_combout\ = (!\inst10|inst3|instruccion\(0) & ((\inst11|valor_interno\(10)) # (!\inst10|inst3|instruccion\(1))))
+-- \inst6|inst8[10]~1_combout\ = (!\inst6|inst3|instruccion\(0) & ((\inst11|valor_interno\(10)) # (!\inst6|inst3|instruccion\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3896,17 +3896,17 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst3|instruccion\(0),
+	datab => \inst6|inst3|instruccion\(0),
 	datac => \inst11|valor_interno\(10),
-	datad => \inst10|inst3|instruccion\(1),
-	combout => \inst10|inst8[10]~1_combout\);
+	datad => \inst6|inst3|instruccion\(1),
+	combout => \inst6|inst8[10]~1_combout\);
 
 -- Location: LCCOMB_X21_Y5_N18
-\inst10|inst2|valor_interno[10]~29\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[10]~29\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[10]~29_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\ & (!\inst10|inst2|valor_interno[9]~28\)) # (!\inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\ & 
--- ((\inst10|inst2|valor_interno[9]~28\) # (GND)))
--- \inst10|inst2|valor_interno[10]~30\ = CARRY((!\inst10|inst2|valor_interno[9]~28\) # (!\inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\))
+-- \inst6|inst2|valor_interno[10]~29_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\ & (!\inst6|inst2|valor_interno[9]~28\)) # (!\inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\ & ((\inst6|inst2|valor_interno[9]~28\) 
+-- # (GND)))
+-- \inst6|inst2|valor_interno[10]~30\ = CARRY((!\inst6|inst2|valor_interno[9]~28\) # (!\inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3914,14 +3914,14 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[9]~28\,
-	combout => \inst10|inst2|valor_interno[10]~29_combout\,
-	cout => \inst10|inst2|valor_interno[10]~30\);
+	cin => \inst6|inst2|valor_interno[9]~28\,
+	combout => \inst6|inst2|valor_interno[10]~29_combout\,
+	cout => \inst6|inst2|valor_interno[10]~30\);
 
 -- Location: FF_X21_Y5_N19
-\inst10|inst2|valor_interno[10]\ : dffeas
+\inst6|inst2|valor_interno[10]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3929,16 +3929,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[10]~29_combout\,
+	d => \inst6|inst2|valor_interno[10]~29_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(10));
+	q => \inst6|inst2|valor_interno\(10));
 
 -- Location: LCCOMB_X20_Y5_N14
-\inst10|inst5|$00000|auto_generated|result_node[10]~10\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[10]~10\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst8[10]~1_combout\)) # (!\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst2|valor_interno\(10))))
+-- \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst8[10]~1_combout\)) # (!\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst2|valor_interno\(10))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3946,15 +3946,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst8[10]~1_combout\,
-	datad => \inst10|inst2|valor_interno\(10),
-	combout => \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\);
+	dataa => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst8[10]~1_combout\,
+	datad => \inst6|inst2|valor_interno\(10),
+	combout => \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\);
 
 -- Location: LCCOMB_X21_Y5_N20
-\inst10|inst2|valor_interno[11]~31\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[11]~31\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[11]~31_combout\ = \inst10|inst2|valor_interno[10]~30\ $ (!\inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\)
+-- \inst6|inst2|valor_interno[11]~31_combout\ = \inst6|inst2|valor_interno[10]~30\ $ (!\inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3962,12 +3962,12 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datad => \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\,
-	cin => \inst10|inst2|valor_interno[10]~30\,
-	combout => \inst10|inst2|valor_interno[11]~31_combout\);
+	datad => \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\,
+	cin => \inst6|inst2|valor_interno[10]~30\,
+	combout => \inst6|inst2|valor_interno[11]~31_combout\);
 
 -- Location: FF_X21_Y5_N21
-\inst10|inst2|valor_interno[11]\ : dffeas
+\inst6|inst2|valor_interno[11]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3975,16 +3975,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[11]~31_combout\,
+	d => \inst6|inst2|valor_interno[11]~31_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(11));
+	q => \inst6|inst2|valor_interno\(11));
 
 -- Location: LCCOMB_X22_Y5_N30
-\inst10|inst5|$00000|auto_generated|result_node[11]~11\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[11]~11\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst8[11]~0_combout\)) # (!\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst2|valor_interno\(11))))
+-- \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst8[11]~0_combout\)) # (!\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst2|valor_interno\(11))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3992,16 +3992,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst8[11]~0_combout\,
-	datad => \inst10|inst2|valor_interno\(11),
-	combout => \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\);
+	datab => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst8[11]~0_combout\,
+	datad => \inst6|inst2|valor_interno\(11),
+	combout => \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\);
 
 -- Location: LCCOMB_X21_Y5_N22
-\inst10|inst|Equal0~1\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal0~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal0~1_combout\ = (!\inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\ & 
--- !\inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\)))
+-- \inst6|inst|Equal0~1_combout\ = (!\inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\ & 
+-- !\inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4009,16 +4009,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\,
-	combout => \inst10|inst|Equal0~1_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\,
+	combout => \inst6|inst|Equal0~1_combout\);
 
 -- Location: LCCOMB_X21_Y5_N26
-\inst10|inst|Equal0~2\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal0~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal0~2_combout\ = (\inst10|inst|Equal0~1_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & \inst10|inst|Equal0~0_combout\)))
+-- \inst6|inst|Equal0~2_combout\ = (\inst6|inst|Equal0~1_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & \inst6|inst|Equal0~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4026,16 +4026,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal0~1_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datad => \inst10|inst|Equal0~0_combout\,
-	combout => \inst10|inst|Equal0~2_combout\);
+	dataa => \inst6|inst|Equal0~1_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datad => \inst6|inst|Equal0~0_combout\,
+	combout => \inst6|inst|Equal0~2_combout\);
 
 -- Location: LCCOMB_X23_Y5_N16
-\inst10|inst|Equal2~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal2~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal2~0_combout\ = (!\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\)
+-- \inst6|inst|Equal2~0_combout\ = (!\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4043,15 +4043,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	combout => \inst10|inst|Equal2~0_combout\);
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	combout => \inst6|inst|Equal2~0_combout\);
 
 -- Location: LCCOMB_X23_Y5_N26
-\inst10|inst|data[27]~25\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[27]~25\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[27]~25_combout\ = (\inst10|inst|Equal0~3_combout\ & (!\inst10|inst|Equal0~2_combout\ & ((!\inst10|inst|Equal14~1_combout\)))) # (!\inst10|inst|Equal0~3_combout\ & (((!\inst10|inst|Equal14~1_combout\) # 
--- (!\inst10|inst|Equal2~0_combout\))))
+-- \inst6|inst|data[27]~25_combout\ = (\inst6|inst|Equal0~3_combout\ & (!\inst6|inst|Equal0~2_combout\ & ((!\inst6|inst|Equal14~1_combout\)))) # (!\inst6|inst|Equal0~3_combout\ & (((!\inst6|inst|Equal14~1_combout\) # (!\inst6|inst|Equal2~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4059,16 +4058,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal0~2_combout\,
-	datab => \inst10|inst|Equal2~0_combout\,
-	datac => \inst10|inst|Equal0~3_combout\,
-	datad => \inst10|inst|Equal14~1_combout\,
-	combout => \inst10|inst|data[27]~25_combout\);
+	dataa => \inst6|inst|Equal0~2_combout\,
+	datab => \inst6|inst|Equal2~0_combout\,
+	datac => \inst6|inst|Equal0~3_combout\,
+	datad => \inst6|inst|Equal14~1_combout\,
+	combout => \inst6|inst|data[27]~25_combout\);
 
 -- Location: LCCOMB_X22_Y5_N14
-\inst10|inst|data[27]~21\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[27]~21\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[27]~21_combout\ = (\inst10|inst|data~17_combout\ & ((!\inst10|inst|data[87]~18_combout\) # (!\inst10|inst|data[86]~20_combout\)))
+-- \inst6|inst|data[27]~21_combout\ = (\inst6|inst|data~17_combout\ & ((!\inst6|inst|data[87]~18_combout\) # (!\inst6|inst|data[86]~20_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4076,15 +4075,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst|data[86]~20_combout\,
-	datac => \inst10|inst|data~17_combout\,
-	datad => \inst10|inst|data[87]~18_combout\,
-	combout => \inst10|inst|data[27]~21_combout\);
+	datab => \inst6|inst|data[86]~20_combout\,
+	datac => \inst6|inst|data~17_combout\,
+	datad => \inst6|inst|data[87]~18_combout\,
+	combout => \inst6|inst|data[27]~21_combout\);
 
 -- Location: LCCOMB_X23_Y5_N22
-\inst10|inst3|nCBD\ : fiftyfivenm_lcell_comb
+\inst6|inst3|nCBD\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|nCBD~combout\ = LCELL(((\inst10|inst|data[27]~25_combout\ & (\inst10|inst|data[87]~27_combout\ & \inst10|inst|data[27]~21_combout\))) # (!\RESET~input_o\))
+-- \inst6|inst3|nCBD~combout\ = LCELL(((\inst6|inst|data[27]~25_combout\ & (\inst6|inst|data[87]~27_combout\ & \inst6|inst|data[27]~21_combout\))) # (!\RESET~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4092,24 +4091,24 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|data[27]~25_combout\,
+	dataa => \inst6|inst|data[27]~25_combout\,
 	datab => \RESET~input_o\,
-	datac => \inst10|inst|data[87]~27_combout\,
-	datad => \inst10|inst|data[27]~21_combout\,
-	combout => \inst10|inst3|nCBD~combout\);
+	datac => \inst6|inst|data[87]~27_combout\,
+	datad => \inst6|inst|data[27]~21_combout\,
+	combout => \inst6|inst3|nCBD~combout\);
 
 -- Location: CLKCTRL_G16
-\inst10|inst3|nCBD~clkctrl\ : fiftyfivenm_clkctrl
+\inst6|inst3|nCBD~clkctrl\ : fiftyfivenm_clkctrl
 -- pragma translate_off
 GENERIC MAP (
 	clock_type => "global clock",
 	ena_register_mode => "none")
 -- pragma translate_on
 PORT MAP (
-	inclk => \inst10|inst3|nCBD~clkctrl_INCLK_bus\,
+	inclk => \inst6|inst3|nCBD~clkctrl_INCLK_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	outclk => \inst10|inst3|nCBD~clkctrl_outclk\);
+	outclk => \inst6|inst3|nCBD~clkctrl_outclk\);
 
 -- Location: LCCOMB_X30_Y5_N30
 \dir|valor_interno[0]~feeder\ : fiftyfivenm_lcell_comb
@@ -4133,7 +4132,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCBD~clkctrl_outclk\,
+	clk => \inst6|inst3|nCBD~clkctrl_outclk\,
 	d => \dir|valor_interno[0]~feeder_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
@@ -4160,7 +4159,7 @@ PORT MAP (
 -- Location: LCCOMB_X23_Y5_N0
 \inst|data[4]~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|data[4]~2_combout\ = ((\inst|data_out[4]~1_combout\ & \inst|data_out[7]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst|data[4]~2_combout\ = ((\inst|data_out[4]~1_combout\ & \inst|data_out[7]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4170,7 +4169,7 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \inst|data_out[4]~1_combout\,
 	datac => \inst|data_out[7]~0_combout\,
-	datad => \inst10|inst3|PC[0]~10_combout\,
+	datad => \inst6|inst3|PC[0]~10_combout\,
 	combout => \inst|data[4]~2_combout\);
 
 -- Location: FF_X23_Y5_N13
@@ -4181,7 +4180,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCRI~combout\,
+	clk => \inst6|inst3|nCRI~combout\,
 	asdata => \inst|data[4]~2_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
@@ -4190,9 +4189,9 @@ PORT MAP (
 	q => \inst11|valor_interno\(8));
 
 -- Location: LCCOMB_X23_Y5_N12
-\inst10|inst8[8]~3\ : fiftyfivenm_lcell_comb
+\inst6|inst8[8]~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst8[8]~3_combout\ = (!\inst10|inst3|instruccion\(0) & ((\inst11|valor_interno\(8)) # (!\inst10|inst3|instruccion\(1))))
+-- \inst6|inst8[8]~3_combout\ = (!\inst6|inst3|instruccion\(0) & ((\inst11|valor_interno\(8)) # (!\inst6|inst3|instruccion\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4200,15 +4199,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|instruccion\(0),
+	dataa => \inst6|inst3|instruccion\(0),
 	datac => \inst11|valor_interno\(8),
-	datad => \inst10|inst3|instruccion\(1),
-	combout => \inst10|inst8[8]~3_combout\);
+	datad => \inst6|inst3|instruccion\(1),
+	combout => \inst6|inst8[8]~3_combout\);
 
 -- Location: LCCOMB_X23_Y5_N20
-\inst10|inst5|$00000|auto_generated|result_node[8]~8\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[8]~8\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst8[8]~3_combout\))) # (!\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst2|valor_interno\(8)))
+-- \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst8[8]~3_combout\))) # (!\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst2|valor_interno\(8)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4216,15 +4215,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst2|valor_interno\(8),
-	datad => \inst10|inst8[8]~3_combout\,
-	combout => \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\);
+	datab => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst2|valor_interno\(8),
+	datad => \inst6|inst8[8]~3_combout\,
+	combout => \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\);
 
 -- Location: LCCOMB_X26_Y5_N4
-\inst10|inst|Equal3~1\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal3~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal3~1_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ & \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\))
+-- \inst6|inst|Equal3~1_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ & \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4232,15 +4231,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\,
-	combout => \inst10|inst|Equal3~1_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\,
+	combout => \inst6|inst|Equal3~1_combout\);
 
 -- Location: LCCOMB_X26_Y5_N26
-\inst10|inst|Equal3~2\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal3~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal3~2_combout\ = (!\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (\inst10|inst|Equal3~1_combout\ & \inst10|inst|Equal3~0_combout\)))
+-- \inst6|inst|Equal3~2_combout\ = (!\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (\inst6|inst|Equal3~1_combout\ & \inst6|inst|Equal3~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4248,16 +4247,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
-	datac => \inst10|inst|Equal3~1_combout\,
-	datad => \inst10|inst|Equal3~0_combout\,
-	combout => \inst10|inst|Equal3~2_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	datac => \inst6|inst|Equal3~1_combout\,
+	datad => \inst6|inst|Equal3~0_combout\,
+	combout => \inst6|inst|Equal3~2_combout\);
 
 -- Location: LCCOMB_X22_Y5_N12
-\inst10|inst|data~30\ : fiftyfivenm_lcell_comb
+\inst6|inst|data~30\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data~30_combout\ = (!\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \inst10|inst|Equal3~2_combout\))
+-- \inst6|inst|data~30_combout\ = (!\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \inst6|inst|Equal3~2_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4265,15 +4264,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datad => \inst10|inst|Equal3~2_combout\,
-	combout => \inst10|inst|data~30_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datad => \inst6|inst|Equal3~2_combout\,
+	combout => \inst6|inst|data~30_combout\);
 
 -- Location: LCCOMB_X23_Y5_N28
-\inst10|inst|Equal18~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal18~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal18~0_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (\inst10|inst|Equal0~3_combout\ & \inst10|inst|Equal14~0_combout\)))
+-- \inst6|inst|Equal18~0_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ & (\inst6|inst|Equal0~3_combout\ & \inst6|inst|Equal14~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4281,16 +4280,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
-	datac => \inst10|inst|Equal0~3_combout\,
-	datad => \inst10|inst|Equal14~0_combout\,
-	combout => \inst10|inst|Equal18~0_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	datac => \inst6|inst|Equal0~3_combout\,
+	datad => \inst6|inst|Equal14~0_combout\,
+	combout => \inst6|inst|Equal18~0_combout\);
 
 -- Location: LCCOMB_X22_Y5_N2
-\inst10|inst|data[86]~22\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[86]~22\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[86]~22_combout\ = (\inst10|inst|data~30_combout\) # ((\inst10|inst|Equal18~0_combout\) # (!\inst10|inst|data[27]~21_combout\))
+-- \inst6|inst|data[86]~22_combout\ = (\inst6|inst|data~30_combout\) # ((\inst6|inst|Equal18~0_combout\) # (!\inst6|inst|data[27]~21_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4298,13 +4297,13 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|data~30_combout\,
-	datab => \inst10|inst|Equal18~0_combout\,
-	datac => \inst10|inst|data[27]~21_combout\,
-	combout => \inst10|inst|data[86]~22_combout\);
+	dataa => \inst6|inst|data~30_combout\,
+	datab => \inst6|inst|Equal18~0_combout\,
+	datac => \inst6|inst|data[27]~21_combout\,
+	combout => \inst6|inst|data[86]~22_combout\);
 
 -- Location: FF_X22_Y5_N3
-\inst10|inst3|instruccion[0]\ : dffeas
+\inst6|inst3|instruccion[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4312,16 +4311,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst|data[86]~22_combout\,
+	d => \inst6|inst|data[86]~22_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst3|instruccion\(0));
+	q => \inst6|inst3|instruccion\(0));
 
 -- Location: LCCOMB_X20_Y5_N20
-\inst10|inst1|SELECTOR~2\ : fiftyfivenm_lcell_comb
+\inst6|inst1|SELECTOR~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst1|SELECTOR~2_combout\ = (\inst10|inst3|instruccion\(0)) # (\inst10|inst3|instruccion\(1))
+-- \inst6|inst1|SELECTOR~2_combout\ = (\inst6|inst3|instruccion\(0)) # (\inst6|inst3|instruccion\(1))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4329,14 +4328,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \inst10|inst3|instruccion\(0),
-	datad => \inst10|inst3|instruccion\(1),
-	combout => \inst10|inst1|SELECTOR~2_combout\);
+	datac => \inst6|inst3|instruccion\(0),
+	datad => \inst6|inst3|instruccion\(1),
+	combout => \inst6|inst1|SELECTOR~2_combout\);
 
 -- Location: LCCOMB_X20_Y5_N24
-\inst10|inst5|$00000|auto_generated|result_node[1]~1\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[1]~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & ((!\inst10|inst1|SELECTOR~2_combout\))) # (!\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst2|valor_interno\(1)))
+-- \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & ((!\inst6|inst1|SELECTOR~2_combout\))) # (!\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst2|valor_interno\(1)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4344,15 +4343,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst2|valor_interno\(1),
-	datad => \inst10|inst1|SELECTOR~2_combout\,
-	combout => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\);
+	dataa => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst2|valor_interno\(1),
+	datad => \inst6|inst1|SELECTOR~2_combout\,
+	combout => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\);
 
 -- Location: LCCOMB_X25_Y5_N6
-\inst10|inst|Equal1~0\ : fiftyfivenm_lcell_comb
+\inst6|inst|Equal1~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|Equal1~0_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & !\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\)
+-- \inst6|inst|Equal1~0_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & !\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4360,14 +4359,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	combout => \inst10|inst|Equal1~0_combout\);
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	combout => \inst6|inst|Equal1~0_combout\);
 
 -- Location: LCCOMB_X25_Y5_N8
-\inst10|inst|data[73]~24\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[73]~24\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[73]~24_combout\ = (((!\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\) # (!\inst10|inst|Equal12~0_combout\)) # (!\inst10|inst|data[87]~18_combout\)) # (!\inst10|inst|Equal1~0_combout\)
+-- \inst6|inst|data[73]~24_combout\ = (((!\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\) # (!\inst6|inst|Equal12~0_combout\)) # (!\inst6|inst|data[87]~18_combout\)) # (!\inst6|inst|Equal1~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4375,16 +4374,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal1~0_combout\,
-	datab => \inst10|inst|data[87]~18_combout\,
-	datac => \inst10|inst|Equal12~0_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	combout => \inst10|inst|data[73]~24_combout\);
+	dataa => \inst6|inst|Equal1~0_combout\,
+	datab => \inst6|inst|data[87]~18_combout\,
+	datac => \inst6|inst|Equal12~0_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	combout => \inst6|inst|data[73]~24_combout\);
 
 -- Location: LCCOMB_X23_Y5_N24
-\inst10|inst3|nCRI\ : fiftyfivenm_lcell_comb
+\inst6|inst3|nCRI\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|nCRI~combout\ = LCELL(((\inst10|inst|data[73]~24_combout\ & ((!\inst10|inst|Equal1~0_combout\) # (!\inst10|inst|Equal0~2_combout\)))) # (!\RESET~input_o\))
+-- \inst6|inst3|nCRI~combout\ = LCELL(((\inst6|inst|data[73]~24_combout\ & ((!\inst6|inst|Equal1~0_combout\) # (!\inst6|inst|Equal0~2_combout\)))) # (!\RESET~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4393,23 +4392,23 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \RESET~input_o\,
-	datab => \inst10|inst|data[73]~24_combout\,
-	datac => \inst10|inst|Equal0~2_combout\,
-	datad => \inst10|inst|Equal1~0_combout\,
-	combout => \inst10|inst3|nCRI~combout\);
+	datab => \inst6|inst|data[73]~24_combout\,
+	datac => \inst6|inst|Equal0~2_combout\,
+	datad => \inst6|inst|Equal1~0_combout\,
+	combout => \inst6|inst3|nCRI~combout\);
 
 -- Location: CLKCTRL_G17
-\inst10|inst3|nCRI~clkctrl\ : fiftyfivenm_clkctrl
+\inst6|inst3|nCRI~clkctrl\ : fiftyfivenm_clkctrl
 -- pragma translate_off
 GENERIC MAP (
 	clock_type => "global clock",
 	ena_register_mode => "none")
 -- pragma translate_on
 PORT MAP (
-	inclk => \inst10|inst3|nCRI~clkctrl_INCLK_bus\,
+	inclk => \inst6|inst3|nCRI~clkctrl_INCLK_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	outclk => \inst10|inst3|nCRI~clkctrl_outclk\);
+	outclk => \inst6|inst3|nCRI~clkctrl_outclk\);
 
 -- Location: LCCOMB_X30_Y5_N26
 \inst|Mux0~0\ : fiftyfivenm_lcell_comb
@@ -4431,7 +4430,7 @@ PORT MAP (
 -- Location: LCCOMB_X22_Y5_N10
 \inst|data[7]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|data[7]~0_combout\ = ((!\inst|Mux0~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst|data[7]~0_combout\ = ((!\inst|Mux0~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4440,7 +4439,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \inst|Mux0~0_combout\,
-	datab => \inst10|inst3|PC[0]~10_combout\,
+	datab => \inst6|inst3|PC[0]~10_combout\,
 	datac => \inst|data_out[7]~0_combout\,
 	combout => \inst|data[7]~0_combout\);
 
@@ -4452,7 +4451,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCRI~clkctrl_outclk\,
+	clk => \inst6|inst3|nCRI~clkctrl_outclk\,
 	asdata => \inst|data[7]~0_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
@@ -4461,9 +4460,9 @@ PORT MAP (
 	q => \inst11|valor_interno\(6));
 
 -- Location: LCCOMB_X22_Y5_N22
-\inst10|inst8[6]~5\ : fiftyfivenm_lcell_comb
+\inst6|inst8[6]~5\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst8[6]~5_combout\ = (!\inst10|inst3|instruccion\(0) & ((\inst11|valor_interno\(6)) # (!\inst10|inst3|instruccion\(1))))
+-- \inst6|inst8[6]~5_combout\ = (!\inst6|inst3|instruccion\(0) & ((\inst11|valor_interno\(6)) # (!\inst6|inst3|instruccion\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4471,17 +4470,17 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst3|instruccion\(1),
+	datab => \inst6|inst3|instruccion\(1),
 	datac => \inst11|valor_interno\(6),
-	datad => \inst10|inst3|instruccion\(0),
-	combout => \inst10|inst8[6]~5_combout\);
+	datad => \inst6|inst3|instruccion\(0),
+	combout => \inst6|inst8[6]~5_combout\);
 
 -- Location: LCCOMB_X21_Y5_N10
-\inst10|inst2|valor_interno[6]~21\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[6]~21\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[6]~21_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\ & (!\inst10|inst2|valor_interno[5]~20\)) # (!\inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\ & ((\inst10|inst2|valor_interno[5]~20\) 
--- # (GND)))
--- \inst10|inst2|valor_interno[6]~22\ = CARRY((!\inst10|inst2|valor_interno[5]~20\) # (!\inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\))
+-- \inst6|inst2|valor_interno[6]~21_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\ & (!\inst6|inst2|valor_interno[5]~20\)) # (!\inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\ & ((\inst6|inst2|valor_interno[5]~20\) # 
+-- (GND)))
+-- \inst6|inst2|valor_interno[6]~22\ = CARRY((!\inst6|inst2|valor_interno[5]~20\) # (!\inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4489,14 +4488,14 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\,
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\,
 	datad => VCC,
-	cin => \inst10|inst2|valor_interno[5]~20\,
-	combout => \inst10|inst2|valor_interno[6]~21_combout\,
-	cout => \inst10|inst2|valor_interno[6]~22\);
+	cin => \inst6|inst2|valor_interno[5]~20\,
+	combout => \inst6|inst2|valor_interno[6]~21_combout\,
+	cout => \inst6|inst2|valor_interno[6]~22\);
 
 -- Location: FF_X21_Y5_N11
-\inst10|inst2|valor_interno[6]\ : dffeas
+\inst6|inst2|valor_interno[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4504,16 +4503,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[6]~21_combout\,
+	d => \inst6|inst2|valor_interno[6]~21_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(6));
+	q => \inst6|inst2|valor_interno\(6));
 
 -- Location: LCCOMB_X22_Y5_N18
-\inst10|inst5|$00000|auto_generated|result_node[6]~6\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[6]~6\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst8[6]~5_combout\)) # (!\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst2|valor_interno\(6))))
+-- \inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst8[6]~5_combout\)) # (!\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst2|valor_interno\(6))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4521,13 +4520,13 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst8[6]~5_combout\,
-	datad => \inst10|inst2|valor_interno\(6),
-	combout => \inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\);
+	datab => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst8[6]~5_combout\,
+	datad => \inst6|inst2|valor_interno\(6),
+	combout => \inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\);
 
 -- Location: FF_X21_Y5_N13
-\inst10|inst2|valor_interno[7]\ : dffeas
+\inst6|inst2|valor_interno[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4535,11 +4534,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[7]~23_combout\,
+	d => \inst6|inst2|valor_interno[7]~23_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(7));
+	q => \inst6|inst2|valor_interno\(7));
 
 -- Location: LCCOMB_X30_Y5_N28
 \inst|Mux4~0\ : fiftyfivenm_lcell_comb
@@ -4561,7 +4560,7 @@ PORT MAP (
 -- Location: LCCOMB_X20_Y5_N4
 \inst|data[3]~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|data[3]~3_combout\ = ((\inst|Mux4~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst|data[3]~3_combout\ = ((\inst|Mux4~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4569,7 +4568,7 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|PC[0]~10_combout\,
+	dataa => \inst6|inst3|PC[0]~10_combout\,
 	datab => \inst|Mux4~0_combout\,
 	datac => \inst|data_out[7]~0_combout\,
 	combout => \inst|data[3]~3_combout\);
@@ -4582,7 +4581,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCRI~clkctrl_outclk\,
+	clk => \inst6|inst3|nCRI~clkctrl_outclk\,
 	asdata => \inst|data[3]~3_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
@@ -4591,9 +4590,9 @@ PORT MAP (
 	q => \inst11|valor_interno\(7));
 
 -- Location: LCCOMB_X20_Y5_N10
-\inst10|inst8[7]~4\ : fiftyfivenm_lcell_comb
+\inst6|inst8[7]~4\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst8[7]~4_combout\ = (!\inst10|inst3|instruccion\(0) & ((\inst11|valor_interno\(7)) # (!\inst10|inst3|instruccion\(1))))
+-- \inst6|inst8[7]~4_combout\ = (!\inst6|inst3|instruccion\(0) & ((\inst11|valor_interno\(7)) # (!\inst6|inst3|instruccion\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4601,15 +4600,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst3|instruccion\(0),
+	datab => \inst6|inst3|instruccion\(0),
 	datac => \inst11|valor_interno\(7),
-	datad => \inst10|inst3|instruccion\(1),
-	combout => \inst10|inst8[7]~4_combout\);
+	datad => \inst6|inst3|instruccion\(1),
+	combout => \inst6|inst8[7]~4_combout\);
 
 -- Location: LCCOMB_X26_Y5_N22
-\inst10|inst5|$00000|auto_generated|result_node[7]~7\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[7]~7\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & ((\inst10|inst8[7]~4_combout\))) # (!\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst2|valor_interno\(7)))
+-- \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & ((\inst6|inst8[7]~4_combout\))) # (!\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst2|valor_interno\(7)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4617,16 +4616,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst2|valor_interno\(7),
-	datad => \inst10|inst8[7]~4_combout\,
-	combout => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\);
+	datab => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst2|valor_interno\(7),
+	datad => \inst6|inst8[7]~4_combout\,
+	combout => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\);
 
 -- Location: LCCOMB_X27_Y5_N22
-\inst10|inst|data[86]~32\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[86]~32\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[86]~32_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & 
--- \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\)))
+-- \inst6|inst|data[86]~32_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & 
+-- \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4634,16 +4633,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datad => \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\,
-	combout => \inst10|inst|data[86]~32_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datad => \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\,
+	combout => \inst6|inst|data[86]~32_combout\);
 
 -- Location: LCCOMB_X26_Y5_N16
-\inst10|inst|data[86]~20\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[86]~20\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[86]~20_combout\ = (\inst10|inst|data[86]~32_combout\ & (!\inst10|inst|Equal15~0_combout\ & (\inst10|inst|Equal14~0_combout\ & \inst10|inst|data[87]~26_combout\)))
+-- \inst6|inst|data[86]~20_combout\ = (\inst6|inst|data[86]~32_combout\ & (!\inst6|inst|Equal15~0_combout\ & (\inst6|inst|Equal14~0_combout\ & \inst6|inst|data[87]~26_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4651,16 +4650,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|data[86]~32_combout\,
-	datab => \inst10|inst|Equal15~0_combout\,
-	datac => \inst10|inst|Equal14~0_combout\,
-	datad => \inst10|inst|data[87]~26_combout\,
-	combout => \inst10|inst|data[86]~20_combout\);
+	dataa => \inst6|inst|data[86]~32_combout\,
+	datab => \inst6|inst|Equal15~0_combout\,
+	datac => \inst6|inst|Equal14~0_combout\,
+	datad => \inst6|inst|data[87]~26_combout\,
+	combout => \inst6|inst|data[86]~20_combout\);
 
 -- Location: LCCOMB_X25_Y5_N16
-\inst10|inst|data~23\ : fiftyfivenm_lcell_comb
+\inst6|inst|data~23\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data~23_combout\ = ((\inst10|inst|data[86]~20_combout\ & \inst10|inst|data[87]~16_combout\)) # (!\inst10|inst|data~17_combout\)
+-- \inst6|inst|data~23_combout\ = ((\inst6|inst|data[86]~20_combout\ & \inst6|inst|data[87]~16_combout\)) # (!\inst6|inst|data~17_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4668,13 +4667,13 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst|data[86]~20_combout\,
-	datac => \inst10|inst|data~17_combout\,
-	datad => \inst10|inst|data[87]~16_combout\,
-	combout => \inst10|inst|data~23_combout\);
+	datab => \inst6|inst|data[86]~20_combout\,
+	datac => \inst6|inst|data~17_combout\,
+	datad => \inst6|inst|data[87]~16_combout\,
+	combout => \inst6|inst|data~23_combout\);
 
 -- Location: FF_X25_Y5_N17
-\inst10|inst3|prueba[4]\ : dffeas
+\inst6|inst3|prueba[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4682,16 +4681,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst|data~23_combout\,
+	d => \inst6|inst|data~23_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst3|prueba\(4));
+	q => \inst6|inst3|prueba\(4));
 
 -- Location: LCCOMB_X24_Y5_N18
-\inst10|inst3|X[0]~0\ : fiftyfivenm_lcell_comb
+\inst6|inst3|X[0]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst3|X[0]~0_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (\inst10|inst|Equal14~1_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \RESET~input_o\)))
+-- \inst6|inst3|X[0]~0_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (\inst6|inst|Equal14~1_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \RESET~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4699,11 +4698,11 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datab => \inst10|inst|Equal14~1_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datab => \inst6|inst|Equal14~1_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
 	datad => \RESET~input_o\,
-	combout => \inst10|inst3|X[0]~0_combout\);
+	combout => \inst6|inst3|X[0]~0_combout\);
 
 -- Location: FF_X26_Y5_N3
 \RegIndX|data_out[0]\ : dffeas
@@ -4717,7 +4716,7 @@ PORT MAP (
 	asdata => \inst|data[0]~5_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
-	ena => \inst10|inst3|X[0]~0_combout\,
+	ena => \inst6|inst3|X[0]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegIndX|data_out\(0));
@@ -4725,7 +4724,7 @@ PORT MAP (
 -- Location: LCCOMB_X26_Y5_N2
 \RegIndX|R0~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \RegIndX|R0~0_combout\ = (\RegIndX|data_out\(0)) # ((\RESET~input_o\ & ((\inst10|inst|Equal15~0_combout\) # (\inst10|inst|Equal17~0_combout\))))
+-- \RegIndX|R0~0_combout\ = (\RegIndX|data_out\(0)) # ((\RESET~input_o\ & ((\inst6|inst|Equal15~0_combout\) # (\inst6|inst|Equal17~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4733,8 +4732,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal15~0_combout\,
-	datab => \inst10|inst|Equal17~0_combout\,
+	dataa => \inst6|inst|Equal15~0_combout\,
+	datab => \inst6|inst|Equal17~0_combout\,
 	datac => \RegIndX|data_out\(0),
 	datad => \RESET~input_o\,
 	combout => \RegIndX|R0~0_combout\);
@@ -4756,7 +4755,7 @@ PORT MAP (
 -- Location: LCCOMB_X19_Y5_N8
 \AcumuladorA|data_out[7]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \AcumuladorA|data_out[7]~0_combout\ = (\RESET~input_o\ & (!\inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\ & (\inst10|inst|Equal1~0_combout\ & \inst10|inst|Equal3~2_combout\)))
+-- \AcumuladorA|data_out[7]~0_combout\ = (\RESET~input_o\ & (!\inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\ & (\inst6|inst|Equal1~0_combout\ & \inst6|inst|Equal3~2_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4765,9 +4764,9 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \RESET~input_o\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\,
-	datac => \inst10|inst|Equal1~0_combout\,
-	datad => \inst10|inst|Equal3~2_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\,
+	datac => \inst6|inst|Equal1~0_combout\,
+	datad => \inst6|inst|Equal3~2_combout\,
 	combout => \AcumuladorA|data_out[7]~0_combout\);
 
 -- Location: FF_X19_Y5_N17
@@ -4801,9 +4800,9 @@ PORT MAP (
 	q => \upa|Banderas\(2));
 
 -- Location: LCCOMB_X27_Y5_N2
-\inst10|inst|data[86]~31\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[86]~31\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[86]~31_combout\ = (\inst10|inst|Equal18~0_combout\) # ((\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & (!\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & \inst10|inst|Equal3~2_combout\)))
+-- \inst6|inst|data[86]~31_combout\ = (\inst6|inst|Equal18~0_combout\) # ((\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & (!\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & \inst6|inst|Equal3~2_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4811,14 +4810,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal18~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datad => \inst10|inst|Equal3~2_combout\,
-	combout => \inst10|inst|data[86]~31_combout\);
+	dataa => \inst6|inst|Equal18~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datad => \inst6|inst|Equal3~2_combout\,
+	combout => \inst6|inst|data[86]~31_combout\);
 
 -- Location: FF_X27_Y5_N3
-\inst10|inst3|prueba[0]\ : dffeas
+\inst6|inst3|prueba[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4826,16 +4825,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst|data[86]~31_combout\,
+	d => \inst6|inst|data[86]~31_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst3|prueba\(0));
+	q => \inst6|inst3|prueba\(0));
 
 -- Location: LCCOMB_X27_Y5_N24
-\inst10|inst6|$00001|auto_generated|result_node[0]~0\ : fiftyfivenm_lcell_comb
+\inst6|inst6|$00001|auto_generated|result_node[0]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst6|$00001|auto_generated|result_node[0]~0_combout\ = (\inst10|inst3|prueba\(0) & ((\upa|Banderas\(2)))) # (!\inst10|inst3|prueba\(0) & (\RegIndX|R0~0_combout\))
+-- \inst6|inst6|$00001|auto_generated|result_node[0]~0_combout\ = (\inst6|inst3|prueba\(0) & ((\upa|Banderas\(2)))) # (!\inst6|inst3|prueba\(0) & (\RegIndX|R0~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4845,11 +4844,11 @@ GENERIC MAP (
 PORT MAP (
 	datab => \RegIndX|R0~0_combout\,
 	datac => \upa|Banderas\(2),
-	datad => \inst10|inst3|prueba\(0),
-	combout => \inst10|inst6|$00001|auto_generated|result_node[0]~0_combout\);
+	datad => \inst6|inst3|prueba\(0),
+	combout => \inst6|inst6|$00001|auto_generated|result_node[0]~0_combout\);
 
 -- Location: FF_X22_Y5_N27
-\inst10|inst3|vf\ : dffeas
+\inst6|inst3|vf\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4857,17 +4856,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	asdata => \inst10|inst|data~30_combout\,
+	asdata => \inst6|inst|data~30_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst3|vf~q\);
+	q => \inst6|inst3|vf~q\);
 
 -- Location: LCCOMB_X22_Y5_N26
-\inst10|inst7\ : fiftyfivenm_lcell_comb
+\inst6|inst7\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst7~combout\ = \inst10|inst3|vf~q\ $ (((\inst10|inst3|prueba\(4) & (\inst10|inst6|$00001|auto_generated|result_node[0]~0_combout\ & \inst10|inst3|instruccion\(0)))))
+-- \inst6|inst7~combout\ = \inst6|inst3|vf~q\ $ (((\inst6|inst3|prueba\(4) & (\inst6|inst6|$00001|auto_generated|result_node[0]~0_combout\ & \inst6|inst3|instruccion\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4875,16 +4874,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|prueba\(4),
-	datab => \inst10|inst6|$00001|auto_generated|result_node[0]~0_combout\,
-	datac => \inst10|inst3|vf~q\,
-	datad => \inst10|inst3|instruccion\(0),
-	combout => \inst10|inst7~combout\);
+	dataa => \inst6|inst3|prueba\(4),
+	datab => \inst6|inst6|$00001|auto_generated|result_node[0]~0_combout\,
+	datac => \inst6|inst3|vf~q\,
+	datad => \inst6|inst3|instruccion\(0),
+	combout => \inst6|inst7~combout\);
 
 -- Location: LCCOMB_X22_Y5_N6
-\inst10|inst1|SELECTOR~3\ : fiftyfivenm_lcell_comb
+\inst6|inst1|SELECTOR~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst1|SELECTOR~3_combout\ = (\inst10|inst3|instruccion\(1) & !\inst10|inst3|instruccion\(0))
+-- \inst6|inst1|SELECTOR~3_combout\ = (\inst6|inst3|instruccion\(1) & !\inst6|inst3|instruccion\(0))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4892,14 +4891,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst3|instruccion\(1),
-	datad => \inst10|inst3|instruccion\(0),
-	combout => \inst10|inst1|SELECTOR~3_combout\);
+	datab => \inst6|inst3|instruccion\(1),
+	datad => \inst6|inst3|instruccion\(0),
+	combout => \inst6|inst1|SELECTOR~3_combout\);
 
 -- Location: LCCOMB_X22_Y5_N24
-\inst10|inst1|SELECTOR~0\ : fiftyfivenm_lcell_comb
+\inst6|inst1|SELECTOR~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst1|SELECTOR~0_combout\ = (\inst10|inst7~combout\ & ((\inst10|inst1|SELECTOR~3_combout\))) # (!\inst10|inst7~combout\ & (\inst10|inst1|SELECTOR~2_combout\))
+-- \inst6|inst1|SELECTOR~0_combout\ = (\inst6|inst7~combout\ & ((\inst6|inst1|SELECTOR~3_combout\))) # (!\inst6|inst7~combout\ & (\inst6|inst1|SELECTOR~2_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4907,15 +4906,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst7~combout\,
-	datac => \inst10|inst1|SELECTOR~2_combout\,
-	datad => \inst10|inst1|SELECTOR~3_combout\,
-	combout => \inst10|inst1|SELECTOR~0_combout\);
+	dataa => \inst6|inst7~combout\,
+	datac => \inst6|inst1|SELECTOR~2_combout\,
+	datad => \inst6|inst1|SELECTOR~3_combout\,
+	combout => \inst6|inst1|SELECTOR~0_combout\);
 
 -- Location: LCCOMB_X27_Y5_N0
-\inst10|inst2|valor_interno[0]~33\ : fiftyfivenm_lcell_comb
+\inst6|inst2|valor_interno[0]~33\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst2|valor_interno[0]~33_combout\ = !\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\
+-- \inst6|inst2|valor_interno[0]~33_combout\ = !\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4923,11 +4922,11 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	combout => \inst10|inst2|valor_interno[0]~33_combout\);
+	datac => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	combout => \inst6|inst2|valor_interno[0]~33_combout\);
 
 -- Location: FF_X27_Y5_N1
-\inst10|inst2|valor_interno[0]\ : dffeas
+\inst6|inst2|valor_interno[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4935,14 +4934,14 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst2|valor_interno[0]~33_combout\,
+	d => \inst6|inst2|valor_interno[0]~33_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst2|valor_interno\(0));
+	q => \inst6|inst2|valor_interno\(0));
 
 -- Location: FF_X25_Y5_N29
-\inst10|inst3|liga[0]\ : dffeas
+\inst6|inst3|liga[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4950,17 +4949,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	asdata => \inst10|inst|data~23_combout\,
+	asdata => \inst6|inst|data~23_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst3|liga\(0));
+	q => \inst6|inst3|liga\(0));
 
 -- Location: LCCOMB_X25_Y5_N28
 \inst12[0]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst12[0]~0_combout\ = (!\inst10|inst3|instruccion\(1) & ((\inst10|inst3|liga\(0)) # (!\inst10|inst3|instruccion\(0))))
+-- \inst12[0]~0_combout\ = (!\inst6|inst3|instruccion\(1) & ((\inst6|inst3|liga\(0)) # (!\inst6|inst3|instruccion\(0))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4968,15 +4967,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst3|instruccion\(0),
-	datac => \inst10|inst3|liga\(0),
-	datad => \inst10|inst3|instruccion\(1),
+	datab => \inst6|inst3|instruccion\(0),
+	datac => \inst6|inst3|liga\(0),
+	datad => \inst6|inst3|instruccion\(1),
 	combout => \inst12[0]~0_combout\);
 
 -- Location: LCCOMB_X26_Y5_N8
-\inst10|inst5|$00000|auto_generated|result_node[0]~0\ : fiftyfivenm_lcell_comb
+\inst6|inst5|$00000|auto_generated|result_node[0]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ = (\inst10|inst1|SELECTOR~0_combout\ & ((\inst12[0]~0_combout\))) # (!\inst10|inst1|SELECTOR~0_combout\ & (\inst10|inst2|valor_interno\(0)))
+-- \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ = (\inst6|inst1|SELECTOR~0_combout\ & ((\inst12[0]~0_combout\))) # (!\inst6|inst1|SELECTOR~0_combout\ & (\inst6|inst2|valor_interno\(0)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4984,15 +4983,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst1|SELECTOR~0_combout\,
-	datac => \inst10|inst2|valor_interno\(0),
+	datab => \inst6|inst1|SELECTOR~0_combout\,
+	datac => \inst6|inst2|valor_interno\(0),
 	datad => \inst12[0]~0_combout\,
-	combout => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\);
+	combout => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\);
 
 -- Location: LCCOMB_X22_Y5_N16
-\inst10|inst|data[87]~29\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[87]~29\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[87]~29_combout\ = ((!\inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (\inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \inst10|inst|Equal11~0_combout\))) # (!\inst10|inst|data[87]~28_combout\)
+-- \inst6|inst|data[87]~29_combout\ = ((!\inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ & (\inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ & \inst6|inst|Equal11~0_combout\))) # (!\inst6|inst|data[87]~28_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5000,16 +4999,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\,
-	datab => \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\,
-	datac => \inst10|inst|Equal11~0_combout\,
-	datad => \inst10|inst|data[87]~28_combout\,
-	combout => \inst10|inst|data[87]~29_combout\);
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\,
+	datab => \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\,
+	datac => \inst6|inst|Equal11~0_combout\,
+	datad => \inst6|inst|data[87]~28_combout\,
+	combout => \inst6|inst|data[87]~29_combout\);
 
 -- Location: LCCOMB_X22_Y5_N28
-\inst10|inst|data[87]~19\ : fiftyfivenm_lcell_comb
+\inst6|inst|data[87]~19\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst|data[87]~19_combout\ = (\inst10|inst|data[87]~29_combout\) # ((\inst10|inst|data[87]~18_combout\ & (\inst10|inst|data[87]~26_combout\ & \inst10|inst|Equal18~0_combout\)))
+-- \inst6|inst|data[87]~19_combout\ = (\inst6|inst|data[87]~29_combout\) # ((\inst6|inst|data[87]~18_combout\ & (\inst6|inst|data[87]~26_combout\ & \inst6|inst|Equal18~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5017,14 +5016,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|data[87]~29_combout\,
-	datab => \inst10|inst|data[87]~18_combout\,
-	datac => \inst10|inst|data[87]~26_combout\,
-	datad => \inst10|inst|Equal18~0_combout\,
-	combout => \inst10|inst|data[87]~19_combout\);
+	dataa => \inst6|inst|data[87]~29_combout\,
+	datab => \inst6|inst|data[87]~18_combout\,
+	datac => \inst6|inst|data[87]~26_combout\,
+	datad => \inst6|inst|Equal18~0_combout\,
+	combout => \inst6|inst|data[87]~19_combout\);
 
 -- Location: FF_X22_Y5_N29
-\inst10|inst3|instruccion[1]\ : dffeas
+\inst6|inst3|instruccion[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -5032,11 +5031,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLK~input_o\,
-	d => \inst10|inst|data[87]~19_combout\,
+	d => \inst6|inst|data[87]~19_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst10|inst3|instruccion\(1));
+	q => \inst6|inst3|instruccion\(1));
 
 -- Location: FF_X22_Y5_N5
 \inst11|valor_interno[11]\ : dffeas
@@ -5046,7 +5045,7 @@ GENERIC MAP (
 	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	clk => \inst10|inst3|nCRI~clkctrl_outclk\,
+	clk => \inst6|inst3|nCRI~clkctrl_outclk\,
 	asdata => \inst|data[7]~0_combout\,
 	clrn => \RESET~input_o\,
 	sload => VCC,
@@ -5055,9 +5054,9 @@ PORT MAP (
 	q => \inst11|valor_interno\(11));
 
 -- Location: LCCOMB_X22_Y5_N4
-\inst10|inst8[11]~0\ : fiftyfivenm_lcell_comb
+\inst6|inst8[11]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst10|inst8[11]~0_combout\ = (!\inst10|inst3|instruccion\(0) & ((\inst11|valor_interno\(11)) # (!\inst10|inst3|instruccion\(1))))
+-- \inst6|inst8[11]~0_combout\ = (!\inst6|inst3|instruccion\(0) & ((\inst11|valor_interno\(11)) # (!\inst6|inst3|instruccion\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5065,10 +5064,10 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst10|inst3|instruccion\(1),
+	datab => \inst6|inst3|instruccion\(1),
 	datac => \inst11|valor_interno\(11),
-	datad => \inst10|inst3|instruccion\(0),
-	combout => \inst10|inst8[11]~0_combout\);
+	datad => \inst6|inst3|instruccion\(0),
+	combout => \inst6|inst8[11]~0_combout\);
 
 -- Location: LCCOMB_X19_Y5_N10
 \AcumuladorA|data_out[6]~feeder\ : fiftyfivenm_lcell_comb
@@ -5130,7 +5129,7 @@ PORT MAP (
 -- Location: LCCOMB_X19_Y5_N0
 \AcumuladorA|data_out[5]~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \AcumuladorA|data_out[5]~1_combout\ = !\inst10|inst3|PC[0]~10_combout\
+-- \AcumuladorA|data_out[5]~1_combout\ = !\inst6|inst3|PC[0]~10_combout\
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5138,7 +5137,7 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \inst10|inst3|PC[0]~10_combout\,
+	datad => \inst6|inst3|PC[0]~10_combout\,
 	combout => \AcumuladorA|data_out[5]~1_combout\);
 
 -- Location: FF_X19_Y5_N1
@@ -5628,7 +5627,7 @@ PORT MAP (
 -- Location: LCCOMB_X27_Y5_N14
 \AcumuladorB|data_out[7]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \AcumuladorB|data_out[7]~0_combout\ = (\inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\ & (\inst10|inst|Equal1~0_combout\ & (\inst10|inst|Equal3~2_combout\ & \RESET~input_o\)))
+-- \AcumuladorB|data_out[7]~0_combout\ = (\inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\ & (\inst6|inst|Equal1~0_combout\ & (\inst6|inst|Equal3~2_combout\ & \RESET~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5636,9 +5635,9 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\,
-	datab => \inst10|inst|Equal1~0_combout\,
-	datac => \inst10|inst|Equal3~2_combout\,
+	dataa => \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\,
+	datab => \inst6|inst|Equal1~0_combout\,
+	datac => \inst6|inst|Equal3~2_combout\,
 	datad => \RESET~input_o\,
 	combout => \AcumuladorB|data_out[7]~0_combout\);
 
@@ -5689,7 +5688,7 @@ PORT MAP (
 -- Location: LCCOMB_X27_Y5_N4
 \AcumuladorB|data_out[5]~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \AcumuladorB|data_out[5]~1_combout\ = !\inst10|inst3|PC[0]~10_combout\
+-- \AcumuladorB|data_out[5]~1_combout\ = !\inst6|inst3|PC[0]~10_combout\
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5697,7 +5696,7 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \inst10|inst3|PC[0]~10_combout\,
+	datad => \inst6|inst3|PC[0]~10_combout\,
 	combout => \AcumuladorB|data_out[5]~1_combout\);
 
 -- Location: FF_X27_Y5_N5
@@ -5863,7 +5862,7 @@ PORT MAP (
 -- Location: LCCOMB_X24_Y5_N14
 \RegIndX|data_out[8]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \RegIndX|data_out[8]~0_combout\ = (\inst10|inst|Equal15~0_combout\ & \RESET~input_o\)
+-- \RegIndX|data_out[8]~0_combout\ = (\inst6|inst|Equal15~0_combout\ & \RESET~input_o\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5871,14 +5870,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst|Equal15~0_combout\,
+	dataa => \inst6|inst|Equal15~0_combout\,
 	datab => \RESET~input_o\,
 	combout => \RegIndX|data_out[8]~0_combout\);
 
 -- Location: LCCOMB_X24_Y5_N28
 \inst5|PortL[7]~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|PortL[7]~2_combout\ = (((!\inst|Mux0~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst5|PortL[7]~2_combout\ = (((!\inst|Mux0~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5886,7 +5885,7 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|PC[0]~10_combout\,
+	dataa => \inst6|inst3|PC[0]~10_combout\,
 	datab => \inst|Mux0~0_combout\,
 	datac => \RegIndX|data_out[8]~0_combout\,
 	datad => \inst|data_out[7]~0_combout\,
@@ -5912,7 +5911,7 @@ PORT MAP (
 -- Location: LCCOMB_X24_Y5_N26
 \inst5|PortL[6]~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|PortL[6]~3_combout\ = (((\inst|data_out[7]~0_combout\ & \inst|Mux1~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst5|PortL[6]~3_combout\ = (((\inst|data_out[7]~0_combout\ & \inst|Mux1~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5921,7 +5920,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \inst|data_out[7]~0_combout\,
-	datab => \inst10|inst3|PC[0]~10_combout\,
+	datab => \inst6|inst3|PC[0]~10_combout\,
 	datac => \RegIndX|data_out[8]~0_combout\,
 	datad => \inst|Mux1~0_combout\,
 	combout => \inst5|PortL[6]~3_combout\);
@@ -5945,7 +5944,7 @@ PORT MAP (
 -- Location: LCCOMB_X24_Y5_N30
 \inst5|PortL[5]~8\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|PortL[5]~8_combout\ = ((!\inst10|inst|Equal15~0_combout\) # (!\inst10|inst3|PC[0]~10_combout\)) # (!\RESET~input_o\)
+-- \inst5|PortL[5]~8_combout\ = ((!\inst6|inst|Equal15~0_combout\) # (!\inst6|inst3|PC[0]~10_combout\)) # (!\RESET~input_o\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5954,8 +5953,8 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datab => \RESET~input_o\,
-	datac => \inst10|inst3|PC[0]~10_combout\,
-	datad => \inst10|inst|Equal15~0_combout\,
+	datac => \inst6|inst3|PC[0]~10_combout\,
+	datad => \inst6|inst|Equal15~0_combout\,
 	combout => \inst5|PortL[5]~8_combout\);
 
 -- Location: FF_X24_Y5_N31
@@ -5977,7 +5976,7 @@ PORT MAP (
 -- Location: LCCOMB_X24_Y5_N22
 \inst5|PortL[4]~4\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|PortL[4]~4_combout\ = (((\inst|data_out[7]~0_combout\ & \inst|data_out[4]~1_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst5|PortL[4]~4_combout\ = (((\inst|data_out[7]~0_combout\ & \inst|data_out[4]~1_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5987,7 +5986,7 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \inst|data_out[7]~0_combout\,
 	datab => \inst|data_out[4]~1_combout\,
-	datac => \inst10|inst3|PC[0]~10_combout\,
+	datac => \inst6|inst3|PC[0]~10_combout\,
 	datad => \RegIndX|data_out[8]~0_combout\,
 	combout => \inst5|PortL[4]~4_combout\);
 
@@ -6010,7 +6009,7 @@ PORT MAP (
 -- Location: LCCOMB_X24_Y5_N24
 \inst5|PortL[3]~5\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|PortL[3]~5_combout\ = (((\inst|Mux4~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst5|PortL[3]~5_combout\ = (((\inst|Mux4~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6019,7 +6018,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \inst|Mux4~0_combout\,
-	datab => \inst10|inst3|PC[0]~10_combout\,
+	datab => \inst6|inst3|PC[0]~10_combout\,
 	datac => \RegIndX|data_out[8]~0_combout\,
 	datad => \inst|data_out[7]~0_combout\,
 	combout => \inst5|PortL[3]~5_combout\);
@@ -6073,7 +6072,7 @@ PORT MAP (
 -- Location: LCCOMB_X24_Y5_N6
 \inst5|PortL[1]~6\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|PortL[1]~6_combout\ = (((!\inst|Mux6~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst5|PortL[1]~6_combout\ = (((!\inst|Mux6~0_combout\ & \inst|data_out[7]~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6082,7 +6081,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \inst|Mux6~0_combout\,
-	datab => \inst10|inst3|PC[0]~10_combout\,
+	datab => \inst6|inst3|PC[0]~10_combout\,
 	datac => \RegIndX|data_out[8]~0_combout\,
 	datad => \inst|data_out[7]~0_combout\,
 	combout => \inst5|PortL[1]~6_combout\);
@@ -6106,7 +6105,7 @@ PORT MAP (
 -- Location: LCCOMB_X24_Y5_N16
 \inst5|PortL[0]~7\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|PortL[0]~7_combout\ = (((\inst|data_out[7]~0_combout\ & \inst|Mux7~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst10|inst3|PC[0]~10_combout\)
+-- \inst5|PortL[0]~7_combout\ = (((\inst|data_out[7]~0_combout\ & \inst|Mux7~0_combout\)) # (!\RegIndX|data_out[8]~0_combout\)) # (!\inst6|inst3|PC[0]~10_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6114,7 +6113,7 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst10|inst3|PC[0]~10_combout\,
+	dataa => \inst6|inst3|PC[0]~10_combout\,
 	datab => \inst|data_out[7]~0_combout\,
 	datac => \RegIndX|data_out[8]~0_combout\,
 	datad => \inst|Mux7~0_combout\,
@@ -6161,7 +6160,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegIndX|data_out[7]~feeder_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|X[0]~0_combout\,
+	ena => \inst6|inst3|X[0]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegIndX|data_out\(7));
@@ -6191,7 +6190,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegIndX|data_out[6]~feeder_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|X[0]~0_combout\,
+	ena => \inst6|inst3|X[0]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegIndX|data_out\(6));
@@ -6199,7 +6198,7 @@ PORT MAP (
 -- Location: LCCOMB_X20_Y5_N30
 \RegIndX|data_out[5]~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \RegIndX|data_out[5]~1_combout\ = !\inst10|inst3|PC[0]~10_combout\
+-- \RegIndX|data_out[5]~1_combout\ = !\inst6|inst3|PC[0]~10_combout\
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6207,7 +6206,7 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \inst10|inst3|PC[0]~10_combout\,
+	datad => \inst6|inst3|PC[0]~10_combout\,
 	combout => \RegIndX|data_out[5]~1_combout\);
 
 -- Location: FF_X20_Y5_N31
@@ -6221,7 +6220,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegIndX|data_out[5]~1_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|X[0]~0_combout\,
+	ena => \inst6|inst3|X[0]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegIndX|data_out\(5));
@@ -6251,7 +6250,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegIndX|data_out[4]~feeder_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|X[0]~0_combout\,
+	ena => \inst6|inst3|X[0]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegIndX|data_out\(4));
@@ -6281,7 +6280,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegIndX|data_out[3]~feeder_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|X[0]~0_combout\,
+	ena => \inst6|inst3|X[0]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegIndX|data_out\(3));
@@ -6311,7 +6310,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegIndX|data_out[2]~feeder_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|X[0]~0_combout\,
+	ena => \inst6|inst3|X[0]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegIndX|data_out\(2));
@@ -6341,7 +6340,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegIndX|data_out[1]~feeder_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|X[0]~0_combout\,
+	ena => \inst6|inst3|X[0]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegIndX|data_out\(1));
@@ -6375,7 +6374,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[8]~29_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(8));
@@ -6409,7 +6408,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[9]~31_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(9));
@@ -6443,7 +6442,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[10]~33_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(10));
@@ -6477,7 +6476,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[11]~35_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(11));
@@ -6511,7 +6510,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[12]~37_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(12));
@@ -6545,7 +6544,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[13]~39_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(13));
@@ -6579,7 +6578,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[14]~41_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(14));
@@ -6610,7 +6609,7 @@ PORT MAP (
 	clk => \CLK~inputclkctrl_outclk\,
 	d => \RegPC|data_out[15]~43_combout\,
 	clrn => \RESET~input_o\,
-	ena => \inst10|inst3|PC[0]~10_combout\,
+	ena => \inst6|inst3|PC[0]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \RegPC|data_out\(15));

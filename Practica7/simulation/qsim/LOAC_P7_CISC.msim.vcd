@@ -3,7 +3,7 @@ $comment
 		vcd file LOAC_P7_CISC.msim.vcd -direction
 $end
 $date
-	Sat Oct 26 21:54:19 2019
+	Sat Oct 26 22:34:30 2019
 $end
 $version
 	ModelSim Version 10.5b
@@ -320,14 +320,14 @@ $var wire 1 4# \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [3] $end
 $var wire 1 5# \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [2] $end
 $var wire 1 6# \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [1] $end
 $var wire 1 7# \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [0] $end
-$var wire 1 8# \inst10|inst3|nCRI~clkctrl_INCLK_bus\ [3] $end
-$var wire 1 9# \inst10|inst3|nCRI~clkctrl_INCLK_bus\ [2] $end
-$var wire 1 :# \inst10|inst3|nCRI~clkctrl_INCLK_bus\ [1] $end
-$var wire 1 ;# \inst10|inst3|nCRI~clkctrl_INCLK_bus\ [0] $end
-$var wire 1 <# \inst10|inst3|nCBD~clkctrl_INCLK_bus\ [3] $end
-$var wire 1 =# \inst10|inst3|nCBD~clkctrl_INCLK_bus\ [2] $end
-$var wire 1 ># \inst10|inst3|nCBD~clkctrl_INCLK_bus\ [1] $end
-$var wire 1 ?# \inst10|inst3|nCBD~clkctrl_INCLK_bus\ [0] $end
+$var wire 1 8# \inst6|inst3|nCRI~clkctrl_INCLK_bus\ [3] $end
+$var wire 1 9# \inst6|inst3|nCRI~clkctrl_INCLK_bus\ [2] $end
+$var wire 1 :# \inst6|inst3|nCRI~clkctrl_INCLK_bus\ [1] $end
+$var wire 1 ;# \inst6|inst3|nCRI~clkctrl_INCLK_bus\ [0] $end
+$var wire 1 <# \inst6|inst3|nCBD~clkctrl_INCLK_bus\ [3] $end
+$var wire 1 =# \inst6|inst3|nCBD~clkctrl_INCLK_bus\ [2] $end
+$var wire 1 ># \inst6|inst3|nCBD~clkctrl_INCLK_bus\ [1] $end
+$var wire 1 ?# \inst6|inst3|nCBD~clkctrl_INCLK_bus\ [0] $end
 $var wire 1 @# \CLK~inputclkctrl_INCLK_bus\ [3] $end
 $var wire 1 A# \CLK~inputclkctrl_INCLK_bus\ [2] $end
 $var wire 1 B# \CLK~inputclkctrl_INCLK_bus\ [1] $end
@@ -479,15 +479,15 @@ $var wire 1 u$ \DebugRA[1]~output_o\ $end
 $var wire 1 v$ \DebugRA[0]~output_o\ $end
 $var wire 1 w$ \CLK~input_o\ $end
 $var wire 1 x$ \RESET~input_o\ $end
-$var wire 1 y$ \inst10|inst2|valor_interno[1]~11_combout\ $end
-$var wire 1 z$ \inst10|inst2|valor_interno[1]~12\ $end
-$var wire 1 {$ \inst10|inst2|valor_interno[2]~13_combout\ $end
-$var wire 1 |$ \inst10|inst5|$00000|auto_generated|result_node[2]~2_combout\ $end
-$var wire 1 }$ \inst10|inst2|valor_interno[7]~24\ $end
-$var wire 1 ~$ \inst10|inst2|valor_interno[8]~25_combout\ $end
-$var wire 1 !% \inst10|inst2|valor_interno[2]~14\ $end
-$var wire 1 "% \inst10|inst2|valor_interno[3]~15_combout\ $end
-$var wire 1 #% \inst10|inst5|$00000|auto_generated|result_node[3]~3_combout\ $end
+$var wire 1 y$ \inst6|inst2|valor_interno[1]~11_combout\ $end
+$var wire 1 z$ \inst6|inst2|valor_interno[1]~12\ $end
+$var wire 1 {$ \inst6|inst2|valor_interno[2]~13_combout\ $end
+$var wire 1 |$ \inst6|inst5|$00000|auto_generated|result_node[2]~2_combout\ $end
+$var wire 1 }$ \inst6|inst2|valor_interno[7]~24\ $end
+$var wire 1 ~$ \inst6|inst2|valor_interno[8]~25_combout\ $end
+$var wire 1 !% \inst6|inst2|valor_interno[2]~14\ $end
+$var wire 1 "% \inst6|inst2|valor_interno[3]~15_combout\ $end
+$var wire 1 #% \inst6|inst5|$00000|auto_generated|result_node[3]~3_combout\ $end
 $var wire 1 $% \CLK~inputclkctrl_outclk\ $end
 $var wire 1 %% \RegPC|data_out[0]~45_combout\ $end
 $var wire 1 &% \RegPC|data_out[0]~feeder_combout\ $end
@@ -514,108 +514,108 @@ $var wire 1 :% \dir|valor_interno[5]~feeder_combout\ $end
 $var wire 1 ;% \dir|valor_interno[4]~feeder_combout\ $end
 $var wire 1 <% \inst|data_out[7]~0_combout\ $end
 $var wire 1 =% \inst|data[1]~4_combout\ $end
-$var wire 1 >% \inst10|inst8[5]~6_combout\ $end
-$var wire 1 ?% \inst10|inst2|valor_interno[3]~16\ $end
-$var wire 1 @% \inst10|inst2|valor_interno[4]~17_combout\ $end
+$var wire 1 >% \inst6|inst8[5]~6_combout\ $end
+$var wire 1 ?% \inst6|inst2|valor_interno[3]~16\ $end
+$var wire 1 @% \inst6|inst2|valor_interno[4]~17_combout\ $end
 $var wire 1 A% \inst|Mux7~0_combout\ $end
 $var wire 1 B% \inst|data[0]~5_combout\ $end
-$var wire 1 C% \inst10|inst8[4]~7_combout\ $end
-$var wire 1 D% \inst10|inst5|$00000|auto_generated|result_node[4]~4_combout\ $end
-$var wire 1 E% \inst10|inst2|valor_interno[4]~18\ $end
-$var wire 1 F% \inst10|inst2|valor_interno[5]~19_combout\ $end
-$var wire 1 G% \inst10|inst5|$00000|auto_generated|result_node[5]~5_combout\ $end
-$var wire 1 H% \inst10|inst2|valor_interno[8]~26\ $end
-$var wire 1 I% \inst10|inst2|valor_interno[9]~27_combout\ $end
+$var wire 1 C% \inst6|inst8[4]~7_combout\ $end
+$var wire 1 D% \inst6|inst5|$00000|auto_generated|result_node[4]~4_combout\ $end
+$var wire 1 E% \inst6|inst2|valor_interno[4]~18\ $end
+$var wire 1 F% \inst6|inst2|valor_interno[5]~19_combout\ $end
+$var wire 1 G% \inst6|inst5|$00000|auto_generated|result_node[5]~5_combout\ $end
+$var wire 1 H% \inst6|inst2|valor_interno[8]~26\ $end
+$var wire 1 I% \inst6|inst2|valor_interno[9]~27_combout\ $end
 $var wire 1 J% \inst11|valor_interno[9]~0_combout\ $end
-$var wire 1 K% \inst10|inst8[9]~2_combout\ $end
-$var wire 1 L% \inst10|inst5|$00000|auto_generated|result_node[9]~9_combout\ $end
-$var wire 1 M% \inst10|inst|Equal3~0_combout\ $end
-$var wire 1 N% \inst10|inst|Equal14~0_combout\ $end
-$var wire 1 O% \inst10|inst|Equal0~3_combout\ $end
-$var wire 1 P% \inst10|inst|Equal14~2_combout\ $end
-$var wire 1 Q% \inst10|inst|Equal0~0_combout\ $end
-$var wire 1 R% \inst10|inst|Equal12~0_combout\ $end
-$var wire 1 S% \inst10|inst3|PC[0]~6_combout\ $end
-$var wire 1 T% \inst10|inst3|PC[0]~12_combout\ $end
-$var wire 1 U% \inst10|inst|data~17_combout\ $end
-$var wire 1 V% \inst10|inst|data[87]~28_combout\ $end
-$var wire 1 W% \inst10|inst3|PC[0]~11_combout\ $end
-$var wire 1 X% \inst10|inst|Equal11~0_combout\ $end
-$var wire 1 Y% \inst10|inst|data[87]~27_combout\ $end
-$var wire 1 Z% \inst10|inst|data[87]~16_combout\ $end
-$var wire 1 [% \inst10|inst|data[87]~18_combout\ $end
-$var wire 1 \% \inst10|inst|data[87]~26_combout\ $end
-$var wire 1 ]% \inst10|inst3|PC[0]~7_combout\ $end
-$var wire 1 ^% \inst10|inst|Equal14~1_combout\ $end
-$var wire 1 _% \inst10|inst3|PC[0]~8_combout\ $end
-$var wire 1 `% \inst10|inst|Equal15~0_combout\ $end
-$var wire 1 a% \inst10|inst3|PC[0]~13_combout\ $end
-$var wire 1 b% \inst10|inst3|PC[0]~9_combout\ $end
-$var wire 1 c% \inst10|inst|Equal17~0_combout\ $end
-$var wire 1 d% \inst10|inst3|PC[0]~10_combout\ $end
+$var wire 1 K% \inst6|inst8[9]~2_combout\ $end
+$var wire 1 L% \inst6|inst5|$00000|auto_generated|result_node[9]~9_combout\ $end
+$var wire 1 M% \inst6|inst|Equal3~0_combout\ $end
+$var wire 1 N% \inst6|inst|Equal14~0_combout\ $end
+$var wire 1 O% \inst6|inst|Equal0~3_combout\ $end
+$var wire 1 P% \inst6|inst|Equal14~2_combout\ $end
+$var wire 1 Q% \inst6|inst|Equal0~0_combout\ $end
+$var wire 1 R% \inst6|inst|Equal12~0_combout\ $end
+$var wire 1 S% \inst6|inst3|PC[0]~6_combout\ $end
+$var wire 1 T% \inst6|inst3|PC[0]~12_combout\ $end
+$var wire 1 U% \inst6|inst|data~17_combout\ $end
+$var wire 1 V% \inst6|inst|data[87]~28_combout\ $end
+$var wire 1 W% \inst6|inst3|PC[0]~11_combout\ $end
+$var wire 1 X% \inst6|inst|Equal11~0_combout\ $end
+$var wire 1 Y% \inst6|inst|data[87]~27_combout\ $end
+$var wire 1 Z% \inst6|inst|data[87]~16_combout\ $end
+$var wire 1 [% \inst6|inst|data[87]~18_combout\ $end
+$var wire 1 \% \inst6|inst|data[87]~26_combout\ $end
+$var wire 1 ]% \inst6|inst3|PC[0]~7_combout\ $end
+$var wire 1 ^% \inst6|inst|Equal14~1_combout\ $end
+$var wire 1 _% \inst6|inst3|PC[0]~8_combout\ $end
+$var wire 1 `% \inst6|inst|Equal15~0_combout\ $end
+$var wire 1 a% \inst6|inst3|PC[0]~13_combout\ $end
+$var wire 1 b% \inst6|inst3|PC[0]~9_combout\ $end
+$var wire 1 c% \inst6|inst|Equal17~0_combout\ $end
+$var wire 1 d% \inst6|inst3|PC[0]~10_combout\ $end
 $var wire 1 e% \inst|Mux1~0_combout\ $end
 $var wire 1 f% \inst|data[6]~1_combout\ $end
-$var wire 1 g% \inst10|inst8[10]~1_combout\ $end
-$var wire 1 h% \inst10|inst2|valor_interno[9]~28\ $end
-$var wire 1 i% \inst10|inst2|valor_interno[10]~29_combout\ $end
-$var wire 1 j% \inst10|inst5|$00000|auto_generated|result_node[10]~10_combout\ $end
-$var wire 1 k% \inst10|inst2|valor_interno[10]~30\ $end
-$var wire 1 l% \inst10|inst2|valor_interno[11]~31_combout\ $end
-$var wire 1 m% \inst10|inst5|$00000|auto_generated|result_node[11]~11_combout\ $end
-$var wire 1 n% \inst10|inst|Equal0~1_combout\ $end
-$var wire 1 o% \inst10|inst|Equal0~2_combout\ $end
-$var wire 1 p% \inst10|inst|Equal2~0_combout\ $end
-$var wire 1 q% \inst10|inst|data[27]~25_combout\ $end
-$var wire 1 r% \inst10|inst|data[27]~21_combout\ $end
-$var wire 1 s% \inst10|inst3|nCBD~combout\ $end
-$var wire 1 t% \inst10|inst3|nCBD~clkctrl_outclk\ $end
+$var wire 1 g% \inst6|inst8[10]~1_combout\ $end
+$var wire 1 h% \inst6|inst2|valor_interno[9]~28\ $end
+$var wire 1 i% \inst6|inst2|valor_interno[10]~29_combout\ $end
+$var wire 1 j% \inst6|inst5|$00000|auto_generated|result_node[10]~10_combout\ $end
+$var wire 1 k% \inst6|inst2|valor_interno[10]~30\ $end
+$var wire 1 l% \inst6|inst2|valor_interno[11]~31_combout\ $end
+$var wire 1 m% \inst6|inst5|$00000|auto_generated|result_node[11]~11_combout\ $end
+$var wire 1 n% \inst6|inst|Equal0~1_combout\ $end
+$var wire 1 o% \inst6|inst|Equal0~2_combout\ $end
+$var wire 1 p% \inst6|inst|Equal2~0_combout\ $end
+$var wire 1 q% \inst6|inst|data[27]~25_combout\ $end
+$var wire 1 r% \inst6|inst|data[27]~21_combout\ $end
+$var wire 1 s% \inst6|inst3|nCBD~combout\ $end
+$var wire 1 t% \inst6|inst3|nCBD~clkctrl_outclk\ $end
 $var wire 1 u% \dir|valor_interno[0]~feeder_combout\ $end
 $var wire 1 v% \inst|data_out[4]~1_combout\ $end
 $var wire 1 w% \inst|data[4]~2_combout\ $end
-$var wire 1 x% \inst10|inst8[8]~3_combout\ $end
-$var wire 1 y% \inst10|inst5|$00000|auto_generated|result_node[8]~8_combout\ $end
-$var wire 1 z% \inst10|inst|Equal3~1_combout\ $end
-$var wire 1 {% \inst10|inst|Equal3~2_combout\ $end
-$var wire 1 |% \inst10|inst|data~30_combout\ $end
-$var wire 1 }% \inst10|inst|Equal18~0_combout\ $end
-$var wire 1 ~% \inst10|inst|data[86]~22_combout\ $end
-$var wire 1 !& \inst10|inst1|SELECTOR~2_combout\ $end
-$var wire 1 "& \inst10|inst5|$00000|auto_generated|result_node[1]~1_combout\ $end
-$var wire 1 #& \inst10|inst|Equal1~0_combout\ $end
-$var wire 1 $& \inst10|inst|data[73]~24_combout\ $end
-$var wire 1 %& \inst10|inst3|nCRI~combout\ $end
-$var wire 1 && \inst10|inst3|nCRI~clkctrl_outclk\ $end
+$var wire 1 x% \inst6|inst8[8]~3_combout\ $end
+$var wire 1 y% \inst6|inst5|$00000|auto_generated|result_node[8]~8_combout\ $end
+$var wire 1 z% \inst6|inst|Equal3~1_combout\ $end
+$var wire 1 {% \inst6|inst|Equal3~2_combout\ $end
+$var wire 1 |% \inst6|inst|data~30_combout\ $end
+$var wire 1 }% \inst6|inst|Equal18~0_combout\ $end
+$var wire 1 ~% \inst6|inst|data[86]~22_combout\ $end
+$var wire 1 !& \inst6|inst1|SELECTOR~2_combout\ $end
+$var wire 1 "& \inst6|inst5|$00000|auto_generated|result_node[1]~1_combout\ $end
+$var wire 1 #& \inst6|inst|Equal1~0_combout\ $end
+$var wire 1 $& \inst6|inst|data[73]~24_combout\ $end
+$var wire 1 %& \inst6|inst3|nCRI~combout\ $end
+$var wire 1 && \inst6|inst3|nCRI~clkctrl_outclk\ $end
 $var wire 1 '& \inst|Mux0~0_combout\ $end
 $var wire 1 (& \inst|data[7]~0_combout\ $end
-$var wire 1 )& \inst10|inst8[6]~5_combout\ $end
-$var wire 1 *& \inst10|inst2|valor_interno[5]~20\ $end
-$var wire 1 +& \inst10|inst2|valor_interno[6]~21_combout\ $end
-$var wire 1 ,& \inst10|inst5|$00000|auto_generated|result_node[6]~6_combout\ $end
-$var wire 1 -& \inst10|inst2|valor_interno[6]~22\ $end
-$var wire 1 .& \inst10|inst2|valor_interno[7]~23_combout\ $end
+$var wire 1 )& \inst6|inst8[6]~5_combout\ $end
+$var wire 1 *& \inst6|inst2|valor_interno[5]~20\ $end
+$var wire 1 +& \inst6|inst2|valor_interno[6]~21_combout\ $end
+$var wire 1 ,& \inst6|inst5|$00000|auto_generated|result_node[6]~6_combout\ $end
+$var wire 1 -& \inst6|inst2|valor_interno[6]~22\ $end
+$var wire 1 .& \inst6|inst2|valor_interno[7]~23_combout\ $end
 $var wire 1 /& \inst|Mux4~0_combout\ $end
 $var wire 1 0& \inst|data[3]~3_combout\ $end
-$var wire 1 1& \inst10|inst8[7]~4_combout\ $end
-$var wire 1 2& \inst10|inst5|$00000|auto_generated|result_node[7]~7_combout\ $end
-$var wire 1 3& \inst10|inst|data[86]~32_combout\ $end
-$var wire 1 4& \inst10|inst|data[86]~20_combout\ $end
-$var wire 1 5& \inst10|inst|data~23_combout\ $end
-$var wire 1 6& \inst10|inst3|X[0]~0_combout\ $end
+$var wire 1 1& \inst6|inst8[7]~4_combout\ $end
+$var wire 1 2& \inst6|inst5|$00000|auto_generated|result_node[7]~7_combout\ $end
+$var wire 1 3& \inst6|inst|data[86]~32_combout\ $end
+$var wire 1 4& \inst6|inst|data[86]~20_combout\ $end
+$var wire 1 5& \inst6|inst|data~23_combout\ $end
+$var wire 1 6& \inst6|inst3|X[0]~0_combout\ $end
 $var wire 1 7& \RegIndX|R0~0_combout\ $end
 $var wire 1 8& \AcumuladorA|data_out[7]~feeder_combout\ $end
 $var wire 1 9& \AcumuladorA|data_out[7]~0_combout\ $end
-$var wire 1 :& \inst10|inst|data[86]~31_combout\ $end
-$var wire 1 ;& \inst10|inst6|$00001|auto_generated|result_node[0]~0_combout\ $end
-$var wire 1 <& \inst10|inst3|vf~q\ $end
-$var wire 1 =& \inst10|inst7~combout\ $end
-$var wire 1 >& \inst10|inst1|SELECTOR~3_combout\ $end
-$var wire 1 ?& \inst10|inst1|SELECTOR~0_combout\ $end
-$var wire 1 @& \inst10|inst2|valor_interno[0]~33_combout\ $end
+$var wire 1 :& \inst6|inst|data[86]~31_combout\ $end
+$var wire 1 ;& \inst6|inst6|$00001|auto_generated|result_node[0]~0_combout\ $end
+$var wire 1 <& \inst6|inst3|vf~q\ $end
+$var wire 1 =& \inst6|inst7~combout\ $end
+$var wire 1 >& \inst6|inst1|SELECTOR~3_combout\ $end
+$var wire 1 ?& \inst6|inst1|SELECTOR~0_combout\ $end
+$var wire 1 @& \inst6|inst2|valor_interno[0]~33_combout\ $end
 $var wire 1 A& \inst12[0]~0_combout\ $end
-$var wire 1 B& \inst10|inst5|$00000|auto_generated|result_node[0]~0_combout\ $end
-$var wire 1 C& \inst10|inst|data[87]~29_combout\ $end
-$var wire 1 D& \inst10|inst|data[87]~19_combout\ $end
-$var wire 1 E& \inst10|inst8[11]~0_combout\ $end
+$var wire 1 B& \inst6|inst5|$00000|auto_generated|result_node[0]~0_combout\ $end
+$var wire 1 C& \inst6|inst|data[87]~29_combout\ $end
+$var wire 1 D& \inst6|inst|data[87]~19_combout\ $end
+$var wire 1 E& \inst6|inst8[11]~0_combout\ $end
 $var wire 1 F& \AcumuladorA|data_out[6]~feeder_combout\ $end
 $var wire 1 G& \upa|Q[6]~feeder_combout\ $end
 $var wire 1 H& \AcumuladorA|data_out[5]~1_combout\ $end
@@ -683,18 +683,18 @@ $var wire 1 '' \AcumuladorA|data_out\ [3] $end
 $var wire 1 (' \AcumuladorA|data_out\ [2] $end
 $var wire 1 )' \AcumuladorA|data_out\ [1] $end
 $var wire 1 *' \AcumuladorA|data_out\ [0] $end
-$var wire 1 +' \inst10|inst2|valor_interno\ [11] $end
-$var wire 1 ,' \inst10|inst2|valor_interno\ [10] $end
-$var wire 1 -' \inst10|inst2|valor_interno\ [9] $end
-$var wire 1 .' \inst10|inst2|valor_interno\ [8] $end
-$var wire 1 /' \inst10|inst2|valor_interno\ [7] $end
-$var wire 1 0' \inst10|inst2|valor_interno\ [6] $end
-$var wire 1 1' \inst10|inst2|valor_interno\ [5] $end
-$var wire 1 2' \inst10|inst2|valor_interno\ [4] $end
-$var wire 1 3' \inst10|inst2|valor_interno\ [3] $end
-$var wire 1 4' \inst10|inst2|valor_interno\ [2] $end
-$var wire 1 5' \inst10|inst2|valor_interno\ [1] $end
-$var wire 1 6' \inst10|inst2|valor_interno\ [0] $end
+$var wire 1 +' \inst6|inst2|valor_interno\ [11] $end
+$var wire 1 ,' \inst6|inst2|valor_interno\ [10] $end
+$var wire 1 -' \inst6|inst2|valor_interno\ [9] $end
+$var wire 1 .' \inst6|inst2|valor_interno\ [8] $end
+$var wire 1 /' \inst6|inst2|valor_interno\ [7] $end
+$var wire 1 0' \inst6|inst2|valor_interno\ [6] $end
+$var wire 1 1' \inst6|inst2|valor_interno\ [5] $end
+$var wire 1 2' \inst6|inst2|valor_interno\ [4] $end
+$var wire 1 3' \inst6|inst2|valor_interno\ [3] $end
+$var wire 1 4' \inst6|inst2|valor_interno\ [2] $end
+$var wire 1 5' \inst6|inst2|valor_interno\ [1] $end
+$var wire 1 6' \inst6|inst2|valor_interno\ [0] $end
 $var wire 1 7' \inst11|valor_interno\ [11] $end
 $var wire 1 8' \inst11|valor_interno\ [10] $end
 $var wire 1 9' \inst11|valor_interno\ [9] $end
@@ -744,8 +744,8 @@ $var wire 1 d' \dir|valor_interno\ [3] $end
 $var wire 1 e' \dir|valor_interno\ [2] $end
 $var wire 1 f' \dir|valor_interno\ [1] $end
 $var wire 1 g' \dir|valor_interno\ [0] $end
-$var wire 1 h' \inst10|inst3|instruccion\ [1] $end
-$var wire 1 i' \inst10|inst3|instruccion\ [0] $end
+$var wire 1 h' \inst6|inst3|instruccion\ [1] $end
+$var wire 1 i' \inst6|inst3|instruccion\ [0] $end
 $var wire 1 j' \upa|Q\ [7] $end
 $var wire 1 k' \upa|Q\ [6] $end
 $var wire 1 l' \upa|Q\ [5] $end
@@ -754,18 +754,18 @@ $var wire 1 n' \upa|Q\ [3] $end
 $var wire 1 o' \upa|Q\ [2] $end
 $var wire 1 p' \upa|Q\ [1] $end
 $var wire 1 q' \upa|Q\ [0] $end
-$var wire 1 r' \inst10|inst3|liga\ [11] $end
-$var wire 1 s' \inst10|inst3|liga\ [10] $end
-$var wire 1 t' \inst10|inst3|liga\ [9] $end
-$var wire 1 u' \inst10|inst3|liga\ [8] $end
-$var wire 1 v' \inst10|inst3|liga\ [7] $end
-$var wire 1 w' \inst10|inst3|liga\ [6] $end
-$var wire 1 x' \inst10|inst3|liga\ [5] $end
-$var wire 1 y' \inst10|inst3|liga\ [4] $end
-$var wire 1 z' \inst10|inst3|liga\ [3] $end
-$var wire 1 {' \inst10|inst3|liga\ [2] $end
-$var wire 1 |' \inst10|inst3|liga\ [1] $end
-$var wire 1 }' \inst10|inst3|liga\ [0] $end
+$var wire 1 r' \inst6|inst3|liga\ [11] $end
+$var wire 1 s' \inst6|inst3|liga\ [10] $end
+$var wire 1 t' \inst6|inst3|liga\ [9] $end
+$var wire 1 u' \inst6|inst3|liga\ [8] $end
+$var wire 1 v' \inst6|inst3|liga\ [7] $end
+$var wire 1 w' \inst6|inst3|liga\ [6] $end
+$var wire 1 x' \inst6|inst3|liga\ [5] $end
+$var wire 1 y' \inst6|inst3|liga\ [4] $end
+$var wire 1 z' \inst6|inst3|liga\ [3] $end
+$var wire 1 {' \inst6|inst3|liga\ [2] $end
+$var wire 1 |' \inst6|inst3|liga\ [1] $end
+$var wire 1 }' \inst6|inst3|liga\ [0] $end
 $var wire 1 ~' \upa|Yupa_interno\ [7] $end
 $var wire 1 !( \upa|Yupa_interno\ [6] $end
 $var wire 1 "( \upa|Yupa_interno\ [5] $end
@@ -798,12 +798,12 @@ $var wire 1 <( \RegIndX|data_out\ [3] $end
 $var wire 1 =( \RegIndX|data_out\ [2] $end
 $var wire 1 >( \RegIndX|data_out\ [1] $end
 $var wire 1 ?( \RegIndX|data_out\ [0] $end
-$var wire 1 @( \inst10|inst3|prueba\ [4] $end
-$var wire 1 A( \inst10|inst3|prueba\ [3] $end
-$var wire 1 B( \inst10|inst3|prueba\ [2] $end
-$var wire 1 C( \inst10|inst3|prueba\ [1] $end
-$var wire 1 D( \inst10|inst3|prueba\ [0] $end
-$var wire 1 E( \inst10|inst1|ALT_INV_SELECTOR~2_combout\ $end
+$var wire 1 @( \inst6|inst3|prueba\ [4] $end
+$var wire 1 A( \inst6|inst3|prueba\ [3] $end
+$var wire 1 B( \inst6|inst3|prueba\ [2] $end
+$var wire 1 C( \inst6|inst3|prueba\ [1] $end
+$var wire 1 D( \inst6|inst3|prueba\ [0] $end
+$var wire 1 E( \inst6|inst1|ALT_INV_SELECTOR~2_combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end

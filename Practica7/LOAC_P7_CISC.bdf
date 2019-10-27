@@ -2071,9 +2071,46 @@ refer to the applicable agreement for further details.
 	(rotate90)
 )
 (symbol
+	(rect 2416 -160 2528 32)
+	(text "ram" (rect 0 169 12 187)(font "Arial" )(vertical))
+	(text "inst" (rect 96 167 108 184)(font "Arial" )(vertical))
+	(port
+		(pt 32 192)
+		(input)
+		(text "address[15..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "address[15..0]" (rect 27 101 39 171)(font "Arial" )(vertical))
+		(line (pt 32 192)(pt 32 176)(line_width 3))
+	)
+	(port
+		(pt 48 192)
+		(input)
+		(text "Wn" (rect 0 0 16 12)(font "Arial" ))
+		(text "Wn" (rect 43 155 55 171)(font "Arial" )(vertical))
+		(line (pt 48 192)(pt 48 176))
+	)
+	(port
+		(pt 64 192)
+		(input)
+		(text "CSn" (rect 0 0 21 12)(font "Arial" ))
+		(text "CSn" (rect 59 150 71 171)(font "Arial" )(vertical))
+		(line (pt 64 192)(pt 64 176))
+	)
+	(port
+		(pt 32 0)
+		(bidir)
+		(text "data[7..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "data[7..0]" (rect 27 10 39 57)(font "Arial" )(vertical))
+		(line (pt 32 0)(pt 32 16)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 176))
+	)
+	(rotate90)
+)
+(symbol
 	(rect 440 -1360 696 -368)
 	(text "secuenciador" (rect 5 0 81 19)(font "Intel Clear" (font_size 8)))
-	(text "inst10" (rect 8 971 36 988)(font "Intel Clear" ))
+	(text "inst6" (rect 8 971 30 988)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -2518,43 +2555,6 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 240 976))
 	)
-)
-(symbol
-	(rect 2416 -160 2528 32)
-	(text "ram" (rect 0 169 12 187)(font "Arial" )(vertical))
-	(text "inst" (rect 96 167 108 184)(font "Arial" )(vertical))
-	(port
-		(pt 32 192)
-		(input)
-		(text "address[15..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "address[15..0]" (rect 27 101 39 171)(font "Arial" )(vertical))
-		(line (pt 32 192)(pt 32 176)(line_width 3))
-	)
-	(port
-		(pt 48 192)
-		(input)
-		(text "Wn" (rect 0 0 16 12)(font "Arial" ))
-		(text "Wn" (rect 43 155 55 171)(font "Arial" )(vertical))
-		(line (pt 48 192)(pt 48 176))
-	)
-	(port
-		(pt 64 192)
-		(input)
-		(text "CSn" (rect 0 0 21 12)(font "Arial" ))
-		(text "CSn" (rect 59 150 71 171)(font "Arial" )(vertical))
-		(line (pt 64 192)(pt 64 176))
-	)
-	(port
-		(pt 32 0)
-		(bidir)
-		(text "data[7..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "data[7..0]" (rect 27 10 39 57)(font "Arial" )(vertical))
-		(line (pt 32 0)(pt 32 16)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 96 176))
-	)
-	(rotate90)
 )
 (connector
 	(pt 1048 816)
