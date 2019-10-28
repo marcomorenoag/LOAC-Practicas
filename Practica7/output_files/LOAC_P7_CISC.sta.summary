@@ -2,124 +2,76 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'RESET'
-Slack : -36.387
-TNS   : -345.880
-
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -34.742
-TNS   : -2114.404
+Slack : -34.030
+TNS   : -2640.043
 
-Type  : Slow 1200mV 85C Model Hold 'RESET'
-Slack : -4.281
-TNS   : -59.587
+Type  : Slow 1200mV 85C Model Setup 'ENAY'
+Slack : -30.342
+TNS   : -246.064
+
+Type  : Slow 1200mV 85C Model Hold 'ENAY'
+Slack : -5.456
+TNS   : -74.615
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.400
+Slack : 0.622
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'CLK'
-Slack : -9.299
-TNS   : -285.801
-
-Type  : Slow 1200mV 85C Model Recovery 'RESET'
-Slack : -6.040
-TNS   : -93.178
-
-Type  : Slow 1200mV 85C Model Removal 'RESET'
-Slack : -5.797
-TNS   : -79.031
-
-Type  : Slow 1200mV 85C Model Removal 'CLK'
-Slack : -0.368
-TNS   : -2.346
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RESET'
-Slack : -9.689
-TNS   : -1381.579
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ENAY'
+Slack : -5.670
+TNS   : -1146.281
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -115.240
-
-Type  : Slow 1200mV 0C Model Setup 'RESET'
-Slack : -33.755
-TNS   : -321.236
+TNS   : -137.688
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -32.170
-TNS   : -1956.110
+Slack : -31.420
+TNS   : -2437.495
 
-Type  : Slow 1200mV 0C Model Hold 'RESET'
-Slack : -4.352
-TNS   : -58.560
+Type  : Slow 1200mV 0C Model Setup 'ENAY'
+Slack : -28.194
+TNS   : -229.929
+
+Type  : Slow 1200mV 0C Model Hold 'ENAY'
+Slack : -5.353
+TNS   : -71.799
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.370
+Slack : 0.576
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'CLK'
-Slack : -8.284
-TNS   : -257.408
-
-Type  : Slow 1200mV 0C Model Recovery 'RESET'
-Slack : -5.798
-TNS   : -89.420
-
-Type  : Slow 1200mV 0C Model Removal 'RESET'
-Slack : -5.335
-TNS   : -72.128
-
-Type  : Slow 1200mV 0C Model Removal 'CLK'
-Slack : -0.341
-TNS   : -2.187
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RESET'
-Slack : -8.843
-TNS   : -1270.043
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ENAY'
+Slack : -5.380
+TNS   : -1065.083
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -115.240
-
-Type  : Fast 1200mV 0C Model Setup 'RESET'
-Slack : -15.439
-TNS   : -147.502
+TNS   : -137.688
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -15.345
-TNS   : -916.173
+Slack : -14.633
+TNS   : -1118.286
 
-Type  : Fast 1200mV 0C Model Hold 'RESET'
-Slack : -1.518
-TNS   : -20.970
+Type  : Fast 1200mV 0C Model Setup 'ENAY'
+Slack : -13.588
+TNS   : -111.439
+
+Type  : Fast 1200mV 0C Model Hold 'ENAY'
+Slack : -1.921
+TNS   : -27.802
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : -0.094
-TNS   : -0.782
+Slack : 0.242
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'CLK'
-Slack : -4.938
-TNS   : -147.521
-
-Type  : Fast 1200mV 0C Model Recovery 'RESET'
-Slack : -2.437
-TNS   : -37.162
-
-Type  : Fast 1200mV 0C Model Removal 'RESET'
-Slack : -2.182
-TNS   : -33.271
-
-Type  : Fast 1200mV 0C Model Removal 'CLK'
-Slack : -0.142
-TNS   : -0.524
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RESET'
-Slack : -4.262
-TNS   : -552.643
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ENAY'
+Slack : -3.000
+TNS   : -443.866
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -88.043
+TNS   : -103.680
 
 ------------------------------------------------------------

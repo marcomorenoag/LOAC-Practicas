@@ -244,6 +244,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "DebugIY[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DebugIY[0]",
+					"strict" : false
+				},
+				{
 					"name" : "DebugPC[15]",
 					"strict" : false
 				},
@@ -361,6 +425,10 @@
 				},
 				{
 					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "ENAY",
 					"strict" : false
 				}
 			]
