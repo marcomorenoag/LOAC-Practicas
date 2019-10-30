@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim
 Ehard_block
-Z0 w1572464422
+Z0 w1572467743
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1572464423
+Z11 !s110 1572467745
 !i10b 1
-Z12 !s108 1572464423.000000
+Z12 !s108 1572467745.000000
 Z13 !s90 -work|work|LOAC_P7_CISC.vho|
 Z14 !s107 LOAC_P7_CISC.vho|
 !i113 1
@@ -92,13 +92,13 @@ R4
 R5
 R18
 DEx4 work 12 loac_p7_cisc 0 22 BFk`2LKhYm=@3Xf>ob=RN3
-l810
+l4637
 L257
-VCk5?ded>J<F5TWJaLZSi42
-!s100 nNaI30m>TkJRWTBlCP_TB0
+VkZM[e[RHAT:adH<[oHX`00
+!s100 8Ad5mPK<7^F^[Aaf_MAW[1
 R10
 32
-Z19 !s110 1572464424
+R11
 !i10b 1
 R12
 R13
@@ -107,23 +107,23 @@ R14
 R15
 R16
 Eloac_p7_cisc_vhd_vec_tst
-Z20 w1572464420
+Z19 w1572467740
 R4
 R5
 R7
-Z21 8Waveform22.vwf.vht
-Z22 FWaveform22.vwf.vht
+Z20 8Waveform23.vwf.vht
+Z21 FWaveform23.vwf.vht
 l0
 L31
 Vo=Oje7k1FI4E18DHY^6Tm0
 !s100 9^@]J1?SFV:JdS2NhKYO43
 R10
 32
-R19
+Z22 !s110 1572467746
 !i10b 1
-Z23 !s108 1572464424.000000
-Z24 !s90 -work|work|Waveform22.vwf.vht|
-Z25 !s107 Waveform22.vwf.vht|
+Z23 !s108 1572467746.000000
+Z24 !s90 -work|work|Waveform23.vwf.vht|
+Z25 !s107 Waveform23.vwf.vht|
 !i113 1
 R15
 R16
@@ -137,7 +137,7 @@ Z27 VaTLT?m4jj^RJ;nPJcZ`220
 Z28 !s100 >kl;[k]5>jC2`iNkP6n6M3
 R10
 32
-R19
+R22
 !i10b 1
 R23
 R24

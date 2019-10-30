@@ -21,17 +21,48 @@ architecture Behavioral of ram is
 	-- Memory Write Block
 	MEM_WRITE: process (address, CSn, Wn, data) 
 	begin
-		mem(0) <= X"C6";
-		mem(1) <= X"02";
-		mem(2) <= X"86";
-		mem(3) <= X"00";
-		mem(4) <= X"1B";
-		mem(5) <= X"7E";
-		mem(6) <= X"00";
-		mem(7) <= X"04";
-		--mem(8) <= X"CE";
-		--mem(9) <= X"00";
-		--mem(10) <= X"03";
+		--LDAA #$00
+		mem(0) <= X"86";
+		mem(1) <= X"00";
+		
+		--LDAB #$01
+		mem(2) <= X"C6";
+		mem(3) <= X"01";
+		
+		--LDx #$0001
+		mem(4) <= X"CE";
+		mem(5) <= X"00";
+		mem(6) <= X"01";
+		
+		--LDy #$0003
+		mem(7) <= X"18";
+		mem(8) <= X"CE";
+		mem(9) <= X"00";
+		mem(10) <= X"03";
+		
+		--ADAA 0,Y
+		mem(11) <= X"18";
+		mem(12) <= X"AB";
+		mem(13) <= X"00";
+		
+		--STAA 0,X
+		mem(14) <= X"A7";
+		mem(15) <= X"00";
+		
+		--ADDB 0,X
+		mem(16) <= X"EB";
+		mem(17) <= X"00";
+		
+		--STAB 0,Y
+		mem(18) <= X"18";
+		mem(19) <= X"E7";
+		mem(20) <= X"00";
+		
+		--JMP #$000B
+		mem(21) <= X"7E";
+		mem(22) <= X"00";
+		mem(23) <= X"0B";
+		
 		
 		if (CSn = '0' and Wn = '0') then
 			mem(conv_integer(unsigned(address))) <= data;
