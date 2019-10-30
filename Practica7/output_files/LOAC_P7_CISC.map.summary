@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Oct 27 21:00:21 2019
+Analysis & Synthesis Status : Successful - Wed Oct 30 13:37:55 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : LOAC_P7_CISC
 Top-level Entity Name : LOAC_P7_CISC
 Family : MAX 10
-Total logic elements : 191
-    Total combinational functions : 126
-    Dedicated logic registers : 112
-Total registers : 112
-Total pins : 143
+Total logic elements : 348
+    Total combinational functions : 284
+    Dedicated logic registers : 130
+Total registers : 130
+Total pins : 142
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

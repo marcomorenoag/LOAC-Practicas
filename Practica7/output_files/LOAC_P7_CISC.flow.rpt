@@ -1,5 +1,5 @@
 Flow report for LOAC_P7_CISC
-Sun Oct 27 21:04:10 2019
+Wed Oct 30 13:40:22 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 27 21:04:10 2019       ;
+; Flow Status                        ; Successful - Wed Oct 30 13:40:22 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LOAC_P7_CISC                                ;
 ; Top-level Entity Name              ; LOAC_P7_CISC                                ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 185 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 127 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 112 / 49,760 ( < 1 % )                      ;
-; Total registers                    ; 112                                         ;
-; Total pins                         ; 143 / 360 ( 40 % )                          ;
+; Total logic elements               ; 316 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 285 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 130 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 130                                         ;
+; Total pins                         ; 142 / 360 ( 39 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/27/2019 20:59:51 ;
+; Start date & time ; 10/30/2019 13:37:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LOAC_P7_CISC        ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 246928000147271.157223159005344        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1097032508660.157246425409832          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -92,15 +92,13 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:31     ; 1.0                     ; 4812 MB             ; 00:00:47                           ;
-; Fitter               ; 00:01:12     ; 1.0                     ; 5455 MB             ; 00:01:12                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4693 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.1                     ; 4809 MB             ; 00:00:09                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4634 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4643 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4634 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4643 MB             ; 00:00:06                           ;
-; Total                ; 00:02:10     ; --                      ; --                  ; 00:02:36                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4798 MB             ; 00:00:41                           ;
+; Fitter               ; 00:00:55     ; 1.0                     ; 5374 MB             ; 00:01:04                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4678 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.2                     ; 4784 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4623 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4631 MB             ; 00:00:02                           ;
+; Total                ; 00:01:30     ; --                      ; --                  ; 00:02:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,14 +107,12 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-2041G4J  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-2041G4J  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-2041G4J  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-2041G4J  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-2041G4J  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-2041G4J  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-2041G4J  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-2041G4J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -127,10 +123,8 @@ quartus_map --read_settings_files=on --write_settings_files=off LOAC_P7_CISC -c 
 quartus_fit --read_settings_files=off --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC
 quartus_asm --read_settings_files=off --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC
 quartus_sta LOAC_P7_CISC -c LOAC_P7_CISC
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform1.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform1.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/Waveform1.vwf" --testbench_file="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/Waveform1.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Alejandro Sebas/Desktop/LOAC-Practicas/Practica7/simulation/qsim/" LOAC_P7_CISC -c LOAC_P7_CISC
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC --vector_source=C:/intelFPGA_lite/OyAC/Lab/Practica7/Waveform22.vwf --testbench_file=C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/Waveform22.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/OyAC/Lab/Practica7/simulation/qsim/ LOAC_P7_CISC -c LOAC_P7_CISC
 
 
 

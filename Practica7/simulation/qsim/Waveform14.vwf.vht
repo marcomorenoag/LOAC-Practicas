@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/26/2019 19:14:25"
+-- Generated on "10/28/2019 11:33:29"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          LOAC_P7_CISC
 -- 
@@ -44,6 +44,7 @@ SIGNAL DebugIX : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugIY : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugPC : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugRA : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL ENAY : STD_LOGIC;
 SIGNAL IRQn : STD_LOGIC;
 SIGNAL N : STD_LOGIC;
 SIGNAL regInstr : STD_LOGIC_VECTOR(11 DOWNTO 0);
@@ -63,6 +64,7 @@ COMPONENT LOAC_P7_CISC
 	DebugIY : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	DebugPC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	DebugRA : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	ENAY : IN STD_LOGIC;
 	IRQn : IN STD_LOGIC;
 	N : OUT STD_LOGIC;
 	regInstr : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
@@ -86,6 +88,7 @@ BEGIN
 	DebugIY => DebugIY,
 	DebugPC => DebugPC,
 	DebugRA => DebugRA,
+	ENAY => ENAY,
 	IRQn => IRQn,
 	N => N,
 	regInstr => regInstr,
@@ -105,6 +108,13 @@ LOOP
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_CLK;
+
+-- ENAY
+t_prcs_ENAY: PROCESS
+BEGIN
+	ENAY <= '0';
+WAIT;
+END PROCESS t_prcs_ENAY;
 
 -- IRQn
 t_prcs_IRQn: PROCESS
