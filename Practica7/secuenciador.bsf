@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 272 1008)
+	(rect 64 64 320 1120)
 	(text "secuenciador" (rect 5 0 81 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 971 24 988)(font "Intel Clear" ))
+	(text "inst" (rect 8 1035 24 1052)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -59,6 +59,20 @@ refer to the applicable agreement for further details.
 		(line (pt 256 32)(pt 240 32)(line_width 3))
 	)
 	(port
+		(pt 256 1024)
+		(output)
+		(text "prueba[4..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
+		(text "prueba[4..0]" (rect 162 1019 235 1038)(font "Intel Clear" (font_size 8)))
+		(line (pt 256 1024)(pt 240 1024)(line_width 3))
+	)
+	(port
+		(pt 256 1008)
+		(output)
+		(text "muxentra" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
+		(text "muxentra" (rect 180 1003 235 1022)(font "Intel Clear" (font_size 8)))
+		(line (pt 256 1008)(pt 240 1008))
+	)
+	(port
 		(pt 256 48)
 		(output)
 		(text "nCRI" (rect 0 0 27 19)(font "Intel Clear" (font_size 8)))
@@ -71,6 +85,13 @@ refer to the applicable agreement for further details.
 		(text "EB[1..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
 		(text "EB[1..0]" (rect 189 59 235 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 256 64)(pt 240 64)(line_width 3))
+	)
+	(port
+		(pt 256 992)
+		(output)
+		(text "vf" (rect 0 0 11 19)(font "Intel Clear" (font_size 8)))
+		(text "vf" (rect 224 987 235 1006)(font "Intel Clear" (font_size 8)))
+		(line (pt 256 992)(pt 240 992))
 	)
 	(port
 		(pt 256 80)
@@ -99,6 +120,13 @@ refer to the applicable agreement for further details.
 		(text "selbus" (rect 0 0 37 19)(font "Intel Clear" (font_size 8)))
 		(text "selbus" (rect 198 123 235 142)(font "Intel Clear" (font_size 8)))
 		(line (pt 256 128)(pt 240 128))
+	)
+	(port
+		(pt 256 976)
+		(output)
+		(text "selector" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "selector" (rect 189 971 235 990)(font "Intel Clear" (font_size 8)))
+		(line (pt 256 976)(pt 240 976))
 	)
 	(port
 		(pt 256 144)
@@ -465,6 +493,6 @@ refer to the applicable agreement for further details.
 		(line (pt 256 960)(pt 240 960))
 	)
 	(drawing
-		(rectangle (rect 16 16 240 976))
+		(rectangle (rect 16 16 240 1040))
 	)
 )

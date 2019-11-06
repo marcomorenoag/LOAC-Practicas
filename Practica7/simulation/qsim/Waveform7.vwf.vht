@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/27/2019 20:29:47"
+-- Generated on "11/03/2019 23:45:26"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          LOAC_P7_CISC
 -- 
@@ -41,13 +41,17 @@ SIGNAL DebugACUMA : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL DebugACUMB : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL DebugAP : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugIX : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL DebugIY : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugPC : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugRA : STD_LOGIC_VECTOR(15 DOWNTO 0);
-SIGNAL ENAY : STD_LOGIC;
 SIGNAL IRQn : STD_LOGIC;
+SIGNAL muxentra : STD_LOGIC;
 SIGNAL N : STD_LOGIC;
+SIGNAL prueba : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL regInstr : STD_LOGIC_VECTOR(11 DOWNTO 0);
 SIGNAL RESET : STD_LOGIC;
+SIGNAL selector : STD_LOGIC;
+SIGNAL vf : STD_LOGIC;
 SIGNAL XIRQn : STD_LOGIC;
 SIGNAL Z : STD_LOGIC;
 COMPONENT LOAC_P7_CISC
@@ -60,13 +64,17 @@ COMPONENT LOAC_P7_CISC
 	DebugACUMB : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	DebugAP : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	DebugIX : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	DebugIY : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	DebugPC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	DebugRA : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	ENAY : IN STD_LOGIC;
 	IRQn : IN STD_LOGIC;
+	muxentra : OUT STD_LOGIC;
 	N : OUT STD_LOGIC;
+	prueba : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
 	regInstr : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
 	RESET : IN STD_LOGIC;
+	selector : OUT STD_LOGIC;
+	vf : OUT STD_LOGIC;
 	XIRQn : IN STD_LOGIC;
 	Z : OUT STD_LOGIC
 	);
@@ -83,13 +91,17 @@ BEGIN
 	DebugACUMB => DebugACUMB,
 	DebugAP => DebugAP,
 	DebugIX => DebugIX,
+	DebugIY => DebugIY,
 	DebugPC => DebugPC,
 	DebugRA => DebugRA,
-	ENAY => ENAY,
 	IRQn => IRQn,
+	muxentra => muxentra,
 	N => N,
+	prueba => prueba,
 	regInstr => regInstr,
 	RESET => RESET,
+	selector => selector,
+	vf => vf,
 	XIRQn => XIRQn,
 	Z => Z
 	);
@@ -105,13 +117,6 @@ LOOP
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_CLK;
-
--- ENAY
-t_prcs_ENAY: PROCESS
-BEGIN
-	ENAY <= '0';
-WAIT;
-END PROCESS t_prcs_ENAY;
 
 -- IRQn
 t_prcs_IRQn: PROCESS

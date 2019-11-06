@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/27/2019 20:05:18"
+-- Generated on "11/03/2019 22:51:56"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          LOAC_P7_CISC
 -- 
@@ -44,11 +44,11 @@ SIGNAL DebugIX : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugIY : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugPC : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL DebugRA : STD_LOGIC_VECTOR(15 DOWNTO 0);
-SIGNAL ENAY : STD_LOGIC;
 SIGNAL IRQn : STD_LOGIC;
 SIGNAL N : STD_LOGIC;
 SIGNAL regInstr : STD_LOGIC_VECTOR(11 DOWNTO 0);
 SIGNAL RESET : STD_LOGIC;
+SIGNAL selector : STD_LOGIC;
 SIGNAL XIRQn : STD_LOGIC;
 SIGNAL Z : STD_LOGIC;
 COMPONENT LOAC_P7_CISC
@@ -64,11 +64,11 @@ COMPONENT LOAC_P7_CISC
 	DebugIY : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	DebugPC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	DebugRA : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	ENAY : IN STD_LOGIC;
 	IRQn : IN STD_LOGIC;
 	N : OUT STD_LOGIC;
 	regInstr : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
 	RESET : IN STD_LOGIC;
+	selector : OUT STD_LOGIC;
 	XIRQn : IN STD_LOGIC;
 	Z : OUT STD_LOGIC
 	);
@@ -88,11 +88,11 @@ BEGIN
 	DebugIY => DebugIY,
 	DebugPC => DebugPC,
 	DebugRA => DebugRA,
-	ENAY => ENAY,
 	IRQn => IRQn,
 	N => N,
 	regInstr => regInstr,
 	RESET => RESET,
+	selector => selector,
 	XIRQn => XIRQn,
 	Z => Z
 	);
@@ -108,13 +108,6 @@ LOOP
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_CLK;
-
--- ENAY
-t_prcs_ENAY: PROCESS
-BEGIN
-	ENAY <= '0';
-WAIT;
-END PROCESS t_prcs_ENAY;
 
 -- IRQn
 t_prcs_IRQn: PROCESS

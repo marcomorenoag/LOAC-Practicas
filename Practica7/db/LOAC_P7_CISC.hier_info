@@ -1,6 +1,6 @@
 |LOAC_P7_CISC
 Z <= contador:RegAux.Z
-RESET => secuenciador:inst6.RESET
+RESET => secuenciador:inst30.RESET
 RESET => registro_instruccion:inst11.RESET
 RESET => contador_ID:inst13.RESET
 RESET => contador_IDX:inst9.RESET
@@ -8,7 +8,7 @@ RESET => registro_direccion:dir.RESET
 RESET => contador:RegPila.RESET
 RESET => contador:RegPC.RESET
 RESET => contador:RegAux.RESET
-CLK => secuenciador:inst6.CLK
+CLK => secuenciador:inst30.CLK
 CLK => contador_ID:inst13.clk
 CLK => inst8.CLK
 CLK => contador_IDX:inst9.clk
@@ -22,18 +22,37 @@ CLK => contador:RegAux.clk
 IRQn => ctrl_interrupciones:inst4.IRQn
 XIRQn => ctrl_interrupciones:inst4.XIRQn
 N <= contador:RegAux.N
-CurrentState[0] <= secuenciador:inst6.CurrentState[0]
-CurrentState[1] <= secuenciador:inst6.CurrentState[1]
-CurrentState[2] <= secuenciador:inst6.CurrentState[2]
-CurrentState[3] <= secuenciador:inst6.CurrentState[3]
-CurrentState[4] <= secuenciador:inst6.CurrentState[4]
-CurrentState[5] <= secuenciador:inst6.CurrentState[5]
-CurrentState[6] <= secuenciador:inst6.CurrentState[6]
-CurrentState[7] <= secuenciador:inst6.CurrentState[7]
-CurrentState[8] <= secuenciador:inst6.CurrentState[8]
-CurrentState[9] <= secuenciador:inst6.CurrentState[9]
-CurrentState[10] <= secuenciador:inst6.CurrentState[10]
-CurrentState[11] <= secuenciador:inst6.CurrentState[11]
+selector <= secuenciador:inst30.selector
+muxentra <= secuenciador:inst30.muxentra
+vf <= secuenciador:inst30.vf
+A[0] <= acumulador:AcumuladorA.C[0]
+A[1] <= acumulador:AcumuladorA.C[1]
+A[2] <= acumulador:AcumuladorA.C[2]
+A[3] <= acumulador:AcumuladorA.C[3]
+A[4] <= acumulador:AcumuladorA.C[4]
+A[5] <= acumulador:AcumuladorA.C[5]
+A[6] <= acumulador:AcumuladorA.C[6]
+A[7] <= acumulador:AcumuladorA.C[7]
+B[0] <= acumulador:AcumuladorB.C[0]
+B[1] <= acumulador:AcumuladorB.C[1]
+B[2] <= acumulador:AcumuladorB.C[2]
+B[3] <= acumulador:AcumuladorB.C[3]
+B[4] <= acumulador:AcumuladorB.C[4]
+B[5] <= acumulador:AcumuladorB.C[5]
+B[6] <= acumulador:AcumuladorB.C[6]
+B[7] <= acumulador:AcumuladorB.C[7]
+CurrentState[0] <= secuenciador:inst30.CurrentState[0]
+CurrentState[1] <= secuenciador:inst30.CurrentState[1]
+CurrentState[2] <= secuenciador:inst30.CurrentState[2]
+CurrentState[3] <= secuenciador:inst30.CurrentState[3]
+CurrentState[4] <= secuenciador:inst30.CurrentState[4]
+CurrentState[5] <= secuenciador:inst30.CurrentState[5]
+CurrentState[6] <= secuenciador:inst30.CurrentState[6]
+CurrentState[7] <= secuenciador:inst30.CurrentState[7]
+CurrentState[8] <= secuenciador:inst30.CurrentState[8]
+CurrentState[9] <= secuenciador:inst30.CurrentState[9]
+CurrentState[10] <= secuenciador:inst30.CurrentState[10]
+CurrentState[11] <= secuenciador:inst30.CurrentState[11]
 Debug_Q[0] <= upa:upa.Debug_Q[0]
 Debug_Q[1] <= upa:upa.Debug_Q[1]
 Debug_Q[2] <= upa:upa.Debug_Q[2]
@@ -146,6 +165,11 @@ DebugRA[12] <= contador:RegAux.Debug[12]
 DebugRA[13] <= contador:RegAux.Debug[13]
 DebugRA[14] <= contador:RegAux.Debug[14]
 DebugRA[15] <= contador:RegAux.Debug[15]
+prueba[0] <= secuenciador:inst30.prueba[0]
+prueba[1] <= secuenciador:inst30.prueba[1]
+prueba[2] <= secuenciador:inst30.prueba[2]
+prueba[3] <= secuenciador:inst30.prueba[3]
+prueba[4] <= secuenciador:inst30.prueba[4]
 regInstr[0] <= gdfx_temp0[0].DB_MAX_OUTPUT_PORT_TYPE
 regInstr[1] <= gdfx_temp0[1].DB_MAX_OUTPUT_PORT_TYPE
 regInstr[2] <= gdfx_temp0[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -274,7 +298,7 @@ RESET => data_out[14].ACLR
 RESET => data_out[15].ACLR
 
 
-|LOAC_P7_CISC|secuenciador:inst6
+|LOAC_P7_CISC|secuenciador:inst30
 MAP1 <= logica_seleccion:inst1.MAP1
 entrada[0] => MUX:inst6.data[0]
 entrada[1] => MUX:inst6.data[1]
@@ -374,6 +398,9 @@ CS <= registro_sec:inst3.CS
 nHB <= registro_sec:inst3.nHB
 ACCSEC <= registro_sec:inst3.ACCSEC
 RESETFF <= logica_seleccion:inst1.RESETFF
+selector <= logica_seleccion:inst1.SELECTOR
+muxentra <= MUX:inst6.result
+vf <= registro_sec:inst3.vf
 AP[0] <= registro_sec:inst3.AP[0]
 AP[1] <= registro_sec:inst3.AP[1]
 AP[2] <= registro_sec:inst3.AP[2]
@@ -396,6 +423,11 @@ EB[1] <= registro_sec:inst3.EB[1]
 PC[0] <= registro_sec:inst3.PC[0]
 PC[1] <= registro_sec:inst3.PC[1]
 PC[2] <= registro_sec:inst3.PC[2]
+prueba[0] <= registro_sec:inst3.prueba[0]
+prueba[1] <= registro_sec:inst3.prueba[1]
+prueba[2] <= registro_sec:inst3.prueba[2]
+prueba[3] <= registro_sec:inst3.prueba[3]
+prueba[4] <= registro_sec:inst3.prueba[4]
 RA[0] <= registro_sec:inst3.RA[0]
 RA[1] <= registro_sec:inst3.RA[1]
 RA[2] <= registro_sec:inst3.RA[2]
@@ -414,7 +446,7 @@ X[1] <= registro_sec:inst3.X[1]
 X[2] <= registro_sec:inst3.X[2]
 
 
-|LOAC_P7_CISC|secuenciador:inst6|logica_seleccion:inst1
+|LOAC_P7_CISC|secuenciador:inst30|logica_seleccion:inst1
 inst[0] => Equal0.IN3
 inst[0] => Equal1.IN3
 inst[0] => Equal2.IN3
@@ -434,7 +466,7 @@ RESETFF <= RESETFF$latch.DB_MAX_OUTPUT_PORT_TYPE
 VECT <= VECT$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LOAC_P7_CISC|secuenciador:inst6|MUX:inst6
+|LOAC_P7_CISC|secuenciador:inst30|MUX:inst6
 data[0] => lpm_mux:$00001.data[0][0]
 data[1] => lpm_mux:$00001.data[1][0]
 data[2] => lpm_mux:$00001.data[2][0]
@@ -475,7 +507,7 @@ sel[4] => lpm_mux:$00001.sel[4]
 result <= lpm_mux:$00001.result[0]
 
 
-|LOAC_P7_CISC|secuenciador:inst6|MUX:inst6|lpm_mux:$00001
+|LOAC_P7_CISC|secuenciador:inst30|MUX:inst6|lpm_mux:$00001
 data[0][0] => mux_k7c:auto_generated.data[0]
 data[1][0] => mux_k7c:auto_generated.data[1]
 data[2][0] => mux_k7c:auto_generated.data[2]
@@ -519,7 +551,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_k7c:auto_generated.result[0]
 
 
-|LOAC_P7_CISC|secuenciador:inst6|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated
+|LOAC_P7_CISC|secuenciador:inst30|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated
 data[0] => _.IN0
 data[0] => _.IN0
 data[0] => _.IN0
@@ -737,7 +769,7 @@ sel[4] => result_node[0].IN0
 sel[4] => _.IN0
 
 
-|LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3
+|LOAC_P7_CISC|secuenciador:inst30|registro_sec:inst3
 CLK => liga[0]~reg0.CLK
 CLK => liga[1]~reg0.CLK
 CLK => liga[2]~reg0.CLK
@@ -1042,7 +1074,7 @@ nHB <= nHB.DB_MAX_OUTPUT_PORT_TYPE
 ACCSEC <= ACCSEC.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LOAC_P7_CISC|secuenciador:inst6|memory:inst
+|LOAC_P7_CISC|secuenciador:inst30|memory:inst
 dir[0] => Equal0.IN23
 dir[0] => Equal1.IN23
 dir[0] => Equal2.IN23
@@ -1108,6 +1140,12 @@ dir[0] => Equal61.IN23
 dir[0] => Equal62.IN23
 dir[0] => Equal63.IN23
 dir[0] => Equal64.IN23
+dir[0] => Equal65.IN23
+dir[0] => Equal66.IN23
+dir[0] => Equal67.IN23
+dir[0] => Equal68.IN23
+dir[0] => Equal69.IN23
+dir[0] => Equal70.IN23
 dir[1] => Equal0.IN22
 dir[1] => Equal1.IN22
 dir[1] => Equal2.IN22
@@ -1173,6 +1211,12 @@ dir[1] => Equal61.IN22
 dir[1] => Equal62.IN22
 dir[1] => Equal63.IN22
 dir[1] => Equal64.IN22
+dir[1] => Equal65.IN22
+dir[1] => Equal66.IN22
+dir[1] => Equal67.IN22
+dir[1] => Equal68.IN22
+dir[1] => Equal69.IN22
+dir[1] => Equal70.IN22
 dir[2] => Equal0.IN21
 dir[2] => Equal1.IN21
 dir[2] => Equal2.IN21
@@ -1238,6 +1282,12 @@ dir[2] => Equal61.IN21
 dir[2] => Equal62.IN21
 dir[2] => Equal63.IN21
 dir[2] => Equal64.IN21
+dir[2] => Equal65.IN21
+dir[2] => Equal66.IN21
+dir[2] => Equal67.IN21
+dir[2] => Equal68.IN21
+dir[2] => Equal69.IN21
+dir[2] => Equal70.IN21
 dir[3] => Equal0.IN20
 dir[3] => Equal1.IN20
 dir[3] => Equal2.IN20
@@ -1303,6 +1353,12 @@ dir[3] => Equal61.IN20
 dir[3] => Equal62.IN20
 dir[3] => Equal63.IN20
 dir[3] => Equal64.IN20
+dir[3] => Equal65.IN20
+dir[3] => Equal66.IN20
+dir[3] => Equal67.IN20
+dir[3] => Equal68.IN20
+dir[3] => Equal69.IN20
+dir[3] => Equal70.IN20
 dir[4] => Equal0.IN19
 dir[4] => Equal1.IN19
 dir[4] => Equal2.IN19
@@ -1368,6 +1424,12 @@ dir[4] => Equal61.IN19
 dir[4] => Equal62.IN19
 dir[4] => Equal63.IN19
 dir[4] => Equal64.IN19
+dir[4] => Equal65.IN19
+dir[4] => Equal66.IN19
+dir[4] => Equal67.IN19
+dir[4] => Equal68.IN19
+dir[4] => Equal69.IN19
+dir[4] => Equal70.IN19
 dir[5] => Equal0.IN18
 dir[5] => Equal1.IN18
 dir[5] => Equal2.IN18
@@ -1433,6 +1495,12 @@ dir[5] => Equal61.IN18
 dir[5] => Equal62.IN18
 dir[5] => Equal63.IN18
 dir[5] => Equal64.IN18
+dir[5] => Equal65.IN18
+dir[5] => Equal66.IN18
+dir[5] => Equal67.IN18
+dir[5] => Equal68.IN18
+dir[5] => Equal69.IN18
+dir[5] => Equal70.IN18
 dir[6] => Equal0.IN17
 dir[6] => Equal1.IN17
 dir[6] => Equal2.IN17
@@ -1498,6 +1566,12 @@ dir[6] => Equal61.IN17
 dir[6] => Equal62.IN17
 dir[6] => Equal63.IN17
 dir[6] => Equal64.IN17
+dir[6] => Equal65.IN17
+dir[6] => Equal66.IN17
+dir[6] => Equal67.IN17
+dir[6] => Equal68.IN17
+dir[6] => Equal69.IN17
+dir[6] => Equal70.IN17
 dir[7] => Equal0.IN16
 dir[7] => Equal1.IN16
 dir[7] => Equal2.IN16
@@ -1563,6 +1637,12 @@ dir[7] => Equal61.IN16
 dir[7] => Equal62.IN16
 dir[7] => Equal63.IN16
 dir[7] => Equal64.IN16
+dir[7] => Equal65.IN16
+dir[7] => Equal66.IN16
+dir[7] => Equal67.IN16
+dir[7] => Equal68.IN16
+dir[7] => Equal69.IN16
+dir[7] => Equal70.IN16
 dir[8] => Equal0.IN15
 dir[8] => Equal1.IN15
 dir[8] => Equal2.IN15
@@ -1628,6 +1708,12 @@ dir[8] => Equal61.IN15
 dir[8] => Equal62.IN15
 dir[8] => Equal63.IN15
 dir[8] => Equal64.IN15
+dir[8] => Equal65.IN15
+dir[8] => Equal66.IN15
+dir[8] => Equal67.IN15
+dir[8] => Equal68.IN15
+dir[8] => Equal69.IN15
+dir[8] => Equal70.IN15
 dir[9] => Equal0.IN14
 dir[9] => Equal1.IN14
 dir[9] => Equal2.IN14
@@ -1693,6 +1779,12 @@ dir[9] => Equal61.IN14
 dir[9] => Equal62.IN14
 dir[9] => Equal63.IN14
 dir[9] => Equal64.IN14
+dir[9] => Equal65.IN14
+dir[9] => Equal66.IN14
+dir[9] => Equal67.IN14
+dir[9] => Equal68.IN14
+dir[9] => Equal69.IN14
+dir[9] => Equal70.IN14
 dir[10] => Equal0.IN13
 dir[10] => Equal1.IN13
 dir[10] => Equal2.IN13
@@ -1758,6 +1850,12 @@ dir[10] => Equal61.IN13
 dir[10] => Equal62.IN13
 dir[10] => Equal63.IN13
 dir[10] => Equal64.IN13
+dir[10] => Equal65.IN13
+dir[10] => Equal66.IN13
+dir[10] => Equal67.IN13
+dir[10] => Equal68.IN13
+dir[10] => Equal69.IN13
+dir[10] => Equal70.IN13
 dir[11] => Equal0.IN12
 dir[11] => Equal1.IN12
 dir[11] => Equal2.IN12
@@ -1823,6 +1921,12 @@ dir[11] => Equal61.IN12
 dir[11] => Equal62.IN12
 dir[11] => Equal63.IN12
 dir[11] => Equal64.IN12
+dir[11] => Equal65.IN12
+dir[11] => Equal66.IN12
+dir[11] => Equal67.IN12
+dir[11] => Equal68.IN12
+dir[11] => Equal69.IN12
+dir[11] => Equal70.IN12
 data[0] <= <GND>
 data[1] <= <VCC>
 data[2] <= <GND>
@@ -1898,7 +2002,7 @@ data[71] <= data.DB_MAX_OUTPUT_PORT_TYPE
 data[72] <= data.DB_MAX_OUTPUT_PORT_TYPE
 data[73] <= data.DB_MAX_OUTPUT_PORT_TYPE
 data[74] <= data.DB_MAX_OUTPUT_PORT_TYPE
-data[75] <= <GND>
+data[75] <= data.DB_MAX_OUTPUT_PORT_TYPE
 data[76] <= data.DB_MAX_OUTPUT_PORT_TYPE
 data[77] <= <GND>
 data[78] <= data.DB_MAX_OUTPUT_PORT_TYPE
@@ -1919,7 +2023,7 @@ data[92] <= data.DB_MAX_OUTPUT_PORT_TYPE
 data[93] <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|LOAC_P7_CISC|secuenciador:inst6|BUSMUX:inst5
+|LOAC_P7_CISC|secuenciador:inst30|BUSMUX:inst5
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -1959,7 +2063,7 @@ result[10] <= lpm_mux:$00000.result[10]
 result[11] <= lpm_mux:$00000.result[11]
 
 
-|LOAC_P7_CISC|secuenciador:inst6|BUSMUX:inst5|lpm_mux:$00000
+|LOAC_P7_CISC|secuenciador:inst30|BUSMUX:inst5|lpm_mux:$00000
 data[0][0] => mux_f7c:auto_generated.data[0]
 data[0][1] => mux_f7c:auto_generated.data[1]
 data[0][2] => mux_f7c:auto_generated.data[2]
@@ -2002,7 +2106,7 @@ result[10] <= mux_f7c:auto_generated.result[10]
 result[11] <= mux_f7c:auto_generated.result[11]
 
 
-|LOAC_P7_CISC|secuenciador:inst6|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated
+|LOAC_P7_CISC|secuenciador:inst30|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -2065,7 +2169,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|LOAC_P7_CISC|secuenciador:inst6|registro_MicroInst:inst2
+|LOAC_P7_CISC|secuenciador:inst30|registro_MicroInst:inst2
 RELOJ => valor_interno[0].CLK
 RELOJ => valor_interno[1].CLK
 RELOJ => valor_interno[2].CLK
@@ -2605,79 +2709,31 @@ BD => PortR.IN1
 BD => PortL.IN1
 
 
-|LOAC_P7_CISC|ram:inst
-address[0] => Decoder0.IN7
-address[0] => Mux0.IN7
-address[0] => Mux1.IN7
-address[0] => Mux2.IN7
-address[0] => Mux3.IN7
-address[0] => Mux4.IN7
-address[0] => Mux5.IN7
-address[0] => Mux6.IN7
-address[0] => Mux7.IN7
-address[1] => Decoder0.IN6
-address[1] => Mux0.IN6
-address[1] => Mux1.IN6
-address[1] => Mux2.IN6
-address[1] => Mux3.IN6
-address[1] => Mux4.IN6
-address[1] => Mux5.IN6
-address[1] => Mux6.IN6
-address[1] => Mux7.IN6
-address[2] => Decoder0.IN5
-address[2] => Mux0.IN5
-address[2] => Mux1.IN5
-address[2] => Mux2.IN5
-address[2] => Mux3.IN5
-address[2] => Mux4.IN5
-address[2] => Mux5.IN5
-address[2] => Mux6.IN5
-address[2] => Mux7.IN5
-address[3] => Decoder0.IN4
-address[3] => Mux0.IN4
-address[3] => Mux1.IN4
-address[3] => Mux2.IN4
-address[3] => Mux3.IN4
-address[3] => Mux4.IN4
-address[3] => Mux5.IN4
-address[3] => Mux6.IN4
-address[3] => Mux7.IN4
-address[4] => Decoder0.IN3
-address[4] => Mux0.IN3
-address[4] => Mux1.IN3
-address[4] => Mux2.IN3
-address[4] => Mux3.IN3
-address[4] => Mux4.IN3
-address[4] => Mux5.IN3
-address[4] => Mux6.IN3
-address[4] => Mux7.IN3
-address[5] => Decoder0.IN2
-address[5] => Mux0.IN2
-address[5] => Mux1.IN2
-address[5] => Mux2.IN2
-address[5] => Mux3.IN2
-address[5] => Mux4.IN2
-address[5] => Mux5.IN2
-address[5] => Mux6.IN2
-address[5] => Mux7.IN2
-address[6] => Decoder0.IN1
-address[6] => Mux0.IN1
-address[6] => Mux1.IN1
-address[6] => Mux2.IN1
-address[6] => Mux3.IN1
-address[6] => Mux4.IN1
-address[6] => Mux5.IN1
-address[6] => Mux6.IN1
-address[6] => Mux7.IN1
-address[7] => Decoder0.IN0
-address[7] => Mux0.IN0
-address[7] => Mux1.IN0
-address[7] => Mux2.IN0
-address[7] => Mux3.IN0
-address[7] => Mux4.IN0
-address[7] => Mux5.IN0
-address[7] => Mux6.IN0
-address[7] => Mux7.IN0
+|LOAC_P7_CISC|ram2:inst
+address[0] => mem~7.DATAIN
+address[0] => mem.WADDR
+address[0] => mem.RADDR
+address[1] => mem~6.DATAIN
+address[1] => mem.WADDR1
+address[1] => mem.RADDR1
+address[2] => mem~5.DATAIN
+address[2] => mem.WADDR2
+address[2] => mem.RADDR2
+address[3] => mem~4.DATAIN
+address[3] => mem.WADDR3
+address[3] => mem.RADDR3
+address[4] => mem~3.DATAIN
+address[4] => mem.WADDR4
+address[4] => mem.RADDR4
+address[5] => mem~2.DATAIN
+address[5] => mem.WADDR5
+address[5] => mem.RADDR5
+address[6] => mem~1.DATAIN
+address[6] => mem.WADDR6
+address[6] => mem.RADDR6
+address[7] => mem~0.DATAIN
+address[7] => mem.WADDR7
+address[7] => mem.RADDR7
 address[8] => ~NO_FANOUT~
 address[9] => ~NO_FANOUT~
 address[10] => ~NO_FANOUT~
@@ -2696,8 +2752,26 @@ data[6] <> data[6]
 data[7] <> data[7]
 Wn => MEM_READ.IN0
 Wn => MEM_WRITE.IN0
-CSn => MEM_WRITE.IN1
 CSn => MEM_READ.IN1
+CSn => MEM_WRITE.IN1
+clk => mem~16.CLK
+clk => mem~0.CLK
+clk => mem~1.CLK
+clk => mem~2.CLK
+clk => mem~3.CLK
+clk => mem~4.CLK
+clk => mem~5.CLK
+clk => mem~6.CLK
+clk => mem~7.CLK
+clk => mem~8.CLK
+clk => mem~9.CLK
+clk => mem~10.CLK
+clk => mem~11.CLK
+clk => mem~12.CLK
+clk => mem~13.CLK
+clk => mem~14.CLK
+clk => mem~15.CLK
+clk => mem.CLK0
 
 
 |LOAC_P7_CISC|registro_direccion:dir
