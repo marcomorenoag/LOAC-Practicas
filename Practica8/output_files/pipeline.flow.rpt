@@ -1,5 +1,5 @@
 Flow report for pipeline
-Sat Nov 09 01:33:33 2019
+Sun Nov 10 00:28:30 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Nov 09 01:33:33 2019       ;
+; Flow Status                        ; Successful - Sun Nov 10 00:28:30 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pipeline                                    ;
 ; Top-level Entity Name              ; pipeline                                    ;
@@ -102,7 +102,9 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4639 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4619 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4628 MB             ; 00:00:02                           ;
-; Total                ; 00:00:55     ; --                      ; --                  ; 00:01:19                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4619 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4628 MB             ; 00:00:02                           ;
+; Total                ; 00:00:59     ; --                      ; --                  ; 00:01:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,6 +120,8 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; PC-MAMG          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -129,6 +133,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off pipeline -c pip
 quartus_asm --read_settings_files=off --write_settings_files=off pipeline -c pipeline
 quartus_sta pipeline -c pipeline
 quartus_eda --read_settings_files=off --write_settings_files=off pipeline -c pipeline
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off pipeline -c pipeline --vector_source=C:/intelFPGA_lite/OyAC/Lab/Practica8/Waveform1.vwf --testbench_file=C:/intelFPGA_lite/OyAC/Lab/Practica8/simulation/qsim/Waveform1.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/OyAC/Lab/Practica8/simulation/qsim/ pipeline -c pipeline
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off pipeline -c pipeline --vector_source=C:/intelFPGA_lite/OyAC/Lab/Practica8/Waveform1.vwf --testbench_file=C:/intelFPGA_lite/OyAC/Lab/Practica8/simulation/qsim/Waveform1.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/OyAC/Lab/Practica8/simulation/qsim/ pipeline -c pipeline
 

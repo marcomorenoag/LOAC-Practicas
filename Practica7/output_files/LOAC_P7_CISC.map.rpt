@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LOAC_P7_CISC
-Wed Oct 30 14:24:09 2019
+Sun Nov 10 01:37:09 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -48,15 +48,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 30 14:24:08 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 10 01:37:09 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; LOAC_P7_CISC                                ;
 ; Top-level Entity Name              ; LOAC_P7_CISC                                ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 4,119                                       ;
-;     Total combinational functions  ; 4,082                                       ;
-;     Dedicated logic registers      ; 158                                         ;
-; Total registers                    ; 158                                         ;
+; Total logic elements               ; 4,242                                       ;
+;     Total combinational functions  ; 4,205                                       ;
+;     Dedicated logic registers      ; 142                                         ;
+; Total registers                    ; 142                                         ;
 ; Total pins                         ; 142                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -166,7 +166,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
+;     Processor 2            ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -219,30 +219,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Estimated Total logic elements              ; 4,119                                   ;
+; Estimated Total logic elements              ; 4,242                                   ;
 ;                                             ;                                         ;
-; Total combinational functions               ; 4082                                    ;
+; Total combinational functions               ; 4205                                    ;
 ; Logic element usage by number of LUT inputs ;                                         ;
-;     -- 4 input functions                    ; 1943                                    ;
-;     -- 3 input functions                    ; 2058                                    ;
-;     -- <=2 input functions                  ; 81                                      ;
+;     -- 4 input functions                    ; 1786                                    ;
+;     -- 3 input functions                    ; 2343                                    ;
+;     -- <=2 input functions                  ; 76                                      ;
 ;                                             ;                                         ;
 ; Logic elements by mode                      ;                                         ;
-;     -- normal mode                          ; 4034                                    ;
-;     -- arithmetic mode                      ; 48                                      ;
+;     -- normal mode                          ; 4171                                    ;
+;     -- arithmetic mode                      ; 34                                      ;
 ;                                             ;                                         ;
-; Total registers                             ; 158                                     ;
-;     -- Dedicated logic registers            ; 158                                     ;
+; Total registers                             ; 142                                     ;
+;     -- Dedicated logic registers            ; 142                                     ;
 ;     -- I/O registers                        ; 0                                       ;
 ;                                             ;                                         ;
 ; I/O pins                                    ; 142                                     ;
 ;                                             ;                                         ;
 ; Embedded Multiplier 9-bit elements          ; 0                                       ;
 ;                                             ;                                         ;
-; Maximum fan-out node                        ; registro_direccion:dir|valor_interno[2] ;
-; Maximum fan-out                             ; 339                                     ;
-; Total fan-out                               ; 14977                                   ;
-; Average fan-out                             ; 3.31                                    ;
+; Maximum fan-out node                        ; registro_direccion:dir|valor_interno[0] ;
+; Maximum fan-out                             ; 341                                     ;
+; Total fan-out                               ; 15116                                   ;
+; Average fan-out                             ; 3.26                                    ;
 +---------------------------------------------+-----------------------------------------+
 
 
@@ -251,34 +251,33 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                 ; Entity Name          ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
-; |LOAC_P7_CISC                        ; 4082 (20)           ; 158 (1)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 142  ; 0            ; 0          ; |LOAC_P7_CISC                                                                       ; LOAC_P7_CISC         ; work         ;
+; |LOAC_P7_CISC                        ; 4205 (20)           ; 142 (1)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 142  ; 0            ; 0          ; |LOAC_P7_CISC                                                                       ; LOAC_P7_CISC         ; work         ;
 ;    |RegEdos:flags|                   ; 0 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|RegEdos:flags                                                         ; RegEdos              ; work         ;
 ;       |registro:tCC|                 ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|RegEdos:flags|registro:tCC                                            ; registro             ; work         ;
-;    |acumulador:AcumuladorA|          ; 21 (21)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorA                                                ; acumulador           ; work         ;
+;    |acumulador:AcumuladorA|          ; 22 (22)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorA                                                ; acumulador           ; work         ;
 ;    |acumulador:AcumuladorB|          ; 19 (19)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|acumulador:AcumuladorB                                                ; acumulador           ; work         ;
-;    |bufferDataBus:inst1|             ; 22 (22)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|bufferDataBus:inst1                                                   ; bufferDataBus        ; work         ;
+;    |bufferDataBus:inst1|             ; 20 (20)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|bufferDataBus:inst1                                                   ; bufferDataBus        ; work         ;
 ;    |bufferDataBusbaja:inst7|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|bufferDataBusbaja:inst7                                               ; bufferDataBusbaja    ; work         ;
-;    |contador:RegAux|                 ; 34 (34)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegAux                                                       ; contador             ; work         ;
+;    |contador:RegAux|                 ; 29 (29)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegAux                                                       ; contador             ; work         ;
 ;    |contador:RegPC|                  ; 34 (34)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegPC                                                        ; contador             ; work         ;
-;    |contador:RegPila|                ; 16 (16)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador:RegPila                                                      ; contador             ; work         ;
 ;    |contador_ID:inst13|              ; 5 (5)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador_ID:inst13                                                    ; contador_ID          ; work         ;
-;    |contador_IDX:inst9|              ; 6 (6)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador_IDX:inst9                                                    ; contador_IDX         ; work         ;
+;    |contador_IDX:inst9|              ; 9 (9)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|contador_IDX:inst9                                                    ; contador_IDX         ; work         ;
 ;    |ctrl_interrupciones:inst4|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|ctrl_interrupciones:inst4                                             ; ctrl_interrupciones  ; work         ;
-;    |ram:inst|                        ; 3425 (3425)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|ram:inst                                                              ; ram                  ; work         ;
+;    |ram:inst|                        ; 3541 (3541)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|ram:inst                                                              ; ram                  ; work         ;
 ;    |registro_direccion:dir|          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_direccion:dir                                                ; registro_direccion   ; work         ;
 ;    |registro_instruccion:inst11|     ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|registro_instruccion:inst11                                           ; registro_instruccion ; work         ;
-;    |secuenciador:inst6|              ; 308 (2)             ; 27 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6                                                    ; secuenciador         ; work         ;
+;    |secuenciador:inst6|              ; 324 (2)             ; 27 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6                                                    ; secuenciador         ; work         ;
 ;       |busmux:inst5|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5                                       ; busmux               ; work         ;
 ;          |lpm_mux:$00000|            ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5|lpm_mux:$00000                        ; lpm_mux              ; work         ;
 ;             |mux_f7c:auto_generated| ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c              ; work         ;
 ;       |logica_seleccion:inst1|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|logica_seleccion:inst1                             ; logica_seleccion     ; work         ;
-;       |memory:inst|                  ; 236 (236)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst                                        ; memory               ; work         ;
+;       |memory:inst|                  ; 168 (168)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst                                        ; memory               ; work         ;
 ;       |mux:inst6|                    ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6                                          ; mux                  ; work         ;
 ;          |lpm_mux:$00001|            ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6|lpm_mux:$00001                           ; lpm_mux              ; work         ;
 ;             |mux_k7c:auto_generated| ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated    ; mux_k7c              ; work         ;
 ;       |registro_MicroInst:inst2|     ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|registro_MicroInst:inst2                           ; registro_MicroInst   ; work         ;
-;       |registro_sec:inst3|           ; 38 (38)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3                                 ; registro_sec         ; work         ;
-;    |upa:upa|                         ; 162 (162)           ; 17 (17)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|upa:upa                                                               ; upa                  ; work         ;
+;       |registro_sec:inst3|           ; 122 (122)           ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3                                 ; registro_sec         ; work         ;
+;    |upa:upa|                         ; 172 (172)           ; 17 (17)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LOAC_P7_CISC|upa:upa                                                               ; upa                  ; work         ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -288,46 +287,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------+----------------------+------------------------+
 ; Latch Name                                            ; Latch Enable Signal  ; Free of Timing Hazards ;
 +-------------------------------------------------------+----------------------+------------------------+
-; ram:inst|mem[60][7]                                   ; ram:inst|mem[60][0]  ; yes                    ;
-; ram:inst|mem[57][7]                                   ; ram:inst|mem[57][0]  ; yes                    ;
-; ram:inst|mem[56][7]                                   ; ram:inst|mem[56][0]  ; yes                    ;
-; ram:inst|mem[61][7]                                   ; ram:inst|mem[61][0]  ; yes                    ;
-; ram:inst|mem[51][7]                                   ; ram:inst|mem[51][0]  ; yes                    ;
-; ram:inst|mem[54][7]                                   ; ram:inst|mem[54][0]  ; yes                    ;
-; ram:inst|mem[50][7]                                   ; ram:inst|mem[50][0]  ; yes                    ;
-; ram:inst|mem[55][7]                                   ; ram:inst|mem[55][0]  ; yes                    ;
-; ram:inst|mem[49][7]                                   ; ram:inst|mem[49][0]  ; yes                    ;
-; ram:inst|mem[52][7]                                   ; ram:inst|mem[52][0]  ; yes                    ;
-; ram:inst|mem[48][7]                                   ; ram:inst|mem[48][0]  ; yes                    ;
-; ram:inst|mem[53][7]                                   ; ram:inst|mem[53][0]  ; yes                    ;
-; ram:inst|mem[62][7]                                   ; ram:inst|mem[62][0]  ; yes                    ;
-; ram:inst|mem[59][7]                                   ; ram:inst|mem[59][0]  ; yes                    ;
-; ram:inst|mem[58][7]                                   ; ram:inst|mem[58][0]  ; yes                    ;
-; ram:inst|mem[63][7]                                   ; ram:inst|mem[63][0]  ; yes                    ;
-; ram:inst|mem[89][7]                                   ; ram:inst|mem[89][0]  ; yes                    ;
-; ram:inst|mem[92][7]                                   ; ram:inst|mem[92][0]  ; yes                    ;
-; ram:inst|mem[88][7]                                   ; ram:inst|mem[88][0]  ; yes                    ;
-; ram:inst|mem[93][7]                                   ; ram:inst|mem[93][0]  ; yes                    ;
-; ram:inst|mem[108][7]                                  ; ram:inst|mem[108][0] ; yes                    ;
+; ram:inst|mem[37][7]                                   ; ram:inst|mem[37][0]  ; yes                    ;
+; ram:inst|mem[35][7]                                   ; ram:inst|mem[35][0]  ; yes                    ;
+; ram:inst|mem[33][7]                                   ; ram:inst|mem[33][0]  ; yes                    ;
+; ram:inst|mem[39][7]                                   ; ram:inst|mem[39][0]  ; yes                    ;
+; ram:inst|mem[42][7]                                   ; ram:inst|mem[42][0]  ; yes                    ;
+; ram:inst|mem[44][7]                                   ; ram:inst|mem[44][0]  ; yes                    ;
+; ram:inst|mem[40][7]                                   ; ram:inst|mem[40][0]  ; yes                    ;
+; ram:inst|mem[46][7]                                   ; ram:inst|mem[46][0]  ; yes                    ;
+; ram:inst|mem[36][7]                                   ; ram:inst|mem[36][0]  ; yes                    ;
+; ram:inst|mem[34][7]                                   ; ram:inst|mem[34][0]  ; yes                    ;
+; ram:inst|mem[32][7]                                   ; ram:inst|mem[32][0]  ; yes                    ;
+; ram:inst|mem[38][7]                                   ; ram:inst|mem[38][0]  ; yes                    ;
+; ram:inst|mem[43][7]                                   ; ram:inst|mem[43][0]  ; yes                    ;
+; ram:inst|mem[45][7]                                   ; ram:inst|mem[45][0]  ; yes                    ;
+; ram:inst|mem[41][7]                                   ; ram:inst|mem[41][0]  ; yes                    ;
+; ram:inst|mem[47][7]                                   ; ram:inst|mem[47][0]  ; yes                    ;
+; ram:inst|mem[120][7]                                  ; ram:inst|mem[120][0] ; yes                    ;
 ; ram:inst|mem[105][7]                                  ; ram:inst|mem[105][0] ; yes                    ;
 ; ram:inst|mem[104][7]                                  ; ram:inst|mem[104][0] ; yes                    ;
-; ram:inst|mem[109][7]                                  ; ram:inst|mem[109][0] ; yes                    ;
-; ram:inst|mem[73][7]                                   ; ram:inst|mem[73][0]  ; yes                    ;
-; ram:inst|mem[76][7]                                   ; ram:inst|mem[76][0]  ; yes                    ;
-; ram:inst|mem[72][7]                                   ; ram:inst|mem[72][0]  ; yes                    ;
-; ram:inst|mem[77][7]                                   ; ram:inst|mem[77][0]  ; yes                    ;
-; ram:inst|mem[124][7]                                  ; ram:inst|mem[124][0] ; yes                    ;
 ; ram:inst|mem[121][7]                                  ; ram:inst|mem[121][0] ; yes                    ;
-; ram:inst|mem[120][7]                                  ; ram:inst|mem[120][0] ; yes                    ;
+; ram:inst|mem[92][7]                                   ; ram:inst|mem[92][0]  ; yes                    ;
+; ram:inst|mem[77][7]                                   ; ram:inst|mem[77][0]  ; yes                    ;
+; ram:inst|mem[76][7]                                   ; ram:inst|mem[76][0]  ; yes                    ;
+; ram:inst|mem[93][7]                                   ; ram:inst|mem[93][0]  ; yes                    ;
+; ram:inst|mem[88][7]                                   ; ram:inst|mem[88][0]  ; yes                    ;
+; ram:inst|mem[73][7]                                   ; ram:inst|mem[73][0]  ; yes                    ;
+; ram:inst|mem[72][7]                                   ; ram:inst|mem[72][0]  ; yes                    ;
+; ram:inst|mem[89][7]                                   ; ram:inst|mem[89][0]  ; yes                    ;
+; ram:inst|mem[124][7]                                  ; ram:inst|mem[124][0] ; yes                    ;
+; ram:inst|mem[109][7]                                  ; ram:inst|mem[109][0] ; yes                    ;
+; ram:inst|mem[108][7]                                  ; ram:inst|mem[108][0] ; yes                    ;
 ; ram:inst|mem[125][7]                                  ; ram:inst|mem[125][0] ; yes                    ;
-; ram:inst|mem[102][7]                                  ; ram:inst|mem[102][0] ; yes                    ;
-; ram:inst|mem[99][7]                                   ; ram:inst|mem[99][0]  ; yes                    ;
-; ram:inst|mem[98][7]                                   ; ram:inst|mem[98][0]  ; yes                    ;
-; ram:inst|mem[103][7]                                  ; ram:inst|mem[103][0] ; yes                    ;
 ; ram:inst|mem[83][7]                                   ; ram:inst|mem[83][0]  ; yes                    ;
 ; ram:inst|mem[86][7]                                   ; ram:inst|mem[86][0]  ; yes                    ;
 ; ram:inst|mem[82][7]                                   ; ram:inst|mem[82][0]  ; yes                    ;
 ; ram:inst|mem[87][7]                                   ; ram:inst|mem[87][0]  ; yes                    ;
+; ram:inst|mem[102][7]                                  ; ram:inst|mem[102][0] ; yes                    ;
+; ram:inst|mem[99][7]                                   ; ram:inst|mem[99][0]  ; yes                    ;
+; ram:inst|mem[98][7]                                   ; ram:inst|mem[98][0]  ; yes                    ;
+; ram:inst|mem[103][7]                                  ; ram:inst|mem[103][0] ; yes                    ;
 ; ram:inst|mem[67][7]                                   ; ram:inst|mem[67][0]  ; yes                    ;
 ; ram:inst|mem[70][7]                                   ; ram:inst|mem[70][0]  ; yes                    ;
 ; ram:inst|mem[66][7]                                   ; ram:inst|mem[66][0]  ; yes                    ;
@@ -336,14 +335,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ram:inst|mem[115][7]                                  ; ram:inst|mem[115][0] ; yes                    ;
 ; ram:inst|mem[114][7]                                  ; ram:inst|mem[114][0] ; yes                    ;
 ; ram:inst|mem[119][7]                                  ; ram:inst|mem[119][0] ; yes                    ;
-; ram:inst|mem[100][7]                                  ; ram:inst|mem[100][0] ; yes                    ;
-; ram:inst|mem[97][7]                                   ; ram:inst|mem[97][0]  ; yes                    ;
-; ram:inst|mem[96][7]                                   ; ram:inst|mem[96][0]  ; yes                    ;
-; ram:inst|mem[101][7]                                  ; ram:inst|mem[101][0] ; yes                    ;
 ; ram:inst|mem[81][7]                                   ; ram:inst|mem[81][0]  ; yes                    ;
 ; ram:inst|mem[84][7]                                   ; ram:inst|mem[84][0]  ; yes                    ;
 ; ram:inst|mem[80][7]                                   ; ram:inst|mem[80][0]  ; yes                    ;
 ; ram:inst|mem[85][7]                                   ; ram:inst|mem[85][0]  ; yes                    ;
+; ram:inst|mem[100][7]                                  ; ram:inst|mem[100][0] ; yes                    ;
+; ram:inst|mem[97][7]                                   ; ram:inst|mem[97][0]  ; yes                    ;
+; ram:inst|mem[96][7]                                   ; ram:inst|mem[96][0]  ; yes                    ;
+; ram:inst|mem[101][7]                                  ; ram:inst|mem[101][0] ; yes                    ;
 ; ram:inst|mem[65][7]                                   ; ram:inst|mem[65][0]  ; yes                    ;
 ; ram:inst|mem[68][7]                                   ; ram:inst|mem[68][0]  ; yes                    ;
 ; ram:inst|mem[64][7]                                   ; ram:inst|mem[64][0]  ; yes                    ;
@@ -352,43 +351,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ram:inst|mem[113][7]                                  ; ram:inst|mem[113][0] ; yes                    ;
 ; ram:inst|mem[112][7]                                  ; ram:inst|mem[112][0] ; yes                    ;
 ; ram:inst|mem[117][7]                                  ; ram:inst|mem[117][0] ; yes                    ;
-; ram:inst|mem[107][7]                                  ; ram:inst|mem[107][0] ; yes                    ;
-; ram:inst|mem[91][7]                                   ; ram:inst|mem[91][0]  ; yes                    ;
-; ram:inst|mem[75][7]                                   ; ram:inst|mem[75][0]  ; yes                    ;
-; ram:inst|mem[123][7]                                  ; ram:inst|mem[123][0] ; yes                    ;
-; ram:inst|mem[94][7]                                   ; ram:inst|mem[94][0]  ; yes                    ;
-; ram:inst|mem[110][7]                                  ; ram:inst|mem[110][0] ; yes                    ;
-; ram:inst|mem[78][7]                                   ; ram:inst|mem[78][0]  ; yes                    ;
-; ram:inst|mem[126][7]                                  ; ram:inst|mem[126][0] ; yes                    ;
-; ram:inst|mem[90][7]                                   ; ram:inst|mem[90][0]  ; yes                    ;
-; ram:inst|mem[106][7]                                  ; ram:inst|mem[106][0] ; yes                    ;
-; ram:inst|mem[74][7]                                   ; ram:inst|mem[74][0]  ; yes                    ;
 ; ram:inst|mem[122][7]                                  ; ram:inst|mem[122][0] ; yes                    ;
-; ram:inst|mem[111][7]                                  ; ram:inst|mem[111][0] ; yes                    ;
-; ram:inst|mem[95][7]                                   ; ram:inst|mem[95][0]  ; yes                    ;
+; ram:inst|mem[94][7]                                   ; ram:inst|mem[94][0]  ; yes                    ;
+; ram:inst|mem[90][7]                                   ; ram:inst|mem[90][0]  ; yes                    ;
+; ram:inst|mem[126][7]                                  ; ram:inst|mem[126][0] ; yes                    ;
+; ram:inst|mem[107][7]                                  ; ram:inst|mem[107][0] ; yes                    ;
 ; ram:inst|mem[79][7]                                   ; ram:inst|mem[79][0]  ; yes                    ;
+; ram:inst|mem[75][7]                                   ; ram:inst|mem[75][0]  ; yes                    ;
+; ram:inst|mem[111][7]                                  ; ram:inst|mem[111][0] ; yes                    ;
+; ram:inst|mem[106][7]                                  ; ram:inst|mem[106][0] ; yes                    ;
+; ram:inst|mem[78][7]                                   ; ram:inst|mem[78][0]  ; yes                    ;
+; ram:inst|mem[74][7]                                   ; ram:inst|mem[74][0]  ; yes                    ;
+; ram:inst|mem[110][7]                                  ; ram:inst|mem[110][0] ; yes                    ;
+; ram:inst|mem[123][7]                                  ; ram:inst|mem[123][0] ; yes                    ;
+; ram:inst|mem[95][7]                                   ; ram:inst|mem[95][0]  ; yes                    ;
+; ram:inst|mem[91][7]                                   ; ram:inst|mem[91][0]  ; yes                    ;
 ; ram:inst|mem[127][7]                                  ; ram:inst|mem[127][0] ; yes                    ;
-; ram:inst|mem[27][7]                                   ; ram:inst|mem[27][0]  ; yes                    ;
-; ram:inst|mem[29][7]                                   ; ram:inst|mem[29][0]  ; yes                    ;
-; ram:inst|mem[25][7]                                   ; ram:inst|mem[25][0]  ; yes                    ;
-; ram:inst|mem[31][7]                                   ; ram:inst|mem[31][0]  ; yes                    ;
-; ram:inst|mem[28][7]                                   ; ram:inst|mem[28][0]  ; yes                    ;
+; ram:inst|mem[15][7]                                   ; ram:inst|mem[15][0]  ; yes                    ;
+; ram:inst|mem[14][7]                                   ; ram:inst|mem[14][0]  ; yes                    ;
+; ram:inst|mem[19][7]                                   ; ram:inst|mem[19][0]  ; yes                    ;
 ; ram:inst|mem[26][7]                                   ; ram:inst|mem[26][0]  ; yes                    ;
+; ram:inst|mem[18][7]                                   ; ram:inst|mem[18][0]  ; yes                    ;
+; ram:inst|mem[27][7]                                   ; ram:inst|mem[27][0]  ; yes                    ;
+; ram:inst|mem[28][7]                                   ; ram:inst|mem[28][0]  ; yes                    ;
+; ram:inst|mem[21][7]                                   ; ram:inst|mem[21][0]  ; yes                    ;
+; ram:inst|mem[20][7]                                   ; ram:inst|mem[20][0]  ; yes                    ;
+; ram:inst|mem[29][7]                                   ; ram:inst|mem[29][0]  ; yes                    ;
+; ram:inst|mem[17][7]                                   ; ram:inst|mem[17][0]  ; yes                    ;
 ; ram:inst|mem[24][7]                                   ; ram:inst|mem[24][0]  ; yes                    ;
+; ram:inst|mem[16][7]                                   ; ram:inst|mem[16][0]  ; yes                    ;
+; ram:inst|mem[25][7]                                   ; ram:inst|mem[25][0]  ; yes                    ;
 ; ram:inst|mem[30][7]                                   ; ram:inst|mem[30][0]  ; yes                    ;
-; ram:inst|mem[44][7]                                   ; ram:inst|mem[44][0]  ; yes                    ;
-; ram:inst|mem[38][7]                                   ; ram:inst|mem[38][0]  ; yes                    ;
-; ram:inst|mem[36][7]                                   ; ram:inst|mem[36][0]  ; yes                    ;
-; ram:inst|mem[46][7]                                   ; ram:inst|mem[46][0]  ; yes                    ;
-; ram:inst|mem[35][7]                                   ; ram:inst|mem[35][0]  ; yes                    ;
-; ram:inst|mem[41][7]                                   ; ram:inst|mem[41][0]  ; yes                    ;
-; ram:inst|mem[33][7]                                   ; ram:inst|mem[33][0]  ; yes                    ;
-; ram:inst|mem[43][7]                                   ; ram:inst|mem[43][0]  ; yes                    ;
-; ram:inst|mem[40][7]                                   ; ram:inst|mem[40][0]  ; yes                    ;
-; ram:inst|mem[34][7]                                   ; ram:inst|mem[34][0]  ; yes                    ;
-; ram:inst|mem[32][7]                                   ; ram:inst|mem[32][0]  ; yes                    ;
-; ram:inst|mem[42][7]                                   ; ram:inst|mem[42][0]  ; yes                    ;
-; Number of user-specified and inferred latches = 1856  ;                      ;                        ;
+; ram:inst|mem[23][7]                                   ; ram:inst|mem[23][0]  ; yes                    ;
+; ram:inst|mem[22][7]                                   ; ram:inst|mem[22][0]  ; yes                    ;
+; ram:inst|mem[31][7]                                   ; ram:inst|mem[31][0]  ; yes                    ;
+; ram:inst|mem[58][7]                                   ; ram:inst|mem[58][0]  ; yes                    ;
+; ram:inst|mem[51][7]                                   ; ram:inst|mem[51][0]  ; yes                    ;
+; Number of user-specified and inferred latches = 1936  ;                      ;                        ;
 +-------------------------------------------------------+----------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -406,8 +405,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; RegEdos:flags|registro:tCX|valor_interno          ; Stuck at GND due to stuck port clock                        ;
 ; RegEdos:flags|registro:tCI|valor_interno          ; Stuck at GND due to stuck port clock                        ;
 ; ctrl_interrupciones:inst4|INT_flag                ; Stuck at GND due to stuck port clock_enable                 ;
+; contador:RegPila|data_out[0..14]                  ; Merged with contador:RegPila|data_out[15]                   ;
 ; secuenciador:inst6|registro_sec:inst3|prueba[1,2] ; Merged with secuenciador:inst6|registro_sec:inst3|prueba[0] ;
 ; upa:upa|Banderas[3]                               ; Merged with upa:upa|Banderas[1]                             ;
+; contador:RegPila|data_out[15]                     ; Stuck at GND due to stuck port data_in                      ;
 ; upa:upa|contador[0..2]                            ; Stuck at GND due to stuck port clock_enable                 ;
 ; upa:upa|Yupa_interno[7]                           ; Merged with upa:upa|Banderas[2]                             ;
 ; upa:upa|Yupa_interno[4]                           ; Merged with upa:upa|Banderas[4]                             ;
@@ -416,7 +417,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; RegEdos:flags|registro:tCZ|valor_interno          ; Lost fanout                                                 ;
 ; upa:upa|Banderas[0]                               ; Lost fanout                                                 ;
 ; RegEdos:flags|registro:tCV|valor_interno          ; Lost fanout                                                 ;
-; Total Number of Removed Registers = 26            ;                                                             ;
+; Total Number of Removed Registers = 42            ;                                                             ;
 +---------------------------------------------------+-------------------------------------------------------------+
 
 
@@ -438,12 +439,12 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 158   ;
+; Total registers                              ; 142   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 16    ;
-; Number of registers using Asynchronous Clear ; 123   ;
+; Number of registers using Asynchronous Clear ; 107   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 112   ;
+; Number of registers using Clock Enable       ; 97    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -453,33 +454,34 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|registro_direccion:dir|valor_interno[5]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|registro_direccion:dir|valor_interno[4]         ;
 ; 15:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|prueba[0] ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|prueba[4] ;
-; 57:1               ; 2 bits    ; 76 LEs        ; 76 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|vf        ;
+; 57:1               ; 4 bits    ; 152 LEs       ; 152 LEs              ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|prueba[4] ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador:RegAux|data_out[2]                     ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|acumulador:AcumuladorA|data_out[6]              ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|acumulador:AcumuladorB|data_out[1]              ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador_IDX:inst9|data_out[5]                  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador:RegPC|data_out[12]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador:RegPC|data_out[3]                      ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |LOAC_P7_CISC|contador:RegAux|data_out[14]                    ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |LOAC_P7_CISC|contador_ID:inst13|data_out[13]                 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|nEPC1     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|acumulador:AcumuladorA|data_out[0]              ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|acumulador:AcumuladorB|data_out[5]              ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador_IDX:inst9|data_out[1]                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador:RegPC|data_out[9]                      ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |LOAC_P7_CISC|contador:RegPC|data_out[0]                      ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |LOAC_P7_CISC|contador:RegAux|data_out[8]                     ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |LOAC_P7_CISC|contador_ID:inst13|data_out[8]                  ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst|data             ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |LOAC_P7_CISC|upa:upa|Mux31                                   ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |LOAC_P7_CISC|upa:upa|Mux32                                   ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst|data             ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |LOAC_P7_CISC|upa:upa|Mux39                                   ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|B6        ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |LOAC_P7_CISC|upa:upa|Mux36                                   ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|B7        ;
 ; 15:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst|data             ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|nWB       ;
-; 31:1               ; 3 bits    ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst|data             ;
-; 36:1               ; 2 bits    ; 48 LEs        ; 46 LEs               ; 2 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst|data             ;
-; 37:1               ; 2 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst|data             ;
-; 38:1               ; 2 bits    ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst|data             ;
-; 40:1               ; 3 bits    ; 78 LEs        ; 78 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|memory:inst|data             ;
-; 305:1              ; 8 bits    ; 1624 LEs      ; 1312 LEs             ; 312 LEs                ; No         ; |LOAC_P7_CISC|ram:inst|data_out[7]                            ;
-; 62:1               ; 2 bits    ; 82 LEs        ; 82 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|nEPC2     ;
+; 285:1              ; 8 bits    ; 1520 LEs      ; 1344 LEs             ; 176 LEs                ; No         ; |LOAC_P7_CISC|ram:inst|data_out[1]                            ;
+; 52:1               ; 5 bits    ; 170 LEs       ; 170 LEs              ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|EB[0]     ;
+; 56:1               ; 2 bits    ; 74 LEs        ; 62 LEs               ; 12 LEs                 ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|nEX0      ;
+; 57:1               ; 2 bits    ; 76 LEs        ; 74 LEs               ; 2 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|selbus    ;
+; 58:1               ; 2 bits    ; 76 LEs        ; 76 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|CH        ;
+; 59:1               ; 2 bits    ; 78 LEs        ; 78 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|nEX2      ;
+; 60:1               ; 2 bits    ; 80 LEs        ; 78 LEs               ; 2 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|B2        ;
+; 61:1               ; 3 bits    ; 120 LEs       ; 102 LEs              ; 18 LEs                 ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|BD        ;
+; 61:1               ; 2 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|CN        ;
+; 62:1               ; 3 bits    ; 123 LEs       ; 123 LEs              ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|nRW       ;
+; 71:1               ; 2 bits    ; 94 LEs        ; 94 LEs               ; 0 LEs                  ; No         ; |LOAC_P7_CISC|secuenciador:inst6|registro_sec:inst3|PC[0]     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
 
@@ -510,25 +512,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 142                         ;
-; cycloneiii_ff         ; 158                         ;
-;     CLR               ; 44                          ;
+; cycloneiii_ff         ; 142                         ;
+;     CLR               ; 43                          ;
 ;     ENA               ; 17                          ;
-;     ENA CLR           ; 79                          ;
+;     ENA CLR           ; 64                          ;
 ;     ENA SLD           ; 16                          ;
 ;     plain             ; 2                           ;
 ; cycloneiii_io_obuf    ; 12                          ;
-; cycloneiii_lcell_comb ; 4083                        ;
-;     arith             ; 48                          ;
-;         2 data inputs ; 37                          ;
-;         3 data inputs ; 11                          ;
-;     normal            ; 4035                        ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 40                          ;
-;         3 data inputs ; 2047                        ;
-;         4 data inputs ; 1943                        ;
+; cycloneiii_lcell_comb ; 4207                        ;
+;     arith             ; 34                          ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 10                          ;
+;     normal            ; 4173                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 49                          ;
+;         3 data inputs ; 2333                        ;
+;         4 data inputs ; 1786                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 22.00                       ;
-; Average LUT depth     ; 11.43                       ;
+; Max LUT depth         ; 22.80                       ;
+; Average LUT depth     ; 12.29                       ;
 +-----------------------+-----------------------------+
 
 
@@ -537,7 +540,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:38     ;
+; Top            ; 00:00:43     ;
 +----------------+--------------+
 
 
@@ -547,7 +550,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Oct 30 14:23:10 2019
+    Info: Processing started: Sun Nov 10 01:35:55 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LOAC_P7_CISC -c LOAC_P7_CISC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2534,6 +2537,86 @@ Info (10041): Inferred latch for "mem[24][4]" at ram.vhd(22) File: C:/intelFPGA_
 Info (10041): Inferred latch for "mem[24][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
 Info (10041): Inferred latch for "mem[24][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
 Info (10041): Inferred latch for "mem[24][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[23][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[23][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[23][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[23][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[23][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[23][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[23][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[23][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[22][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[22][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[22][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[22][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[22][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[22][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[22][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[22][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[21][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[21][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[21][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[21][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[21][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[21][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[21][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[21][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[20][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[20][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[20][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[20][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[20][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[20][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[20][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[20][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[19][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[19][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[19][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[19][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[19][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[19][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[19][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[19][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[18][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[18][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[18][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[18][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[18][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[18][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[18][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[18][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[17][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[17][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[17][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[17][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[17][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[17][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[17][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[17][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[16][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[16][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[16][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[16][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[16][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[16][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[16][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[16][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[15][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[15][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[15][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[15][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[15][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[15][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[15][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[15][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[14][0]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[14][1]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[14][2]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[14][3]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[14][4]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[14][5]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[14][6]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
+Info (10041): Inferred latch for "mem[14][7]" at ram.vhd(22) File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ram.vhd Line: 22
 Info (12128): Elaborating entity "registro_direccion" for hierarchy "registro_direccion:dir"
 Info (12128): Elaborating entity "upa" for hierarchy "upa:upa"
 Warning (10492): VHDL Process Statement warning at upa.vhd(107): signal "R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 107
@@ -2647,46 +2730,46 @@ Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|_~0 File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
     Warning (19017): Found clock multiplexer secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|_~1 File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[7]" to the node "bufferDataBus:inst1|PortR[7]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[7]" to the node "bufferDataBus:inst1|PortR[7]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[7]" to the node "bufferDataBusbaja:inst7|PortR[7]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[7]" to the node "bufferDataBusbaja:inst7|PortR[7]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[6]" to the node "bufferDataBus:inst1|PortR[6]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[6]" to the node "bufferDataBus:inst1|PortR[6]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[6]" to the node "bufferDataBusbaja:inst7|PortR[6]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[7]" to the node "bufferDataBus:inst1|PortR[7]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[6]" to the node "bufferDataBusbaja:inst7|PortR[6]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[5]" to the node "bufferDataBus:inst1|PortR[5]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[5]" to the node "bufferDataBus:inst1|PortR[5]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[6]" to the node "bufferDataBus:inst1|PortR[6]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCH|SALIDA" to the node "bufferDataBusbaja:inst7|PortR[5]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[5]" to the node "bufferDataBusbaja:inst7|PortR[5]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[5]" to the node "bufferDataBusbaja:inst7|PortR[5]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[4]" to the node "bufferDataBus:inst1|PortR[4]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[4]" to the node "bufferDataBus:inst1|PortR[4]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[4]" to the node "bufferDataBusbaja:inst7|PortR[4]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[5]" to the node "bufferDataBus:inst1|PortR[5]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[4]" to the node "bufferDataBusbaja:inst7|PortR[4]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[3]" to the node "bufferDataBus:inst1|PortR[3]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[3]" to the node "bufferDataBus:inst1|PortR[3]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[4]" to the node "bufferDataBus:inst1|PortR[4]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCN|SALIDA" to the node "bufferDataBusbaja:inst7|PortR[3]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[3]" to the node "bufferDataBusbaja:inst7|PortR[3]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[3]" to the node "bufferDataBusbaja:inst7|PortR[3]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[2]" to the node "bufferDataBus:inst1|PortR[2]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[2]" to the node "bufferDataBus:inst1|PortR[2]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[3]" to the node "bufferDataBus:inst1|PortR[3]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCZ|SALIDA" to the node "bufferDataBusbaja:inst7|PortR[2]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[2]" to the node "bufferDataBusbaja:inst7|PortR[2]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[2]" to the node "bufferDataBusbaja:inst7|PortR[2]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[1]" to the node "bufferDataBus:inst1|PortR[1]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[1]" to the node "bufferDataBus:inst1|PortR[1]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[2]" to the node "bufferDataBus:inst1|PortR[2]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCV|SALIDA" to the node "bufferDataBusbaja:inst7|PortR[1]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[1]" to the node "bufferDataBusbaja:inst7|PortR[1]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[1]" to the node "bufferDataBusbaja:inst7|PortR[1]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[0]" to the node "bufferDataBus:inst1|PortR[0]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[0]" to the node "bufferDataBus:inst1|PortR[0]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[1]" to the node "bufferDataBus:inst1|PortR[1]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCC|SALIDA" to the node "bufferDataBusbaja:inst7|PortR[0]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[0]" to the node "bufferDataBusbaja:inst7|PortR[0]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|D[0]" to the node "bufferDataBusbaja:inst7|PortR[0]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPC|C[0]" to the node "bufferDataBus:inst1|PortR[0]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCS|SALIDA" to the node "bufferDataBusbaja:inst7|PortR[7]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[7]" to the node "bufferDataBusbaja:inst7|PortR[7]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[7]" to the node "bufferDataBus:inst1|PortR[7]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCX|SALIDA" to the node "bufferDataBusbaja:inst7|PortR[6]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[6]" to the node "bufferDataBusbaja:inst7|PortR[6]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[6]" to the node "bufferDataBus:inst1|PortR[6]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[5]" to the node "bufferDataBusbaja:inst7|PortR[5]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[5]" to the node "bufferDataBus:inst1|PortR[5]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "RegEdos:flags|registro:tCI|SALIDA" to the node "bufferDataBusbaja:inst7|PortR[4]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[4]" to the node "bufferDataBusbaja:inst7|PortR[4]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[4]" to the node "bufferDataBus:inst1|PortR[4]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[3]" to the node "bufferDataBusbaja:inst7|PortR[3]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[3]" to the node "bufferDataBus:inst1|PortR[3]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[2]" to the node "bufferDataBusbaja:inst7|PortR[2]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[2]" to the node "bufferDataBus:inst1|PortR[2]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[1]" to the node "bufferDataBusbaja:inst7|PortR[1]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[1]" to the node "bufferDataBus:inst1|PortR[1]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|D[0]" to the node "bufferDataBusbaja:inst7|PortR[0]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 12
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:RegPila|C[0]" to the node "bufferDataBus:inst1|PortR[0]" File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 11
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "contador_IDX:inst9|R0" to the node "secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|_" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador_IDX.vhd Line: 17
     Warning (13047): Converted the fan-out from the tri-state buffer "contador:RegAux|R15" to the node "secuenciador:inst6|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|_" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/contador.vhd Line: 17
@@ -2710,22 +2793,22 @@ Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s
     Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst6|inst8[3]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]" into a wire
     Warning (13051): Converted the fanout from the open-drain buffer "secuenciador:inst6|inst8[1]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]" into a wire
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[7]" to the node "upa:upa|Mux43" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[7]" to the node "registro_instruccion:inst11|valor_interno[11]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[6]" to the node "upa:upa|Mux42" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[7]" to the node "upa:upa|Mux43" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[6]" to the node "registro_instruccion:inst11|valor_interno[10]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[5]" to the node "upa:upa|Mux41" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[6]" to the node "upa:upa|Mux42" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[5]" to the node "registro_instruccion:inst11|valor_interno[9]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[4]" to the node "upa:upa|Mux40" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[5]" to the node "upa:upa|Mux41" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[4]" to the node "registro_instruccion:inst11|valor_interno[8]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[3]" to the node "upa:upa|Mux39" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[4]" to the node "upa:upa|Mux40" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[3]" to the node "registro_instruccion:inst11|valor_interno[7]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[2]" to the node "upa:upa|Mux38" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[3]" to the node "upa:upa|Mux39" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[2]" to the node "registro_instruccion:inst11|valor_interno[6]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[1]" to the node "upa:upa|Mux37" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[2]" to the node "upa:upa|Mux38" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[1]" to the node "registro_instruccion:inst11|valor_interno[5]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 25
-    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[0]" to the node "upa:upa|Mux36" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[1]" to the node "upa:upa|Mux37" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa[0]" to the node "registro_instruccion:inst11|valor_interno[4]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 25
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:upa|Yupa2[0]" to the node "upa:upa|Mux36" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/upa.vhd Line: 26
     Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst1|PortR[7]" to the node "ram:inst|mem[255][7]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/bufferDataBus.vhd Line: 7
     Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst1|PortR[6]" to the node "ram:inst|mem[255][6]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/bufferDataBus.vhd Line: 7
     Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:inst1|PortR[5]" to the node "ram:inst|mem[255][5]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/bufferDataBus.vhd Line: 7
@@ -2744,6 +2827,23 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "ctrl_interrupciones:inst4|Y[4]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]" into an OR gate File: C:/intelFPGA_lite/OyAC/Lab/Practica7/ctrl_interrupciones.vhd Line: 15
     Warning (13047): Converted the fan-out from the tri-state buffer "inst12[2]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "inst12[0]" to the node "secuenciador:inst6|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]" into an OR gate
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DebugAP[15]" is stuck at GND
+    Warning (13410): Pin "DebugAP[14]" is stuck at GND
+    Warning (13410): Pin "DebugAP[13]" is stuck at GND
+    Warning (13410): Pin "DebugAP[12]" is stuck at GND
+    Warning (13410): Pin "DebugAP[11]" is stuck at GND
+    Warning (13410): Pin "DebugAP[10]" is stuck at GND
+    Warning (13410): Pin "DebugAP[9]" is stuck at GND
+    Warning (13410): Pin "DebugAP[8]" is stuck at GND
+    Warning (13410): Pin "DebugAP[7]" is stuck at GND
+    Warning (13410): Pin "DebugAP[6]" is stuck at GND
+    Warning (13410): Pin "DebugAP[5]" is stuck at GND
+    Warning (13410): Pin "DebugAP[4]" is stuck at GND
+    Warning (13410): Pin "DebugAP[3]" is stuck at GND
+    Warning (13410): Pin "DebugAP[2]" is stuck at GND
+    Warning (13410): Pin "DebugAP[1]" is stuck at GND
+    Warning (13410): Pin "DebugAP[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -2751,14 +2851,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IRQn"
     Warning (15610): No output dependent on input pin "XIRQn"
-Info (21057): Implemented 4286 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4409 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 138 output pins
-    Info (21061): Implemented 4144 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 191 warnings
+    Info (21061): Implemented 4267 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 208 warnings
     Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Wed Oct 30 14:24:09 2019
-    Info: Elapsed time: 00:00:59
-    Info: Total CPU time (on all processors): 00:01:19
+    Info: Processing ended: Sun Nov 10 01:37:09 2019
+    Info: Elapsed time: 00:01:14
+    Info: Total CPU time (on all processors): 00:01:26
 
 

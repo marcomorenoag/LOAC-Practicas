@@ -45,23 +45,23 @@ architecture Behavioral of ram is
 		mem(12) <= X"AB";
 		mem(13) <= X"00";
 		
-		--STAA 0,X
-		mem(14) <= X"A7";
-		mem(15) <= X"00";
-		
-		--ADDB 0,X
-		mem(16) <= X"EB";
-		mem(17) <= X"00";
-		
-		--STAB 0,Y
-		mem(18) <= X"18";
-		mem(19) <= X"E7";
-		mem(20) <= X"00";
-		
-		--JMP #$000B
-		mem(21) <= X"7E";
-		mem(22) <= X"00";
-		mem(23) <= X"0B";
+--		--STAA 0,X
+--		mem(14) <= X"A7";
+--		mem(15) <= X"00";
+--		
+--		--ADDB 0,X
+--		mem(16) <= X"EB";
+--		mem(17) <= X"00";
+--		
+--		--STAB 0,Y
+--		mem(18) <= X"18";
+--		mem(19) <= X"E7";
+--		mem(20) <= X"00";
+--		
+--		--JMP #$000B
+--		mem(21) <= X"7E";
+--		mem(22) <= X"00";
+--		mem(23) <= X"0B";
 		
 		
 		if (CSn = '0' and Wn = '0') then

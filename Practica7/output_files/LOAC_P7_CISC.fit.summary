@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed Oct 30 14:33:02 2019
+Fitter Status : Successful - Sun Nov 10 01:53:04 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : LOAC_P7_CISC
 Top-level Entity Name : LOAC_P7_CISC
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 4,090 / 49,760 ( 8 % )
-    Total combinational functions : 4,083 / 49,760 ( 8 % )
-    Dedicated logic registers : 158 / 49,760 ( < 1 % )
-Total registers : 158
+Total logic elements : 4,222 / 49,760 ( 8 % )
+    Total combinational functions : 4,206 / 49,760 ( 8 % )
+    Dedicated logic registers : 142 / 49,760 ( < 1 % )
+Total registers : 142
 Total pins : 142 / 360 ( 39 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
