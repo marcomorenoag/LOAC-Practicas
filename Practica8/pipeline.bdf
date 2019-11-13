@@ -659,7 +659,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 200 280 424 408)
+	(rect 192 280 416 408)
 	(text "etapa1" (rect 5 0 47 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
@@ -916,40 +916,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -24 112)
-	(pt -24 312)
-)
-(connector
-	(pt -8 128)
-	(pt -8 328)
-	(bus)
-)
-(connector
-	(pt -24 312)
-	(pt 200 312)
-)
-(connector
-	(pt -8 328)
-	(pt 200 328)
-	(bus)
-)
-(connector
-	(pt 56 344)
-	(pt 168 344)
-)
-(connector
-	(pt 168 344)
-	(pt 200 344)
-)
-(connector
-	(pt 56 360)
-	(pt 184 360)
-)
-(connector
-	(pt 184 360)
-	(pt 200 360)
-)
-(connector
 	(pt 704 128)
 	(pt 704 280)
 	(bus)
@@ -1072,21 +1038,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 520 344)
-	(pt 520 376)
-	(bus)
-)
-(connector
-	(pt 512 360)
-	(pt 512 408)
-	(bus)
-)
-(connector
-	(pt 536 328)
-	(pt 536 392)
-	(bus)
-)
-(connector
 	(pt 704 128)
 	(pt 1736 128)
 	(bus)
@@ -1201,23 +1152,72 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 424 360)
-	(pt 512 360)
+	(pt -24 112)
+	(pt -24 312)
+)
+(connector
+	(pt -8 128)
+	(pt -8 328)
 	(bus)
 )
 (connector
-	(pt 424 344)
+	(pt -24 312)
+	(pt 192 312)
+)
+(connector
+	(pt -8 328)
+	(pt 192 328)
+	(bus)
+)
+(connector
+	(pt 520 376)
 	(pt 520 344)
 	(bus)
 )
 (connector
-	(pt 424 328)
+	(pt 512 408)
+	(pt 512 360)
+	(bus)
+)
+(connector
+	(pt 536 392)
 	(pt 536 328)
 	(bus)
 )
 (connector
-	(pt 424 312)
+	(pt 56 344)
+	(pt 168 344)
+)
+(connector
+	(pt 168 344)
+	(pt 192 344)
+)
+(connector
+	(pt 56 360)
+	(pt 184 360)
+)
+(connector
+	(pt 184 360)
+	(pt 192 360)
+)
+(connector
+	(pt 416 312)
 	(pt 728 312)
+	(bus)
+)
+(connector
+	(pt 416 328)
+	(pt 536 328)
+	(bus)
+)
+(connector
+	(pt 416 344)
+	(pt 520 344)
+	(bus)
+)
+(connector
+	(pt 416 360)
+	(pt 512 360)
 	(bus)
 )
 (junction (pt 184 360))

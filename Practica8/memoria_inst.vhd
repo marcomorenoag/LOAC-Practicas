@@ -20,11 +20,11 @@ architecture Behavioral of memoria_inst is
 		memoria(0) <= X"00C60002"; -- LDAB #$02
 		memoria(1) <= X"00860000"; -- LDAA #$00
 		memoria(2) <= X"00010000"; -- NOP
-		memoria(4) <= X"001B0000"; -- ABA
-		memoria(5) <= X"007E0002"; -- JMP #$0002
+		memoria(3) <= X"001B0000"; -- ABA
+		memoria(4) <= X"007E0003"; -- JMP #$0002
+		memoria(5) <= X"00010000"; -- NOP
 		memoria(6) <= X"00010000"; -- NOP
 		memoria(7) <= X"00010000"; -- NOP
-		memoria(8) <= X"00010000"; -- NOP
 		
 		
 		
