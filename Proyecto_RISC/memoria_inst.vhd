@@ -16,6 +16,32 @@ architecture Behavioral of memoria_inst is
 	
 	begin
 
+		-- PROGRAMA EN ENSAMBLADOR DEL PROCESADOR RISC 68HC11
+		--
+		-- REALIZADO POR:
+		-- * García Fernández Jesús Alejandro
+		-- * López Santibañez Jiménez Luis Gerardo
+		-- * Moreno Guerra Marco Antonio
+		--
+		-- FECHA DE ÚLTIMA MODIFICACIÓN:
+		-- 23 de noviembre del 2019
+		--
+		-- DESCRIPCIÓN:
+		-- Este programa realiza la siguiente SERIE: SUMA(((-1)^(i+1))*i+(2^i))) desde i=0 hasta i=5
+		-- El desarrollo de la serie es el siguiente:
+		--  0 + 1	=> SUMA = 1
+		--  1 + 2	=> SUMA = 4
+		-- -2 + 4	=> SUMA = 6
+		--  3 + 8	=> SUMA = 17
+		-- -4 + 16	=> SUMA = 29
+		--  5 + 32 (Este paso ya no se ejecuta, aquí se detiene
+		--
+		-- El registro ACCA almacenará el resultado de: ((-1)^(i+1))*i
+		-- El registro ACCB almacenará el resultado de: (2^i)
+		-- La suma de ACCA + ACCB se almacenará en SUMA, que es la localidad de memoria[0]
+		-- El indice contador "i" se almacenará en la localidad de memoria[1]
+		-- 
+		-- CÓDIGO EN ENSAMBLADOR
 		-- Inicio: ACCA = 0, MEM_0 = 0, ACCB = 1
 		memoria(0) <= x"00860000"; -- LDAA #0000 ; (ACCA) <- 0x0000
 		memoria(1) <= x"00B70004"; -- STAA #0004 ; (mem[4]) <- (ACCA)

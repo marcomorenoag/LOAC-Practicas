@@ -17,7 +17,7 @@ entity u_control is
 			selresult : out STD_LOGIC_VECTOR (1 downto 0);
 			selc : out STD_LOGIC;
 			cadj : out STD_LOGIC;
-			selfalgs : out STD_LOGIC_VECTOR (3 downto 0);
+			selflags : out STD_LOGIC_VECTOR (3 downto 0);
 			selbranch : out STD_LOGIC_VECTOR (2 downto 0);
 			vf : out STD_LOGIC;
 			selregw : out STD_LOGIC_VECTOR (2 downto 0);
@@ -42,7 +42,7 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '0';
-			selfalgs <= X"2";
+			selflags <= X"2";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "001";
@@ -62,7 +62,7 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '0';
-			selfalgs <= X"1";
+			selflags <= X"1";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "001";
@@ -82,7 +82,7 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '0';
-			selfalgs <= X"1";
+			selflags <= X"1";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "100";
@@ -101,7 +101,7 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '0';
-			selfalgs <= X"1";
+			selflags <= X"1";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "001";
@@ -121,7 +121,7 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '0';
-			selfalgs <= X"1";
+			selflags <= X"1";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "000";
@@ -141,7 +141,7 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '0';
-			selfalgs <= X"1";
+			selflags <= X"1";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "000";
@@ -161,7 +161,7 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '1';
-			selfalgs <= X"C";
+			selflags <= X"C";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "001";
@@ -181,7 +181,7 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '1';
-			selfalgs <= X"C";
+			selflags <= X"C";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "100";
@@ -201,7 +201,7 @@ begin
 			selresult <= "00";
 			selc <= '1';
 			cadj <= '1';
-			selfalgs <= X"3";
+			selflags <= X"3";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "000";
@@ -221,7 +221,7 @@ begin
 			selresult <= "01";
 			selc <= '0';
 			cadj <= '0';
-			selfalgs <= X"0";
+			selflags <= X"0";
 			selbranch <= "000";
 			vf <= '0';
 			selregw <= "000";
@@ -241,7 +241,7 @@ begin
 			selresult <= "00";
 			selc <= '0';
 			cadj <= '0';
-			selfalgs <= X"0";
+			selflags <= X"0";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "000";
@@ -261,7 +261,7 @@ begin
 			selresult <= "01";
 			selc <= '0';
 			cadj <= '0';
-			selfalgs <= X"0";
+			selflags <= X"0";
 			selbranch <= "010";
 			vf <= '1';
 			selregw <= "000";
@@ -281,22 +281,63 @@ begin
 			selresult <= "01";
 			selc <= '1';
 			cadj <= '1';
-			selfalgs <= X"3";
+			selflags <= X"3";
 			selbranch <= "000";
 			vf <= '1';
 			selregw <= "000";
 			memw <= '1';
 			seldirw <= "10";
+			
+		elsif inst = X"007F" then -- clr #dir_16bits (ext)
+			selregr <= X"0";
+			sels1 <= '0';
+			sr <= '1';
+			cin <= '0';
+			sels2 <= '0';
+			seldato <= '1';
+			selsrc <= "010";
+			seldir <= "01";
+			selop <= X"3";
+			selresult <= "01";
+			selc <= '1';
+			cadj <= '0';
+			selflags <= X"3";
+			selbranch <= "000";
+			vf <= '1';
+			selregw <= "000";
+			memw <= '1';
+			seldirw <= "10";
+			
+		elsif inst = X"0058" then -- lslb (inh)
+			selregr <= X"5";
+			sels1 <= '0';
+			sr <= '1';
+			cin <= '0';
+			sels2 <= '0';
+			seldato <= '1';
+			selsrc <= "010";
+			seldir <= "00";
+			selop <= X"6";
+			selresult <= "01";
+			selc <= '1';
+			cadj <= '0';
+			selflags <= X"3";
+			selbranch <= "000";
+			vf <= '1';
+			selregw <= "100";
+			memw <= '0';
+			seldirw <= "00";
 
 		end if;
 		
 		
+		-- ITERACIÓN 1: MEJORAS AL PROGRAMA PARA AGREGAR INSTRUCCIONES
 		-- A incr alternando signos en 1
 		-- B en potencias de 2
-		-- 1: neg -> alternar signos
-		-- 2: lslb (0058) -> potencias
-		-- 3: inca -> incrementa ACCA
-		-- 4: clr -> RESET antes del jump
+		-- 1: neg -> alternar signos (LISTO)
+		-- 2: lslb (0058) -> potencias (LISTO)
+		-- 3: inca -> incrementa ACCA (LISTO)
+		-- 4: clr -> RESET antes del jump (LISTO)
 		
 	end process;
 end Behavioral;
