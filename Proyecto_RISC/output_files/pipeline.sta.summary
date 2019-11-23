@@ -1,0 +1,221 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -13.431
+TNS   : -4697.530
+
+Type  : Slow 1200mV 85C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : -9.578
+TNS   : -149.233
+
+Type  : Slow 1200mV 85C Model Setup 'divisor:inst5|div'
+Slack : -7.977
+TNS   : -573.855
+
+Type  : Slow 1200mV 85C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : -6.367
+TNS   : -30.559
+
+Type  : Slow 1200mV 85C Model Setup 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -6.231
+TNS   : -3354.259
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.469
+TNS   : -53.588
+
+Type  : Slow 1200mV 85C Model Hold 'divisor:inst5|div'
+Slack : -2.711
+TNS   : -4.855
+
+Type  : Slow 1200mV 85C Model Hold 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -2.369
+TNS   : -548.520
+
+Type  : Slow 1200mV 85C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -1.919
+TNS   : -202.071
+
+Type  : Slow 1200mV 85C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.640
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 1.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -6.767
+TNS   : -29118.474
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -3.882
+TNS   : -12525.153
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -40.881
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor:inst5|div'
+Slack : -1.403
+TNS   : -252.540
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -12.196
+TNS   : -4417.527
+
+Type  : Slow 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : -8.900
+TNS   : -138.371
+
+Type  : Slow 1200mV 0C Model Setup 'divisor:inst5|div'
+Slack : -7.353
+TNS   : -516.034
+
+Type  : Slow 1200mV 0C Model Setup 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -5.941
+TNS   : -3137.887
+
+Type  : Slow 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : -5.851
+TNS   : -27.953
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.066
+TNS   : -46.425
+
+Type  : Slow 1200mV 0C Model Hold 'divisor:inst5|div'
+Slack : -2.510
+TNS   : -4.500
+
+Type  : Slow 1200mV 0C Model Hold 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -2.280
+TNS   : -543.373
+
+Type  : Slow 1200mV 0C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -1.798
+TNS   : -205.293
+
+Type  : Slow 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.592
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.930
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -6.192
+TNS   : -26378.031
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -3.751
+TNS   : -11281.083
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -40.881
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor:inst5|div'
+Slack : -1.403
+TNS   : -252.540
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -5.930
+TNS   : -2032.860
+
+Type  : Fast 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : -3.996
+TNS   : -61.209
+
+Type  : Fast 1200mV 0C Model Setup 'divisor:inst5|div'
+Slack : -3.442
+TNS   : -208.719
+
+Type  : Fast 1200mV 0C Model Setup 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -2.768
+TNS   : -1393.680
+
+Type  : Fast 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : -2.317
+TNS   : -10.995
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.460
+TNS   : -7.491
+
+Type  : Fast 1200mV 0C Model Hold 'divisor:inst5|div'
+Slack : -1.380
+TNS   : -2.530
+
+Type  : Fast 1200mV 0C Model Hold 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -0.732
+TNS   : -124.457
+
+Type  : Fast 1200mV 0C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -0.276
+TNS   : -9.375
+
+Type  : Fast 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -30.856
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa3:inst2|reg_acoplo_4:inst107|memw'
+Slack : -2.663
+TNS   : -10068.477
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -1.725
+TNS   : -3733.452
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor:inst5|div'
+Slack : -1.000
+TNS   : -180.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : 0.381
+TNS   : 0.000
+
+------------------------------------------------------------
