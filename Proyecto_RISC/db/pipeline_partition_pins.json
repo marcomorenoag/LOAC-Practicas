@@ -556,6 +556,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "boton",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},

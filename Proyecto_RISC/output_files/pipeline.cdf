@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("C:/intelFPGA_lite/OyAC/Proyecto/Pipeline/output_files/") File("pipeline.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("C:/intelFPGA_lite/OyAC/Lab/Proyecto_RISC/output_files/") File("pipeline.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
