@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Sun Nov 24 01:45:55 2019
+Sun Nov 24 11:34:23 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -52,13 +52,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 24 01:45:55 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 24 11:34:23 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pipeline                                    ;
 ; Top-level Entity Name              ; pipeline                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2,162                                       ;
-;     Total combinational functions  ; 2,117                                       ;
+; Total logic elements               ; 2,159                                       ;
+;     Total combinational functions  ; 2,114                                       ;
 ;     Dedicated logic registers      ; 181                                         ;
 ; Total registers                    ; 181                                         ;
 ; Total pins                         ; 159                                         ;
@@ -226,36 +226,36 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                        ;
-+---------------------------------------------+--------------------------------------+
-; Resource                                    ; Usage                                ;
-+---------------------------------------------+--------------------------------------+
-; Estimated Total logic elements              ; 2,162                                ;
-;                                             ;                                      ;
-; Total combinational functions               ; 2117                                 ;
-; Logic element usage by number of LUT inputs ;                                      ;
-;     -- 4 input functions                    ; 957                                  ;
-;     -- 3 input functions                    ; 1093                                 ;
-;     -- <=2 input functions                  ; 67                                   ;
-;                                             ;                                      ;
-; Logic elements by mode                      ;                                      ;
-;     -- normal mode                          ; 2063                                 ;
-;     -- arithmetic mode                      ; 54                                   ;
-;                                             ;                                      ;
-; Total registers                             ; 181                                  ;
-;     -- Dedicated logic registers            ; 181                                  ;
-;     -- I/O registers                        ; 0                                    ;
-;                                             ;                                      ;
-; I/O pins                                    ; 159                                  ;
-;                                             ;                                      ;
-; Embedded Multiplier 9-bit elements          ; 0                                    ;
-;                                             ;                                      ;
-; Maximum fan-out node                        ; etapa2:inst3|mux_dir:inst2|sal[1]~29 ;
-; Maximum fan-out                             ; 185                                  ;
-; Total fan-out                               ; 8159                                 ;
-; Average fan-out                             ; 3.12                                 ;
-+---------------------------------------------+--------------------------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 2,159       ;
+;                                             ;             ;
+; Total combinational functions               ; 2114        ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 952         ;
+;     -- 3 input functions                    ; 1091        ;
+;     -- <=2 input functions                  ; 71          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 2060        ;
+;     -- arithmetic mode                      ; 54          ;
+;                                             ;             ;
+; Total registers                             ; 181         ;
+;     -- Dedicated logic registers            ; 181         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 159         ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; RESET~input ;
+; Maximum fan-out                             ; 185         ;
+; Total fan-out                               ; 8119        ;
+; Average fan-out                             ; 3.11        ;
++---------------------------------------------+-------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -263,17 +263,17 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                       ; Entity Name     ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------+-----------------+--------------+
-; |pipeline                            ; 2117 (0)            ; 181 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 159  ; 0            ; 0          ; |pipeline                                                                 ; pipeline        ; work         ;
+; |pipeline                            ; 2114 (0)            ; 181 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 159  ; 0            ; 0          ; |pipeline                                                                 ; pipeline        ; work         ;
 ;    |display_decoder:inst4|           ; 45 (45)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|display_decoder:inst4                                           ; display_decoder ; work         ;
 ;    |display_opcode:inst6|            ; 14 (14)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|display_opcode:inst6                                            ; display_opcode  ; work         ;
-;    |etapa1:inst|                     ; 44 (0)              ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst                                                     ; etapa1          ; work         ;
-;       |busmux:inst10|                ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|busmux:inst10                                       ; busmux          ; work         ;
-;          |lpm_mux:$00000|            ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|busmux:inst10|lpm_mux:$00000                        ; lpm_mux         ; work         ;
-;             |mux_h7c:auto_generated| ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|busmux:inst10|lpm_mux:$00000|mux_h7c:auto_generated ; mux_h7c         ; work         ;
-;       |registro_inst:inst5|          ; 8 (8)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_inst:inst5                                 ; registro_inst   ; work         ;
+;    |etapa1:inst|                     ; 48 (0)              ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst                                                     ; etapa1          ; work         ;
+;       |busmux:inst10|                ; 42 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|busmux:inst10                                       ; busmux          ; work         ;
+;          |lpm_mux:$00000|            ; 42 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|busmux:inst10|lpm_mux:$00000                        ; lpm_mux         ; work         ;
+;             |mux_h7c:auto_generated| ; 42 (42)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|busmux:inst10|lpm_mux:$00000|mux_h7c:auto_generated ; mux_h7c         ; work         ;
+;       |registro_inst:inst5|          ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_inst:inst5                                 ; registro_inst   ; work         ;
 ;       |registro_pc:inst3|            ; 6 (6)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_pc:inst3                                   ; registro_pc     ; work         ;
-;    |etapa2:inst3|                    ; 1771 (0)            ; 98 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3                                                    ; etapa2          ; work         ;
-;       |memoria_datos:inst200|        ; 1444 (1444)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|memoria_datos:inst200                              ; memoria_datos   ; work         ;
+;    |etapa2:inst3|                    ; 1768 (0)            ; 98 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3                                                    ; etapa2          ; work         ;
+;       |memoria_datos:inst200|        ; 1441 (1441)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|memoria_datos:inst200                              ; memoria_datos   ; work         ;
 ;       |mux_detencion:inst11|         ; 20 (20)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|mux_detencion:inst11                               ; mux_detencion   ; work         ;
 ;       |mux_dir:inst2|                ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|mux_dir:inst2                                      ; mux_dir         ; work         ;
 ;       |mux_src:inst202|              ; 66 (66)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|mux_src:inst202                                    ; mux_src         ; work         ;
@@ -289,7 +289,7 @@ refer to the applicable agreement for further details.
 ;       |sumador:inst3|                ; 20 (20)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|sumador:inst3                                      ; sumador         ; work         ;
 ;       |u_control:inst206|            ; 167 (167)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|u_control:inst206                                  ; u_control       ; work         ;
 ;       |u_detencion:instdetencion|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|u_detencion:instdetencion                          ; u_detencion     ; work         ;
-;    |etapa3:inst2|                    ; 242 (0)             ; 43 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2                                                    ; etapa3          ; work         ;
+;    |etapa3:inst2|                    ; 238 (0)             ; 43 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2                                                    ; etapa3          ; work         ;
 ;       |branch:inst4|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|branch:inst4                                       ; branch          ; work         ;
 ;       |busmux:inst8|                 ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst8                                       ; busmux          ; work         ;
 ;          |lpm_mux:$00000|            ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst8|lpm_mux:$00000                        ; lpm_mux         ; work         ;
@@ -311,7 +311,7 @@ refer to the applicable agreement for further details.
 ;       |registro_pc:inst5|            ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_pc:inst5                                  ; registro_pc     ; work         ;
 ;       |registro_pc:inst6|            ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_pc:inst6                                  ; registro_pc     ; work         ;
 ;       |u_anticipacion:inst7|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|u_anticipacion:inst7                               ; u_anticipacion  ; work         ;
-;       |upa:inst|                     ; 157 (157)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|upa:inst                                           ; upa             ; work         ;
+;       |upa:inst|                     ; 153 (153)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|upa:inst                                           ; upa             ; work         ;
 ;    |sensa_boton:inst7|               ; 1 (1)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|sensa_boton:inst7                                               ; sensa_boton     ; work         ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -447,7 +447,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[0..15]  ; Stuck at GND due to stuck port clock_enable ;
 ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[0..15]  ; Stuck at GND due to stuck port clock_enable ;
 ; etapa1:inst|registro_pc:inst4|valor_interno[0..15]               ; Lost fanout                                 ;
-; etapa1:inst|registro_inst:inst5|valor_interno[3,5..15,24..31]    ; Stuck at GND due to stuck port data_in      ;
+; etapa1:inst|registro_inst:inst5|valor_interno[1,5..15,24..31]    ; Stuck at GND due to stuck port data_in      ;
 ; display_opcode:inst6|third_value[0..3]                           ; Stuck at GND due to stuck port data_in      ;
 ; etapa1:inst|registro_pc:inst3|valor_interno[6..15]               ; Lost fanout                                 ;
 ; Total Number of Removed Registers = 124                          ;                                             ;
@@ -526,8 +526,8 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 181   ;
-; Number of registers using Synchronous Clear  ; 8     ;
-; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 179   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 50    ;
@@ -553,18 +553,18 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |pipeline|display_decoder:inst4|second_value[1]                 ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pipeline|etapa1:inst|registro_pc:inst3|valor_interno[2]        ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |pipeline|etapa2:inst3|registro_pc:inst9|valor_interno[14]      ;
-; 52:1               ; 12 bits   ; 408 LEs       ; 216 LEs              ; 192 LEs                ; Yes        ; |pipeline|etapa1:inst|registro_inst:inst5|valor_interno[23]     ;
+; 52:1               ; 12 bits   ; 408 LEs       ; 276 LEs              ; 132 LEs                ; Yes        ; |pipeline|etapa1:inst|registro_inst:inst5|valor_interno[23]     ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selregw[2]             ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selsrc[1]              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selsrc[0]              ;
-; 8:1                ; 14 bits   ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; No         ; |pipeline|etapa3:inst2|upa:inst|opres[12]                       ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_src:inst202|OP2[6]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selsrc[1]              ;
+; 8:1                ; 14 bits   ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; No         ; |pipeline|etapa3:inst2|upa:inst|opres[3]                        ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_src:inst202|OP2[11]                  ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_src:inst202|OP2[2]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_dir:inst2|sal[3]                     ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_dir:inst2|sal[4]                     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|registros:inst700666|mux_regs:inst|D1[7] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_dir:inst2|sal[1]                     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_dir:inst2|sal[2]                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|registros:inst700666|mux_regs:inst|D1[9] ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|sumador:inst3|Add0                       ;
-; 51:1               ; 16 bits   ; 544 LEs       ; 544 LEs              ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|memoria_datos:inst200|Mux2               ;
+; 51:1               ; 16 bits   ; 544 LEs       ; 544 LEs              ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|memoria_datos:inst200|Mux5               ;
 ; 256:1              ; 2 bits    ; 340 LEs       ; 16 LEs               ; 324 LEs                ; No         ; |pipeline|etapa2:inst3|u_control:inst206|seldir[0]              ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selregr[0]             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
@@ -628,23 +628,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 159                         ;
 ; cycloneiii_ff         ; 181                         ;
 ;     CLR               ; 129                         ;
-;     ENA CLR           ; 36                          ;
-;     ENA CLR SCLR SLD  ; 8                           ;
+;     ENA CLR           ; 42                          ;
+;     ENA CLR SCLR      ; 2                           ;
 ;     ENA CLR SLD       ; 6                           ;
 ;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 2126                        ;
+; cycloneiii_lcell_comb ; 2123                        ;
 ;     arith             ; 54                          ;
 ;         2 data inputs ; 7                           ;
 ;         3 data inputs ; 47                          ;
-;     normal            ; 2072                        ;
+;     normal            ; 2069                        ;
 ;         0 data inputs ; 4                           ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 57                          ;
-;         3 data inputs ; 1046                        ;
-;         4 data inputs ; 957                         ;
+;         2 data inputs ; 61                          ;
+;         3 data inputs ; 1044                        ;
+;         4 data inputs ; 952                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 13.30                       ;
-; Average LUT depth     ; 7.31                        ;
+; Max LUT depth         ; 12.30                       ;
+; Average LUT depth     ; 7.23                        ;
 +-----------------------+-----------------------------+
 
 
@@ -663,7 +663,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 24 01:45:24 2019
+    Info: Processing started: Sun Nov 24 11:33:53 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1903,8 +1903,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
     Info (12023): Found entity 1: mux_h7c File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_RISC/db/mux_h7c.tdf Line: 22
 Info (12128): Elaborating entity "mux_h7c" for hierarchy "etapa1:inst|BUSMUX:inst10|lpm_mux:$00000|mux_h7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "memoria_inst" for hierarchy "etapa1:inst|memoria_inst:inst1"
-Warning (10492): VHDL Process Statement warning at memoria_inst.vhd(88): signal "memoria" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_RISC/memoria_inst.vhd Line: 88
-Warning (10873): Using initial value X (don't care) for net "memoria[28..50]" at memoria_inst.vhd(15) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_RISC/memoria_inst.vhd Line: 15
+Warning (10492): VHDL Process Statement warning at memoria_inst.vhd(94): signal "memoria" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_RISC/memoria_inst.vhd Line: 94
+Warning (10873): Using initial value X (don't care) for net "memoria[36..50]" at memoria_inst.vhd(15) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_RISC/memoria_inst.vhd Line: 15
 Info (12128): Elaborating entity "incrementador" for hierarchy "etapa1:inst|incrementador:inst"
 Info (12128): Elaborating entity "display_decoder" for hierarchy "display_decoder:inst4"
 Info (12128): Elaborating entity "display_opcode" for hierarchy "display_opcode:inst6"
@@ -1992,14 +1992,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 58 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2334 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2331 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 154 output pins
-    Info (21061): Implemented 2175 logic cells
+    Info (21061): Implemented 2172 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 130 warnings
     Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Sun Nov 24 01:45:55 2019
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:53
+    Info: Processing ended: Sun Nov 24 11:34:23 2019
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:47
 
 
