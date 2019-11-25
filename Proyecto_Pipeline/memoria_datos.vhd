@@ -17,9 +17,7 @@ architecture Behavioral of memoria_datos is
 	signal memoria : memory;
 	
 	begin
-		-- Las direcciones las indicamos en decimal
 		
-		-- Llenamos la memoria CARTA A
 		--memoria(0) <= "000000000010" & "01" & "01" & '1' & "11000";
 		--memoria(1) <= "000000000011" & "01" & "11" & '1' & "01001";
 		--memoria(2) <= "000000000100" & "01" & "00" & '1' & "00100";

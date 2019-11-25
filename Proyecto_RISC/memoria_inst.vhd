@@ -24,7 +24,7 @@ architecture Behavioral of memoria_inst is
 		-- * Moreno Guerra Marco Antonio
 		--
 		-- FECHA DE ÚLTIMA MODIFICACIÓN:
-		-- 24 de noviembre del 2019
+		-- 25 de noviembre del 2019
 		--
 		-- DESCRIPCIÓN:
 		-- Este programa realiza la siguiente SERIE: SUMA((i+(2i))) desde i=1 hasta i=5

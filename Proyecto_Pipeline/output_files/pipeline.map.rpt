@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Mon Nov 25 14:12:55 2019
+Mon Nov 25 14:22:39 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -49,15 +49,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 25 14:12:55 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 25 14:22:39 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pipeline                                    ;
 ; Top-level Entity Name              ; pipeline                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 322                                         ;
-;     Total combinational functions  ; 263                                         ;
-;     Dedicated logic registers      ; 135                                         ;
-; Total registers                    ; 135                                         ;
+; Total logic elements               ; 352                                         ;
+;     Total combinational functions  ; 292                                         ;
+;     Dedicated logic registers      ; 141                                         ;
+; Total registers                    ; 141                                         ;
 ; Total pins                         ; 150                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -227,20 +227,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 322         ;
+; Estimated Total logic elements              ; 352         ;
 ;                                             ;             ;
-; Total combinational functions               ; 263         ;
+; Total combinational functions               ; 292         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 169         ;
-;     -- 3 input functions                    ; 57          ;
+;     -- 4 input functions                    ; 190         ;
+;     -- 3 input functions                    ; 65          ;
 ;     -- <=2 input functions                  ; 37          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 241         ;
+;     -- normal mode                          ; 270         ;
 ;     -- arithmetic mode                      ; 22          ;
 ;                                             ;             ;
-; Total registers                             ; 135         ;
-;     -- Dedicated logic registers            ; 135         ;
+; Total registers                             ; 141         ;
+;     -- Dedicated logic registers            ; 141         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 150         ;
@@ -248,9 +248,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; RESET~input ;
-; Maximum fan-out                             ; 151         ;
-; Total fan-out                               ; 1614        ;
-; Average fan-out                             ; 2.31        ;
+; Maximum fan-out                             ; 157         ;
+; Total fan-out                               ; 1740        ;
+; Average fan-out                             ; 2.37        ;
 +---------------------------------------------+-------------+
 
 
@@ -259,15 +259,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                          ; Entity Name         ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------+---------------------+--------------+
-; |pipeline                            ; 263 (0)             ; 135 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 150  ; 0            ; 0          ; |pipeline                                                                    ; pipeline            ; work         ;
-;    |decoDisp_Instr:inst4|            ; 12 (12)             ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decoDisp_Instr:inst4                                               ; decoDisp_Instr      ; work         ;
+; |pipeline                            ; 292 (0)             ; 141 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 150  ; 0            ; 0          ; |pipeline                                                                    ; pipeline            ; work         ;
+;    |decoDisp_Instr:inst4|            ; 12 (12)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decoDisp_Instr:inst4                                               ; decoDisp_Instr      ; work         ;
 ;    |decoDisp_regContent:inst5|       ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decoDisp_regContent:inst5                                          ; decoDisp_regContent ; work         ;
-;    |etapa1:inst|                     ; 18 (0)              ; 13 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst                                                        ; etapa1              ; work         ;
-;       |memoria_inst:inst1|           ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|memoria_inst:inst1                                     ; memoria_inst        ; work         ;
-;       |registro_inst:inst5|          ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_inst:inst5                                    ; registro_inst       ; work         ;
+;    |etapa1:inst|                     ; 40 (0)              ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst                                                        ; etapa1              ; work         ;
+;       |memoria_inst:inst1|           ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|memoria_inst:inst1                                     ; memoria_inst        ; work         ;
+;       |registro_inst:inst5|          ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_inst:inst5                                    ; registro_inst       ; work         ;
 ;       |registro_pc:inst3|            ; 6 (6)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_pc:inst3                                      ; registro_pc         ; work         ;
-;    |etapa2:inst3|                    ; 72 (0)              ; 90 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3                                                       ; etapa2              ; work         ;
-;       |mux_src:inst202|              ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|mux_src:inst202                                       ; mux_src             ; work         ;
+;    |etapa2:inst3|                    ; 79 (0)              ; 90 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3                                                       ; etapa2              ; work         ;
+;       |mux_src:inst202|              ; 36 (36)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|mux_src:inst202                                       ; mux_src             ; work         ;
 ;       |reg_acoplo_3:inst10|          ; 1 (1)               ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|reg_acoplo_3:inst10                                   ; reg_acoplo_3        ; work         ;
 ;       |registro_pc:inst700|          ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registro_pc:inst700                                   ; registro_pc         ; work         ;
 ;       |registro_pc:inst8|            ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registro_pc:inst8                                     ; registro_pc         ; work         ;
@@ -276,7 +276,7 @@ refer to the applicable agreement for further details.
 ;          |registro_esp:ACCA|         ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:ACCA                ; registro_esp        ; work         ;
 ;          |registro_esp:ACCB|         ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:ACCB                ; registro_esp        ; work         ;
 ;          |registro_esp:AUX|          ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:AUX                 ; registro_esp        ; work         ;
-;       |u_control:inst206|            ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|u_control:inst206                                     ; u_control           ; work         ;
+;       |u_control:inst206|            ; 39 (39)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|u_control:inst206                                     ; u_control           ; work         ;
 ;    |etapa3:inst2|                    ; 131 (0)             ; 24 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2                                                       ; etapa3              ; work         ;
 ;       |busmux:inst1356|              ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst1356                                       ; busmux              ; work         ;
 ;          |lpm_mux:$00000|            ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst1356|lpm_mux:$00000                        ; lpm_mux             ; work         ;
@@ -410,39 +410,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                              ;
-+-----------------------------------------------------------------+---------------------------------------------------------------+
-; Register name                                                   ; Reason for Removal                                            ;
-+-----------------------------------------------------------------+---------------------------------------------------------------+
-; etapa2:inst3|reg_acoplo_3:inst10|selop[1,3]                     ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|selresult[1]                   ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|cadj                           ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|selfalgs[2,3]                  ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|selbranch[0..2]                ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|selregw[1]                     ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|memw                           ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|seldirw[0,1]                   ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|selregR[1..3]                  ; Stuck at GND due to stuck port data_in                        ;
-; etapa3:inst2|reg_acoplo_4:inst107|selregw[1]                    ; Stuck at GND due to stuck port data_in                        ;
-; etapa3:inst2|reg_acoplo_4:inst107|memw                          ; Stuck at GND due to stuck port data_in                        ;
-; etapa3:inst2|reg_acoplo_4:inst107|seldirw[0,1]                  ; Stuck at GND due to stuck port data_in                        ;
-; etapa1:inst|registro_pc:inst4|SALIDA[0..15]                     ; Lost fanout                                                   ;
-; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable                   ;
-; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable                   ;
-; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable                   ;
-; etapa3:inst2|registro_1:inst106|valor_interno                   ; Stuck at GND due to stuck port data_in                        ;
-; etapa2:inst3|registro_pc:inst9|SALIDA[0..15]                    ; Lost fanout                                                   ;
-; etapa3:inst2|registro_pc:inst5|SALIDA[0..15]                    ; Lost fanout                                                   ;
-; etapa1:inst|registro_inst:inst5|valor_interno[2..15,24..31]     ; Stuck at GND due to stuck port data_in                        ;
-; decoDisp_Instr:inst4|third_value[0..3]                          ; Stuck at GND due to stuck port data_in                        ;
-; etapa1:inst|registro_inst:inst5|valor_interno[20]               ; Merged with etapa1:inst|registro_inst:inst5|valor_interno[19] ;
-; etapa1:inst|registro_inst:inst5|valor_interno[1]                ; Merged with etapa1:inst|registro_inst:inst5|valor_interno[22] ;
-; etapa1:inst|registro_inst:inst5|valor_interno[0]                ; Merged with etapa1:inst|registro_inst:inst5|valor_interno[21] ;
-; decoDisp_Instr:inst4|second_value[0]                            ; Merged with decoDisp_Instr:inst4|first_value[3]               ;
-; etapa1:inst|registro_pc:inst3|SALIDA[6..15]                     ; Lost fanout                                                   ;
-; Total Number of Removed Registers = 157                         ;                                                               ;
-+-----------------------------------------------------------------+---------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                            ;
++-----------------------------------------------------------------+---------------------------------------------+
+; Register name                                                   ; Reason for Removal                          ;
++-----------------------------------------------------------------+---------------------------------------------+
+; etapa2:inst3|reg_acoplo_3:inst10|selop[1,3]                     ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|reg_acoplo_3:inst10|selresult[1]                   ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|reg_acoplo_3:inst10|cadj                           ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|reg_acoplo_3:inst10|selfalgs[2,3]                  ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|reg_acoplo_3:inst10|selbranch[0..2]                ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|reg_acoplo_3:inst10|selregw[1]                     ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|reg_acoplo_3:inst10|memw                           ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|reg_acoplo_3:inst10|seldirw[0,1]                   ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|reg_acoplo_3:inst10|selregR[1..3]                  ; Stuck at GND due to stuck port data_in      ;
+; etapa3:inst2|reg_acoplo_4:inst107|selregw[1]                    ; Stuck at GND due to stuck port data_in      ;
+; etapa3:inst2|reg_acoplo_4:inst107|memw                          ; Stuck at GND due to stuck port data_in      ;
+; etapa3:inst2|reg_acoplo_4:inst107|seldirw[0,1]                  ; Stuck at GND due to stuck port data_in      ;
+; etapa1:inst|registro_pc:inst4|SALIDA[0..15]                     ; Lost fanout                                 ;
+; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable ;
+; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable ;
+; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable ;
+; etapa3:inst2|registro_1:inst106|valor_interno                   ; Stuck at GND due to stuck port data_in      ;
+; etapa2:inst3|registro_pc:inst9|SALIDA[0..15]                    ; Lost fanout                                 ;
+; etapa3:inst2|registro_pc:inst5|SALIDA[0..15]                    ; Lost fanout                                 ;
+; etapa1:inst|registro_inst:inst5|valor_interno[1,5..15,24..31]   ; Stuck at GND due to stuck port data_in      ;
+; decoDisp_Instr:inst4|third_value[0..3]                          ; Stuck at GND due to stuck port data_in      ;
+; etapa1:inst|registro_pc:inst3|SALIDA[6..15]                     ; Lost fanout                                 ;
+; Total Number of Removed Registers = 151                         ;                                             ;
++-----------------------------------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -499,8 +495,8 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[13],                       ;
 ;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[14],                       ;
 ;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[15],                       ;
-;                                               ;                           ; decoDisp_Instr:inst4|third_value[0], decoDisp_Instr:inst4|third_value[3],           ;
-;                                               ;                           ; decoDisp_Instr:inst4|third_value[2], decoDisp_Instr:inst4|third_value[1]            ;
+;                                               ;                           ; decoDisp_Instr:inst4|third_value[3], decoDisp_Instr:inst4|third_value[2],           ;
+;                                               ;                           ; decoDisp_Instr:inst4|third_value[1]                                                 ;
 ; etapa2:inst3|reg_acoplo_3:inst10|memw         ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|memw, etapa3:inst2|registro_pc:inst5|SALIDA[13],  ;
 ;                                               ; due to stuck port data_in ; etapa3:inst2|registro_pc:inst5|SALIDA[12],                                          ;
 ;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[11],                                          ;
@@ -529,9 +525,8 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[7],                                   ;
 ;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[6],                                   ;
 ;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[5],                                   ;
-;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[4],                                   ;
-;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[3],                                   ;
-;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[2]                                    ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[1],                                   ;
+;                                               ;                           ; decoDisp_Instr:inst4|third_value[0]                                                 ;
 ; etapa2:inst3|reg_acoplo_3:inst10|selresult[1] ; Stuck at GND              ; etapa2:inst3|registro_pc:inst9|SALIDA[15],                                          ;
 ;                                               ; due to stuck port data_in ; etapa2:inst3|registro_pc:inst9|SALIDA[14],                                          ;
 ;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[13],                                          ;
@@ -558,10 +553,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 135   ;
+; Total registers                              ; 141   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 6     ;
-; Number of registers using Asynchronous Clear ; 134   ;
+; Number of registers using Asynchronous Clear ; 140   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 48    ;
 ; Number of registers using Preset             ; 0     ;
@@ -578,17 +573,17 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |pipeline|etapa3:inst2|upa:inst|opres[15]          ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|seldato   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_src:inst202|OP2[0]      ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |pipeline|decoDisp_regContent:inst5|third_value[0] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selsrc[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |pipeline|etapa3:inst2|upa:inst|opres[10]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selregr[0] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_src:inst202|OP2[4]       ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |pipeline|decoDisp_regContent:inst5|second_value[3] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selsrc[1]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
 +---------------------------------------------------------------------------+
@@ -617,24 +612,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 150                         ;
-; cycloneiii_ff         ; 135                         ;
-;     CLR               ; 80                          ;
+; cycloneiii_ff         ; 141                         ;
+;     CLR               ; 86                          ;
 ;     CLR SLD           ; 6                           ;
 ;     ENA CLR           ; 48                          ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 270                         ;
+; cycloneiii_lcell_comb ; 299                         ;
 ;     arith             ; 22                          ;
 ;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 17                          ;
-;     normal            ; 248                         ;
+;     normal            ; 277                         ;
 ;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 29                          ;
-;         3 data inputs ; 40                          ;
-;         4 data inputs ; 169                         ;
+;         3 data inputs ; 48                          ;
+;         4 data inputs ; 190                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.40                        ;
-; Average LUT depth     ; 3.78                        ;
+; Average LUT depth     ; 3.72                        ;
 +-----------------------+-----------------------------+
 
 
@@ -653,7 +648,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 25 14:12:30 2019
+    Info: Processing started: Mon Nov 25 14:22:14 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1019,24 +1014,24 @@ Info (10041): Inferred latch for "OP1[13]" at mux_src.vhd(17) File: C:/intelFPGA
 Info (10041): Inferred latch for "OP1[14]" at mux_src.vhd(17) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_src.vhd Line: 17
 Info (10041): Inferred latch for "OP1[15]" at mux_src.vhd(17) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_src.vhd Line: 17
 Info (12128): Elaborating entity "memoria_datos" for hierarchy "etapa2:inst3|memoria_datos:inst200"
-Warning (10492): VHDL Process Statement warning at memoria_datos.vhd(34): signal "memoria" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 34
-Warning (10631): VHDL Process Statement warning at memoria_datos.vhd(31): inferring latch(es) for signal or variable "datos", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[0]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[1]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[2]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[3]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[4]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[5]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[6]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[7]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[8]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[9]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[10]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[11]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[12]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[13]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[14]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Info (10041): Inferred latch for "datos[15]" at memoria_datos.vhd(31) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at memoria_datos.vhd(32): signal "memoria" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 32
+Warning (10631): VHDL Process Statement warning at memoria_datos.vhd(29): inferring latch(es) for signal or variable "datos", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[0]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[1]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[2]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[3]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[4]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[5]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[6]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[7]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[8]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[9]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[10]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[11]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[12]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[13]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[14]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Info (10041): Inferred latch for "datos[15]" at memoria_datos.vhd(29) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
 Info (12128): Elaborating entity "ext_signo" for hierarchy "etapa2:inst3|ext_signo:inst"
 Warning (10631): VHDL Process Statement warning at ext_signo.vhd(11): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/ext_signo.vhd Line: 11
 Info (10041): Inferred latch for "salida[0]" at ext_signo.vhd(11) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/ext_signo.vhd Line: 11
@@ -1058,8 +1053,8 @@ Info (10041): Inferred latch for "salida[15]" at ext_signo.vhd(11) File: C:/inte
 Info (12128): Elaborating entity "etapa1" for hierarchy "etapa1:inst"
 Info (12128): Elaborating entity "registro_inst" for hierarchy "etapa1:inst|registro_inst:inst5"
 Info (12128): Elaborating entity "memoria_inst" for hierarchy "etapa1:inst|memoria_inst:inst1"
-Warning (10492): VHDL Process Statement warning at memoria_inst.vhd(34): signal "memoria" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_inst.vhd Line: 34
-Warning (10873): Using initial value X (don't care) for net "memoria[8..50]" at memoria_inst.vhd(15) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_inst.vhd Line: 15
+Warning (10492): VHDL Process Statement warning at memoria_inst.vhd(93): signal "memoria" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_inst.vhd Line: 93
+Warning (10873): Using initial value X (don't care) for net "memoria[35..50]" at memoria_inst.vhd(15) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_inst.vhd Line: 15
 Info (12128): Elaborating entity "incrementador" for hierarchy "etapa1:inst|incrementador:inst"
 Info (12128): Elaborating entity "decoDisp_regContent" for hierarchy "decoDisp_regContent:inst5"
 Warning (10492): VHDL Process Statement warning at decoDisp_regContent.vhd(30): signal "sw_selectReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/decoDisp_regContent.vhd Line: 30
@@ -1072,9 +1067,9 @@ Warning (10492): VHDL Process Statement warning at decoDisp_regContent.vhd(37): 
 Info (12128): Elaborating entity "decoDisp_Instr" for hierarchy "decoDisp_Instr:inst4"
 Info (12128): Elaborating entity "time_divisor" for hierarchy "time_divisor:inst7"
 Warning (10542): VHDL Variable Declaration warning at time_divisor.vhd(17): used initial value expression for variable "limite" because variable was never assigned a value File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/time_divisor.vhd Line: 17
-Warning (14026): LATCH primitive "etapa2:inst3|memoria_datos:inst200|datos[1]" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Warning (14026): LATCH primitive "etapa2:inst3|memoria_datos:inst200|datos[0]" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
-Warning (14026): LATCH primitive "etapa2:inst3|memoria_datos:inst200|datos[3]" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 31
+Warning (14026): LATCH primitive "etapa2:inst3|memoria_datos:inst200|datos[1]" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Warning (14026): LATCH primitive "etapa2:inst3|memoria_datos:inst200|datos[0]" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
+Warning (14026): LATCH primitive "etapa2:inst3|memoria_datos:inst200|datos[3]" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd Line: 29
 Warning (14025): LATCH primitive "etapa3:inst2|ccr:inst3|ii" is permanently disabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/ccr.vhd Line: 30
 Warning (14026): LATCH primitive "etapa3:inst2|branch:inst4|branch" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/branch.vhd Line: 13
 Warning (14026): LATCH primitive "etapa3:inst2|branch:inst4|branch" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/branch.vhd Line: 13
@@ -1184,14 +1179,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 58 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 487 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 516 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 146 output pins
-    Info (21061): Implemented 337 logic cells
+    Info (21061): Implemented 366 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 157 warnings
-    Info: Peak virtual memory: 4795 megabytes
-    Info: Processing ended: Mon Nov 25 14:12:55 2019
+    Info: Peak virtual memory: 4792 megabytes
+    Info: Processing ended: Mon Nov 25 14:22:39 2019
     Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Total CPU time (on all processors): 00:00:41
 
 
