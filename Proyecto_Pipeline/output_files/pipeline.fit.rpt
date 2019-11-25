@@ -1,5 +1,5 @@
 Fitter report for pipeline
-Mon Nov 25 12:16:32 2019
+Mon Nov 25 12:55:25 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Nov 25 12:16:32 2019       ;
+; Fitter Status                      ; Successful - Mon Nov 25 12:55:25 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pipeline                                    ;
 ; Top-level Entity Name              ; pipeline                                    ;
@@ -154,12 +154,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.4%      ;
+;     Processor 2            ;   3.6%      ;
 +----------------------------+-------------+
 
 
@@ -2171,7 +2171,7 @@ Info (170195): Router estimated average interconnect usage is 1% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.50 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.47 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2179,9 +2179,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:05
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/output_files/pipeline.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5204 megabytes
-    Info: Processing ended: Mon Nov 25 12:16:33 2019
-    Info: Elapsed time: 00:00:25
+    Info: Peak virtual memory: 5214 megabytes
+    Info: Processing ended: Mon Nov 25 12:55:26 2019
+    Info: Elapsed time: 00:00:24
     Info: Total CPU time (on all processors): 00:00:24
 
 

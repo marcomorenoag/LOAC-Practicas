@@ -34,6 +34,7 @@ source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/decoDisp_Instr.vhd
 source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/decoDisp_regContent.vhd
 source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/sensa_boton.vhd
 source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/time_divisor.vhd
+source_file = 1, C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_detentionUnit.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd

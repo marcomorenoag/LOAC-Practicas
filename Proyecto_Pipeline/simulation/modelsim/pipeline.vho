@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "11/25/2019 12:16:48"
+-- DATE "11/25/2019 12:55:42"
 
 -- 
 -- Device: Altera 10M08DAF484C8G Package FBGA484
@@ -698,12 +698,12 @@ SIGNAL \inst3|inst206|selregw\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \inst3|inst206|selop\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \inst3|inst206|selsrc\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \inst3|inst206|selregr\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \inst6|ALT_INV_ESIGUIENTE~clkctrl_outclk\ : std_logic;
 SIGNAL \inst4|ALT_INV_Mux13~0_combout\ : std_logic;
 SIGNAL \inst4|ALT_INV_Mux6~0_combout\ : std_logic;
 SIGNAL \inst5|ALT_INV_Mux20~0_combout\ : std_logic;
 SIGNAL \inst5|ALT_INV_Mux13~0_combout\ : std_logic;
 SIGNAL \inst5|ALT_INV_Mux6~0_combout\ : std_logic;
+SIGNAL \inst6|ALT_INV_ESIGUIENTE~clkctrl_outclk\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -749,12 +749,12 @@ ww_devpor <= devpor;
 \inst6|ESIGUIENTE~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst6|ESIGUIENTE~q\);
 
 \RESET~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \RESET~input_o\);
-\inst6|ALT_INV_ESIGUIENTE~clkctrl_outclk\ <= NOT \inst6|ESIGUIENTE~clkctrl_outclk\;
 \inst4|ALT_INV_Mux13~0_combout\ <= NOT \inst4|Mux13~0_combout\;
 \inst4|ALT_INV_Mux6~0_combout\ <= NOT \inst4|Mux6~0_combout\;
 \inst5|ALT_INV_Mux20~0_combout\ <= NOT \inst5|Mux20~0_combout\;
 \inst5|ALT_INV_Mux13~0_combout\ <= NOT \inst5|Mux13~0_combout\;
 \inst5|ALT_INV_Mux6~0_combout\ <= NOT \inst5|Mux6~0_combout\;
+\inst6|ALT_INV_ESIGUIENTE~clkctrl_outclk\ <= NOT \inst6|ESIGUIENTE~clkctrl_outclk\;
 auto_generated_inst : hard_block
 PORT MAP (
 	devoe => ww_devoe,

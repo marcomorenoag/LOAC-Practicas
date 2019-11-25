@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 248 368)
+	(rect 16 16 248 432)
 	(text "etapa2" (rect 5 0 47 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 331 24 348)(font "Intel Clear" ))
+	(text "inst" (rect 8 395 24 412)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -233,7 +233,28 @@ refer to the applicable agreement for further details.
 		(text "seldirwo[1..0]" (rect 131 315 211 334)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 320)(pt 216 320)(line_width 3))
 	)
+	(port
+		(pt 232 336)
+		(output)
+		(text "stopPC" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "stopPC" (rect 169 331 211 350)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 336)(pt 216 336))
+	)
+	(port
+		(pt 232 352)
+		(output)
+		(text "SelCtrl" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "SelCtrl" (rect 171 347 211 366)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 352)(pt 216 352))
+	)
+	(port
+		(pt 232 368)
+		(output)
+		(text "SelD" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "SelD" (rect 183 363 211 382)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 368)(pt 216 368))
+	)
 	(drawing
-		(rectangle (rect 16 16 216 336))
+		(rectangle (rect 16 16 216 400))
 	)
 )

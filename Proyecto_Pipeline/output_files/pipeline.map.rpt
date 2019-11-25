@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Mon Nov 25 12:16:07 2019
+Mon Nov 25 12:55:00 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 25 12:16:07 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 25 12:55:00 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pipeline                                    ;
 ; Top-level Entity Name              ; pipeline                                    ;
@@ -206,6 +206,7 @@ refer to the applicable agreement for further details.
 ; decoDisp_regContent.vhd          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/decoDisp_regContent.vhd ;         ;
 ; sensa_boton.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/sensa_boton.vhd         ;         ;
 ; time_divisor.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/time_divisor.vhd        ;         ;
+; mux_detentionUnit.vhd            ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_detentionUnit.vhd   ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -396,7 +397,6 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +-----------------------------------------------------------------+---------------------------------------------------------------+
 ; Register name                                                   ; Reason for Removal                                            ;
 +-----------------------------------------------------------------+---------------------------------------------------------------+
-; etapa1:inst|registro_pc:inst4|SALIDA[0..15]                     ; Lost fanout                                                   ;
 ; etapa2:inst3|reg_acoplo_3:inst10|selop[1,3]                     ; Stuck at GND due to stuck port data_in                        ;
 ; etapa2:inst3|reg_acoplo_3:inst10|selresult[1]                   ; Stuck at GND due to stuck port data_in                        ;
 ; etapa2:inst3|reg_acoplo_3:inst10|cadj                           ; Stuck at GND due to stuck port data_in                        ;
@@ -408,6 +408,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; etapa3:inst2|reg_acoplo_4:inst107|selregw[1]                    ; Stuck at GND due to stuck port data_in                        ;
 ; etapa3:inst2|reg_acoplo_4:inst107|memw                          ; Stuck at GND due to stuck port data_in                        ;
 ; etapa3:inst2|reg_acoplo_4:inst107|seldirw[0,1]                  ; Stuck at GND due to stuck port data_in                        ;
+; etapa1:inst|registro_pc:inst4|SALIDA[0..15]                     ; Lost fanout                                                   ;
 ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable                   ;
 ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable                   ;
 ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[0..15] ; Stuck at GND due to stuck port clock_enable                   ;
@@ -478,8 +479,22 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[12],                       ;
 ;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[13],                       ;
 ;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[14],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[15],                       ;
-;                                                   ;                           ; decoDisp_Instr:inst4|third_value[1]                                                 ;
+;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[15]                        ;
+; etapa2:inst3|reg_acoplo_3:inst10|memw             ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|memw, etapa1:inst|registro_pc:inst4|SALIDA[0],    ;
+;                                                   ; due to stuck port data_in ; etapa1:inst|registro_pc:inst4|SALIDA[2], etapa1:inst|registro_pc:inst4|SALIDA[3],   ;
+;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[4], etapa1:inst|registro_pc:inst4|SALIDA[5],   ;
+;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[9], etapa1:inst|registro_pc:inst4|SALIDA[10],  ;
+;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[11], etapa1:inst|registro_pc:inst4|SALIDA[12], ;
+;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[13], etapa1:inst|registro_pc:inst4|SALIDA[14], ;
+;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[15],                                           ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[15],                                          ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[14],                                          ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[13],                                          ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[12],                                          ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[11],                                          ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[10],                                          ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[9], etapa3:inst2|registro_pc:inst5|SALIDA[1], ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[0]                                            ;
 ; etapa2:inst3|reg_acoplo_3:inst10|selresult[1]     ; Stuck at GND              ; etapa2:inst3|registro_pc:inst9|SALIDA[15],                                          ;
 ;                                                   ; due to stuck port data_in ; etapa2:inst3|registro_pc:inst9|SALIDA[14],                                          ;
 ;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[13],                                          ;
@@ -492,19 +507,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[3], etapa2:inst3|registro_pc:inst9|SALIDA[2], ;
 ;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[1], etapa2:inst3|registro_pc:inst9|SALIDA[0]  ;
 ; etapa2:inst3|reg_acoplo_3:inst10|seldirw[1]       ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|seldirw[1],                                       ;
-;                                                   ; due to stuck port data_in ; etapa3:inst2|registro_pc:inst5|SALIDA[15],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[14],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[13],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[12],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[11],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[10],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[9], etapa3:inst2|registro_pc:inst5|SALIDA[8], ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[7], etapa3:inst2|registro_pc:inst5|SALIDA[6], ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[5], etapa3:inst2|registro_pc:inst5|SALIDA[4], ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[3], etapa3:inst2|registro_pc:inst5|SALIDA[2], ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[1]                                            ;
-; etapa2:inst3|reg_acoplo_3:inst10|memw             ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|memw, etapa3:inst2|registro_pc:inst5|SALIDA[0]    ;
-;                                                   ; due to stuck port data_in ;                                                                                     ;
+;                                                   ; due to stuck port data_in ; etapa3:inst2|registro_pc:inst5|SALIDA[8], etapa3:inst2|registro_pc:inst5|SALIDA[7], ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[6], etapa3:inst2|registro_pc:inst5|SALIDA[5], ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[4], etapa3:inst2|registro_pc:inst5|SALIDA[3], ;
+;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[2]                                            ;
 ; etapa2:inst3|reg_acoplo_3:inst10|selfalgs[3]      ; Stuck at GND              ; etapa3:inst2|registro_1:inst106|valor_interno                                       ;
 ;                                                   ; due to stuck port data_in ;                                                                                     ;
 ; etapa2:inst3|reg_acoplo_3:inst10|seldirw[0]       ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|seldirw[0]                                        ;
@@ -512,6 +518,8 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; etapa1:inst|registro_inst:inst5|valor_interno[27] ; Stuck at GND              ; decoDisp_Instr:inst4|third_value[3]                                                 ;
 ;                                                   ; due to stuck port data_in ;                                                                                     ;
 ; etapa1:inst|registro_inst:inst5|valor_interno[26] ; Stuck at GND              ; decoDisp_Instr:inst4|third_value[2]                                                 ;
+;                                                   ; due to stuck port data_in ;                                                                                     ;
+; etapa1:inst|registro_inst:inst5|valor_interno[25] ; Stuck at GND              ; decoDisp_Instr:inst4|third_value[1]                                                 ;
 ;                                                   ; due to stuck port data_in ;                                                                                     ;
 ; etapa1:inst|registro_inst:inst5|valor_interno[24] ; Stuck at GND              ; decoDisp_Instr:inst4|third_value[0]                                                 ;
 ;                                                   ; due to stuck port data_in ;                                                                                     ;
@@ -598,7 +606,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 25 12:15:41 2019
+    Info: Processing started: Mon Nov 25 12:54:36 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -693,6 +701,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file sensa_b
 Info (12021): Found 2 design units, including 1 entities, in source file time_divisor.vhd
     Info (12022): Found design unit 1: time_divisor-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/time_divisor.vhd Line: 11
     Info (12023): Found entity 1: time_divisor File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/time_divisor.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux_detentionunit.vhd
+    Info (12022): Found design unit 1: mux_detentionUnit-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_detentionUnit.vhd Line: 44
+    Info (12023): Found entity 1: mux_detentionUnit File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_detentionUnit.vhd Line: 4
 Info (12127): Elaborating entity "pipeline" for the top level hierarchy
 Info (12128): Elaborating entity "etapa3" for hierarchy "etapa3:inst2"
 Info (12128): Elaborating entity "registro_1" for hierarchy "etapa3:inst2|registro_1:inst100"
@@ -775,6 +786,7 @@ Info (12128): Elaborating entity "sensa_boton" for hierarchy "sensa_boton:inst6"
 Warning (10492): VHDL Process Statement warning at sensa_boton.vhd(21): signal "CLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/sensa_boton.vhd Line: 21
 Info (12128): Elaborating entity "etapa2" for hierarchy "etapa2:inst3"
 Info (12128): Elaborating entity "reg_acoplo_3" for hierarchy "etapa2:inst3|reg_acoplo_3:inst10"
+Info (12128): Elaborating entity "mux_detentionUnit" for hierarchy "etapa2:inst3|mux_detentionUnit:inst1250"
 Info (12128): Elaborating entity "u_control" for hierarchy "etapa2:inst3|u_control:inst206"
 Warning (10631): VHDL Process Statement warning at u_control.vhd(30): inferring latch(es) for signal or variable "selregr", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/u_control.vhd Line: 30
 Warning (10631): VHDL Process Statement warning at u_control.vhd(30): inferring latch(es) for signal or variable "sels1", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/u_control.vhd Line: 30
@@ -1111,9 +1123,9 @@ Info (21057): Implemented 453 device resources after synthesis - the final resou
     Info (21059): Implemented 144 output pins
     Info (21061): Implemented 305 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 155 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Mon Nov 25 12:16:07 2019
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Mon Nov 25 12:55:00 2019
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:41
 
 

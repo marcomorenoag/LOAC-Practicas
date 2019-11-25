@@ -47,9 +47,16 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "RESET" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "RESET" (rect 21 75 59 94)(font "Intel Clear" (font_size 8)))
+		(text "stopPC" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "stopPC" (rect 21 75 63 94)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "RESET" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "RESET" (rect 21 91 59 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 224 32)
