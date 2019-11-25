@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Mon Nov 25 12:55:00 2019
+Mon Nov 25 14:12:55 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -19,9 +19,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  11. General Register Statistics
  12. Inverted Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 14. Parameter Settings for User Entity Instance: etapa3:inst2|BUSMUX:inst1356
+ 15. Parameter Settings for User Entity Instance: etapa3:inst2|BUSMUX:inst1357
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -47,16 +49,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 25 12:55:00 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 25 14:12:55 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pipeline                                    ;
 ; Top-level Entity Name              ; pipeline                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 291                                         ;
-;     Total combinational functions  ; 232                                         ;
-;     Dedicated logic registers      ; 134                                         ;
-; Total registers                    ; 134                                         ;
-; Total pins                         ; 148                                         ;
+; Total logic elements               ; 322                                         ;
+;     Total combinational functions  ; 263                                         ;
+;     Dedicated logic registers      ; 135                                         ;
+; Total registers                    ; 135                                         ;
+; Total pins                         ; 150                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -169,45 +171,55 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
-; incrementador.vhdl               ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/incrementador.vhdl      ;         ;
-; mux_pc.vhdl                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_pc.vhdl             ;         ;
-; registro_pc.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registro_pc.vhd         ;         ;
-; memoria_inst.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_inst.vhd        ;         ;
-; pipeline.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/pipeline.bdf            ;         ;
-; registro_inst.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registro_inst.vhd       ;         ;
-; etapa1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/etapa1.bdf              ;         ;
-; ext_signo.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/ext_signo.vhd           ;         ;
-; etapa2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/etapa2.bdf              ;         ;
-; mux_dir.vhd                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_dir.vhd             ;         ;
-; sumador.vhd                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/sumador.vhd             ;         ;
-; memoria_datos.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd       ;         ;
-; mux_src.vhd                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_src.vhd             ;         ;
-; registros.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registros.bdf           ;         ;
-; mux_regs.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_regs.vhd            ;         ;
-; deco_regw.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/deco_regw.vhd           ;         ;
-; u_control.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/u_control.vhd           ;         ;
-; reg_acoplo_3.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd        ;         ;
-; upa.vhd                          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd                 ;         ;
-; mux_1.vhd                        ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_1.vhd               ;         ;
-; etapa3.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/etapa3.bdf              ;         ;
-; mux_result.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_result.vhd          ;         ;
-; ccr.vhd                          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/ccr.vhd                 ;         ;
-; branch.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/branch.vhd              ;         ;
-; registro_1.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registro_1.vhd          ;         ;
-; reg_acoplo_4.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_4.vhd        ;         ;
-; mux_dirw.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_dirw.vhd            ;         ;
-; registro_esp.vhdl                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registro_esp.vhdl       ;         ;
-; decoDisp_Instr.vhd               ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/decoDisp_Instr.vhd      ;         ;
-; decoDisp_regContent.vhd          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/decoDisp_regContent.vhd ;         ;
-; sensa_boton.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/sensa_boton.vhd         ;         ;
-; time_divisor.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/time_divisor.vhd        ;         ;
-; mux_detentionUnit.vhd            ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_detentionUnit.vhd   ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+; incrementador.vhdl               ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/incrementador.vhdl       ;         ;
+; mux_pc.vhdl                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_pc.vhdl              ;         ;
+; registro_pc.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registro_pc.vhd          ;         ;
+; memoria_inst.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_inst.vhd         ;         ;
+; pipeline.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/pipeline.bdf             ;         ;
+; registro_inst.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registro_inst.vhd        ;         ;
+; etapa1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/etapa1.bdf               ;         ;
+; ext_signo.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/ext_signo.vhd            ;         ;
+; etapa2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/etapa2.bdf               ;         ;
+; mux_dir.vhd                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_dir.vhd              ;         ;
+; sumador.vhd                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/sumador.vhd              ;         ;
+; memoria_datos.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/memoria_datos.vhd        ;         ;
+; mux_src.vhd                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_src.vhd              ;         ;
+; registros.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registros.bdf            ;         ;
+; mux_regs.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_regs.vhd             ;         ;
+; deco_regw.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/deco_regw.vhd            ;         ;
+; u_control.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/u_control.vhd            ;         ;
+; reg_acoplo_3.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd         ;         ;
+; upa.vhd                          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd                  ;         ;
+; mux_1.vhd                        ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_1.vhd                ;         ;
+; etapa3.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/etapa3.bdf               ;         ;
+; mux_result.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_result.vhd           ;         ;
+; ccr.vhd                          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/ccr.vhd                  ;         ;
+; branch.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/branch.vhd               ;         ;
+; registro_1.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registro_1.vhd           ;         ;
+; reg_acoplo_4.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_4.vhd         ;         ;
+; mux_dirw.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_dirw.vhd             ;         ;
+; registro_esp.vhdl                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/registro_esp.vhdl        ;         ;
+; decoDisp_Instr.vhd               ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/decoDisp_Instr.vhd       ;         ;
+; decoDisp_regContent.vhd          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/decoDisp_regContent.vhd  ;         ;
+; sensa_boton.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/sensa_boton.vhd          ;         ;
+; time_divisor.vhd                 ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/time_divisor.vhd         ;         ;
+; mux_detentionUnit.vhd            ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_detentionUnit.vhd    ;         ;
+; detentionUnit.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/detentionUnit.vhd        ;         ;
+; anticipationUnit.vhd             ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/anticipationUnit.vhd     ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf     ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc    ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf    ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc     ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc   ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc   ;         ;
+; db/mux_j7c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/db/mux_j7c.tdf           ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -215,70 +227,76 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 291         ;
+; Estimated Total logic elements              ; 322         ;
 ;                                             ;             ;
-; Total combinational functions               ; 232         ;
+; Total combinational functions               ; 263         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 139         ;
-;     -- 3 input functions                    ; 56          ;
+;     -- 4 input functions                    ; 169         ;
+;     -- 3 input functions                    ; 57          ;
 ;     -- <=2 input functions                  ; 37          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 210         ;
+;     -- normal mode                          ; 241         ;
 ;     -- arithmetic mode                      ; 22          ;
 ;                                             ;             ;
-; Total registers                             ; 134         ;
-;     -- Dedicated logic registers            ; 134         ;
+; Total registers                             ; 135         ;
+;     -- Dedicated logic registers            ; 135         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 148         ;
+; I/O pins                                    ; 150         ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; RESET~input ;
-; Maximum fan-out                             ; 150         ;
-; Total fan-out                               ; 1486        ;
-; Average fan-out                             ; 2.24        ;
+; Maximum fan-out                             ; 151         ;
+; Total fan-out                               ; 1614        ;
+; Average fan-out                             ; 2.31        ;
 +---------------------------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                       ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                            ; Entity Name         ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------+---------------------+--------------+
-; |pipeline                      ; 232 (0)             ; 134 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 148  ; 0            ; 0          ; |pipeline                                                      ; pipeline            ; work         ;
-;    |decoDisp_Instr:inst4|      ; 12 (12)             ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decoDisp_Instr:inst4                                 ; decoDisp_Instr      ; work         ;
-;    |decoDisp_regContent:inst5| ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decoDisp_regContent:inst5                            ; decoDisp_regContent ; work         ;
-;    |etapa1:inst|               ; 18 (0)              ; 13 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst                                          ; etapa1              ; work         ;
-;       |memoria_inst:inst1|     ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|memoria_inst:inst1                       ; memoria_inst        ; work         ;
-;       |registro_inst:inst5|    ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_inst:inst5                      ; registro_inst       ; work         ;
-;       |registro_pc:inst3|      ; 6 (6)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_pc:inst3                        ; registro_pc         ; work         ;
-;    |etapa2:inst3|              ; 73 (0)              ; 89 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3                                         ; etapa2              ; work         ;
-;       |mux_src:inst202|        ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|mux_src:inst202                         ; mux_src             ; work         ;
-;       |reg_acoplo_3:inst10|    ; 1 (1)               ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|reg_acoplo_3:inst10                     ; reg_acoplo_3        ; work         ;
-;       |registro_pc:inst700|    ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registro_pc:inst700                     ; registro_pc         ; work         ;
-;       |registro_pc:inst8|      ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registro_pc:inst8                       ; registro_pc         ; work         ;
-;       |registros:inst700666|   ; 3 (0)               ; 48 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666                    ; registros           ; work         ;
-;          |deco_regw:inst1000|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|deco_regw:inst1000 ; deco_regw           ; work         ;
-;          |registro_esp:ACCA|   ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:ACCA  ; registro_esp        ; work         ;
-;          |registro_esp:ACCB|   ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:ACCB  ; registro_esp        ; work         ;
-;          |registro_esp:AUX|    ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:AUX   ; registro_esp        ; work         ;
-;       |u_control:inst206|      ; 35 (35)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|u_control:inst206                       ; u_control           ; work         ;
-;    |etapa3:inst2|              ; 99 (0)              ; 24 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2                                         ; etapa3              ; work         ;
-;       |ccr:inst3|              ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|ccr:inst3                               ; ccr                 ; work         ;
-;       |mux_result:inst2|       ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|mux_result:inst2                        ; mux_result          ; work         ;
-;       |reg_acoplo_4:inst107|   ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|reg_acoplo_4:inst107                    ; reg_acoplo_4        ; work         ;
-;       |registro_1:inst100|     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst100                      ; registro_1          ; work         ;
-;       |registro_1:inst101|     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst101                      ; registro_1          ; work         ;
-;       |registro_1:inst102|     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst102                      ; registro_1          ; work         ;
-;       |registro_1:inst103|     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst103                      ; registro_1          ; work         ;
-;       |registro_1:inst104|     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst104                      ; registro_1          ; work         ;
-;       |registro_1:inst105|     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst105                      ; registro_1          ; work         ;
-;       |registro_pc:inst6|      ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_pc:inst6                       ; registro_pc         ; work         ;
-;       |upa:inst|               ; 75 (75)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|upa:inst                                ; upa                 ; work         ;
-;    |sensa_boton:inst6|         ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|sensa_boton:inst6                                    ; sensa_boton         ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                           ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                          ; Entity Name         ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------+---------------------+--------------+
+; |pipeline                            ; 263 (0)             ; 135 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 150  ; 0            ; 0          ; |pipeline                                                                    ; pipeline            ; work         ;
+;    |decoDisp_Instr:inst4|            ; 12 (12)             ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decoDisp_Instr:inst4                                               ; decoDisp_Instr      ; work         ;
+;    |decoDisp_regContent:inst5|       ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decoDisp_regContent:inst5                                          ; decoDisp_regContent ; work         ;
+;    |etapa1:inst|                     ; 18 (0)              ; 13 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst                                                        ; etapa1              ; work         ;
+;       |memoria_inst:inst1|           ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|memoria_inst:inst1                                     ; memoria_inst        ; work         ;
+;       |registro_inst:inst5|          ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_inst:inst5                                    ; registro_inst       ; work         ;
+;       |registro_pc:inst3|            ; 6 (6)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa1:inst|registro_pc:inst3                                      ; registro_pc         ; work         ;
+;    |etapa2:inst3|                    ; 72 (0)              ; 90 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3                                                       ; etapa2              ; work         ;
+;       |mux_src:inst202|              ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|mux_src:inst202                                       ; mux_src             ; work         ;
+;       |reg_acoplo_3:inst10|          ; 1 (1)               ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|reg_acoplo_3:inst10                                   ; reg_acoplo_3        ; work         ;
+;       |registro_pc:inst700|          ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registro_pc:inst700                                   ; registro_pc         ; work         ;
+;       |registro_pc:inst8|            ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registro_pc:inst8                                     ; registro_pc         ; work         ;
+;       |registros:inst700666|         ; 3 (0)               ; 48 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666                                  ; registros           ; work         ;
+;          |deco_regw:inst1000|        ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|deco_regw:inst1000               ; deco_regw           ; work         ;
+;          |registro_esp:ACCA|         ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:ACCA                ; registro_esp        ; work         ;
+;          |registro_esp:ACCB|         ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:ACCB                ; registro_esp        ; work         ;
+;          |registro_esp:AUX|          ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|registros:inst700666|registro_esp:AUX                 ; registro_esp        ; work         ;
+;       |u_control:inst206|            ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa2:inst3|u_control:inst206                                     ; u_control           ; work         ;
+;    |etapa3:inst2|                    ; 131 (0)             ; 24 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2                                                       ; etapa3              ; work         ;
+;       |busmux:inst1356|              ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst1356                                       ; busmux              ; work         ;
+;          |lpm_mux:$00000|            ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst1356|lpm_mux:$00000                        ; lpm_mux             ; work         ;
+;             |mux_j7c:auto_generated| ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst1356|lpm_mux:$00000|mux_j7c:auto_generated ; mux_j7c             ; work         ;
+;       |busmux:inst1357|              ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst1357                                       ; busmux              ; work         ;
+;          |lpm_mux:$00000|            ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst1357|lpm_mux:$00000                        ; lpm_mux             ; work         ;
+;             |mux_j7c:auto_generated| ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|busmux:inst1357|lpm_mux:$00000|mux_j7c:auto_generated ; mux_j7c             ; work         ;
+;       |ccr:inst3|                    ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|ccr:inst3                                             ; ccr                 ; work         ;
+;       |mux_result:inst2|             ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|mux_result:inst2                                      ; mux_result          ; work         ;
+;       |reg_acoplo_4:inst107|         ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|reg_acoplo_4:inst107                                  ; reg_acoplo_4        ; work         ;
+;       |registro_1:inst100|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst100                                    ; registro_1          ; work         ;
+;       |registro_1:inst101|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst101                                    ; registro_1          ; work         ;
+;       |registro_1:inst102|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst102                                    ; registro_1          ; work         ;
+;       |registro_1:inst103|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst103                                    ; registro_1          ; work         ;
+;       |registro_1:inst104|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst104                                    ; registro_1          ; work         ;
+;       |registro_1:inst105|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_1:inst105                                    ; registro_1          ; work         ;
+;       |registro_pc:inst6|            ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|registro_pc:inst6                                     ; registro_pc         ; work         ;
+;       |upa:inst|                     ; 75 (75)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|etapa3:inst2|upa:inst                                              ; upa                 ; work         ;
+;    |sensa_boton:inst6|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|sensa_boton:inst6                                                  ; sensa_boton         ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -329,8 +347,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; etapa2:inst3|u_control:inst206|selfalgs[0]             ; GND                                          ; yes                    ;
 ; etapa2:inst3|u_control:inst206|selregw[2]              ; GND                                          ; yes                    ;
 ; etapa2:inst3|u_control:inst206|selregw[0]              ; GND                                          ; yes                    ;
-; etapa2:inst3|mux_src:inst202|OP2[15]                   ; VCC                                          ; yes                    ;
 ; etapa2:inst3|mux_src:inst202|OP1[15]                   ; VCC                                          ; yes                    ;
+; etapa2:inst3|u_control:inst206|selregr[0]              ; GND                                          ; yes                    ;
+; etapa2:inst3|mux_src:inst202|OP2[15]                   ; VCC                                          ; yes                    ;
 ; etapa2:inst3|u_control:inst206|selop[2]                ; GND                                          ; yes                    ;
 ; etapa2:inst3|mux_src:inst202|OP2[14]                   ; VCC                                          ; yes                    ;
 ; etapa2:inst3|mux_src:inst202|OP1[14]                   ; VCC                                          ; yes                    ;
@@ -365,10 +384,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; etapa2:inst3|u_control:inst206|selc                    ; GND                                          ; yes                    ;
 ; etapa2:inst3|u_control:inst206|selop[0]                ; GND                                          ; yes                    ;
 ; etapa2:inst3|u_control:inst206|selresult[0]            ; GND                                          ; yes                    ;
-; etapa2:inst3|registros:inst700666|mux_regs:inst|D2[15] ; VCC                                          ; yes                    ;
+; etapa2:inst3|registros:inst700666|mux_regs:inst|D1[15] ; VCC                                          ; yes                    ;
 ; etapa2:inst3|u_control:inst206|selsrc[0]               ; GND                                          ; yes                    ;
 ; etapa2:inst3|u_control:inst206|selsrc[1]               ; GND                                          ; yes                    ;
-; etapa2:inst3|registros:inst700666|mux_regs:inst|D1[15] ; VCC                                          ; yes                    ;
+; etapa2:inst3|registros:inst700666|mux_regs:inst|D2[15] ; VCC                                          ; yes                    ;
 ; etapa2:inst3|registros:inst700666|mux_regs:inst|D2[14] ; VCC                                          ; yes                    ;
 ; etapa2:inst3|registros:inst700666|mux_regs:inst|D1[14] ; VCC                                          ; yes                    ;
 ; etapa2:inst3|registros:inst700666|mux_regs:inst|D2[13] ; VCC                                          ; yes                    ;
@@ -386,7 +405,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; etapa2:inst3|registros:inst700666|mux_regs:inst|D2[7]  ; VCC                                          ; yes                    ;
 ; etapa2:inst3|registros:inst700666|mux_regs:inst|D1[7]  ; VCC                                          ; yes                    ;
 ; etapa2:inst3|registros:inst700666|mux_regs:inst|D2[6]  ; VCC                                          ; yes                    ;
-; etapa2:inst3|registros:inst700666|mux_regs:inst|D1[6]  ; VCC                                          ; yes                    ;
 ; Number of user-specified and inferred latches = 114    ;                                              ;                        ;
 +--------------------------------------------------------+----------------------------------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -405,6 +423,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; etapa2:inst3|reg_acoplo_3:inst10|selregw[1]                     ; Stuck at GND due to stuck port data_in                        ;
 ; etapa2:inst3|reg_acoplo_3:inst10|memw                           ; Stuck at GND due to stuck port data_in                        ;
 ; etapa2:inst3|reg_acoplo_3:inst10|seldirw[0,1]                   ; Stuck at GND due to stuck port data_in                        ;
+; etapa2:inst3|reg_acoplo_3:inst10|selregR[1..3]                  ; Stuck at GND due to stuck port data_in                        ;
 ; etapa3:inst2|reg_acoplo_4:inst107|selregw[1]                    ; Stuck at GND due to stuck port data_in                        ;
 ; etapa3:inst2|reg_acoplo_4:inst107|memw                          ; Stuck at GND due to stuck port data_in                        ;
 ; etapa3:inst2|reg_acoplo_4:inst107|seldirw[0,1]                  ; Stuck at GND due to stuck port data_in                        ;
@@ -422,108 +441,116 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; etapa1:inst|registro_inst:inst5|valor_interno[0]                ; Merged with etapa1:inst|registro_inst:inst5|valor_interno[21] ;
 ; decoDisp_Instr:inst4|second_value[0]                            ; Merged with decoDisp_Instr:inst4|first_value[3]               ;
 ; etapa1:inst|registro_pc:inst3|SALIDA[6..15]                     ; Lost fanout                                                   ;
-; Total Number of Removed Registers = 154                         ;                                                               ;
+; Total Number of Removed Registers = 157                         ;                                                               ;
 +-----------------------------------------------------------------+---------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                         ;
-+---------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; Register name                                     ; Reason for Removal        ; Registers Removed due to This Register                                              ;
-+---------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; etapa2:inst3|reg_acoplo_3:inst10|selregw[1]       ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|selregw[1],                                       ;
-;                                                   ; due to stuck port data_in ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[0],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[1],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[2],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[3],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[4],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[5],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[6],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[7],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[8],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[9],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[10],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[11],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[12],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[13],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[14],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[15],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[0],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[1],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[2],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[3],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[4],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[5],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[6],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[7],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[8],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[9],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[10],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[11],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[12],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[13],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[14],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[15],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[0],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[1],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[2],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[3],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[4],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[5],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[6],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[7],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[8],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[9],                        ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[10],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[11],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[12],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[13],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[14],                       ;
-;                                                   ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[15]                        ;
-; etapa2:inst3|reg_acoplo_3:inst10|memw             ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|memw, etapa1:inst|registro_pc:inst4|SALIDA[0],    ;
-;                                                   ; due to stuck port data_in ; etapa1:inst|registro_pc:inst4|SALIDA[2], etapa1:inst|registro_pc:inst4|SALIDA[3],   ;
-;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[4], etapa1:inst|registro_pc:inst4|SALIDA[5],   ;
-;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[9], etapa1:inst|registro_pc:inst4|SALIDA[10],  ;
-;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[11], etapa1:inst|registro_pc:inst4|SALIDA[12], ;
-;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[13], etapa1:inst|registro_pc:inst4|SALIDA[14], ;
-;                                                   ;                           ; etapa1:inst|registro_pc:inst4|SALIDA[15],                                           ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[15],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[14],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[13],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[12],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[11],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[10],                                          ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[9], etapa3:inst2|registro_pc:inst5|SALIDA[1], ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[0]                                            ;
-; etapa2:inst3|reg_acoplo_3:inst10|selresult[1]     ; Stuck at GND              ; etapa2:inst3|registro_pc:inst9|SALIDA[15],                                          ;
-;                                                   ; due to stuck port data_in ; etapa2:inst3|registro_pc:inst9|SALIDA[14],                                          ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[13],                                          ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[12],                                          ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[11],                                          ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[10],                                          ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[9], etapa2:inst3|registro_pc:inst9|SALIDA[8], ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[7], etapa2:inst3|registro_pc:inst9|SALIDA[6], ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[5], etapa2:inst3|registro_pc:inst9|SALIDA[4], ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[3], etapa2:inst3|registro_pc:inst9|SALIDA[2], ;
-;                                                   ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[1], etapa2:inst3|registro_pc:inst9|SALIDA[0]  ;
-; etapa2:inst3|reg_acoplo_3:inst10|seldirw[1]       ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|seldirw[1],                                       ;
-;                                                   ; due to stuck port data_in ; etapa3:inst2|registro_pc:inst5|SALIDA[8], etapa3:inst2|registro_pc:inst5|SALIDA[7], ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[6], etapa3:inst2|registro_pc:inst5|SALIDA[5], ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[4], etapa3:inst2|registro_pc:inst5|SALIDA[3], ;
-;                                                   ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[2]                                            ;
-; etapa2:inst3|reg_acoplo_3:inst10|selfalgs[3]      ; Stuck at GND              ; etapa3:inst2|registro_1:inst106|valor_interno                                       ;
-;                                                   ; due to stuck port data_in ;                                                                                     ;
-; etapa2:inst3|reg_acoplo_3:inst10|seldirw[0]       ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|seldirw[0]                                        ;
-;                                                   ; due to stuck port data_in ;                                                                                     ;
-; etapa1:inst|registro_inst:inst5|valor_interno[27] ; Stuck at GND              ; decoDisp_Instr:inst4|third_value[3]                                                 ;
-;                                                   ; due to stuck port data_in ;                                                                                     ;
-; etapa1:inst|registro_inst:inst5|valor_interno[26] ; Stuck at GND              ; decoDisp_Instr:inst4|third_value[2]                                                 ;
-;                                                   ; due to stuck port data_in ;                                                                                     ;
-; etapa1:inst|registro_inst:inst5|valor_interno[25] ; Stuck at GND              ; decoDisp_Instr:inst4|third_value[1]                                                 ;
-;                                                   ; due to stuck port data_in ;                                                                                     ;
-; etapa1:inst|registro_inst:inst5|valor_interno[24] ; Stuck at GND              ; decoDisp_Instr:inst4|third_value[0]                                                 ;
-;                                                   ; due to stuck port data_in ;                                                                                     ;
-+---------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                     ;
++-----------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                                 ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++-----------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; etapa2:inst3|reg_acoplo_3:inst10|selregw[1]   ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|selregw[1],                                       ;
+;                                               ; due to stuck port data_in ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[0],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[1],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[2],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[3],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[4],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[5],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[6],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[7],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[8],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[9],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[10],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[11],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[12],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[13],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[14],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:SP|SALIDA[15],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[0],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[1],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[2],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[3],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[4],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[5],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[6],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[7],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[8],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[9],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[10],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[11],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[12],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[13],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[14],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IY|SALIDA[15],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[0],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[1],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[2],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[3],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[4],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[5],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[6],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[7],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[8],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[9],                        ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[10],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[11],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[12],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[13],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[14],                       ;
+;                                               ;                           ; etapa2:inst3|registros:inst700666|registro_esp:IX|SALIDA[15],                       ;
+;                                               ;                           ; decoDisp_Instr:inst4|third_value[0], decoDisp_Instr:inst4|third_value[3],           ;
+;                                               ;                           ; decoDisp_Instr:inst4|third_value[2], decoDisp_Instr:inst4|third_value[1]            ;
+; etapa2:inst3|reg_acoplo_3:inst10|memw         ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|memw, etapa3:inst2|registro_pc:inst5|SALIDA[13],  ;
+;                                               ; due to stuck port data_in ; etapa3:inst2|registro_pc:inst5|SALIDA[12],                                          ;
+;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[11],                                          ;
+;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[10],                                          ;
+;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[9], etapa3:inst2|registro_pc:inst5|SALIDA[8], ;
+;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[7], etapa3:inst2|registro_pc:inst5|SALIDA[6], ;
+;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[5], etapa3:inst2|registro_pc:inst5|SALIDA[4], ;
+;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[3], etapa3:inst2|registro_pc:inst5|SALIDA[2], ;
+;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[1], etapa3:inst2|registro_pc:inst5|SALIDA[0], ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[31],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[30],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[29],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[28],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[27],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[26],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[25],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[24],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[15],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[14],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[13],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[12],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[11],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[10],                                  ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[9],                                   ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[8],                                   ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[7],                                   ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[6],                                   ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[5],                                   ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[4],                                   ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[3],                                   ;
+;                                               ;                           ; etapa1:inst|registro_inst:inst5|valor_interno[2]                                    ;
+; etapa2:inst3|reg_acoplo_3:inst10|selresult[1] ; Stuck at GND              ; etapa2:inst3|registro_pc:inst9|SALIDA[15],                                          ;
+;                                               ; due to stuck port data_in ; etapa2:inst3|registro_pc:inst9|SALIDA[14],                                          ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[13],                                          ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[12],                                          ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[11],                                          ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[10],                                          ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[9], etapa2:inst3|registro_pc:inst9|SALIDA[8], ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[7], etapa2:inst3|registro_pc:inst9|SALIDA[6], ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[5], etapa2:inst3|registro_pc:inst9|SALIDA[4], ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[3], etapa2:inst3|registro_pc:inst9|SALIDA[2], ;
+;                                               ;                           ; etapa2:inst3|registro_pc:inst9|SALIDA[1], etapa2:inst3|registro_pc:inst9|SALIDA[0]  ;
+; etapa2:inst3|reg_acoplo_3:inst10|seldirw[1]   ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|seldirw[1],                                       ;
+;                                               ; due to stuck port data_in ; etapa3:inst2|registro_pc:inst5|SALIDA[15],                                          ;
+;                                               ;                           ; etapa3:inst2|registro_pc:inst5|SALIDA[14]                                           ;
+; etapa2:inst3|reg_acoplo_3:inst10|selfalgs[3]  ; Stuck at GND              ; etapa3:inst2|registro_1:inst106|valor_interno                                       ;
+;                                               ; due to stuck port data_in ;                                                                                     ;
+; etapa2:inst3|reg_acoplo_3:inst10|seldirw[0]   ; Stuck at GND              ; etapa3:inst2|reg_acoplo_4:inst107|seldirw[0]                                        ;
+;                                               ; due to stuck port data_in ;                                                                                     ;
++-----------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -531,10 +558,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 134   ;
+; Total registers                              ; 135   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 6     ;
-; Number of registers using Asynchronous Clear ; 133   ;
+; Number of registers using Asynchronous Clear ; 134   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 48    ;
 ; Number of registers using Preset             ; 0     ;
@@ -556,12 +583,32 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |pipeline|etapa3:inst2|upa:inst|opres[9]           ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |pipeline|etapa3:inst2|upa:inst|opres[15]          ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|seldato   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_src:inst202|OP2[1]      ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |pipeline|decoDisp_regContent:inst5|first_value[1] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|mux_src:inst202|OP2[0]      ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |pipeline|decoDisp_regContent:inst5|third_value[0] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipeline|etapa2:inst3|u_control:inst206|selsrc[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: etapa3:inst2|BUSMUX:inst1356 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                          ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: etapa3:inst2|BUSMUX:inst1357 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                          ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -569,25 +616,25 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 148                         ;
-; cycloneiii_ff         ; 134                         ;
-;     CLR               ; 79                          ;
+; boundary_port         ; 150                         ;
+; cycloneiii_ff         ; 135                         ;
+;     CLR               ; 80                          ;
 ;     CLR SLD           ; 6                           ;
 ;     ENA CLR           ; 48                          ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 239                         ;
+; cycloneiii_lcell_comb ; 270                         ;
 ;     arith             ; 22                          ;
 ;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 17                          ;
-;     normal            ; 217                         ;
+;     normal            ; 248                         ;
 ;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 29                          ;
-;         3 data inputs ; 39                          ;
-;         4 data inputs ; 139                         ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 169                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.79                        ;
+; Max LUT depth         ; 7.40                        ;
+; Average LUT depth     ; 3.78                        ;
 +-----------------------+-----------------------------+
 
 
@@ -606,7 +653,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 25 12:54:36 2019
+    Info: Processing started: Mon Nov 25 14:12:30 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -658,7 +705,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file u_contr
     Info (12022): Found design unit 1: u_control-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/u_control.vhd Line: 28
     Info (12023): Found entity 1: u_control File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/u_control.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file reg_acoplo_3.vhd
-    Info (12022): Found design unit 1: reg_acoplo_3-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 29
+    Info (12022): Found design unit 1: reg_acoplo_3-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 31
     Info (12023): Found entity 1: reg_acoplo_3 File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file upa.vhd
     Info (12022): Found design unit 1: upa-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 20
@@ -704,6 +751,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file time_di
 Info (12021): Found 2 design units, including 1 entities, in source file mux_detentionunit.vhd
     Info (12022): Found design unit 1: mux_detentionUnit-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_detentionUnit.vhd Line: 44
     Info (12023): Found entity 1: mux_detentionUnit File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_detentionUnit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file detentionunit.vhd
+    Info (12022): Found design unit 1: detentionUnit-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/detentionUnit.vhd Line: 12
+    Info (12023): Found entity 1: detentionUnit File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/detentionUnit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file anticipationunit.vhd
+    Info (12022): Found design unit 1: anticipationUnit-Behavioral File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/anticipationUnit.vhd Line: 13
+    Info (12023): Found entity 1: anticipationUnit File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/anticipationUnit.vhd Line: 6
 Info (12127): Elaborating entity "pipeline" for the top level hierarchy
 Info (12128): Elaborating entity "etapa3" for hierarchy "etapa3:inst2"
 Info (12128): Elaborating entity "registro_1" for hierarchy "etapa3:inst2|registro_1:inst100"
@@ -745,6 +798,16 @@ Info (10041): Inferred latch for "opres[16]" at upa.vhd(23) File: C:/intelFPGA_l
 Info (12128): Elaborating entity "mux_1" for hierarchy "etapa3:inst2|mux_1:inst1"
 Warning (10631): VHDL Process Statement warning at mux_1.vhd(13): inferring latch(es) for signal or variable "sal", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_1.vhd Line: 13
 Info (10041): Inferred latch for "sal" at mux_1.vhd(13) File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/mux_1.vhd Line: 13
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "etapa3:inst2|BUSMUX:inst1356"
+Info (12130): Elaborated megafunction instantiation "etapa3:inst2|BUSMUX:inst1356"
+Info (12133): Instantiated megafunction "etapa3:inst2|BUSMUX:inst1356" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "etapa3:inst2|BUSMUX:inst1356|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "etapa3:inst2|BUSMUX:inst1356|lpm_mux:$00000", which is child of megafunction instantiation "etapa3:inst2|BUSMUX:inst1356" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_j7c.tdf
+    Info (12023): Found entity 1: mux_j7c File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/db/mux_j7c.tdf Line: 22
+Info (12128): Elaborating entity "mux_j7c" for hierarchy "etapa3:inst2|BUSMUX:inst1356|lpm_mux:$00000|mux_j7c:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "anticipationUnit" for hierarchy "etapa3:inst2|anticipationUnit:inst1350"
 Info (12128): Elaborating entity "reg_acoplo_4" for hierarchy "etapa3:inst2|reg_acoplo_4:inst107"
 Info (12128): Elaborating entity "registro_pc" for hierarchy "etapa3:inst2|registro_pc:inst6"
 Info (12128): Elaborating entity "mux_result" for hierarchy "etapa3:inst2|mux_result:inst2"
@@ -787,6 +850,7 @@ Warning (10492): VHDL Process Statement warning at sensa_boton.vhd(21): signal "
 Info (12128): Elaborating entity "etapa2" for hierarchy "etapa2:inst3"
 Info (12128): Elaborating entity "reg_acoplo_3" for hierarchy "etapa2:inst3|reg_acoplo_3:inst10"
 Info (12128): Elaborating entity "mux_detentionUnit" for hierarchy "etapa2:inst3|mux_detentionUnit:inst1250"
+Info (12128): Elaborating entity "detentionUnit" for hierarchy "etapa2:inst3|detentionUnit:inst11"
 Info (12128): Elaborating entity "u_control" for hierarchy "etapa2:inst3|u_control:inst206"
 Warning (10631): VHDL Process Statement warning at u_control.vhd(30): inferring latch(es) for signal or variable "selregr", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/u_control.vhd Line: 30
 Warning (10631): VHDL Process Statement warning at u_control.vhd(30): inferring latch(es) for signal or variable "sels1", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/u_control.vhd Line: 30
@@ -1015,45 +1079,47 @@ Warning (14025): LATCH primitive "etapa3:inst2|ccr:inst3|ii" is permanently disa
 Warning (14026): LATCH primitive "etapa3:inst2|branch:inst4|branch" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/branch.vhd Line: 13
 Warning (14026): LATCH primitive "etapa3:inst2|branch:inst4|branch" is permanently enabled File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/branch.vhd Line: 13
 Warning (13012): Latch etapa3:inst2|ccr:inst3|vi has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/ccr.vhd Line: 30
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selfalgs[1] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selfalgs[1] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[15] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[1] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[2] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[3] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[4] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[5] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[6] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[7] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[8] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[9] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[10] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[11] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[12] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[13] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[14] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[0] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[0] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Warning (13012): Latch etapa3:inst2|upa:inst|opres[16] has unsafe behavior File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/upa.vhd Line: 23
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
-Info (13000): Registers with preset signals will power-up high File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 46
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal etapa2:inst3|reg_acoplo_3:inst10|selop[2] File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
+Info (13000): Registers with preset signals will power-up high File: C:/intelFPGA_lite/OyAC/Lab/Proyecto_Pipeline/reg_acoplo_3.vhd Line: 49
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "i" is stuck at GND
+    Warning (13410): Pin "SelCtrl" is stuck at GND
+    Warning (13410): Pin "SelD" is stuck at GND
     Warning (13410): Pin "disp1[0]" is stuck at VCC
     Warning (13410): Pin "disp2[0]" is stuck at VCC
     Warning (13410): Pin "disp3[0]" is stuck at VCC
@@ -1118,14 +1184,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 58 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 453 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 487 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 144 output pins
-    Info (21061): Implemented 305 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 155 warnings
-    Info: Peak virtual memory: 4784 megabytes
-    Info: Processing ended: Mon Nov 25 12:55:00 2019
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:41
+    Info (21059): Implemented 146 output pins
+    Info (21061): Implemented 337 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 157 warnings
+    Info: Peak virtual memory: 4795 megabytes
+    Info: Processing ended: Mon Nov 25 14:12:55 2019
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:40
 
 
