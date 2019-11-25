@@ -68,24 +68,23 @@ architecture Behavioral of memoria_inst is
 		memoria(17)<= x"00580000"; -- LSLB ; ACCB <<  => 2^ACCB
 		memoria(18)<= x"001B0000"; -- ABA ; (ACCA) <- (ACCA) + (ACCB)
 		memoria(19)<= x"00D60001"; -- LDAB $#0001 ; (ACCB) <- (mem[1]) => old acumulator
-		memoria(20)<= x"00010000"; -- NOP
-		memoria(21)<= x"001B0000"; -- ABA ; (ACCA) <- (ACCA) + (ACCB) => new acumulator
-		memoria(22)<= x"00B70001"; -- STAA $#0001 ; (mem[1]) <- (ACCA) => acumulator
-		memoria(23)<= x"00960000"; -- LDAA $#0000 ; (ACCA) <- (mem[0]) => counter
-		memoria(24)<= x"004C0000"; -- INCA ; (ACCA) <- (ACCA) + 1
-		memoria(25)<= x"00B70000"; -- STAA $#0000 ; (mem[0]) <- (ACCA) => acumulator + 1 
-		memoria(26)<= x"007E0009"; -- JMP #0009 ; PC <- (0x0008)
+		memoria(20)<= x"001B0000"; -- ABA ; (ACCA) <- (ACCA) + (ACCB) => new acumulator
+		memoria(21)<= x"00B70001"; -- STAA $#0001 ; (mem[1]) <- (ACCA) => acumulator
+		memoria(22)<= x"00960000"; -- LDAA $#0000 ; (ACCA) <- (mem[0]) => counter
+		memoria(23)<= x"004C0000"; -- INCA ; (ACCA) <- (ACCA) + 1
+		memoria(24)<= x"00B70000"; -- STAA $#0000 ; (mem[0]) <- (ACCA) => acumulator + 1 
+		memoria(25)<= x"007E0009"; -- JMP #0009 ; PC <- (0x0008)
+		memoria(26)<= x"00010000"; -- NOP
 		memoria(27)<= x"00010000"; -- NOP
 		memoria(28)<= x"00010000"; -- NOP
-		memoria(29)<= x"00010000"; -- NOP
 		
 		-- RESET (FINAL)
-		memoria(30)<= x"004F0000"; -- CLRA ; ACCA <- 0x0000
-		memoria(31)<= x"005F0000"; -- CLRB ; ACCB <- 0x0000
-		memoria(32)<= x"007E0000"; -- JMP #0000 ; PC <- (0x0000)
+		memoria(29)<= x"004F0000"; -- CLRA ; ACCA <- 0x0000
+		memoria(30)<= x"005F0000"; -- CLRB ; ACCB <- 0x0000
+		memoria(31)<= x"007E0000"; -- JMP #0000 ; PC <- (0x0000)
+		memoria(32)<= x"00010000"; -- NOP
 		memoria(33)<= x"00010000"; -- NOP
 		memoria(34)<= x"00010000"; -- NOP
-		memoria(35)<= x"00010000"; -- NOP
 
 		
 		-- Mapeo de dirección de la memoria

@@ -3,60 +3,60 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -13.210
-TNS   : -4491.663
-
-Type  : Slow 1200mV 85C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : -10.652
-TNS   : -150.485
+Slack : -13.624
+TNS   : -5505.627
 
 Type  : Slow 1200mV 85C Model Setup 'sensa_boton:inst7|RELOJ'
-Slack : -8.893
-TNS   : -585.902
+Slack : -9.250
+TNS   : -581.356
+
+Type  : Slow 1200mV 85C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : -8.116
+TNS   : -132.076
 
 Type  : Slow 1200mV 85C Model Setup 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -6.847
-TNS   : -3215.031
+Slack : -7.735
+TNS   : -3778.995
 
 Type  : Slow 1200mV 85C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : -5.688
-TNS   : -26.836
+Slack : -6.369
+TNS   : -30.813
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : 0.177
+Slack : 0.179
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -2.419
-TNS   : -224.352
-
-Type  : Slow 1200mV 85C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -1.564
-TNS   : -58.553
+Slack : -0.683
+TNS   : -36.309
 
 Type  : Slow 1200mV 85C Model Hold 'sensa_boton:inst7|RELOJ'
-Slack : -0.484
-TNS   : -0.484
+Slack : 0.246
+TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : -0.096
-TNS   : -0.188
+Type  : Slow 1200mV 85C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : 0.379
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.432
+Slack : 0.433
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : 0.549
+Slack : 0.596
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.600
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -6.042
-TNS   : -23483.190
+Slack : -5.612
+TNS   : -28229.214
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -4.542
-TNS   : -9866.794
+Slack : -3.219
+TNS   : -8406.794
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
@@ -67,131 +67,131 @@ Slack : -1.403
 TNS   : -251.137
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : 0.342
+Slack : 0.306
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : 0.426
+Slack : 0.414
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -11.856
-TNS   : -4226.063
-
-Type  : Slow 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : -9.995
-TNS   : -139.927
+Slack : -12.162
+TNS   : -5168.709
 
 Type  : Slow 1200mV 0C Model Setup 'sensa_boton:inst7|RELOJ'
-Slack : -8.031
-TNS   : -529.771
+Slack : -8.355
+TNS   : -527.250
+
+Type  : Slow 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : -7.505
+TNS   : -121.908
 
 Type  : Slow 1200mV 0C Model Setup 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -6.481
-TNS   : -3012.321
+Slack : -7.277
+TNS   : -3554.447
 
 Type  : Slow 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : -5.173
-TNS   : -24.360
+Slack : -5.818
+TNS   : -28.169
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : 0.249
+Slack : 0.250
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -2.098
-TNS   : -223.314
-
-Type  : Slow 1200mV 0C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -1.223
-TNS   : -52.096
+Slack : -0.768
+TNS   : -55.102
 
 Type  : Slow 1200mV 0C Model Hold 'sensa_boton:inst7|RELOJ'
-Slack : -0.445
-TNS   : -0.445
+Slack : 0.223
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : -0.163
-TNS   : -0.176
+Type  : Slow 1200mV 0C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : 0.235
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
 Slack : 0.398
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.514
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : 0.523
+Slack : 0.577
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -5.731
-TNS   : -21283.768
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -4.162
-TNS   : -8844.553
+Slack : -5.349
+TNS   : -25587.782
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -5.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : -2.952
+TNS   : -7459.923
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sensa_boton:inst7|RELOJ'
 Slack : -1.403
 TNS   : -251.137
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : 0.384
+Slack : 0.345
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : 0.445
+Slack : 0.399
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -5.877
-TNS   : -1981.813
-
-Type  : Fast 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : -4.567
-TNS   : -62.363
+Slack : -6.029
+TNS   : -2506.062
 
 Type  : Fast 1200mV 0C Model Setup 'sensa_boton:inst7|RELOJ'
-Slack : -3.575
-TNS   : -211.859
+Slack : -3.745
+TNS   : -208.484
 
 Type  : Fast 1200mV 0C Model Setup 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -3.124
-TNS   : -1365.475
+Slack : -3.598
+TNS   : -1735.445
+
+Type  : Fast 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : -3.443
+TNS   : -53.001
 
 Type  : Fast 1200mV 0C Model Setup 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : -2.047
-TNS   : -9.482
+Slack : -2.265
+TNS   : -11.149
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
 Slack : 0.640
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -1.089
-TNS   : -60.776
-
-Type  : Fast 1200mV 0C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -0.519
-TNS   : -6.729
+Slack : -0.216
+TNS   : -0.896
 
 Type  : Fast 1200mV 0C Model Hold 'sensa_boton:inst7|RELOJ'
-Slack : -0.448
-TNS   : -0.448
-
-Type  : Fast 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : -0.187
-TNS   : -0.285
+Slack : 0.163
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : 0.164
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : 0.228
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
+Slack : 0.345
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
@@ -199,23 +199,23 @@ Slack : -3.000
 TNS   : -5.068
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa3:inst2|reg_acoplo_4:inst107|memw'
-Slack : -2.691
-TNS   : -7474.590
+Slack : -2.563
+TNS   : -9548.276
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa1:inst|registro_inst:inst5|valor_interno[0]'
-Slack : -1.852
-TNS   : -2594.655
+Slack : -1.191
+TNS   : -1894.831
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sensa_boton:inst7|RELOJ'
 Slack : -1.000
 TNS   : -179.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
-Slack : 0.395
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
+Slack : 0.360
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selop[0]'
-Slack : 0.411
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'etapa2:inst3|reg_acoplo_3:inst10|selfalgs[0]'
+Slack : 0.395
 TNS   : 0.000
 
 ------------------------------------------------------------
