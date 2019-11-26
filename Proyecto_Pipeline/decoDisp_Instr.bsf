@@ -47,22 +47,22 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 232 32)
 		(output)
-		(text "first_digit[6..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "first_digit[6..0]" (rect 156 27 211 39)(font "Arial" ))
+		(text "first_digit[7..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "first_digit[7..0]" (rect 156 27 211 39)(font "Arial" ))
 		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(port
 		(pt 232 48)
 		(output)
-		(text "second_digit[6..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "second_digit[6..0]" (rect 143 43 211 55)(font "Arial" ))
+		(text "second_digit[7..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "second_digit[7..0]" (rect 143 43 211 55)(font "Arial" ))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
 	)
 	(port
 		(pt 232 64)
 		(output)
-		(text "third_digit[6..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "third_digit[6..0]" (rect 155 59 211 71)(font "Arial" ))
+		(text "third_digit[7..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "third_digit[7..0]" (rect 155 59 211 71)(font "Arial" ))
 		(line (pt 232 64)(pt 216 64)(line_width 3))
 	)
 	(drawing

@@ -44,47 +44,50 @@ architecture Behavioral of memoria_inst is
 		-- Inicio:
 		memoria(0) <= x"00860000"; -- LDAA #0000 ; (ACCA) <- 0x0000
 		memoria(1) <= x"00010000"; -- NOP
-		memoria(2) <= x"00B70001"; -- STAA $#0001 ; (mem[1]) <- (ACCA) => init acumulator
-		memoria(3) <= x"00010000"; -- NOP
+		memoria(2) <= x"00010000"; -- NOP
+		memoria(3) <= x"00B70001"; -- STAA $#0001 ; (mem[1]) <- (ACCA) => init acumulator
 		memoria(4) <= x"00010000"; -- NOP
-		memoria(5) <= x"004C0000"; -- INCA ; (ACCA) <- (ACCA) + 1
-		memoria(6) <= x"00010000"; -- NOP
-		memoria(7) <= x"00B70000"; -- STAA $#0000 ; (mem[0]) <- (ACCA) => init counter
+		memoria(5) <= x"00010000"; -- NOP
+		memoria(6) <= x"004C0000"; -- INCA ; (ACCA) <- (ACCA) + 1
+		memoria(7) <= x"00010000"; -- NOP
 		memoria(8) <= x"00010000"; -- NOP
-		memoria(9) <= x"00D60000"; -- LDAB $#0000 ; (ACCB) <- (mem[0]) => counter
+		memoria(9) <= x"00B70000"; -- STAA $#0000 ; (mem[0]) <- (ACCA) => init counter
+		memoria(10)<= x"00010000"; -- NOP
+		memoria(11)<= x"00010000"; -- NOP
+		memoria(12)<= x"00D60000"; -- LDAB $#0000 ; (ACCB) <- (mem[0]) => counter
 		
 		-- límite_ACCB = 5
-		memoria(10)<= x"00860005"; -- LDAA #0005 ; (ACCA) <- 0x0005
+		memoria(13)<= x"00860005"; -- LDAA #0005 ; (ACCA) <- 0x0005
 	
 		-- IF (ACCB >= límite) THEN: reset 
-		memoria(11)<= x"00110000"; -- CBA ; (ACCA) - (ACCB) ; update flags (N, Z, V, C)
-		memoria(12)<= x"0027001D"; -- JZ #0013 ; IF (Z == 1): PC <- (0x001D = 0d0029)
-		memoria(13)<= x"00010000"; -- NOP
-		memoria(14)<= x"00010000"; -- NOP
-		memoria(15)<= x"00010000"; -- NOP
+		memoria(14)<= x"00110000"; -- CBA ; (ACCA) - (ACCB) ; update flags (N, Z, V, C)
+		memoria(15)<= x"00270020"; -- JZ #0013 ; IF (Z == 1): PC <- (0x0020 = 0d0032)
+		memoria(16)<= x"00010000"; -- NOP
+		memoria(17)<= x"00010000"; -- NOP
+		memoria(18)<= x"00010000"; -- NOP
 		
 		-- ELSE: (ACCA + ACCB; ACCB <- ACBB + 1)
-		memoria(16)<= x"00960000"; -- LDAA $#0000 ; (ACCA) <- (mem[0]) => counter
-		memoria(17)<= x"00580000"; -- LSLB ; ACCB <<  => 2^ACCB
-		memoria(18)<= x"001B0000"; -- ABA ; (ACCA) <- (ACCA) + (ACCB)
-		memoria(19)<= x"00D60001"; -- LDAB $#0001 ; (ACCB) <- (mem[1]) => old acumulator
-		memoria(20)<= x"001B0000"; -- ABA ; (ACCA) <- (ACCA) + (ACCB) => new acumulator
-		memoria(21)<= x"00B70001"; -- STAA $#0001 ; (mem[1]) <- (ACCA) => acumulator
-		memoria(22)<= x"00960000"; -- LDAA $#0000 ; (ACCA) <- (mem[0]) => counter
-		memoria(23)<= x"004C0000"; -- INCA ; (ACCA) <- (ACCA) + 1
-		memoria(24)<= x"00B70000"; -- STAA $#0000 ; (mem[0]) <- (ACCA) => acumulator + 1 
-		memoria(25)<= x"007E0009"; -- JMP #0009 ; PC <- (0x0008)
-		memoria(26)<= x"00010000"; -- NOP
-		memoria(27)<= x"00010000"; -- NOP
-		memoria(28)<= x"00010000"; -- NOP
+		memoria(19)<= x"00960000"; -- LDAA $#0000 ; (ACCA) <- (mem[0]) => counter
+		memoria(20)<= x"00580000"; -- LSLB ; ACCB <<  => 2^ACCB
+		memoria(21)<= x"001B0000"; -- ABA ; (ACCA) <- (ACCA) + (ACCB)
+		memoria(22)<= x"00D60001"; -- LDAB $#0001 ; (ACCB) <- (mem[1]) => old acumulator
+		memoria(23)<= x"001B0000"; -- ABA ; (ACCA) <- (ACCA) + (ACCB) => new acumulator
+		memoria(24)<= x"00B70001"; -- STAA $#0001 ; (mem[1]) <- (ACCA) => acumulator
+		memoria(25)<= x"00960000"; -- LDAA $#0000 ; (ACCA) <- (mem[0]) => counter
+		memoria(26)<= x"004C0000"; -- INCA ; (ACCA) <- (ACCA) + 1
+		memoria(27)<= x"00B70000"; -- STAA $#0000 ; (mem[0]) <- (ACCA) => acumulator + 1 
+		memoria(28)<= x"007E000C"; -- JMP #000C ; PC <- (0x0008)
+		memoria(29)<= x"00010000"; -- NOP
+		memoria(30)<= x"00010000"; -- NOP
+		memoria(31)<= x"00010000"; -- NOP
 		
 		-- RESET (FINAL)
-		memoria(29)<= x"004F0000"; -- CLRA ; ACCA <- 0x0000
-		memoria(30)<= x"005F0000"; -- CLRB ; ACCB <- 0x0000
-		memoria(31)<= x"007E0000"; -- JMP #0000 ; PC <- (0x0000)
-		memoria(32)<= x"00010000"; -- NOP
-		memoria(33)<= x"00010000"; -- NOP
-		memoria(34)<= x"00010000"; -- NOP
+		memoria(32)<= x"004F0000"; -- CLRA ; ACCA <- 0x0000
+		memoria(33)<= x"005F0000"; -- CLRB ; ACCB <- 0x0000
+		memoria(34)<= x"007E0000"; -- JMP #0000 ; PC <- (0x0000)
+		memoria(35)<= x"00010000"; -- NOP
+		memoria(36)<= x"00010000"; -- NOP
+		memoria(37)<= x"00010000"; -- NOP
 
 		
 		-- Mapeo de dirección de la memoria

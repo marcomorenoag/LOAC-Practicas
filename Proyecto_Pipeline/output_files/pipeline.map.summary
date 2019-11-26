@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Nov 25 14:22:39 2019
+Analysis & Synthesis Status : Successful - Mon Nov 25 15:11:14 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : pipeline
 Top-level Entity Name : pipeline
 Family : MAX 10
-Total logic elements : 352
-    Total combinational functions : 292
+Total logic elements : 362
+    Total combinational functions : 302
     Dedicated logic registers : 141
 Total registers : 141
-Total pins : 150
+Total pins : 156
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
