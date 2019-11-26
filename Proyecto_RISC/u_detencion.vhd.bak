@@ -1,15 +1,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity u_detencion is
+entity detentionUnit is
 	Port( SelSrc : in STD_LOGIC_VECTOR (2 downto 0);
          MemWE4 : in STD_LOGIC;
          PCWrite : out STD_LOGIC := '1';
          IFIDWrite : out STD_LOGIC := '1';
          SelCtrl : out STD_LOGIC := '0');
-end u_detencion;
+end detentionUnit;
 
-architecture Behavioral of u_detencion is
+architecture Behavioral of detentionUnit is
 
 begin
 	process (SelSrc,MemWE4) begin
@@ -36,4 +36,4 @@ begin
 	end process;
 
 	
-end Behavioral; 
+end Behavioral;

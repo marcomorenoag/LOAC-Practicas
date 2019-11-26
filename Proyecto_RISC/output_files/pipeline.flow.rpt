@@ -1,5 +1,5 @@
 Flow report for pipeline
-Mon Nov 25 10:12:50 2019
+Tue Nov 26 01:13:12 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 25 10:12:50 2019       ;
+; Flow Status                        ; Successful - Tue Nov 26 01:13:12 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pipeline                                    ;
 ; Top-level Entity Name              ; pipeline                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,126 / 49,760 ( 4 % )                      ;
-;     Total combinational functions  ; 2,115 / 49,760 ( 4 % )                      ;
-;     Dedicated logic registers      ; 181 / 49,760 ( < 1 % )                      ;
-; Total registers                    ; 181                                         ;
-; Total pins                         ; 159 / 360 ( 44 % )                          ;
+; Total logic elements               ; 2,095 / 49,760 ( 4 % )                      ;
+;     Total combinational functions  ; 2,061 / 49,760 ( 4 % )                      ;
+;     Dedicated logic registers      ; 165 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 165                                         ;
+; Total pins                         ; 154 / 360 ( 43 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/25/2019 10:10:20 ;
+; Start date & time ; 11/26/2019 01:10:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline            ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 1097032508660.157469821913304          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 1097032508660.157475222604912          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -95,12 +95,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4800 MB             ; 00:00:46                           ;
-; Fitter               ; 00:01:34     ; 1.1                     ; 5390 MB             ; 00:01:43                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4682 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.3                     ; 4805 MB             ; 00:00:14                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4664 MB             ; 00:00:02                           ;
-; Total                ; 00:02:24     ; --                      ; --                  ; 00:02:50                           ;
+; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 4798 MB             ; 00:00:46                           ;
+; Fitter               ; 00:01:59     ; 1.1                     ; 5392 MB             ; 00:02:18                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4685 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.4                     ; 4800 MB             ; 00:00:12                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4666 MB             ; 00:00:02                           ;
+; Total                ; 00:02:40     ; --                      ; --                  ; 00:03:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
