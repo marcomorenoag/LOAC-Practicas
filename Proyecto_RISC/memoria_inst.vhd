@@ -53,7 +53,7 @@ architecture Behavioral of memoria_inst is
 		memoria(8) <= x"00010000"; -- NOP
 		memoria(9) <= x"00D60000"; -- LDAB $#0000 ; (ACCB) <- (mem[0]) => counter
 		
-		-- límite_ACCB = 5
+		-- Límite ACCB = 5 (no se llega a este valor)
 		memoria(10)<= x"00860005"; -- LDAA #0005 ; (ACCA) <- 0x0005
 	
 		-- IF (ACCB >= límite) THEN: reset 
@@ -73,7 +73,7 @@ architecture Behavioral of memoria_inst is
 		memoria(22)<= x"00960000"; -- LDAA $#0000 ; (ACCA) <- (mem[0]) => counter
 		memoria(23)<= x"004C0000"; -- INCA ; (ACCA) <- (ACCA) + 1
 		memoria(24)<= x"00B70000"; -- STAA $#0000 ; (mem[0]) <- (ACCA) => acumulator + 1 
-		memoria(25)<= x"007E0009"; -- JMP #0009 ; PC <- (0x0008)
+		memoria(25)<= x"007E0009"; -- JMP #0009 ; PC <- (0x0009)
 		memoria(26)<= x"00010000"; -- NOP
 		memoria(27)<= x"00010000"; -- NOP
 		memoria(28)<= x"00010000"; -- NOP

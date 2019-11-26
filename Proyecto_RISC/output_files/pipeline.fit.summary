@@ -1,11 +1,11 @@
-Fitter Status : Successful - Tue Nov 26 01:12:52 2019
+Fitter Status : Successful - Tue Nov 26 14:25:11 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : pipeline
 Top-level Entity Name : pipeline
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 2,095 / 49,760 ( 4 % )
+Total logic elements : 2,102 / 49,760 ( 4 % )
     Total combinational functions : 2,061 / 49,760 ( 4 % )
     Dedicated logic registers : 165 / 49,760 ( < 1 % )
 Total registers : 165

@@ -373,15 +373,6 @@ begin
 		
 		
 		
-		-- ITERACIÓN 1: MEJORAS AL PROGRAMA PARA AGREGAR INSTRUCCIONES
-		-- A incr alternando signos en 1
-		-- B en potencias de 2
-		
-		-- 1: ldab (ext) -> (LISTO)
-		-- 2: lslb (0058) -> potencias (LISTO)
-		-- 3: inca -> incrementa ACCA (LISTO)
-		-- 4: clra -> ACCA RESET antes del jump (LISTO)
-		-- 5: clra -> ACCA RESET antes del jump (LISTO)
 		
 	end process;
 end Behavioral;
